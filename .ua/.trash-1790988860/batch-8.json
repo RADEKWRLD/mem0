@@ -1,0 +1,436 @@
+{
+  "nodes": [
+    {
+      "id": "file:.gitmodules",
+      "type": "file",
+      "name": ".gitmodules",
+      "filePath": ".gitmodules",
+      "summary": "将 evaluation 目录绑定到 memory-benchmarks 仓库的 main 分支，使基准评测代码以 Git submodule 形式独立演进。",
+      "tags": ["configuration", "git-submodule", "evaluation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:mem0/AGENTS.md",
+      "type": "document",
+      "name": "AGENTS.md",
+      "filePath": "mem0/AGENTS.md",
+      "summary": "核心 Python SDK 的开发指南，定义 Hatch/Ruff/Pytest 工作流、provider 扩展模式、公共 API 约束与图记忆定位。",
+      "tags": ["documentation", "python-sdk", "provider-pattern", "development"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/client/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "mem0/client/__init__.py",
+      "summary": "标记 hosted client 子包的空命名空间；实际客户端实现由同目录其他模块提供。",
+      "tags": ["entry-point", "package-marker", "client"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "mem0/configs/__init__.py",
+      "summary": "标记全局配置子包的空命名空间，为不同 provider 类别的配置模型提供包边界。",
+      "tags": ["entry-point", "package-marker", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/embeddings/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "mem0/configs/embeddings/__init__.py",
+      "summary": "标记 embedding provider 配置模型所在的 Python 子包，不承担运行时导出逻辑。",
+      "tags": ["entry-point", "package-marker", "embeddings"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/llms/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "mem0/configs/llms/__init__.py",
+      "summary": "标记 LLM provider 配置模型所在的 Python 子包，不承担运行时导出逻辑。",
+      "tags": ["entry-point", "package-marker", "llm"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/rerankers/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "mem0/configs/rerankers/__init__.py",
+      "summary": "标记 reranker provider 配置模型所在的 Python 子包，不承担运行时导出逻辑。",
+      "tags": ["entry-point", "package-marker", "reranker"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "mem0/configs/vector_stores/__init__.py",
+      "summary": "标记各向量数据库配置模型的 Python 子包；具体 provider 配置按模块分隔。",
+      "tags": ["entry-point", "package-marker", "vector-store"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/azure_ai_search.py",
+      "type": "file",
+      "name": "azure_ai_search.py",
+      "filePath": "mem0/configs/vector_stores/azure_ai_search.py",
+      "summary": "定义 Azure AI Search 向量存储的 Pydantic 配置，覆盖服务凭据、向量维度、压缩、混合检索与过滤模式校验。",
+      "tags": ["configuration", "vector-store", "azure-ai-search", "validation"],
+      "complexity": "simple",
+      "languageNotes": "使用 Pydantic v2 的 model_validator 在模型构造前拒绝额外字段和已废弃参数。"
+    },
+    {
+      "id": "class:mem0/configs/vector_stores/azure_ai_search.py:AzureAISearchConfig",
+      "type": "class",
+      "name": "AzureAISearchConfig",
+      "filePath": "mem0/configs/vector_stores/azure_ai_search.py",
+      "lineRange": [6, 57],
+      "summary": "封装 Azure AI Search 的索引、认证与检索特性参数，并校验压缩类型及旧版 use_compression 配置。",
+      "tags": ["configuration", "pydantic-model", "azure-ai-search", "validation"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/azure_mysql.py",
+      "type": "file",
+      "name": "azure_mysql.py",
+      "filePath": "mem0/configs/vector_stores/azure_mysql.py",
+      "summary": "定义 Azure MySQL 向量存储配置，支持密码、Azure 凭据或外部连接池，并验证连接必填项与安全 SQL 标识符。",
+      "tags": ["configuration", "vector-store", "azure-mysql", "validation"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/configs/vector_stores/azure_mysql.py:AzureMySQLConfig",
+      "type": "class",
+      "name": "AzureMySQLConfig",
+      "filePath": "mem0/configs/vector_stores/azure_mysql.py",
+      "lineRange": [11, 97],
+      "summary": "建模 Azure MySQL 主机、凭据、SSL 与连接池参数，并通过多阶段验证防止缺失认证和不安全表名。",
+      "tags": ["configuration", "pydantic-model", "azure-mysql", "security"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/baidu.py",
+      "type": "file",
+      "name": "baidu.py",
+      "filePath": "mem0/configs/vector_stores/baidu.py",
+      "summary": "提供 Baidu VectorDB 的端点、账号、数据库、表、向量维度和距离度量配置，并拒绝未声明字段。",
+      "tags": ["configuration", "vector-store", "baidu-vectordb", "validation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/vector_stores/baidu.py:BaiduDBConfig",
+      "type": "class",
+      "name": "BaiduDBConfig",
+      "filePath": "mem0/configs/vector_stores/baidu.py",
+      "lineRange": [6, 27],
+      "summary": "表示 Baidu VectorDB 连接与索引参数，通过 Pydantic 前置校验限定配置字段集合。",
+      "tags": ["configuration", "pydantic-model", "baidu-vectordb", "validation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/cassandra.py",
+      "type": "file",
+      "name": "cassandra.py",
+      "filePath": "mem0/configs/vector_stores/cassandra.py",
+      "summary": "定义 Cassandra/Astra DB 向量存储配置，处理接触点、secure connect bundle、成对账号密码与协议参数。",
+      "tags": ["configuration", "vector-store", "cassandra", "validation"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/configs/vector_stores/cassandra.py:CassandraConfig",
+      "type": "class",
+      "name": "CassandraConfig",
+      "filePath": "mem0/configs/vector_stores/cassandra.py",
+      "lineRange": [6, 75],
+      "summary": "建模 Cassandra 集群与 Astra DB 连接选项，并保证认证字段配对及至少一种连接方式可用。",
+      "tags": ["configuration", "pydantic-model", "cassandra", "authentication"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/chroma.py",
+      "type": "file",
+      "name": "chroma.py",
+      "filePath": "mem0/configs/vector_stores/chroma.py",
+      "summary": "定义 ChromaDB 本地、服务端或 Cloud 三种连接配置，支持注入现有客户端并约束互斥连接模式。",
+      "tags": ["configuration", "vector-store", "chromadb", "validation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/vector_stores/chroma.py:ChromaDbConfig",
+      "type": "class",
+      "name": "ChromaDbConfig",
+      "filePath": "mem0/configs/vector_stores/chroma.py",
+      "lineRange": [6, 58],
+      "summary": "封装 ChromaDB 客户端、路径、主机端口及云凭据，确保 Cloud 与本地/服务端配置不混用。",
+      "tags": ["configuration", "pydantic-model", "chromadb", "connection-management"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/databricks.py",
+      "type": "file",
+      "name": "databricks.py",
+      "filePath": "mem0/configs/vector_stores/databricks.py",
+      "summary": "定义 Databricks Vector Search 配置，覆盖 workspace、Unity Catalog、索引/管道类型、warehouse 与多种令牌或服务主体认证。",
+      "tags": ["configuration", "vector-store", "databricks", "authentication"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/configs/vector_stores/databricks.py:DatabricksConfig",
+      "type": "class",
+      "name": "DatabricksConfig",
+      "filePath": "mem0/configs/vector_stores/databricks.py",
+      "lineRange": [8, 61],
+      "summary": "聚合 Databricks 向量索引与查询管道参数，并验证 personal token 或服务主体凭据至少有一种完整可用。",
+      "tags": ["configuration", "pydantic-model", "databricks", "validation"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/faiss.py",
+      "type": "file",
+      "name": "faiss.py",
+      "filePath": "mem0/configs/vector_stores/faiss.py",
+      "summary": "提供 FAISS 索引路径、向量维度、距离策略与 L2 归一化配置，并限制支持的度量类型。",
+      "tags": ["configuration", "vector-store", "faiss", "validation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/vector_stores/faiss.py:FAISSConfig",
+      "type": "class",
+      "name": "FAISSConfig",
+      "filePath": "mem0/configs/vector_stores/faiss.py",
+      "lineRange": [6, 37],
+      "summary": "建模 FAISS 本地索引参数，并将距离策略限定为 Euclidean、inner product 或 cosine。",
+      "tags": ["configuration", "pydantic-model", "faiss", "similarity-search"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/langchain.py",
+      "type": "file",
+      "name": "langchain.py",
+      "filePath": "mem0/configs/vector_stores/langchain.py",
+      "summary": "定义对任意 LangChain Community VectorStore 实例的适配配置，并在缺少可选依赖时给出安装提示。",
+      "tags": ["configuration", "vector-store", "langchain", "adapter"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/vector_stores/langchain.py:LangchainConfig",
+      "type": "class",
+      "name": "LangchainConfig",
+      "filePath": "mem0/configs/vector_stores/langchain.py",
+      "lineRange": [6, 30],
+      "summary": "接收现有 LangChain VectorStore 客户端及 collection 名称，并拒绝额外配置字段。",
+      "tags": ["configuration", "pydantic-model", "langchain", "adapter"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/mongodb.py",
+      "type": "file",
+      "name": "mongodb.py",
+      "filePath": "mem0/configs/vector_stores/mongodb.py",
+      "summary": "提供 MongoDB 向量数据库的 URI、数据库、collection 与 embedding 维度配置，并禁止未知字段。",
+      "tags": ["configuration", "vector-store", "mongodb", "validation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/vector_stores/mongodb.py:MongoDBConfig",
+      "type": "class",
+      "name": "MongoDBConfig",
+      "filePath": "mem0/configs/vector_stores/mongodb.py",
+      "lineRange": [6, 27],
+      "summary": "封装 MongoDB 向量存储的数据库定位信息与向量维度，提供本地 URI 默认值。",
+      "tags": ["configuration", "pydantic-model", "mongodb", "connection-management"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/neptune.py",
+      "type": "file",
+      "name": "neptune.py",
+      "filePath": "mem0/configs/vector_stores/neptune.py",
+      "summary": "定义 Amazon Neptune Analytics 作为向量存储时的图端点与 collection 配置，并保护 Cypher 标识符插值。",
+      "tags": ["configuration", "vector-store", "amazon-neptune", "security"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/vector_stores/neptune.py:NeptuneAnalyticsConfig",
+      "type": "class",
+      "name": "NeptuneAnalyticsConfig",
+      "filePath": "mem0/configs/vector_stores/neptune.py",
+      "lineRange": [17, 40],
+      "summary": "表示 Neptune Analytics 图端点与 collection 名称，并以正则保证 collection 可安全用于 Cypher 标签。",
+      "tags": ["configuration", "pydantic-model", "amazon-neptune", "validation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/pgvector.py",
+      "type": "file",
+      "name": "pgvector.py",
+      "filePath": "mem0/configs/vector_stores/pgvector.py",
+      "summary": "定义 pgvector 的连接参数、SSL、连接池、DiskANN/HNSW 开关与向量维度，并支持三层连接配置优先级。",
+      "tags": ["configuration", "vector-store", "pgvector", "connection-management"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/vector_stores/pgvector.py:PGVectorConfig",
+      "type": "class",
+      "name": "PGVectorConfig",
+      "filePath": "mem0/configs/vector_stores/pgvector.py",
+      "lineRange": [6, 54],
+      "summary": "建模 PostgreSQL/pgvector 的单项连接参数、connection string 或外部连接池，并验证成对认证与地址字段。",
+      "tags": ["configuration", "pydantic-model", "pgvector", "validation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/pinecone.py",
+      "type": "file",
+      "name": "pinecone.py",
+      "filePath": "mem0/configs/vector_stores/pinecone.py",
+      "summary": "定义 Pinecone 客户端、API key、serverless/pod 部署、namespace、度量与批处理参数，并支持环境变量认证。",
+      "tags": ["configuration", "vector-store", "pinecone", "authentication"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/vector_stores/pinecone.py:PineconeConfig",
+      "type": "class",
+      "name": "PineconeConfig",
+      "filePath": "mem0/configs/vector_stores/pinecone.py",
+      "lineRange": [7, 55],
+      "summary": "封装 Pinecone 索引与查询配置，确保存在客户端或 API key，并禁止 pod 与 serverless 设置同时出现。",
+      "tags": ["configuration", "pydantic-model", "pinecone", "validation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/qdrant.py",
+      "type": "file",
+      "name": "qdrant.py",
+      "filePath": "mem0/configs/vector_stores/qdrant.py",
+      "summary": "定义 Qdrant 的本地路径、host/port、URL/API key、HTTPS、持久化与外部客户端配置，并检查连接方式完整性。",
+      "tags": ["configuration", "vector-store", "qdrant", "connection-management"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/vector_stores/qdrant.py:QdrantConfig",
+      "type": "class",
+      "name": "QdrantConfig",
+      "filePath": "mem0/configs/vector_stores/qdrant.py",
+      "lineRange": [6, 51],
+      "summary": "建模 Qdrant 本地、服务端或托管连接参数，要求路径、host/port 或 URL/API key 三者至少一种成立。",
+      "tags": ["configuration", "pydantic-model", "qdrant", "validation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/redis.py",
+      "type": "file",
+      "name": "redis.py",
+      "filePath": "mem0/configs/vector_stores/redis.py",
+      "summary": "提供精简的 Redis 向量存储配置，要求连接 URL，并给出 collection 和 embedding 维度默认值。",
+      "tags": ["configuration", "vector-store", "redis", "data-model"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/vector_stores/redis.py:RedisDBConfig",
+      "type": "class",
+      "name": "RedisDBConfig",
+      "filePath": "mem0/configs/vector_stores/redis.py",
+      "lineRange": [4, 9],
+      "summary": "以禁止额外字段的 Pydantic 模型表示 Redis URL、collection 名称和向量维度。",
+      "tags": ["configuration", "pydantic-model", "redis", "validation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/s3_vectors.py",
+      "type": "file",
+      "name": "s3_vectors.py",
+      "filePath": "mem0/configs/vector_stores/s3_vectors.py",
+      "summary": "定义 Amazon S3 Vectors 的 bucket、索引名称、embedding 维度、距离度量与区域配置，并拒绝额外字段。",
+      "tags": ["configuration", "vector-store", "s3-vectors", "validation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/vector_stores/s3_vectors.py:S3VectorsConfig",
+      "type": "class",
+      "name": "S3VectorsConfig",
+      "filePath": "mem0/configs/vector_stores/s3_vectors.py",
+      "lineRange": [6, 28],
+      "summary": "封装 S3 Vector bucket 与索引参数，为向量维度、cosine 度量和 AWS region 提供明确配置入口。",
+      "tags": ["configuration", "pydantic-model", "s3-vectors", "similarity-search"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/turbopuffer.py",
+      "type": "file",
+      "name": "turbopuffer.py",
+      "filePath": "mem0/configs/vector_stores/turbopuffer.py",
+      "summary": "定义 Turbopuffer namespace、区域、距离度量、批量大小及认证配置，并支持从环境变量读取 API key。",
+      "tags": ["configuration", "vector-store", "turbopuffer", "authentication"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/vector_stores/turbopuffer.py:TurbopufferConfig",
+      "type": "class",
+      "name": "TurbopufferConfig",
+      "filePath": "mem0/configs/vector_stores/turbopuffer.py",
+      "lineRange": [7, 45],
+      "summary": "建模 Turbopuffer 查询和批处理参数，要求显式 API key 或 TURBOPUFFER_API_KEY 环境变量。",
+      "tags": ["configuration", "pydantic-model", "turbopuffer", "validation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/upstash_vector.py",
+      "type": "file",
+      "name": "upstash_vector.py",
+      "filePath": "mem0/configs/vector_stores/upstash_vector.py",
+      "summary": "定义 Upstash Vector 的 URL/token、现有客户端、namespace 与内建 embedding 开关，并将环境变量凭据写回已验证配置。",
+      "tags": ["configuration", "vector-store", "upstash-vector", "authentication"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/vector_stores/upstash_vector.py:UpstashVectorConfig",
+      "type": "class",
+      "name": "UpstashVectorConfig",
+      "filePath": "mem0/configs/vector_stores/upstash_vector.py",
+      "lineRange": [12, 41],
+      "summary": "封装 Upstash Vector 客户端或 REST 凭据，保证二者至少有一种，并保留从环境变量解析出的 URL 与 token。",
+      "tags": ["configuration", "pydantic-model", "upstash-vector", "validation"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {"source": "file:mem0/configs/vector_stores/azure_ai_search.py", "target": "class:mem0/configs/vector_stores/azure_ai_search.py:AzureAISearchConfig", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:mem0/configs/vector_stores/azure_ai_search.py", "target": "class:mem0/configs/vector_stores/azure_ai_search.py:AzureAISearchConfig", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:mem0/configs/vector_stores/azure_mysql.py", "target": "class:mem0/configs/vector_stores/azure_mysql.py:AzureMySQLConfig", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:mem0/configs/vector_stores/azure_mysql.py", "target": "class:mem0/configs/vector_stores/azure_mysql.py:AzureMySQLConfig", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:mem0/configs/vector_stores/baidu.py", "target": "class:mem0/configs/vector_stores/baidu.py:BaiduDBConfig", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:mem0/configs/vector_stores/baidu.py", "target": "class:mem0/configs/vector_stores/baidu.py:BaiduDBConfig", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:mem0/configs/vector_stores/cassandra.py", "target": "class:mem0/configs/vector_stores/cassandra.py:CassandraConfig", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:mem0/configs/vector_stores/cassandra.py", "target": "class:mem0/configs/vector_stores/cassandra.py:CassandraConfig", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:mem0/configs/vector_stores/chroma.py", "target": "class:mem0/configs/vector_stores/chroma.py:ChromaDbConfig", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:mem0/configs/vector_stores/chroma.py", "target": "class:mem0/configs/vector_stores/chroma.py:ChromaDbConfig", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:mem0/configs/vector_stores/databricks.py", "target": "class:mem0/configs/vector_stores/databricks.py:DatabricksConfig", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:mem0/configs/vector_stores/databricks.py", "target": "class:mem0/configs/vector_stores/databricks.py:DatabricksConfig", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:mem0/configs/vector_stores/faiss.py", "target": "class:mem0/configs/vector_stores/faiss.py:FAISSConfig", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:mem0/configs/vector_stores/faiss.py", "target": "class:mem0/configs/vector_stores/faiss.py:FAISSConfig", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:mem0/configs/vector_stores/langchain.py", "target": "class:mem0/configs/vector_stores/langchain.py:LangchainConfig", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:mem0/configs/vector_stores/langchain.py", "target": "class:mem0/configs/vector_stores/langchain.py:LangchainConfig", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:mem0/configs/vector_stores/mongodb.py", "target": "class:mem0/configs/vector_stores/mongodb.py:MongoDBConfig", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:mem0/configs/vector_stores/mongodb.py", "target": "class:mem0/configs/vector_stores/mongodb.py:MongoDBConfig", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:mem0/configs/vector_stores/neptune.py", "target": "class:mem0/configs/vector_stores/neptune.py:NeptuneAnalyticsConfig", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:mem0/configs/vector_stores/neptune.py", "target": "class:mem0/configs/vector_stores/neptune.py:NeptuneAnalyticsConfig", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:mem0/configs/vector_stores/pgvector.py", "target": "class:mem0/configs/vector_stores/pgvector.py:PGVectorConfig", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:mem0/configs/vector_stores/pgvector.py", "target": "class:mem0/configs/vector_stores/pgvector.py:PGVectorConfig", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:mem0/configs/vector_stores/pinecone.py", "target": "class:mem0/configs/vector_stores/pinecone.py:PineconeConfig", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:mem0/configs/vector_stores/pinecone.py", "target": "class:mem0/configs/vector_stores/pinecone.py:PineconeConfig", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:mem0/configs/vector_stores/qdrant.py", "target": "class:mem0/configs/vector_stores/qdrant.py:QdrantConfig", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:mem0/configs/vector_stores/qdrant.py", "target": "class:mem0/configs/vector_stores/qdrant.py:QdrantConfig", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:mem0/configs/vector_stores/redis.py", "target": "class:mem0/configs/vector_stores/redis.py:RedisDBConfig", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:mem0/configs/vector_stores/redis.py", "target": "class:mem0/configs/vector_stores/redis.py:RedisDBConfig", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:mem0/configs/vector_stores/s3_vectors.py", "target": "class:mem0/configs/vector_stores/s3_vectors.py:S3VectorsConfig", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:mem0/configs/vector_stores/s3_vectors.py", "target": "class:mem0/configs/vector_stores/s3_vectors.py:S3VectorsConfig", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:mem0/configs/vector_stores/turbopuffer.py", "target": "class:mem0/configs/vector_stores/turbopuffer.py:TurbopufferConfig", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:mem0/configs/vector_stores/turbopuffer.py", "target": "class:mem0/configs/vector_stores/turbopuffer.py:TurbopufferConfig", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:mem0/configs/vector_stores/upstash_vector.py", "target": "class:mem0/configs/vector_stores/upstash_vector.py:UpstashVectorConfig", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:mem0/configs/vector_stores/upstash_vector.py", "target": "class:mem0/configs/vector_stores/upstash_vector.py:UpstashVectorConfig", "type": "exports", "direction": "forward", "weight": 0.8}
+  ]
+}

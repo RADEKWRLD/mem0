@@ -1,0 +1,388 @@
+{
+  "nodes": [
+    {
+      "id": "file:mem0/configs/base.py",
+      "type": "file",
+      "name": "base.py",
+      "filePath": "mem0/configs/base.py",
+      "summary": "定义核心 Memory 数据与组合配置模型，把 vector store、LLM、embedder、reranker 和历史存储配置汇聚为单一入口。",
+      "tags": [
+        "configuration",
+        "data-model",
+        "composition-root"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "Pydantic 模型把各子系统配置组合成 MemoryConfig，并为对外返回的 MemoryItem 提供稳定结构。"
+    },
+    {
+      "id": "class:mem0/configs/base.py:MemoryItem",
+      "type": "class",
+      "name": "MemoryItem",
+      "filePath": "mem0/configs/base.py",
+      "lineRange": [
+        16,
+        26
+      ],
+      "summary": "定义对外暴露的单条记忆记录结构，包括内容、哈希、元数据、相似度和时间戳。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "composition-root"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/base.py:MemoryConfig",
+      "type": "class",
+      "name": "MemoryConfig",
+      "filePath": "mem0/configs/base.py",
+      "lineRange": [
+        29,
+        57
+      ],
+      "summary": "作为核心组合配置聚合 vector store、LLM、embedder、reranker、历史数据库和自定义指令。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "composition-root"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/base.py:AzureConfig",
+      "type": "class",
+      "name": "AzureConfig",
+      "filePath": "mem0/configs/base.py",
+      "lineRange": [
+        60,
+        81
+      ],
+      "summary": "承载 Azure 服务通用的密钥、deployment、endpoint、API version 与默认 headers。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "composition-root"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/llms/azure.py",
+      "type": "file",
+      "name": "azure.py",
+      "filePath": "mem0/configs/llms/azure.py",
+      "summary": "定义 Azure OpenAI 的 provider 专属 LLM 配置，把通用 LLM 参数与 deployment、endpoint、API version 和 headers 组合起来。",
+      "tags": [
+        "configuration",
+        "llm",
+        "azure-openai"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/configs/llms/azure.py:AzureOpenAIConfig",
+      "type": "class",
+      "name": "AzureOpenAIConfig",
+      "filePath": "mem0/configs/llms/azure.py",
+      "lineRange": [
+        7,
+        66
+      ],
+      "summary": "在通用 LLM 配置上加入 Azure deployment 参数，并规范化嵌套 AzureConfig。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "llm",
+        "azure-openai"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/rerankers/config.py",
+      "type": "file",
+      "name": "config.py",
+      "filePath": "mem0/configs/rerankers/config.py",
+      "summary": "定义顶层 reranker 选择配置，以 provider 名称和可选 provider-specific 字典接入 MemoryConfig。",
+      "tags": [
+        "configuration",
+        "reranking",
+        "provider-selection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/rerankers/config.py:RerankerConfig",
+      "type": "class",
+      "name": "RerankerConfig",
+      "filePath": "mem0/configs/rerankers/config.py",
+      "lineRange": [
+        6,
+        12
+      ],
+      "summary": "用 provider 加 provider-specific 字典表示顶层 reranker 选择。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "reranking",
+        "provider-selection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/embeddings/configs.py",
+      "type": "file",
+      "name": "configs.py",
+      "filePath": "mem0/embeddings/configs.py",
+      "summary": "定义顶层 embedder 选择配置，并在 Pydantic 校验阶段检查内置 provider 名称。",
+      "tags": [
+        "configuration",
+        "embeddings",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/embeddings/configs.py:EmbedderConfig",
+      "type": "class",
+      "name": "EmbedderConfig",
+      "filePath": "mem0/embeddings/configs.py",
+      "lineRange": [
+        6,
+        31
+      ],
+      "summary": "用 provider 加配置字典表示顶层 embedder 选择，并在构造时校验 provider。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "embeddings",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/llms/configs.py",
+      "type": "file",
+      "name": "configs.py",
+      "filePath": "mem0/llms/configs.py",
+      "summary": "定义顶层 LLM provider 配置，并通过校验器限制为核心支持的 provider 集合。",
+      "tags": [
+        "configuration",
+        "llm",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/llms/configs.py:LlmConfig",
+      "type": "class",
+      "name": "LlmConfig",
+      "filePath": "mem0/llms/configs.py",
+      "lineRange": [
+        6,
+        35
+      ],
+      "summary": "用 provider 加配置字典表示顶层 LLM 选择，并在构造时校验 provider。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "llm",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/vector_stores/configs.py",
+      "type": "file",
+      "name": "configs.py",
+      "filePath": "mem0/vector_stores/configs.py",
+      "summary": "定义 vector store provider 配置，维护 provider 到配置类的动态映射，并把字典转换为相应的强类型配置对象。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "dynamic-loading"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "Pydantic model validator 在实例创建后动态导入 provider 配置类，实现统一入口与按需依赖。"
+    },
+    {
+      "id": "class:mem0/vector_stores/configs.py:VectorStoreConfig",
+      "type": "class",
+      "name": "VectorStoreConfig",
+      "filePath": "mem0/vector_stores/configs.py",
+      "lineRange": [
+        6,
+        68
+      ],
+      "summary": "维护向量库 provider 到配置类的映射，并动态实例化相应强类型配置。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "vector-store",
+        "dynamic-loading"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:mem0/configs/base.py",
+      "target": "class:mem0/configs/base.py:MemoryItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/base.py",
+      "target": "class:mem0/configs/base.py:MemoryItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/configs/base.py",
+      "target": "class:mem0/configs/base.py:MemoryConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/base.py",
+      "target": "class:mem0/configs/base.py:MemoryConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/configs/base.py",
+      "target": "class:mem0/configs/base.py:AzureConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/base.py",
+      "target": "class:mem0/configs/base.py:AzureConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/configs/llms/azure.py",
+      "target": "class:mem0/configs/llms/azure.py:AzureOpenAIConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/llms/azure.py",
+      "target": "class:mem0/configs/llms/azure.py:AzureOpenAIConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/configs/llms/azure.py:AzureOpenAIConfig",
+      "target": "class:mem0/configs/llms/base.py:BaseLlmConfig",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/configs/rerankers/config.py",
+      "target": "class:mem0/configs/rerankers/config.py:RerankerConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/rerankers/config.py",
+      "target": "class:mem0/configs/rerankers/config.py:RerankerConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/embeddings/configs.py",
+      "target": "class:mem0/embeddings/configs.py:EmbedderConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/embeddings/configs.py",
+      "target": "class:mem0/embeddings/configs.py:EmbedderConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/llms/configs.py",
+      "target": "class:mem0/llms/configs.py:LlmConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/llms/configs.py",
+      "target": "class:mem0/llms/configs.py:LlmConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/configs.py",
+      "target": "class:mem0/vector_stores/configs.py:VectorStoreConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/configs.py",
+      "target": "class:mem0/vector_stores/configs.py:VectorStoreConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/configs/base.py",
+      "target": "file:mem0/configs/rerankers/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/base.py",
+      "target": "file:mem0/embeddings/configs.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/base.py",
+      "target": "file:mem0/llms/configs.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/base.py",
+      "target": "file:mem0/vector_stores/configs.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/azure.py",
+      "target": "file:mem0/configs/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/azure.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

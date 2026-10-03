@@ -1,0 +1,496 @@
+{
+  "scriptCompleted": true,
+  "stats": {
+    "filesScanned": 161,
+    "filesWithImports": 92,
+    "totalEdges": 232
+  },
+  "failures": [],
+  "importMap": {
+    ".gitmodules": [],
+    ".pre-commit-config.yaml": [],
+    "AGENTS.md": [],
+    "CODE_OF_CONDUCT.md": [],
+    "CONTRIBUTING.md": [],
+    "LLM.md": [],
+    "Makefile": [],
+    "README.md": [],
+    "SECURITY.md": [],
+    "marketplace.json": [],
+    "mem0/AGENTS.md": [],
+    "mem0/__init__.py": [
+      "mem0/client/main.py",
+      "mem0/memory/main.py"
+    ],
+    "mem0/client/__init__.py": [],
+    "mem0/client/main.py": [
+      "mem0/client/project.py",
+      "mem0/client/types.py",
+      "mem0/client/utils.py",
+      "mem0/memory/setup.py",
+      "mem0/memory/telemetry.py"
+    ],
+    "mem0/client/project.py": [
+      "mem0/client/utils.py",
+      "mem0/memory/telemetry.py"
+    ],
+    "mem0/client/types.py": [],
+    "mem0/client/utils.py": [
+      "mem0/exceptions.py"
+    ],
+    "mem0/configs/__init__.py": [],
+    "mem0/configs/base.py": [
+      "mem0/configs/rerankers/config.py",
+      "mem0/embeddings/configs.py",
+      "mem0/llms/configs.py",
+      "mem0/vector_stores/configs.py"
+    ],
+    "mem0/configs/embeddings/__init__.py": [],
+    "mem0/configs/embeddings/base.py": [
+      "mem0/configs/base.py",
+      "mem0/utils/http.py"
+    ],
+    "mem0/configs/enums.py": [],
+    "mem0/configs/llms/__init__.py": [],
+    "mem0/configs/llms/anthropic.py": [
+      "mem0/configs/llms/base.py"
+    ],
+    "mem0/configs/llms/aws_bedrock.py": [
+      "mem0/configs/llms/base.py"
+    ],
+    "mem0/configs/llms/azure.py": [
+      "mem0/configs/base.py",
+      "mem0/configs/llms/base.py"
+    ],
+    "mem0/configs/llms/base.py": [
+      "mem0/utils/http.py"
+    ],
+    "mem0/configs/llms/deepseek.py": [
+      "mem0/configs/llms/base.py"
+    ],
+    "mem0/configs/llms/gemini.py": [
+      "mem0/configs/llms/base.py"
+    ],
+    "mem0/configs/llms/lmstudio.py": [
+      "mem0/configs/llms/base.py"
+    ],
+    "mem0/configs/llms/minimax.py": [
+      "mem0/configs/llms/base.py"
+    ],
+    "mem0/configs/llms/ollama.py": [
+      "mem0/configs/llms/base.py"
+    ],
+    "mem0/configs/llms/openai.py": [
+      "mem0/configs/llms/base.py"
+    ],
+    "mem0/configs/llms/vllm.py": [
+      "mem0/configs/llms/base.py"
+    ],
+    "mem0/configs/llms/xai.py": [
+      "mem0/configs/llms/base.py"
+    ],
+    "mem0/configs/prompts.py": [],
+    "mem0/configs/rerankers/__init__.py": [],
+    "mem0/configs/rerankers/base.py": [],
+    "mem0/configs/rerankers/cohere.py": [
+      "mem0/configs/rerankers/base.py"
+    ],
+    "mem0/configs/rerankers/config.py": [],
+    "mem0/configs/rerankers/huggingface.py": [
+      "mem0/configs/rerankers/base.py"
+    ],
+    "mem0/configs/rerankers/llm.py": [
+      "mem0/configs/rerankers/base.py"
+    ],
+    "mem0/configs/rerankers/sentence_transformer.py": [
+      "mem0/configs/rerankers/base.py"
+    ],
+    "mem0/configs/rerankers/zero_entropy.py": [
+      "mem0/configs/rerankers/base.py"
+    ],
+    "mem0/configs/vector_stores/__init__.py": [],
+    "mem0/configs/vector_stores/azure_ai_search.py": [],
+    "mem0/configs/vector_stores/azure_mysql.py": [],
+    "mem0/configs/vector_stores/baidu.py": [],
+    "mem0/configs/vector_stores/cassandra.py": [],
+    "mem0/configs/vector_stores/chroma.py": [],
+    "mem0/configs/vector_stores/databricks.py": [],
+    "mem0/configs/vector_stores/elasticsearch.py": [],
+    "mem0/configs/vector_stores/faiss.py": [],
+    "mem0/configs/vector_stores/langchain.py": [],
+    "mem0/configs/vector_stores/milvus.py": [],
+    "mem0/configs/vector_stores/mongodb.py": [],
+    "mem0/configs/vector_stores/neptune.py": [],
+    "mem0/configs/vector_stores/opensearch.py": [],
+    "mem0/configs/vector_stores/oracledb.py": [],
+    "mem0/configs/vector_stores/pgvector.py": [],
+    "mem0/configs/vector_stores/pinecone.py": [],
+    "mem0/configs/vector_stores/qdrant.py": [],
+    "mem0/configs/vector_stores/redis.py": [],
+    "mem0/configs/vector_stores/s3_vectors.py": [],
+    "mem0/configs/vector_stores/supabase.py": [],
+    "mem0/configs/vector_stores/turbopuffer.py": [],
+    "mem0/configs/vector_stores/upstash_vector.py": [],
+    "mem0/configs/vector_stores/valkey.py": [],
+    "mem0/configs/vector_stores/vertex_ai_vector_search.py": [],
+    "mem0/configs/vector_stores/weaviate.py": [],
+    "mem0/embeddings/__init__.py": [],
+    "mem0/embeddings/aws_bedrock.py": [
+      "mem0/configs/embeddings/base.py",
+      "mem0/embeddings/base.py"
+    ],
+    "mem0/embeddings/azure_openai.py": [
+      "mem0/configs/embeddings/base.py",
+      "mem0/embeddings/base.py",
+      "mem0/embeddings/openai.py"
+    ],
+    "mem0/embeddings/base.py": [
+      "mem0/configs/embeddings/base.py"
+    ],
+    "mem0/embeddings/configs.py": [],
+    "mem0/embeddings/fastembed.py": [
+      "mem0/configs/embeddings/base.py",
+      "mem0/embeddings/base.py"
+    ],
+    "mem0/embeddings/gemini.py": [
+      "mem0/configs/embeddings/base.py",
+      "mem0/embeddings/base.py"
+    ],
+    "mem0/embeddings/huggingface.py": [
+      "mem0/configs/embeddings/base.py",
+      "mem0/embeddings/base.py",
+      "mem0/embeddings/openai.py"
+    ],
+    "mem0/embeddings/langchain.py": [
+      "mem0/configs/embeddings/base.py",
+      "mem0/embeddings/base.py"
+    ],
+    "mem0/embeddings/lmstudio.py": [
+      "mem0/configs/embeddings/base.py",
+      "mem0/embeddings/base.py",
+      "mem0/embeddings/openai.py"
+    ],
+    "mem0/embeddings/mock.py": [
+      "mem0/embeddings/base.py"
+    ],
+    "mem0/embeddings/ollama.py": [
+      "mem0/configs/embeddings/base.py",
+      "mem0/embeddings/base.py"
+    ],
+    "mem0/embeddings/openai.py": [
+      "mem0/configs/embeddings/base.py",
+      "mem0/embeddings/base.py",
+      "mem0/embeddings/openai.py"
+    ],
+    "mem0/embeddings/together.py": [
+      "mem0/configs/embeddings/base.py",
+      "mem0/embeddings/base.py",
+      "mem0/embeddings/together.py"
+    ],
+    "mem0/embeddings/vertexai.py": [
+      "mem0/configs/embeddings/base.py",
+      "mem0/embeddings/base.py",
+      "mem0/utils/gcp_auth.py"
+    ],
+    "mem0/exceptions.py": [],
+    "mem0/llms/__init__.py": [],
+    "mem0/llms/anthropic.py": [
+      "mem0/configs/llms/anthropic.py",
+      "mem0/configs/llms/base.py",
+      "mem0/llms/base.py"
+    ],
+    "mem0/llms/aws_bedrock.py": [
+      "mem0/configs/llms/aws_bedrock.py",
+      "mem0/configs/llms/base.py",
+      "mem0/llms/base.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/llms/azure_openai.py": [
+      "mem0/configs/llms/azure.py",
+      "mem0/configs/llms/base.py",
+      "mem0/llms/base.py",
+      "mem0/llms/openai.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/llms/azure_openai_structured.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/llms/base.py",
+      "mem0/llms/openai.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/llms/base.py": [
+      "mem0/configs/llms/base.py"
+    ],
+    "mem0/llms/configs.py": [],
+    "mem0/llms/deepseek.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/configs/llms/deepseek.py",
+      "mem0/llms/base.py",
+      "mem0/llms/openai.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/llms/gemini.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/configs/llms/gemini.py",
+      "mem0/llms/base.py"
+    ],
+    "mem0/llms/groq.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/llms/base.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/llms/langchain.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/llms/base.py"
+    ],
+    "mem0/llms/litellm.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/llms/base.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/llms/lmstudio.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/configs/llms/lmstudio.py",
+      "mem0/llms/base.py",
+      "mem0/llms/openai.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/llms/minimax.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/configs/llms/minimax.py",
+      "mem0/llms/base.py",
+      "mem0/llms/openai.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/llms/ollama.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/configs/llms/ollama.py",
+      "mem0/llms/base.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/llms/openai.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/configs/llms/openai.py",
+      "mem0/llms/base.py",
+      "mem0/llms/openai.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/llms/openai_structured.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/llms/base.py",
+      "mem0/llms/openai.py"
+    ],
+    "mem0/llms/sarvam.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/llms/base.py"
+    ],
+    "mem0/llms/together.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/llms/base.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/llms/vllm.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/configs/llms/vllm.py",
+      "mem0/llms/base.py",
+      "mem0/llms/openai.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/llms/xai.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/configs/llms/xai.py",
+      "mem0/llms/base.py",
+      "mem0/llms/openai.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/memory/__init__.py": [],
+    "mem0/memory/base.py": [],
+    "mem0/memory/main.py": [
+      "mem0/configs/base.py",
+      "mem0/configs/enums.py",
+      "mem0/configs/prompts.py",
+      "mem0/exceptions.py",
+      "mem0/memory/base.py",
+      "mem0/memory/notices.py",
+      "mem0/memory/setup.py",
+      "mem0/memory/storage.py",
+      "mem0/memory/telemetry.py",
+      "mem0/memory/utils.py",
+      "mem0/utils/entity_extraction.py",
+      "mem0/utils/factory.py",
+      "mem0/utils/lemmatization.py",
+      "mem0/utils/scoring.py",
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/memory/notices.py": [
+      "mem0/memory/__init__.py",
+      "mem0/memory/setup.py"
+    ],
+    "mem0/memory/oss_notices_config.json": [],
+    "mem0/memory/setup.py": [],
+    "mem0/memory/storage.py": [],
+    "mem0/memory/telemetry.py": [
+      "mem0/__init__.py",
+      "mem0/memory/setup.py"
+    ],
+    "mem0/memory/utils.py": [
+      "mem0/configs/prompts.py"
+    ],
+    "mem0/proxy/__init__.py": [],
+    "mem0/proxy/main.py": [
+      "mem0/__init__.py",
+      "mem0/configs/prompts.py",
+      "mem0/memory/telemetry.py"
+    ],
+    "mem0/reranker/__init__.py": [
+      "mem0/reranker/base.py",
+      "mem0/reranker/cohere_reranker.py",
+      "mem0/reranker/huggingface_reranker.py",
+      "mem0/reranker/llm_reranker.py",
+      "mem0/reranker/sentence_transformer_reranker.py",
+      "mem0/reranker/zero_entropy_reranker.py"
+    ],
+    "mem0/reranker/base.py": [],
+    "mem0/reranker/cohere_reranker.py": [
+      "mem0/reranker/base.py"
+    ],
+    "mem0/reranker/huggingface_reranker.py": [
+      "mem0/configs/rerankers/base.py",
+      "mem0/configs/rerankers/huggingface.py",
+      "mem0/reranker/base.py"
+    ],
+    "mem0/reranker/llm_reranker.py": [
+      "mem0/configs/rerankers/base.py",
+      "mem0/configs/rerankers/llm.py",
+      "mem0/reranker/base.py",
+      "mem0/utils/factory.py"
+    ],
+    "mem0/reranker/sentence_transformer_reranker.py": [
+      "mem0/configs/rerankers/base.py",
+      "mem0/configs/rerankers/sentence_transformer.py",
+      "mem0/reranker/base.py"
+    ],
+    "mem0/reranker/zero_entropy_reranker.py": [
+      "mem0/reranker/base.py"
+    ],
+    "mem0/utils/entity_extraction.py": [],
+    "mem0/utils/factory.py": [
+      "mem0/configs/embeddings/base.py",
+      "mem0/configs/llms/anthropic.py",
+      "mem0/configs/llms/aws_bedrock.py",
+      "mem0/configs/llms/azure.py",
+      "mem0/configs/llms/base.py",
+      "mem0/configs/llms/deepseek.py",
+      "mem0/configs/llms/gemini.py",
+      "mem0/configs/llms/lmstudio.py",
+      "mem0/configs/llms/minimax.py",
+      "mem0/configs/llms/ollama.py",
+      "mem0/configs/llms/openai.py",
+      "mem0/configs/llms/vllm.py",
+      "mem0/configs/llms/xai.py",
+      "mem0/configs/rerankers/base.py",
+      "mem0/configs/rerankers/cohere.py",
+      "mem0/configs/rerankers/huggingface.py",
+      "mem0/configs/rerankers/llm.py",
+      "mem0/configs/rerankers/sentence_transformer.py",
+      "mem0/configs/rerankers/zero_entropy.py",
+      "mem0/embeddings/mock.py"
+    ],
+    "mem0/utils/gcp_auth.py": [],
+    "mem0/utils/http.py": [],
+    "mem0/utils/lemmatization.py": [],
+    "mem0/utils/scoring.py": [],
+    "mem0/utils/spacy_models.py": [],
+    "mem0/vector_stores/__init__.py": [],
+    "mem0/vector_stores/azure_ai_search.py": [
+      "mem0/memory/utils.py",
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/azure_mysql.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/baidu.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/base.py": [],
+    "mem0/vector_stores/cassandra.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/chroma.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/configs.py": [],
+    "mem0/vector_stores/databricks.py": [
+      "mem0/memory/utils.py",
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/elasticsearch.py": [
+      "mem0/configs/vector_stores/elasticsearch.py",
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/faiss.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/langchain.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/milvus.py": [
+      "mem0/configs/vector_stores/milvus.py",
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/mongodb.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/neptune_analytics.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/opensearch.py": [
+      "mem0/configs/vector_stores/opensearch.py",
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/oracledb.py": [
+      "mem0/configs/vector_stores/oracledb.py",
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/pgvector.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/pinecone.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/qdrant.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/redis.py": [
+      "mem0/memory/utils.py",
+      "mem0/vector_stores/base.py",
+      "mem0/vector_stores/redis.py"
+    ],
+    "mem0/vector_stores/s3_vectors.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/supabase.py": [
+      "mem0/configs/vector_stores/supabase.py",
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/turbopuffer.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/upstash_vector.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/valkey.py": [
+      "mem0/memory/utils.py",
+      "mem0/vector_stores/base.py",
+      "mem0/vector_stores/valkey.py"
+    ],
+    "mem0/vector_stores/vertex_ai_vector_search.py": [
+      "mem0/configs/vector_stores/vertex_ai_vector_search.py",
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/weaviate.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "pyproject.toml": []
+  }
+}

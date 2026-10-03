@@ -1,0 +1,180 @@
+{
+  "projectRoot": "/Users/cenghaoyang/mem0",
+  "batchFiles": [
+    {
+      "path": "mem0/__init__.py",
+      "language": "python",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/client/main.py",
+      "language": "python",
+      "sizeLines": 2282,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/client/project.py",
+      "language": "python",
+      "sizeLines": 944,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/client/types.py",
+      "language": "python",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/client/utils.py",
+      "language": "python",
+      "sizeLines": 127,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/configs/enums.py",
+      "language": "python",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/configs/prompts.py",
+      "language": "python",
+      "sizeLines": 1062,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/exceptions.py",
+      "language": "python",
+      "sizeLines": 484,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/memory/__init__.py",
+      "language": "python",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/memory/base.py",
+      "language": "python",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/memory/main.py",
+      "language": "python",
+      "sizeLines": 3912,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/memory/notices.py",
+      "language": "python",
+      "sizeLines": 1667,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/memory/setup.py",
+      "language": "python",
+      "sizeLines": 166,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/memory/storage.py",
+      "language": "python",
+      "sizeLines": 347,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/memory/telemetry.py",
+      "language": "python",
+      "sizeLines": 241,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/proxy/main.py",
+      "language": "python",
+      "sizeLines": 186,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/utils/entity_extraction.py",
+      "language": "python",
+      "sizeLines": 772,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/utils/lemmatization.py",
+      "language": "python",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/utils/scoring.py",
+      "language": "python",
+      "sizeLines": 139,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "mem0/__init__.py": [
+      "mem0/client/main.py",
+      "mem0/memory/main.py"
+    ],
+    "mem0/client/main.py": [
+      "mem0/client/project.py",
+      "mem0/client/types.py",
+      "mem0/client/utils.py",
+      "mem0/memory/setup.py",
+      "mem0/memory/telemetry.py"
+    ],
+    "mem0/client/project.py": [
+      "mem0/client/utils.py",
+      "mem0/memory/telemetry.py"
+    ],
+    "mem0/client/types.py": [],
+    "mem0/client/utils.py": [
+      "mem0/exceptions.py"
+    ],
+    "mem0/configs/enums.py": [],
+    "mem0/configs/prompts.py": [],
+    "mem0/exceptions.py": [],
+    "mem0/memory/__init__.py": [],
+    "mem0/memory/base.py": [],
+    "mem0/memory/main.py": [
+      "mem0/configs/base.py",
+      "mem0/configs/enums.py",
+      "mem0/configs/prompts.py",
+      "mem0/exceptions.py",
+      "mem0/memory/base.py",
+      "mem0/memory/notices.py",
+      "mem0/memory/setup.py",
+      "mem0/memory/storage.py",
+      "mem0/memory/telemetry.py",
+      "mem0/memory/utils.py",
+      "mem0/utils/entity_extraction.py",
+      "mem0/utils/factory.py",
+      "mem0/utils/lemmatization.py",
+      "mem0/utils/scoring.py",
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/memory/notices.py": [
+      "mem0/memory/__init__.py",
+      "mem0/memory/setup.py"
+    ],
+    "mem0/memory/setup.py": [],
+    "mem0/memory/storage.py": [],
+    "mem0/memory/telemetry.py": [
+      "mem0/__init__.py",
+      "mem0/memory/setup.py"
+    ],
+    "mem0/proxy/main.py": [
+      "mem0/__init__.py",
+      "mem0/configs/prompts.py",
+      "mem0/memory/telemetry.py"
+    ],
+    "mem0/utils/entity_extraction.py": [],
+    "mem0/utils/lemmatization.py": [],
+    "mem0/utils/scoring.py": []
+  }
+}

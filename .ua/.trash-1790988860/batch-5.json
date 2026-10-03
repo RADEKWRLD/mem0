@@ -1,0 +1,1095 @@
+{
+  "nodes": [
+    {
+      "id": "file:mem0/configs/rerankers/base.py",
+      "type": "file",
+      "name": "base.py",
+      "filePath": "mem0/configs/rerankers/base.py",
+      "summary": "定义 reranker provider 共享的 Pydantic 配置字段，包括 provider、model、API key 与 top_k。",
+      "tags": [
+        "configuration",
+        "reranking",
+        "data-model"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/rerankers/base.py:BaseRerankerConfig",
+      "type": "class",
+      "name": "BaseRerankerConfig",
+      "filePath": "mem0/configs/rerankers/base.py",
+      "lineRange": [
+        5,
+        17
+      ],
+      "summary": "提供所有 reranker 配置共享的 provider、model、api_key 与 top_k 字段。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "reranking"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/rerankers/cohere.py",
+      "type": "file",
+      "name": "cohere.py",
+      "filePath": "mem0/configs/rerankers/cohere.py",
+      "summary": "定义 Cohere reranker 的默认模型以及返回文档和分块数量等 provider 专属配置。",
+      "tags": [
+        "configuration",
+        "reranking",
+        "cohere"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/rerankers/cohere.py:CohereRerankerConfig",
+      "type": "class",
+      "name": "CohereRerankerConfig",
+      "filePath": "mem0/configs/rerankers/cohere.py",
+      "lineRange": [
+        8,
+        16
+      ],
+      "summary": "扩展通用配置以描述 Cohere 模型和文档返回策略。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "reranking",
+        "cohere"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/rerankers/huggingface.py",
+      "type": "file",
+      "name": "huggingface.py",
+      "filePath": "mem0/configs/rerankers/huggingface.py",
+      "summary": "定义 Hugging Face reranker 的模型、设备、批大小、最大长度和分数归一化选项。",
+      "tags": [
+        "configuration",
+        "reranking",
+        "huggingface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/rerankers/huggingface.py:HuggingFaceRerankerConfig",
+      "type": "class",
+      "name": "HuggingFaceRerankerConfig",
+      "filePath": "mem0/configs/rerankers/huggingface.py",
+      "lineRange": [
+        7,
+        17
+      ],
+      "summary": "描述 Hugging Face reranker 的模型运行设备、批处理和归一化行为。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "reranking",
+        "huggingface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/rerankers/llm.py",
+      "type": "file",
+      "name": "llm.py",
+      "filePath": "mem0/configs/rerankers/llm.py",
+      "summary": "定义基于 LLM 的 reranker 配置，覆盖模型、采样、输出长度、top_k 以及可嵌套的 LLM provider 配置。",
+      "tags": [
+        "configuration",
+        "reranking",
+        "llm"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/rerankers/llm.py:LLMRerankerConfig",
+      "type": "class",
+      "name": "LLMRerankerConfig",
+      "filePath": "mem0/configs/rerankers/llm.py",
+      "lineRange": [
+        8,
+        54
+      ],
+      "summary": "描述用于相关性评分的 LLM、采样参数、嵌套 provider 配置和兼容性 scoring prompt。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "reranking",
+        "llm"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/rerankers/sentence_transformer.py",
+      "type": "file",
+      "name": "sentence_transformer.py",
+      "filePath": "mem0/configs/rerankers/sentence_transformer.py",
+      "summary": "定义 SentenceTransformer cross-encoder reranker 的模型、设备、批大小和进度显示选项。",
+      "tags": [
+        "configuration",
+        "reranking",
+        "sentence-transformers"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/rerankers/sentence_transformer.py:SentenceTransformerRerankerConfig",
+      "type": "class",
+      "name": "SentenceTransformerRerankerConfig",
+      "filePath": "mem0/configs/rerankers/sentence_transformer.py",
+      "lineRange": [
+        7,
+        16
+      ],
+      "summary": "描述本地 CrossEncoder 的模型、设备和批处理选项。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "reranking",
+        "sentence-transformers"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/rerankers/zero_entropy.py",
+      "type": "file",
+      "name": "zero_entropy.py",
+      "filePath": "mem0/configs/rerankers/zero_entropy.py",
+      "summary": "定义 ZeroEntropy reranker 的模型、API key 与 top_k 配置。",
+      "tags": [
+        "configuration",
+        "reranking",
+        "zero-entropy"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/rerankers/zero_entropy.py:ZeroEntropyRerankerConfig",
+      "type": "class",
+      "name": "ZeroEntropyRerankerConfig",
+      "filePath": "mem0/configs/rerankers/zero_entropy.py",
+      "lineRange": [
+        7,
+        28
+      ],
+      "summary": "描述 ZeroEntropy API 的模型、凭据和结果上限。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "reranking",
+        "zero-entropy"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/reranker/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "mem0/reranker/__init__.py",
+      "summary": "作为 reranker 包入口，集中导出基础接口和各 provider 实现，方便工厂与用户统一导入。",
+      "tags": [
+        "entry-point",
+        "barrel",
+        "reranking"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/reranker/base.py",
+      "type": "file",
+      "name": "base.py",
+      "filePath": "mem0/reranker/base.py",
+      "summary": "声明 reranker 的抽象接口，约定根据 query 对文档列表重排并返回带分数的结果。",
+      "tags": [
+        "reranking",
+        "abstract-base",
+        "interface"
+      ],
+      "complexity": "simple",
+      "languageNotes": "通过 ABC 定义所有 reranker provider 必须实现的 rerank 契约。"
+    },
+    {
+      "id": "class:mem0/reranker/base.py:BaseReranker",
+      "type": "class",
+      "name": "BaseReranker",
+      "filePath": "mem0/reranker/base.py",
+      "lineRange": [
+        4,
+        20
+      ],
+      "summary": "规定所有 reranker 必须实现的 query、documents、top_k 输入输出契约。",
+      "tags": [
+        "reranking",
+        "abstract-base",
+        "interface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/reranker/cohere_reranker.py",
+      "type": "file",
+      "name": "cohere_reranker.py",
+      "filePath": "mem0/reranker/cohere_reranker.py",
+      "summary": "调用 Cohere Rerank API 对多种文档载荷提取出的文本进行排序，并保留原始文档结构和 rerank 分数。",
+      "tags": [
+        "reranking",
+        "provider-adapter",
+        "cohere"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/reranker/cohere_reranker.py:CohereReranker",
+      "type": "class",
+      "name": "CohereReranker",
+      "filePath": "mem0/reranker/cohere_reranker.py",
+      "lineRange": [
+        16,
+        93
+      ],
+      "summary": "调用 Cohere 服务重排文档，同时把服务结果映射回原始文档结构。",
+      "tags": [
+        "reranking",
+        "provider-adapter",
+        "cohere"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/reranker/huggingface_reranker.py",
+      "type": "file",
+      "name": "huggingface_reranker.py",
+      "filePath": "mem0/reranker/huggingface_reranker.py",
+      "summary": "使用 Hugging Face sequence-classification 模型对 query-document 对打分，支持批处理、设备选择、分数归一化和失败回退。",
+      "tags": [
+        "reranking",
+        "provider-adapter",
+        "huggingface"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/reranker/huggingface_reranker.py:HuggingFaceReranker",
+      "type": "class",
+      "name": "HuggingFaceReranker",
+      "filePath": "mem0/reranker/huggingface_reranker.py",
+      "lineRange": [
+        20,
+        173
+      ],
+      "summary": "用 sequence-classification 模型批量计算相关性并可归一化分数，异常时保留可用结果。",
+      "tags": [
+        "reranking",
+        "provider-adapter",
+        "huggingface"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/reranker/llm_reranker.py",
+      "type": "file",
+      "name": "llm_reranker.py",
+      "filePath": "mem0/reranker/llm_reranker.py",
+      "summary": "逐文档调用可配置 LLM 生成相关性分数，解析并限制到 0 到 1，再排序和应用 top_k；失败时使用中性分数。",
+      "tags": [
+        "reranking",
+        "llm",
+        "fault-tolerance"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "将系统评分规则与截断后的用户数据分离为 system/user 消息，以降低 prompt injection 与输入泛滥风险。"
+    },
+    {
+      "id": "class:mem0/reranker/llm_reranker.py:LLMReranker",
+      "type": "class",
+      "name": "LLMReranker",
+      "filePath": "mem0/reranker/llm_reranker.py",
+      "lineRange": [
+        13,
+        173
+      ],
+      "summary": "通过 LLM 为每个文档生成受限相关性分数，采用安全消息分层、解析钳制和中性失败回退。",
+      "tags": [
+        "reranking",
+        "llm",
+        "fault-tolerance"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/reranker/sentence_transformer_reranker.py",
+      "type": "file",
+      "name": "sentence_transformer_reranker.py",
+      "filePath": "mem0/reranker/sentence_transformer_reranker.py",
+      "summary": "使用 SentenceTransformer CrossEncoder 对 query-document 对预测相关性，排序后返回带分数的文档，并对异常项提供回退。",
+      "tags": [
+        "reranking",
+        "cross-encoder",
+        "local-model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/reranker/sentence_transformer_reranker.py:SentenceTransformerReranker",
+      "type": "class",
+      "name": "SentenceTransformerReranker",
+      "filePath": "mem0/reranker/sentence_transformer_reranker.py",
+      "lineRange": [
+        21,
+        120
+      ],
+      "summary": "使用 CrossEncoder 预测 query-document 分数，排序、截断并保留异常文档。",
+      "tags": [
+        "reranking",
+        "cross-encoder",
+        "local-model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/reranker/zero_entropy_reranker.py",
+      "type": "file",
+      "name": "zero_entropy_reranker.py",
+      "filePath": "mem0/reranker/zero_entropy_reranker.py",
+      "summary": "调用 ZeroEntropy rerank 服务处理抽取后的文档文本，恢复原始文档、附加分数并按 top_k 截断。",
+      "tags": [
+        "reranking",
+        "provider-adapter",
+        "zero-entropy"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/reranker/zero_entropy_reranker.py:ZeroEntropyReranker",
+      "type": "class",
+      "name": "ZeroEntropyReranker",
+      "filePath": "mem0/reranker/zero_entropy_reranker.py",
+      "lineRange": [
+        16,
+        104
+      ],
+      "summary": "调用 ZeroEntropy API 重排文本并将结果索引、分数重新附着到原始文档。",
+      "tags": [
+        "reranking",
+        "provider-adapter",
+        "zero-entropy"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/utils/factory.py",
+      "type": "file",
+      "name": "factory.py",
+      "filePath": "mem0/utils/factory.py",
+      "summary": "集中维护 LLM、embedding、vector store 与 reranker 的 provider 注册表，通过延迟导入和配置适配创建具体实现。",
+      "tags": [
+        "factory",
+        "provider-registry",
+        "dynamic-loading"
+      ],
+      "complexity": "complex",
+      "languageNotes": "字符串类路径配合 importlib 实现延迟加载，使可选 provider 依赖不会在核心模块导入时全部加载。"
+    },
+    {
+      "id": "function:mem0/utils/factory.py:load_class",
+      "type": "function",
+      "name": "load_class",
+      "filePath": "mem0/utils/factory.py",
+      "lineRange": [
+        29,
+        32
+      ],
+      "summary": "从完全限定类路径动态导入模块并返回目标类。",
+      "tags": [
+        "service",
+        "factory",
+        "provider-registry",
+        "dynamic-loading"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/utils/factory.py:LlmFactory",
+      "type": "class",
+      "name": "LlmFactory",
+      "filePath": "mem0/utils/factory.py",
+      "lineRange": [
+        35,
+        149
+      ],
+      "summary": "依据 provider 注册表选择 LLM 实现与配置类，兼容基础配置、provider-specific 配置和运行时注册。",
+      "tags": [
+        "factory",
+        "provider-registry",
+        "dynamic-loading"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/utils/factory.py:EmbedderFactory",
+      "type": "class",
+      "name": "EmbedderFactory",
+      "filePath": "mem0/utils/factory.py",
+      "lineRange": [
+        152,
+        177
+      ],
+      "summary": "依据 provider 名称延迟加载 embedding 适配器，并把字典转换成统一 BaseEmbedderConfig。",
+      "tags": [
+        "factory",
+        "provider-registry",
+        "dynamic-loading"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/utils/factory.py:VectorStoreFactory",
+      "type": "class",
+      "name": "VectorStoreFactory",
+      "filePath": "mem0/utils/factory.py",
+      "lineRange": [
+        180,
+        223
+      ],
+      "summary": "依据 provider 注册表延迟加载向量库实现，统一字典化配置、实例创建和 reset。",
+      "tags": [
+        "factory",
+        "provider-registry",
+        "dynamic-loading"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/utils/factory.py:RerankerFactory",
+      "type": "class",
+      "name": "RerankerFactory",
+      "filePath": "mem0/utils/factory.py",
+      "lineRange": [
+        226,
+        280
+      ],
+      "summary": "依据 provider 注册表构造 provider-specific 配置并延迟加载 reranker 实现。",
+      "tags": [
+        "factory",
+        "provider-registry",
+        "dynamic-loading"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:mem0/configs/rerankers/base.py",
+      "target": "class:mem0/configs/rerankers/base.py:BaseRerankerConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/rerankers/base.py",
+      "target": "class:mem0/configs/rerankers/base.py:BaseRerankerConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/configs/rerankers/cohere.py",
+      "target": "class:mem0/configs/rerankers/cohere.py:CohereRerankerConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/rerankers/cohere.py",
+      "target": "class:mem0/configs/rerankers/cohere.py:CohereRerankerConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/configs/rerankers/cohere.py:CohereRerankerConfig",
+      "target": "class:mem0/configs/rerankers/base.py:BaseRerankerConfig",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/configs/rerankers/huggingface.py",
+      "target": "class:mem0/configs/rerankers/huggingface.py:HuggingFaceRerankerConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/rerankers/huggingface.py",
+      "target": "class:mem0/configs/rerankers/huggingface.py:HuggingFaceRerankerConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/configs/rerankers/huggingface.py:HuggingFaceRerankerConfig",
+      "target": "class:mem0/configs/rerankers/base.py:BaseRerankerConfig",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/configs/rerankers/llm.py",
+      "target": "class:mem0/configs/rerankers/llm.py:LLMRerankerConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/rerankers/llm.py",
+      "target": "class:mem0/configs/rerankers/llm.py:LLMRerankerConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/configs/rerankers/llm.py:LLMRerankerConfig",
+      "target": "class:mem0/configs/rerankers/base.py:BaseRerankerConfig",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/configs/rerankers/sentence_transformer.py",
+      "target": "class:mem0/configs/rerankers/sentence_transformer.py:SentenceTransformerRerankerConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/rerankers/sentence_transformer.py",
+      "target": "class:mem0/configs/rerankers/sentence_transformer.py:SentenceTransformerRerankerConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/configs/rerankers/sentence_transformer.py:SentenceTransformerRerankerConfig",
+      "target": "class:mem0/configs/rerankers/base.py:BaseRerankerConfig",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/configs/rerankers/zero_entropy.py",
+      "target": "class:mem0/configs/rerankers/zero_entropy.py:ZeroEntropyRerankerConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/rerankers/zero_entropy.py",
+      "target": "class:mem0/configs/rerankers/zero_entropy.py:ZeroEntropyRerankerConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/configs/rerankers/zero_entropy.py:ZeroEntropyRerankerConfig",
+      "target": "class:mem0/configs/rerankers/base.py:BaseRerankerConfig",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/reranker/base.py",
+      "target": "class:mem0/reranker/base.py:BaseReranker",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/reranker/base.py",
+      "target": "class:mem0/reranker/base.py:BaseReranker",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/reranker/cohere_reranker.py",
+      "target": "class:mem0/reranker/cohere_reranker.py:CohereReranker",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/reranker/cohere_reranker.py",
+      "target": "class:mem0/reranker/cohere_reranker.py:CohereReranker",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/reranker/cohere_reranker.py:CohereReranker",
+      "target": "class:mem0/reranker/base.py:BaseReranker",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/reranker/huggingface_reranker.py",
+      "target": "class:mem0/reranker/huggingface_reranker.py:HuggingFaceReranker",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/reranker/huggingface_reranker.py",
+      "target": "class:mem0/reranker/huggingface_reranker.py:HuggingFaceReranker",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/reranker/huggingface_reranker.py:HuggingFaceReranker",
+      "target": "class:mem0/reranker/base.py:BaseReranker",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/reranker/llm_reranker.py",
+      "target": "class:mem0/reranker/llm_reranker.py:LLMReranker",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/reranker/llm_reranker.py",
+      "target": "class:mem0/reranker/llm_reranker.py:LLMReranker",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/reranker/llm_reranker.py:LLMReranker",
+      "target": "class:mem0/reranker/base.py:BaseReranker",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/reranker/sentence_transformer_reranker.py",
+      "target": "class:mem0/reranker/sentence_transformer_reranker.py:SentenceTransformerReranker",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/reranker/sentence_transformer_reranker.py",
+      "target": "class:mem0/reranker/sentence_transformer_reranker.py:SentenceTransformerReranker",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/reranker/sentence_transformer_reranker.py:SentenceTransformerReranker",
+      "target": "class:mem0/reranker/base.py:BaseReranker",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/reranker/zero_entropy_reranker.py",
+      "target": "class:mem0/reranker/zero_entropy_reranker.py:ZeroEntropyReranker",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/reranker/zero_entropy_reranker.py",
+      "target": "class:mem0/reranker/zero_entropy_reranker.py:ZeroEntropyReranker",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/reranker/zero_entropy_reranker.py:ZeroEntropyReranker",
+      "target": "class:mem0/reranker/base.py:BaseReranker",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "function:mem0/utils/factory.py:load_class",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "function:mem0/utils/factory.py:load_class",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "class:mem0/utils/factory.py:LlmFactory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "class:mem0/utils/factory.py:LlmFactory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "class:mem0/utils/factory.py:EmbedderFactory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "class:mem0/utils/factory.py:EmbedderFactory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "class:mem0/utils/factory.py:VectorStoreFactory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "class:mem0/utils/factory.py:VectorStoreFactory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "class:mem0/utils/factory.py:RerankerFactory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "class:mem0/utils/factory.py:RerankerFactory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/configs/rerankers/cohere.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/rerankers/huggingface.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/rerankers/llm.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/rerankers/sentence_transformer.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/rerankers/zero_entropy.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/__init__.py",
+      "target": "file:mem0/reranker/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/__init__.py",
+      "target": "file:mem0/reranker/cohere_reranker.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/__init__.py",
+      "target": "file:mem0/reranker/huggingface_reranker.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/__init__.py",
+      "target": "file:mem0/reranker/llm_reranker.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/__init__.py",
+      "target": "file:mem0/reranker/sentence_transformer_reranker.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/__init__.py",
+      "target": "file:mem0/reranker/zero_entropy_reranker.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/cohere_reranker.py",
+      "target": "file:mem0/reranker/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/huggingface_reranker.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/huggingface_reranker.py",
+      "target": "file:mem0/configs/rerankers/huggingface.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/huggingface_reranker.py",
+      "target": "file:mem0/reranker/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/llm_reranker.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/llm_reranker.py",
+      "target": "file:mem0/configs/rerankers/llm.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/llm_reranker.py",
+      "target": "file:mem0/reranker/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/llm_reranker.py",
+      "target": "file:mem0/utils/factory.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/sentence_transformer_reranker.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/sentence_transformer_reranker.py",
+      "target": "file:mem0/configs/rerankers/sentence_transformer.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/sentence_transformer_reranker.py",
+      "target": "file:mem0/reranker/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/zero_entropy_reranker.py",
+      "target": "file:mem0/reranker/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/anthropic.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/aws_bedrock.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/azure.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/deepseek.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/gemini.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/lmstudio.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/minimax.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/ollama.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/vllm.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/xai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/rerankers/cohere.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/rerankers/huggingface.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/rerankers/llm.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/rerankers/sentence_transformer.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/rerankers/zero_entropy.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/embeddings/mock.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

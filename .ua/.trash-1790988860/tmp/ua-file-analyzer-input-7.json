@@ -1,0 +1,27 @@
+{
+  "projectRoot": "/Users/cenghaoyang/mem0",
+  "batchFiles": [
+    {"path": ".pre-commit-config.yaml", "language": "yaml", "sizeLines": 16, "fileCategory": "config"},
+    {"path": "AGENTS.md", "language": "markdown", "sizeLines": 175, "fileCategory": "docs"},
+    {"path": "CODE_OF_CONDUCT.md", "language": "markdown", "sizeLines": 181, "fileCategory": "docs"},
+    {"path": "CONTRIBUTING.md", "language": "markdown", "sizeLines": 256, "fileCategory": "docs"},
+    {"path": "LLM.md", "language": "markdown", "sizeLines": 1324, "fileCategory": "docs"},
+    {"path": "Makefile", "language": "makefile", "sizeLines": 52, "fileCategory": "infra"},
+    {"path": "README.md", "language": "markdown", "sizeLines": 269, "fileCategory": "docs"},
+    {"path": "SECURITY.md", "language": "markdown", "sizeLines": 54, "fileCategory": "docs"},
+    {"path": "marketplace.json", "language": "json", "sizeLines": 19, "fileCategory": "config"},
+    {"path": "pyproject.toml", "language": "toml", "sizeLines": 174, "fileCategory": "config"}
+  ],
+  "batchImportData": {
+    ".pre-commit-config.yaml": [],
+    "AGENTS.md": [],
+    "CODE_OF_CONDUCT.md": [],
+    "CONTRIBUTING.md": [],
+    "LLM.md": [],
+    "Makefile": [],
+    "README.md": [],
+    "SECURITY.md": [],
+    "marketplace.json": [],
+    "pyproject.toml": []
+  }
+}

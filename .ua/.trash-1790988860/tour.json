@@ -1,0 +1,97 @@
+[
+  {
+    "order": 1,
+    "title": "项目全景",
+    "description": "先从 README 建立 Mem0 的问题意识：它不是聊天记录数据库，而是位于 AI assistant/agent 与模型、存储之间的长期记忆层。这里先认识 user、session、agent 等记忆作用域，以及开源 SDK、托管 Cloud 和生态集成组成的产品边界，为后面的代码路径建立地图。",
+    "nodeIds": [
+      "document:README.md"
+    ]
+  },
+  {
+    "order": 2,
+    "title": "公共 API 门面",
+    "description": "顶层包把 Memory、AsyncMemory、MemoryClient 与 AsyncMemoryClient 收敛为稳定的 public API，使调用者不必了解内部目录结构。这个门面同时揭示两条主线：本地编排的开源 Memory，以及通过 HTTP 访问平台能力的 hosted client。",
+    "nodeIds": [
+      "file:mem0/__init__.py"
+    ],
+    "languageLesson": "Python 包可在 __init__.py 中重新导出核心类，以小而稳定的命名空间隔离内部模块变化。"
+  },
+  {
+    "order": 3,
+    "title": "记忆写入编排",
+    "description": "沿着 public API 进入 Memory.add：核心引擎把输入规范化、事实抽取、embedding、向量写入、图关系、历史记录与 telemetry 串成一次完整写入。MemoryConfig 将 LLM、embedder、vector store、reranker 与历史存储汇聚为组合配置，而抽象基类规定同步 Memory 能力的共同契约。",
+    "nodeIds": [
+      "file:mem0/memory/main.py",
+      "file:mem0/configs/base.py",
+      "file:mem0/memory/base.py"
+    ],
+    "languageLesson": "这里体现 Python 的 composition（组合）设计：编排器依赖一组可替换对象，而不是把模型调用和数据库逻辑硬编码在 Memory 内。"
+  },
+  {
+    "order": 4,
+    "title": "事实抽取管线",
+    "description": "写入的第一项关键工作是把对话消息规范化，并借助集中管理的 prompt 提炼为可持久化事实。V3 的 ADD-only 提取把模型输出约束为新增事实，让提取、实体链接与后续存储各守一层职责；视觉消息、JSON 清洗和关系消毒等边界情况也在共享工具中统一处理。",
+    "nodeIds": [
+      "file:mem0/configs/prompts.py",
+      "file:mem0/memory/utils.py"
+    ]
+  },
+  {
+    "order": 5,
+    "title": "向量与持久化",
+    "description": "抽取出的事实通过统一 Embedder 契约转成向量，再由 VectorStore 抽象完成集合管理、CRUD、过滤、关键词与向量检索。向量后端保存可检索的记忆主体，SQLite storage 则记录变更历史与消息，因此检索数据面和审计历史各自独立演进。",
+    "nodeIds": [
+      "file:mem0/embeddings/base.py",
+      "file:mem0/vector_stores/base.py",
+      "file:mem0/memory/storage.py"
+    ],
+    "languageLesson": "Abstract Base Class（抽象基类）定义最小 provider 契约；默认批处理等通用行为可留在基类，后端差异由子类实现。"
+  },
+  {
+    "order": 6,
+    "title": "混合检索创新",
+    "description": "读取路径不只依赖向量相似度：实体抽取器融合 NER、技术标识符、专名与主题短语，为 entity linking 和 entity boost 提供稳定信号。评分层再组合 semantic similarity、BM25 与图实体信号，最后可通过统一 Reranker 接口重排和 top-k 截断，这就是 Mem0 多信号检索优于单一路径召回的关键。",
+    "nodeIds": [
+      "file:mem0/utils/entity_extraction.py",
+      "file:mem0/utils/scoring.py",
+      "file:mem0/reranker/base.py",
+      "file:mem0/configs/rerankers/config.py"
+    ]
+  },
+  {
+    "order": 7,
+    "title": "Provider 插件架构",
+    "description": "核心编排不直接绑定厂商，而由 factory 根据 provider 名称延迟导入 LLM、embedding、vector store 与 reranker 实现。抽象契约负责统一输入输出，OpenAI 与 Qdrant 等 adapter 只处理各自协议和配置差异，因此扩展新 provider 通常不需要改动 Memory 主流程。",
+    "nodeIds": [
+      "file:mem0/utils/factory.py",
+      "file:mem0/llms/base.py",
+      "file:mem0/llms/openai.py",
+      "file:mem0/embeddings/openai.py",
+      "file:mem0/vector_stores/qdrant.py"
+    ],
+    "languageLesson": "Lazy import（延迟导入）让可选依赖只在选择对应 provider 时加载，既降低基础安装成本，也把缺失依赖的错误限制在相关功能边界。"
+  },
+  {
+    "order": 8,
+    "title": "运行形态边界",
+    "description": "本地 Memory/AsyncMemory 在进程内执行整条记忆 pipeline，而 MemoryClient/AsyncMemoryClient 把相同领域动作映射为托管平台 HTTP API；两者是部署边界不同，不是两套记忆概念。异常模块把 HTTP 状态与服务端响应翻译为领域异常，OpenAI-compatible proxy 则展示了一个端到端集成：生成前检索并注入记忆，生成后异步回写对话。",
+    "nodeIds": [
+      "file:mem0/client/main.py",
+      "file:mem0/exceptions.py",
+      "file:mem0/proxy/main.py"
+    ],
+    "languageLesson": "async/await 适合把网络请求、向量库访问与回写并发化；同步 facade 则为不使用 event loop 的应用保留低门槛接口。"
+  },
+  {
+    "order": 9,
+    "title": "工程与贡献闭环",
+    "description": "最后从运行时架构回到可维护性：pyproject.toml 定义构建、依赖分组、多 Python 环境、pytest 与 Ruff 规则，Makefile 把常用开发和发布动作串成统一入口。pre-commit 在提交前执行质量检查，而 Python SDK 的 AGENTS.md 记录 provider 扩展、测试和公共 API 约束；理解这些规则，才能以项目认可的方式修改前面各层。",
+    "nodeIds": [
+      "config:pyproject.toml",
+      "pipeline:Makefile",
+      "config:.pre-commit-config.yaml",
+      "document:mem0/AGENTS.md"
+    ],
+    "languageLesson": "TOML 负责结构化包配置，YAML 描述 hook 流程，Makefile 用 target 与依赖关系组织可重复命令；三者共同把本地开发行为固定为可验证的工程约定。"
+  }
+]

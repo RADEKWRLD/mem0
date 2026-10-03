@@ -1,0 +1,337 @@
+{
+  "projectRoot": "/Users/cenghaoyang/mem0",
+  "batchFiles": [
+    {
+      "path": "mem0/configs/llms/anthropic.py",
+      "language": "python",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/configs/llms/aws_bedrock.py",
+      "language": "python",
+      "sizeLines": 202,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/configs/llms/base.py",
+      "language": "python",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/configs/llms/deepseek.py",
+      "language": "python",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/configs/llms/gemini.py",
+      "language": "python",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/configs/llms/lmstudio.py",
+      "language": "python",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/configs/llms/minimax.py",
+      "language": "python",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/configs/llms/ollama.py",
+      "language": "python",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/configs/llms/openai.py",
+      "language": "python",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/configs/llms/vllm.py",
+      "language": "python",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/configs/llms/xai.py",
+      "language": "python",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/llms/anthropic.py",
+      "language": "python",
+      "sizeLines": 159,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/llms/aws_bedrock.py",
+      "language": "python",
+      "sizeLines": 728,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/llms/azure_openai.py",
+      "language": "python",
+      "sizeLines": 166,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/llms/azure_openai_structured.py",
+      "language": "python",
+      "sizeLines": 153,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/llms/base.py",
+      "language": "python",
+      "sizeLines": 170,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/llms/deepseek.py",
+      "language": "python",
+      "sizeLines": 109,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/llms/gemini.py",
+      "language": "python",
+      "sizeLines": 228,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/llms/groq.py",
+      "language": "python",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/llms/langchain.py",
+      "language": "python",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/llms/litellm.py",
+      "language": "python",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/llms/lmstudio.py",
+      "language": "python",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/llms/minimax.py",
+      "language": "python",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/llms/ollama.py",
+      "language": "python",
+      "sizeLines": 144,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/llms/openai.py",
+      "language": "python",
+      "sizeLines": 150,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/llms/openai_structured.py",
+      "language": "python",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/llms/sarvam.py",
+      "language": "python",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/llms/together.py",
+      "language": "python",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/llms/vllm.py",
+      "language": "python",
+      "sizeLines": 108,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/llms/xai.py",
+      "language": "python",
+      "sizeLines": 110,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/memory/utils.py",
+      "language": "python",
+      "sizeLines": 330,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "mem0/configs/llms/anthropic.py": [
+      "mem0/configs/llms/base.py"
+    ],
+    "mem0/configs/llms/aws_bedrock.py": [
+      "mem0/configs/llms/base.py"
+    ],
+    "mem0/configs/llms/base.py": [
+      "mem0/utils/http.py"
+    ],
+    "mem0/configs/llms/deepseek.py": [
+      "mem0/configs/llms/base.py"
+    ],
+    "mem0/configs/llms/gemini.py": [
+      "mem0/configs/llms/base.py"
+    ],
+    "mem0/configs/llms/lmstudio.py": [
+      "mem0/configs/llms/base.py"
+    ],
+    "mem0/configs/llms/minimax.py": [
+      "mem0/configs/llms/base.py"
+    ],
+    "mem0/configs/llms/ollama.py": [
+      "mem0/configs/llms/base.py"
+    ],
+    "mem0/configs/llms/openai.py": [
+      "mem0/configs/llms/base.py"
+    ],
+    "mem0/configs/llms/vllm.py": [
+      "mem0/configs/llms/base.py"
+    ],
+    "mem0/configs/llms/xai.py": [
+      "mem0/configs/llms/base.py"
+    ],
+    "mem0/llms/anthropic.py": [
+      "mem0/configs/llms/anthropic.py",
+      "mem0/configs/llms/base.py",
+      "mem0/llms/base.py"
+    ],
+    "mem0/llms/aws_bedrock.py": [
+      "mem0/configs/llms/aws_bedrock.py",
+      "mem0/configs/llms/base.py",
+      "mem0/llms/base.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/llms/azure_openai.py": [
+      "mem0/configs/llms/azure.py",
+      "mem0/configs/llms/base.py",
+      "mem0/llms/base.py",
+      "mem0/llms/openai.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/llms/azure_openai_structured.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/llms/base.py",
+      "mem0/llms/openai.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/llms/base.py": [
+      "mem0/configs/llms/base.py"
+    ],
+    "mem0/llms/deepseek.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/configs/llms/deepseek.py",
+      "mem0/llms/base.py",
+      "mem0/llms/openai.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/llms/gemini.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/configs/llms/gemini.py",
+      "mem0/llms/base.py"
+    ],
+    "mem0/llms/groq.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/llms/base.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/llms/langchain.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/llms/base.py"
+    ],
+    "mem0/llms/litellm.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/llms/base.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/llms/lmstudio.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/configs/llms/lmstudio.py",
+      "mem0/llms/base.py",
+      "mem0/llms/openai.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/llms/minimax.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/configs/llms/minimax.py",
+      "mem0/llms/base.py",
+      "mem0/llms/openai.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/llms/ollama.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/configs/llms/ollama.py",
+      "mem0/llms/base.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/llms/openai.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/configs/llms/openai.py",
+      "mem0/llms/base.py",
+      "mem0/llms/openai.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/llms/openai_structured.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/llms/base.py",
+      "mem0/llms/openai.py"
+    ],
+    "mem0/llms/sarvam.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/llms/base.py"
+    ],
+    "mem0/llms/together.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/llms/base.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/llms/vllm.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/configs/llms/vllm.py",
+      "mem0/llms/base.py",
+      "mem0/llms/openai.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/llms/xai.py": [
+      "mem0/configs/llms/base.py",
+      "mem0/configs/llms/xai.py",
+      "mem0/llms/base.py",
+      "mem0/llms/openai.py",
+      "mem0/memory/utils.py"
+    ],
+    "mem0/memory/utils.py": [
+      "mem0/configs/prompts.py"
+    ]
+  }
+}

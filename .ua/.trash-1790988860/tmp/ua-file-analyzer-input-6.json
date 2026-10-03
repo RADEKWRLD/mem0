@@ -1,0 +1,57 @@
+{
+  "projectRoot": "/Users/cenghaoyang/mem0",
+  "batchFiles": [
+    {
+      "path": "mem0/configs/base.py",
+      "language": "python",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/configs/llms/azure.py",
+      "language": "python",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/configs/rerankers/config.py",
+      "language": "python",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/embeddings/configs.py",
+      "language": "python",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/llms/configs.py",
+      "language": "python",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/configs.py",
+      "language": "python",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "mem0/configs/base.py": [
+      "mem0/configs/rerankers/config.py",
+      "mem0/embeddings/configs.py",
+      "mem0/llms/configs.py",
+      "mem0/vector_stores/configs.py"
+    ],
+    "mem0/configs/llms/azure.py": [
+      "mem0/configs/base.py",
+      "mem0/configs/llms/base.py"
+    ],
+    "mem0/configs/rerankers/config.py": [],
+    "mem0/embeddings/configs.py": [],
+    "mem0/llms/configs.py": [],
+    "mem0/vector_stores/configs.py": []
+  }
+}

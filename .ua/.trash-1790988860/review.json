@@ -1,0 +1,41 @@
+{
+  "issues": [],
+  "warnings": [
+    "Node 'config:.pre-commit-config.yaml' has no edges (orphan)",
+    "Node 'file:.gitmodules' has no edges (orphan)",
+    "Node 'document:mem0/AGENTS.md' has no edges (orphan)",
+    "Node 'file:mem0/client/__init__.py' has no edges (orphan)",
+    "Node 'file:mem0/configs/__init__.py' has no edges (orphan)",
+    "Node 'file:mem0/configs/embeddings/__init__.py' has no edges (orphan)",
+    "Node 'file:mem0/configs/llms/__init__.py' has no edges (orphan)",
+    "Node 'file:mem0/configs/rerankers/__init__.py' has no edges (orphan)",
+    "Node 'file:mem0/configs/vector_stores/__init__.py' has no edges (orphan)",
+    "Node 'file:mem0/embeddings/__init__.py' has no edges (orphan)",
+    "Node 'file:mem0/llms/__init__.py' has no edges (orphan)",
+    "Node 'config:mem0/memory/oss_notices_config.json' has no edges (orphan)",
+    "Node 'file:mem0/proxy/__init__.py' has no edges (orphan)",
+    "Node 'file:mem0/vector_stores/__init__.py' has no edges (orphan)"
+  ],
+  "stats": {
+    "totalNodes": 530,
+    "totalEdges": 1071,
+    "totalLayers": 9,
+    "tourSteps": 9,
+    "nodeTypes": {
+      "file": 149,
+      "class": 192,
+      "function": 177,
+      "config": 4,
+      "document": 7,
+      "pipeline": 1
+    },
+    "edgeTypes": {
+      "contains": 369,
+      "exports": 369,
+      "imports": 232,
+      "inherits": 95,
+      "related": 5,
+      "depends_on": 1
+    }
+  }
+}

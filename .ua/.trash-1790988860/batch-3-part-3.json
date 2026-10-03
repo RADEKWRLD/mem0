@@ -1,0 +1,3101 @@
+{
+  "nodes": [
+    {
+      "id": "file:mem0/memory/main.py",
+      "type": "file",
+      "name": "main.py",
+      "filePath": "mem0/memory/main.py",
+      "summary": "实现开源同步与异步记忆引擎，编排 LLM 抽取、embedding、向量检索、图关系、重排、历史记录与实体索引。",
+      "tags": [
+        "memory-engine",
+        "orchestration",
+        "sync-async"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:mem0/memory/main.py:_vector_store_list_rows",
+      "type": "function",
+      "name": "_vector_store_list_rows",
+      "filePath": "mem0/memory/main.py",
+      "lineRange": [
+        85,
+        90
+      ],
+      "summary": "实现 vector store list rows 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/main.py:_strip_identity_keys",
+      "type": "function",
+      "name": "_strip_identity_keys",
+      "filePath": "mem0/memory/main.py",
+      "lineRange": [
+        143,
+        162
+      ],
+      "summary": "处理 strip identity keys 的识别、清洗、持久化或关联逻辑。",
+      "tags": [
+        "entity-extraction",
+        "nlp",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/main.py:_reject_top_level_entity_params",
+      "type": "function",
+      "name": "_reject_top_level_entity_params",
+      "filePath": "mem0/memory/main.py",
+      "lineRange": [
+        165,
+        172
+      ],
+      "summary": "校验并规范化 reject top level entity params 相关输入，在违反约束时尽早抛出明确错误。",
+      "tags": [
+        "validation",
+        "guard",
+        "error-handling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/main.py:_validate_and_trim_entity_id",
+      "type": "function",
+      "name": "_validate_and_trim_entity_id",
+      "filePath": "mem0/memory/main.py",
+      "lineRange": [
+        175,
+        209
+      ],
+      "summary": "校验并规范化 validate and trim entity id 相关输入，在违反约束时尽早抛出明确错误。",
+      "tags": [
+        "validation",
+        "guard",
+        "error-handling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/main.py:_validate_search_params",
+      "type": "function",
+      "name": "_validate_search_params",
+      "filePath": "mem0/memory/main.py",
+      "lineRange": [
+        212,
+        236
+      ],
+      "summary": "校验并规范化 validate search params 相关输入，在违反约束时尽早抛出明确错误。",
+      "tags": [
+        "validation",
+        "guard",
+        "error-handling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/main.py:_validate_and_trim_search_query",
+      "type": "function",
+      "name": "_validate_and_trim_search_query",
+      "filePath": "mem0/memory/main.py",
+      "lineRange": [
+        239,
+        251
+      ],
+      "summary": "校验并规范化 validate and trim search query 相关输入，在违反约束时尽早抛出明确错误。",
+      "tags": [
+        "validation",
+        "guard",
+        "error-handling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/main.py:_is_sensitive_field",
+      "type": "function",
+      "name": "_is_sensitive_field",
+      "filePath": "mem0/memory/main.py",
+      "lineRange": [
+        254,
+        267
+      ],
+      "summary": "实现 is sensitive field 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/main.py:_safe_deepcopy_config",
+      "type": "function",
+      "name": "_safe_deepcopy_config",
+      "filePath": "mem0/memory/main.py",
+      "lineRange": [
+        270,
+        298
+      ],
+      "summary": "读取、组合或持久化 safe deepcopy config 所需的配置数据。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/main.py:_normalize_iso_timestamp_to_utc",
+      "type": "function",
+      "name": "_normalize_iso_timestamp_to_utc",
+      "filePath": "mem0/memory/main.py",
+      "lineRange": [
+        301,
+        311
+      ],
+      "summary": "实现 normalize iso timestamp to utc 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/main.py:_build_filters_and_metadata",
+      "type": "function",
+      "name": "_build_filters_and_metadata",
+      "filePath": "mem0/memory/main.py",
+      "lineRange": [
+        314,
+        404
+      ],
+      "summary": "构建或清洗 build filters and metadata 所需的过滤表达式，隔离不同后端的查询语法。",
+      "tags": [
+        "query-builder",
+        "filtering",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:mem0/memory/main.py:_escape_scope_value",
+      "type": "function",
+      "name": "_escape_scope_value",
+      "filePath": "mem0/memory/main.py",
+      "lineRange": [
+        407,
+        409
+      ],
+      "summary": "实现 escape scope value 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/main.py:_build_session_scope",
+      "type": "function",
+      "name": "_build_session_scope",
+      "filePath": "mem0/memory/main.py",
+      "lineRange": [
+        412,
+        419
+      ],
+      "summary": "实现 build session scope 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/main.py:_entity_collection_name",
+      "type": "function",
+      "name": "_entity_collection_name",
+      "filePath": "mem0/memory/main.py",
+      "lineRange": [
+        422,
+        424
+      ],
+      "summary": "处理 entity collection name 的识别、清洗、持久化或关联逻辑。",
+      "tags": [
+        "entity-extraction",
+        "nlp",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/main.py:_normalize_expiration_date",
+      "type": "function",
+      "name": "_normalize_expiration_date",
+      "filePath": "mem0/memory/main.py",
+      "lineRange": [
+        427,
+        439
+      ],
+      "summary": "实现 normalize expiration date 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/main.py:_payload_is_expired",
+      "type": "function",
+      "name": "_payload_is_expired",
+      "filePath": "mem0/memory/main.py",
+      "lineRange": [
+        442,
+        451
+      ],
+      "summary": "实现 payload is expired 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/memory/main.py:_OSSProject",
+      "type": "class",
+      "name": "_OSSProject",
+      "filePath": "mem0/memory/main.py",
+      "lineRange": [
+        461,
+        471
+      ],
+      "summary": "实现 _OSSProject 对应的领域模型或服务能力。",
+      "tags": [
+        "data-model",
+        "service",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/memory/main.py:_AsyncOSSProject",
+      "type": "class",
+      "name": "_AsyncOSSProject",
+      "filePath": "mem0/memory/main.py",
+      "lineRange": [
+        474,
+        484
+      ],
+      "summary": "实现 _AsyncOSSProject 对应的领域模型或服务能力。",
+      "tags": [
+        "data-model",
+        "service",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/memory/main.py:Memory",
+      "type": "class",
+      "name": "Memory",
+      "filePath": "mem0/memory/main.py",
+      "lineRange": [
+        487,
+        2190
+      ],
+      "summary": "同步 OSS 记忆引擎，协调抽取、向量/图存储、实体关联、搜索重排与变更历史。",
+      "tags": [
+        "memory-engine",
+        "service",
+        "public-api"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:mem0/memory/main.py:AsyncMemory",
+      "type": "class",
+      "name": "AsyncMemory",
+      "filePath": "mem0/memory/main.py",
+      "lineRange": [
+        2193,
+        3912
+      ],
+      "summary": "异步 OSS 记忆引擎，与同步实现保持能力对称并并发调度外部 provider。",
+      "tags": [
+        "memory-engine",
+        "service",
+        "public-api"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/memory/notices.py",
+      "type": "file",
+      "name": "notices.py",
+      "filePath": "mem0/memory/notices.py",
+      "summary": "实现 OSS 功能提示与容量机会检测，通过本地状态、远端配置和采样规则控制首次运行、时间、衰减、规模及性能提示。",
+      "tags": [
+        "feature-notice",
+        "local-state",
+        "telemetry"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_load_bundled_config",
+      "type": "function",
+      "name": "_load_bundled_config",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        54,
+        59
+      ],
+      "summary": "读取、组合或持久化 load bundled config 所需的配置数据。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_fetch_remote_config",
+      "type": "function",
+      "name": "_fetch_remote_config",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        62,
+        69
+      ],
+      "summary": "读取、组合或持久化 fetch remote config 所需的配置数据。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_get_notice_config",
+      "type": "function",
+      "name": "_get_notice_config",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        72,
+        87
+      ],
+      "summary": "评估并记录 get notice config 的展示条件、容量限制和提示状态。",
+      "tags": [
+        "feature-notice",
+        "state-management",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_evaluate_notice_flags",
+      "type": "function",
+      "name": "_evaluate_notice_flags",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        90,
+        97
+      ],
+      "summary": "评估并记录 evaluate notice flags 的展示条件、容量限制和提示状态。",
+      "tags": [
+        "feature-notice",
+        "state-management",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:display_first_run_notice",
+      "type": "function",
+      "name": "display_first_run_notice",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        165,
+        231
+      ],
+      "summary": "评估并记录 display first run notice 的展示条件、容量限制和提示状态。",
+      "tags": [
+        "feature-notice",
+        "state-management",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:display_first_run_notice_async",
+      "type": "function",
+      "name": "display_first_run_notice_async",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        234,
+        237
+      ],
+      "summary": "评估并记录 display first run notice async 的展示条件、容量限制和提示状态。",
+      "tags": [
+        "feature-notice",
+        "state-management",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:display_temporal_usage_notice",
+      "type": "function",
+      "name": "display_temporal_usage_notice",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        240,
+        321
+      ],
+      "summary": "评估并记录 display temporal usage notice 的展示条件、容量限制和提示状态。",
+      "tags": [
+        "feature-notice",
+        "state-management",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:display_temporal_usage_notice_async",
+      "type": "function",
+      "name": "display_temporal_usage_notice_async",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        324,
+        338
+      ],
+      "summary": "评估并记录 display temporal usage notice async 的展示条件、容量限制和提示状态。",
+      "tags": [
+        "feature-notice",
+        "state-management",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:detect_decay_usage_from_delete",
+      "type": "function",
+      "name": "detect_decay_usage_from_delete",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        341,
+        358
+      ],
+      "summary": "实现 detect decay usage from delete 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:detect_decay_usage_from_delete_all",
+      "type": "function",
+      "name": "detect_decay_usage_from_delete_all",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        361,
+        369
+      ],
+      "summary": "实现 detect decay usage from delete all 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:display_decay_usage_notice",
+      "type": "function",
+      "name": "display_decay_usage_notice",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        372,
+        459
+      ],
+      "summary": "评估并记录 display decay usage notice 的展示条件、容量限制和提示状态。",
+      "tags": [
+        "feature-notice",
+        "state-management",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:display_decay_usage_notice_async",
+      "type": "function",
+      "name": "display_decay_usage_notice_async",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        462,
+        480
+      ],
+      "summary": "评估并记录 display decay usage notice async 的展示条件、容量限制和提示状态。",
+      "tags": [
+        "feature-notice",
+        "state-management",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:detect_scale_threshold_from_top_k",
+      "type": "function",
+      "name": "detect_scale_threshold_from_top_k",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        483,
+        492
+      ],
+      "summary": "实现 detect scale threshold from top k 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:detect_scale_threshold_from_add_result",
+      "type": "function",
+      "name": "detect_scale_threshold_from_add_result",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        495,
+        546
+      ],
+      "summary": "实现 detect scale threshold from add result 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:display_scale_threshold_notice",
+      "type": "function",
+      "name": "display_scale_threshold_notice",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        549,
+        641
+      ],
+      "summary": "评估并记录 display scale threshold notice 的展示条件、容量限制和提示状态。",
+      "tags": [
+        "feature-notice",
+        "state-management",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:display_scale_threshold_notice_async",
+      "type": "function",
+      "name": "display_scale_threshold_notice_async",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        644,
+        664
+      ],
+      "summary": "评估并记录 display scale threshold notice async 的展示条件、容量限制和提示状态。",
+      "tags": [
+        "feature-notice",
+        "state-management",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:display_performance_slow_query_notice",
+      "type": "function",
+      "name": "display_performance_slow_query_notice",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        667,
+        752
+      ],
+      "summary": "评估并记录 display performance slow query notice 的展示条件、容量限制和提示状态。",
+      "tags": [
+        "feature-notice",
+        "state-management",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:display_performance_slow_query_notice_async",
+      "type": "function",
+      "name": "display_performance_slow_query_notice_async",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        755,
+        771
+      ],
+      "summary": "评估并记录 display performance slow query notice async 的展示条件、容量限制和提示状态。",
+      "tags": [
+        "feature-notice",
+        "state-management",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:get_temporal_feature_error_message",
+      "type": "function",
+      "name": "get_temporal_feature_error_message",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        774,
+        782
+      ],
+      "summary": "评估并记录 get temporal feature error message 的展示条件、容量限制和提示状态。",
+      "tags": [
+        "prompt-engineering",
+        "serialization",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:get_temporal_feature_error_message_async",
+      "type": "function",
+      "name": "get_temporal_feature_error_message_async",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        785,
+        795
+      ],
+      "summary": "评估并记录 get temporal feature error message async 的展示条件、容量限制和提示状态。",
+      "tags": [
+        "prompt-engineering",
+        "serialization",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:get_decay_feature_error_message",
+      "type": "function",
+      "name": "get_decay_feature_error_message",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        798,
+        806
+      ],
+      "summary": "评估并记录 get decay feature error message 的展示条件、容量限制和提示状态。",
+      "tags": [
+        "prompt-engineering",
+        "serialization",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:get_decay_feature_error_message_async",
+      "type": "function",
+      "name": "get_decay_feature_error_message_async",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        809,
+        819
+      ],
+      "summary": "评估并记录 get decay feature error message async 的展示条件、容量限制和提示状态。",
+      "tags": [
+        "prompt-engineering",
+        "serialization",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_get_feature_error_message",
+      "type": "function",
+      "name": "_get_feature_error_message",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        822,
+        903
+      ],
+      "summary": "评估并记录 get feature error message 的展示条件、容量限制和提示状态。",
+      "tags": [
+        "prompt-engineering",
+        "serialization",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:detect_temporal_usage_from_metadata",
+      "type": "function",
+      "name": "detect_temporal_usage_from_metadata",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        906,
+        917
+      ],
+      "summary": "实现 detect temporal usage from metadata 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:detect_temporal_usage_from_search",
+      "type": "function",
+      "name": "detect_temporal_usage_from_search",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        920,
+        935
+      ],
+      "summary": "实现 detect temporal usage from search 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_claim_first_run_notice",
+      "type": "function",
+      "name": "_claim_first_run_notice",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        938,
+        965
+      ],
+      "summary": "评估并记录 claim first run notice 的展示条件、容量限制和提示状态。",
+      "tags": [
+        "feature-notice",
+        "state-management",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_update_first_run_variant",
+      "type": "function",
+      "name": "_update_first_run_variant",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        968,
+        983
+      ],
+      "summary": "实现 update first run variant 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_feature_error_at_capacity",
+      "type": "function",
+      "name": "_feature_error_at_capacity",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        986,
+        999
+      ],
+      "summary": "评估并记录 feature error at capacity 的展示条件、容量限制和提示状态。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_record_feature_error_opportunity",
+      "type": "function",
+      "name": "_record_feature_error_opportunity",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1002,
+        1043
+      ],
+      "summary": "评估并记录 record feature error opportunity 的展示条件、容量限制和提示状态。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_recent_feature_error_entries",
+      "type": "function",
+      "name": "_recent_feature_error_entries",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1046,
+        1067
+      ],
+      "summary": "评估并记录 recent feature error entries 的展示条件、容量限制和提示状态。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_temporal_usage_at_capacity",
+      "type": "function",
+      "name": "_temporal_usage_at_capacity",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1070,
+        1084
+      ],
+      "summary": "实现 temporal usage at capacity 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_record_temporal_usage_opportunity",
+      "type": "function",
+      "name": "_record_temporal_usage_opportunity",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1087,
+        1130
+      ],
+      "summary": "实现 record temporal usage opportunity 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_recent_temporal_usage_entries",
+      "type": "function",
+      "name": "_recent_temporal_usage_entries",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1133,
+        1154
+      ],
+      "summary": "实现 recent temporal usage entries 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_decay_usage_at_capacity",
+      "type": "function",
+      "name": "_decay_usage_at_capacity",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1157,
+        1171
+      ],
+      "summary": "实现 decay usage at capacity 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_record_decay_usage_opportunity",
+      "type": "function",
+      "name": "_record_decay_usage_opportunity",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1174,
+        1222
+      ],
+      "summary": "实现 record decay usage opportunity 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_recent_decay_usage_entries",
+      "type": "function",
+      "name": "_recent_decay_usage_entries",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1225,
+        1246
+      ],
+      "summary": "实现 recent decay usage entries 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_scale_threshold_at_capacity",
+      "type": "function",
+      "name": "_scale_threshold_at_capacity",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1249,
+        1263
+      ],
+      "summary": "实现 scale threshold at capacity 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_record_scale_threshold_opportunity",
+      "type": "function",
+      "name": "_record_scale_threshold_opportunity",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1266,
+        1319
+      ],
+      "summary": "实现 record scale threshold opportunity 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_mark_scale_memory_count_threshold_evaluated",
+      "type": "function",
+      "name": "_mark_scale_memory_count_threshold_evaluated",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1322,
+        1344
+      ],
+      "summary": "实现 mark scale memory count threshold evaluated 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_recent_scale_threshold_entries",
+      "type": "function",
+      "name": "_recent_scale_threshold_entries",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1347,
+        1368
+      ],
+      "summary": "实现 recent scale threshold entries 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_performance_slow_query_at_capacity",
+      "type": "function",
+      "name": "_performance_slow_query_at_capacity",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1371,
+        1385
+      ],
+      "summary": "实现 performance slow query at capacity 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_record_performance_slow_query_opportunity",
+      "type": "function",
+      "name": "_record_performance_slow_query_opportunity",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1388,
+        1429
+      ],
+      "summary": "实现 record performance slow query opportunity 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_recent_performance_slow_query_entries",
+      "type": "function",
+      "name": "_recent_performance_slow_query_entries",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1432,
+        1453
+      ],
+      "summary": "实现 recent performance slow query entries 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_parse_datetime",
+      "type": "function",
+      "name": "_parse_datetime",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1456,
+        1465
+      ],
+      "summary": "实现 parse datetime 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_get_notice_state",
+      "type": "function",
+      "name": "_get_notice_state",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1468,
+        1474
+      ],
+      "summary": "评估并记录 get notice state 的展示条件、容量限制和提示状态。",
+      "tags": [
+        "feature-notice",
+        "state-management",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_count_added_memories",
+      "type": "function",
+      "name": "_count_added_memories",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1477,
+        1486
+      ],
+      "summary": "实现 count added memories 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_get_provider_memory_count",
+      "type": "function",
+      "name": "_get_provider_memory_count",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1489,
+        1533
+      ],
+      "summary": "实现 get provider memory count 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_extract_count",
+      "type": "function",
+      "name": "_extract_count",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1536,
+        1561
+      ],
+      "summary": "实现 extract count 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_render_scale_copy",
+      "type": "function",
+      "name": "_render_scale_copy",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1564,
+        1570
+      ],
+      "summary": "实现 render scale copy 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_coerce_nonnegative_int",
+      "type": "function",
+      "name": "_coerce_nonnegative_int",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1573,
+        1580
+      ],
+      "summary": "实现 coerce nonnegative int 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_coerce_mapping",
+      "type": "function",
+      "name": "_coerce_mapping",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1583,
+        1592
+      ],
+      "summary": "实现 coerce mapping 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_walk_mapping",
+      "type": "function",
+      "name": "_walk_mapping",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1595,
+        1603
+      ],
+      "summary": "实现 walk mapping 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_is_temporal_key",
+      "type": "function",
+      "name": "_is_temporal_key",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1606,
+        1627
+      ],
+      "summary": "实现 is temporal key 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_looks_temporal_value",
+      "type": "function",
+      "name": "_looks_temporal_value",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1630,
+        1639
+      ],
+      "summary": "实现 looks temporal value 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/notices.py:_has_temporal_filter",
+      "type": "function",
+      "name": "_has_temporal_filter",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        1642,
+        1667
+      ],
+      "summary": "构建或清洗 has temporal filter 所需的过滤表达式，隔离不同后端的查询语法。",
+      "tags": [
+        "query-builder",
+        "filtering",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/memory/notices.py:StaticFlagResult",
+      "type": "class",
+      "name": "StaticFlagResult",
+      "filePath": "mem0/memory/notices.py",
+      "lineRange": [
+        34,
+        51
+      ],
+      "summary": "以静态配置模拟 feature flag 结果，为提示文案和事件属性提供统一读取接口。",
+      "tags": [
+        "data-model",
+        "service",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/memory/setup.py",
+      "type": "file",
+      "name": "setup.py",
+      "filePath": "mem0/memory/setup.py",
+      "summary": "管理本地匿名用户标识、配置文件初始化和身份别名标记，为遥测与客户端迁移提供持久状态。",
+      "tags": [
+        "memory",
+        "service",
+        "persistence"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:mem0/memory/setup.py:_config_path",
+      "type": "function",
+      "name": "_config_path",
+      "filePath": "mem0/memory/setup.py",
+      "lineRange": [
+        17,
+        18
+      ],
+      "summary": "读取、组合或持久化 config path 所需的配置数据。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/setup.py:_load_config",
+      "type": "function",
+      "name": "_load_config",
+      "filePath": "mem0/memory/setup.py",
+      "lineRange": [
+        21,
+        32
+      ],
+      "summary": "读取、组合或持久化 load config 所需的配置数据。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/setup.py:_write_config",
+      "type": "function",
+      "name": "_write_config",
+      "filePath": "mem0/memory/setup.py",
+      "lineRange": [
+        35,
+        53
+      ],
+      "summary": "读取、组合或持久化 write config 所需的配置数据。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/setup.py:setup_config",
+      "type": "function",
+      "name": "setup_config",
+      "filePath": "mem0/memory/setup.py",
+      "lineRange": [
+        56,
+        68
+      ],
+      "summary": "读取、组合或持久化 setup config 所需的配置数据。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/setup.py:get_user_id",
+      "type": "function",
+      "name": "get_user_id",
+      "filePath": "mem0/memory/setup.py",
+      "lineRange": [
+        71,
+        75
+      ],
+      "summary": "维护 get user id 对应的匿名身份与别名持久状态。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/setup.py:read_anon_ids",
+      "type": "function",
+      "name": "read_anon_ids",
+      "filePath": "mem0/memory/setup.py",
+      "lineRange": [
+        78,
+        93
+      ],
+      "summary": "实现 read anon ids 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/setup.py:_alias_pair_marker",
+      "type": "function",
+      "name": "_alias_pair_marker",
+      "filePath": "mem0/memory/setup.py",
+      "lineRange": [
+        96,
+        97
+      ],
+      "summary": "维护 alias pair marker 对应的匿名身份与别名持久状态。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/setup.py:is_aliased",
+      "type": "function",
+      "name": "is_aliased",
+      "filePath": "mem0/memory/setup.py",
+      "lineRange": [
+        100,
+        109
+      ],
+      "summary": "维护 is aliased 对应的匿名身份与别名持久状态。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/setup.py:mark_aliased",
+      "type": "function",
+      "name": "mark_aliased",
+      "filePath": "mem0/memory/setup.py",
+      "lineRange": [
+        112,
+        131
+      ],
+      "summary": "维护 mark aliased 对应的匿名身份与别名持久状态。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/setup.py:get_or_create_user_id",
+      "type": "function",
+      "name": "get_or_create_user_id",
+      "filePath": "mem0/memory/setup.py",
+      "lineRange": [
+        134,
+        166
+      ],
+      "summary": "维护 get or create user id 对应的匿名身份与别名持久状态。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/memory/storage.py",
+      "type": "file",
+      "name": "storage.py",
+      "filePath": "mem0/memory/storage.py",
+      "summary": "以 SQLite 持久化记忆变更历史和对话消息，并负责旧表结构迁移与批量写入。",
+      "tags": [
+        "sqlite",
+        "history",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:mem0/memory/storage.py:SQLiteManager",
+      "type": "class",
+      "name": "SQLiteManager",
+      "filePath": "mem0/memory/storage.py",
+      "lineRange": [
+        11,
+        347
+      ],
+      "summary": "管理本地 SQLite 连接、模式迁移、历史记录与消息持久化。",
+      "tags": [
+        "data-model",
+        "service",
+        "python-sdk"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/memory/telemetry.py",
+      "type": "file",
+      "name": "telemetry.py",
+      "filePath": "mem0/memory/telemetry.py",
+      "summary": "封装匿名 OSS/托管客户端遥测，处理采样、事件上报、身份识别与进程退出清理。",
+      "tags": [
+        "telemetry",
+        "sampling",
+        "observability"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:mem0/memory/telemetry.py:_parse_sample_rate",
+      "type": "function",
+      "name": "_parse_sample_rate",
+      "filePath": "mem0/memory/telemetry.py",
+      "lineRange": [
+        35,
+        45
+      ],
+      "summary": "实现 parse sample rate 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/telemetry.py:_sampling_before_send",
+      "type": "function",
+      "name": "_sampling_before_send",
+      "filePath": "mem0/memory/telemetry.py",
+      "lineRange": [
+        58,
+        73
+      ],
+      "summary": "实现 sampling before send 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/telemetry.py:_get_oss_telemetry",
+      "type": "function",
+      "name": "_get_oss_telemetry",
+      "filePath": "mem0/memory/telemetry.py",
+      "lineRange": [
+        155,
+        174
+      ],
+      "summary": "处理 get oss telemetry 的采样、脱敏与事件上报。",
+      "tags": [
+        "telemetry",
+        "observability",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/telemetry.py:_shutdown_oss_telemetry",
+      "type": "function",
+      "name": "_shutdown_oss_telemetry",
+      "filePath": "mem0/memory/telemetry.py",
+      "lineRange": [
+        177,
+        183
+      ],
+      "summary": "处理 shutdown oss telemetry 的采样、脱敏与事件上报。",
+      "tags": [
+        "telemetry",
+        "observability",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/telemetry.py:capture_event",
+      "type": "function",
+      "name": "capture_event",
+      "filePath": "mem0/memory/telemetry.py",
+      "lineRange": [
+        192,
+        220
+      ],
+      "summary": "处理 capture event 的采样、脱敏与事件上报。",
+      "tags": [
+        "telemetry",
+        "observability",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/telemetry.py:capture_client_event",
+      "type": "function",
+      "name": "capture_client_event",
+      "filePath": "mem0/memory/telemetry.py",
+      "lineRange": [
+        223,
+        241
+      ],
+      "summary": "处理 capture client event 的采样、脱敏与事件上报。",
+      "tags": [
+        "telemetry",
+        "observability",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/memory/telemetry.py:AnonymousTelemetry",
+      "type": "class",
+      "name": "AnonymousTelemetry",
+      "filePath": "mem0/memory/telemetry.py",
+      "lineRange": [
+        76,
+        142
+      ],
+      "summary": "管理匿名遥测客户端生命周期并统一事件和 identify 上报。",
+      "tags": [
+        "data-model",
+        "service",
+        "python-sdk"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/configs/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/configs/enums.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/configs/prompts.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/exceptions.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/memory/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/memory/notices.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/memory/setup.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/memory/storage.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/memory/telemetry.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/utils/entity_extraction.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/utils/factory.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/utils/lemmatization.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/utils/scoring.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_vector_store_list_rows",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_vector_store_list_rows",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_strip_identity_keys",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_strip_identity_keys",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_reject_top_level_entity_params",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_reject_top_level_entity_params",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_validate_and_trim_entity_id",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_validate_and_trim_entity_id",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_validate_search_params",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_validate_search_params",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_validate_and_trim_search_query",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_validate_and_trim_search_query",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_is_sensitive_field",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_is_sensitive_field",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_safe_deepcopy_config",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_safe_deepcopy_config",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_normalize_iso_timestamp_to_utc",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_normalize_iso_timestamp_to_utc",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_build_filters_and_metadata",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_build_filters_and_metadata",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_escape_scope_value",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_escape_scope_value",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_build_session_scope",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_build_session_scope",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_entity_collection_name",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_entity_collection_name",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_normalize_expiration_date",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_normalize_expiration_date",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_payload_is_expired",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "function:mem0/memory/main.py:_payload_is_expired",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "class:mem0/memory/main.py:_OSSProject",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "class:mem0/memory/main.py:_OSSProject",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "class:mem0/memory/main.py:_AsyncOSSProject",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "class:mem0/memory/main.py:_AsyncOSSProject",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "class:mem0/memory/main.py:Memory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "class:mem0/memory/main.py:Memory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/memory/main.py:Memory",
+      "target": "class:mem0/memory/base.py:MemoryBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "class:mem0/memory/main.py:AsyncMemory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "class:mem0/memory/main.py:AsyncMemory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/memory/main.py:AsyncMemory",
+      "target": "class:mem0/memory/base.py:MemoryBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "file:mem0/memory/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "file:mem0/memory/setup.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_load_bundled_config",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_load_bundled_config",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_fetch_remote_config",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_fetch_remote_config",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_get_notice_config",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_get_notice_config",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_evaluate_notice_flags",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_evaluate_notice_flags",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:display_first_run_notice",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:display_first_run_notice",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:display_first_run_notice_async",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:display_first_run_notice_async",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:display_temporal_usage_notice",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:display_temporal_usage_notice",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:display_temporal_usage_notice_async",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:display_temporal_usage_notice_async",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:detect_decay_usage_from_delete",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:detect_decay_usage_from_delete",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:detect_decay_usage_from_delete_all",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:detect_decay_usage_from_delete_all",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:display_decay_usage_notice",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:display_decay_usage_notice",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:display_decay_usage_notice_async",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:display_decay_usage_notice_async",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:detect_scale_threshold_from_top_k",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:detect_scale_threshold_from_top_k",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:detect_scale_threshold_from_add_result",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:detect_scale_threshold_from_add_result",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:display_scale_threshold_notice",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:display_scale_threshold_notice",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:display_scale_threshold_notice_async",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:display_scale_threshold_notice_async",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:display_performance_slow_query_notice",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:display_performance_slow_query_notice",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:display_performance_slow_query_notice_async",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:display_performance_slow_query_notice_async",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:get_temporal_feature_error_message",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:get_temporal_feature_error_message",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:get_temporal_feature_error_message_async",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:get_temporal_feature_error_message_async",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:get_decay_feature_error_message",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:get_decay_feature_error_message",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:get_decay_feature_error_message_async",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:get_decay_feature_error_message_async",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_get_feature_error_message",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_get_feature_error_message",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:detect_temporal_usage_from_metadata",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:detect_temporal_usage_from_metadata",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:detect_temporal_usage_from_search",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:detect_temporal_usage_from_search",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_claim_first_run_notice",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_claim_first_run_notice",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_update_first_run_variant",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_update_first_run_variant",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_feature_error_at_capacity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_feature_error_at_capacity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_record_feature_error_opportunity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_record_feature_error_opportunity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_recent_feature_error_entries",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_recent_feature_error_entries",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_temporal_usage_at_capacity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_temporal_usage_at_capacity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_record_temporal_usage_opportunity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_record_temporal_usage_opportunity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_recent_temporal_usage_entries",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_recent_temporal_usage_entries",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_decay_usage_at_capacity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_decay_usage_at_capacity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_record_decay_usage_opportunity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_record_decay_usage_opportunity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_recent_decay_usage_entries",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_recent_decay_usage_entries",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_scale_threshold_at_capacity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_scale_threshold_at_capacity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_record_scale_threshold_opportunity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_record_scale_threshold_opportunity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_mark_scale_memory_count_threshold_evaluated",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_mark_scale_memory_count_threshold_evaluated",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_recent_scale_threshold_entries",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_recent_scale_threshold_entries",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_performance_slow_query_at_capacity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_performance_slow_query_at_capacity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_record_performance_slow_query_opportunity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_record_performance_slow_query_opportunity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_recent_performance_slow_query_entries",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_recent_performance_slow_query_entries",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_parse_datetime",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_parse_datetime",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_get_notice_state",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_get_notice_state",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_count_added_memories",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_count_added_memories",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_get_provider_memory_count",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_get_provider_memory_count",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_extract_count",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_extract_count",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_render_scale_copy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_render_scale_copy",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_coerce_nonnegative_int",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_coerce_nonnegative_int",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_coerce_mapping",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_coerce_mapping",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_walk_mapping",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_walk_mapping",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_is_temporal_key",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_is_temporal_key",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_looks_temporal_value",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_looks_temporal_value",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_has_temporal_filter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "function:mem0/memory/notices.py:_has_temporal_filter",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "class:mem0/memory/notices.py:StaticFlagResult",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "class:mem0/memory/notices.py:StaticFlagResult",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/setup.py",
+      "target": "function:mem0/memory/setup.py:_config_path",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/setup.py",
+      "target": "function:mem0/memory/setup.py:_config_path",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/setup.py",
+      "target": "function:mem0/memory/setup.py:_load_config",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/setup.py",
+      "target": "function:mem0/memory/setup.py:_load_config",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/setup.py",
+      "target": "function:mem0/memory/setup.py:_write_config",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/setup.py",
+      "target": "function:mem0/memory/setup.py:_write_config",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/setup.py",
+      "target": "function:mem0/memory/setup.py:setup_config",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/setup.py",
+      "target": "function:mem0/memory/setup.py:setup_config",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/setup.py",
+      "target": "function:mem0/memory/setup.py:get_user_id",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/setup.py",
+      "target": "function:mem0/memory/setup.py:get_user_id",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/setup.py",
+      "target": "function:mem0/memory/setup.py:read_anon_ids",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/setup.py",
+      "target": "function:mem0/memory/setup.py:read_anon_ids",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/setup.py",
+      "target": "function:mem0/memory/setup.py:_alias_pair_marker",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/setup.py",
+      "target": "function:mem0/memory/setup.py:_alias_pair_marker",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/setup.py",
+      "target": "function:mem0/memory/setup.py:is_aliased",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/setup.py",
+      "target": "function:mem0/memory/setup.py:is_aliased",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/setup.py",
+      "target": "function:mem0/memory/setup.py:mark_aliased",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/setup.py",
+      "target": "function:mem0/memory/setup.py:mark_aliased",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/setup.py",
+      "target": "function:mem0/memory/setup.py:get_or_create_user_id",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/setup.py",
+      "target": "function:mem0/memory/setup.py:get_or_create_user_id",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/storage.py",
+      "target": "class:mem0/memory/storage.py:SQLiteManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/storage.py",
+      "target": "class:mem0/memory/storage.py:SQLiteManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/telemetry.py",
+      "target": "file:mem0/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/telemetry.py",
+      "target": "file:mem0/memory/setup.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/telemetry.py",
+      "target": "function:mem0/memory/telemetry.py:_parse_sample_rate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/telemetry.py",
+      "target": "function:mem0/memory/telemetry.py:_parse_sample_rate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/telemetry.py",
+      "target": "function:mem0/memory/telemetry.py:_sampling_before_send",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/telemetry.py",
+      "target": "function:mem0/memory/telemetry.py:_sampling_before_send",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/telemetry.py",
+      "target": "function:mem0/memory/telemetry.py:_get_oss_telemetry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/telemetry.py",
+      "target": "function:mem0/memory/telemetry.py:_get_oss_telemetry",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/telemetry.py",
+      "target": "function:mem0/memory/telemetry.py:_shutdown_oss_telemetry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/telemetry.py",
+      "target": "function:mem0/memory/telemetry.py:_shutdown_oss_telemetry",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/telemetry.py",
+      "target": "function:mem0/memory/telemetry.py:capture_event",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/telemetry.py",
+      "target": "function:mem0/memory/telemetry.py:capture_event",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/telemetry.py",
+      "target": "function:mem0/memory/telemetry.py:capture_client_event",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/telemetry.py",
+      "target": "function:mem0/memory/telemetry.py:capture_client_event",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/telemetry.py",
+      "target": "class:mem0/memory/telemetry.py:AnonymousTelemetry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/telemetry.py",
+      "target": "class:mem0/memory/telemetry.py:AnonymousTelemetry",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

@@ -1,0 +1,1023 @@
+{
+  "nodes": [
+    {
+      "id": "file:mem0/configs/embeddings/base.py",
+      "type": "file",
+      "name": "base.py",
+      "filePath": "mem0/configs/embeddings/base.py",
+      "summary": "汇总所有 embedding provider 的通用配置，包括模型、维度、代理、云端凭据与按记忆动作选择 embedding 类型，是各适配器的统一配置入口。",
+      "tags": [
+        "configuration",
+        "embeddings",
+        "provider-config"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "以普通 Python 配置对象统一不同厂商参数，并在初始化阶段构造 HTTP client 与 Azure 子配置。"
+    },
+    {
+      "id": "class:mem0/configs/embeddings/base.py:BaseEmbedderConfig",
+      "type": "class",
+      "name": "BaseEmbedderConfig",
+      "filePath": "mem0/configs/embeddings/base.py",
+      "lineRange": [
+        9,
+        111
+      ],
+      "summary": "统一承载所有 embedding provider 的共享与专属参数，并预构造代理 HTTP client、Azure 配置和云端认证字段。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "embeddings",
+        "provider-config"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/embeddings/aws_bedrock.py",
+      "type": "file",
+      "name": "aws_bedrock.py",
+      "filePath": "mem0/embeddings/aws_bedrock.py",
+      "summary": "实现 AWS Bedrock embedding 适配器，按模型家族组装请求、解析不同响应格式，并可对向量执行归一化。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "aws-bedrock"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/embeddings/aws_bedrock.py:AWSBedrockEmbedding",
+      "type": "class",
+      "name": "AWSBedrockEmbedding",
+      "filePath": "mem0/embeddings/aws_bedrock.py",
+      "lineRange": [
+        16,
+        110
+      ],
+      "summary": "把 Bedrock Runtime 的多种 embedding 模型请求与响应差异封装在统一 embed 接口后，并可输出归一化向量。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "aws-bedrock"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/embeddings/azure_openai.py",
+      "type": "file",
+      "name": "azure_openai.py",
+      "filePath": "mem0/embeddings/azure_openai.py",
+      "summary": "实现 Azure OpenAI embedding 适配器，支持 API key 或 Azure Identity 认证，并提供单条与分批向量化。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "azure-openai"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/embeddings/azure_openai.py:AzureOpenAIEmbedding",
+      "type": "class",
+      "name": "AzureOpenAIEmbedding",
+      "filePath": "mem0/embeddings/azure_openai.py",
+      "lineRange": [
+        13,
+        77
+      ],
+      "summary": "使用 Azure OpenAI client 提供单条和批量 embedding，并在 API key 缺失时使用 Azure Identity token。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "azure-openai"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/embeddings/base.py",
+      "type": "file",
+      "name": "base.py",
+      "filePath": "mem0/embeddings/base.py",
+      "summary": "定义 embedding provider 的抽象契约和默认批处理行为，使上层 Memory 流程可以统一调用不同向量模型。",
+      "tags": [
+        "embeddings",
+        "abstract-base",
+        "interface"
+      ],
+      "complexity": "simple",
+      "languageNotes": "通过 ABC 与抽象 embed 方法建立 provider 插件边界，embed_batch 默认逐条回退。"
+    },
+    {
+      "id": "class:mem0/embeddings/base.py:EmbeddingBase",
+      "type": "class",
+      "name": "EmbeddingBase",
+      "filePath": "mem0/embeddings/base.py",
+      "lineRange": [
+        7,
+        47
+      ],
+      "summary": "规定 embedding 适配器的初始化、单条 embed 契约和默认批处理实现。",
+      "tags": [
+        "embeddings",
+        "abstract-base",
+        "interface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/embeddings/fastembed.py",
+      "type": "file",
+      "name": "fastembed.py",
+      "filePath": "mem0/embeddings/fastembed.py",
+      "summary": "将 FastEmbed 的本地 TextEmbedding 模型接入统一 embedding 接口，并把 NumPy 向量转换为普通列表。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "local-model"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/embeddings/fastembed.py:FastEmbedEmbedding",
+      "type": "class",
+      "name": "FastEmbedEmbedding",
+      "filePath": "mem0/embeddings/fastembed.py",
+      "lineRange": [
+        11,
+        32
+      ],
+      "summary": "在本地加载 FastEmbed TextEmbedding 并把首个模型结果转换为可序列化向量。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "local-model"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/embeddings/gemini.py",
+      "type": "file",
+      "name": "gemini.py",
+      "filePath": "mem0/embeddings/gemini.py",
+      "summary": "封装 Google GenAI embedding API，按记忆动作选择 task type，并支持指定输出维度和批量分块。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "google-genai"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/embeddings/gemini.py:GoogleGenAIEmbedding",
+      "type": "class",
+      "name": "GoogleGenAIEmbedding",
+      "filePath": "mem0/embeddings/gemini.py",
+      "lineRange": [
+        11,
+        56
+      ],
+      "summary": "调用 Google GenAI embed_content，并把 memory action 映射为检索文档或查询等 task type。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "google-genai"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/embeddings/huggingface.py",
+      "type": "file",
+      "name": "huggingface.py",
+      "filePath": "mem0/embeddings/huggingface.py",
+      "summary": "提供 Hugging Face embedding 适配器，可在远程 OpenAI-compatible endpoint 与本地 SentenceTransformer 之间切换。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "huggingface"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/embeddings/huggingface.py:HuggingFaceEmbedding",
+      "type": "class",
+      "name": "HuggingFaceEmbedding",
+      "filePath": "mem0/embeddings/huggingface.py",
+      "lineRange": [
+        16,
+        68
+      ],
+      "summary": "根据配置选择远程 Hugging Face endpoint 或本地 SentenceTransformer，并统一单条与批量结果格式。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "huggingface"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/embeddings/langchain.py",
+      "type": "file",
+      "name": "langchain.py",
+      "filePath": "mem0/embeddings/langchain.py",
+      "summary": "把用户提供的 LangChain Embeddings 实例包装为 Mem0 的统一 embedding 接口，并校验所需协议。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "langchain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/embeddings/langchain.py:LangchainEmbedding",
+      "type": "class",
+      "name": "LangchainEmbedding",
+      "filePath": "mem0/embeddings/langchain.py",
+      "lineRange": [
+        12,
+        35
+      ],
+      "summary": "校验并代理 LangChain Embeddings 实例的 embed_query 方法。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "langchain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/embeddings/lmstudio.py",
+      "type": "file",
+      "name": "lmstudio.py",
+      "filePath": "mem0/embeddings/lmstudio.py",
+      "summary": "通过 OpenAI-compatible API 调用本地 LM Studio embedding 服务，支持单条与批量请求及响应数量校验。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "local-inference"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/embeddings/lmstudio.py:LMStudioEmbedding",
+      "type": "class",
+      "name": "LMStudioEmbedding",
+      "filePath": "mem0/embeddings/lmstudio.py",
+      "lineRange": [
+        9,
+        43
+      ],
+      "summary": "通过本地 OpenAI-compatible endpoint 调用 LM Studio embedding 模型并校验批量结果完整性。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "local-inference"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/embeddings/mock.py",
+      "type": "file",
+      "name": "mock.py",
+      "filePath": "mem0/embeddings/mock.py",
+      "summary": "提供返回空向量的占位 embedding 实现，供由外部向量服务自行生成 embedding 的场景使用。",
+      "tags": [
+        "embeddings",
+        "mock",
+        "adapter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/embeddings/mock.py:MockEmbeddings",
+      "type": "class",
+      "name": "MockEmbeddings",
+      "filePath": "mem0/embeddings/mock.py",
+      "lineRange": [
+        6,
+        11
+      ],
+      "summary": "为无需客户端生成向量的后端返回空 embedding 占位值。",
+      "tags": [
+        "embeddings",
+        "mock",
+        "adapter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/embeddings/ollama.py",
+      "type": "file",
+      "name": "ollama.py",
+      "filePath": "mem0/embeddings/ollama.py",
+      "summary": "封装 Ollama embedding API，负责规范化模型名、按需拉取缺失模型，并提供单条和批量向量化。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "ollama"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/embeddings/ollama.py:OllamaEmbedding",
+      "type": "class",
+      "name": "OllamaEmbedding",
+      "filePath": "mem0/embeddings/ollama.py",
+      "lineRange": [
+        12,
+        63
+      ],
+      "summary": "管理 Ollama embedding 模型的名称与可用性，并代理单条和批量 embedding 调用。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "ollama"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/embeddings/openai.py",
+      "type": "file",
+      "name": "openai.py",
+      "filePath": "mem0/embeddings/openai.py",
+      "summary": "实现 OpenAI embedding 适配器，处理输入清洗、按动作传递 embedding 类型、维度参数以及批量响应排序。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "openai"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/embeddings/openai.py:OpenAIEmbedding",
+      "type": "class",
+      "name": "OpenAIEmbedding",
+      "filePath": "mem0/embeddings/openai.py",
+      "lineRange": [
+        11,
+        81
+      ],
+      "summary": "封装 OpenAI embeddings client，支持 action-aware 输入、可选维度和稳定的批量结果顺序。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "openai"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/embeddings/together.py",
+      "type": "file",
+      "name": "together.py",
+      "filePath": "mem0/embeddings/together.py",
+      "summary": "通过 Together 的 OpenAI-compatible client 生成 embedding，并支持批量请求、结果排序和数量一致性校验。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "together-ai"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/embeddings/together.py:TogetherEmbedding",
+      "type": "class",
+      "name": "TogetherEmbedding",
+      "filePath": "mem0/embeddings/together.py",
+      "lineRange": [
+        10,
+        43
+      ],
+      "summary": "通过 Together endpoint 生成单条或批量 embedding，并校验返回数量。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "together-ai"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/embeddings/vertexai.py",
+      "type": "file",
+      "name": "vertexai.py",
+      "filePath": "mem0/embeddings/vertexai.py",
+      "summary": "实现 Vertex AI embedding 适配器，集中处理 GCP 认证、任务类型映射、输出维度以及分批预测。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "vertex-ai"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/embeddings/vertexai.py:VertexAIEmbedding",
+      "type": "class",
+      "name": "VertexAIEmbedding",
+      "filePath": "mem0/embeddings/vertexai.py",
+      "lineRange": [
+        11,
+        85
+      ],
+      "summary": "完成 Vertex AI 认证与 TextEmbeddingModel 调用，按记忆动作设置任务类型并分块处理批量输入。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "vertex-ai"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/utils/gcp_auth.py",
+      "type": "file",
+      "name": "gcp_auth.py",
+      "filePath": "mem0/utils/gcp_auth.py",
+      "summary": "集中处理 GCP 凭据发现，并为 Vertex AI 初始化和 Google GenAI client 创建提供统一入口。",
+      "tags": [
+        "authentication",
+        "gcp",
+        "utility"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "凭据解析按内存 service account、文件、环境变量和 Application Default Credentials 的优先级回退。"
+    },
+    {
+      "id": "class:mem0/utils/gcp_auth.py:GCPAuthenticator",
+      "type": "class",
+      "name": "GCPAuthenticator",
+      "filePath": "mem0/utils/gcp_auth.py",
+      "lineRange": [
+        13,
+        167
+      ],
+      "summary": "按确定优先级解析 Google 凭据，并创建 Vertex AI 环境或 Google GenAI client。",
+      "tags": [
+        "service",
+        "authentication",
+        "gcp",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/utils/http.py",
+      "type": "file",
+      "name": "http.py",
+      "filePath": "mem0/utils/http.py",
+      "summary": "根据字符串或字典代理配置创建同步 httpx client，供 provider 配置复用。",
+      "tags": [
+        "http-client",
+        "proxy",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/http.py:build_http_client",
+      "type": "function",
+      "name": "build_http_client",
+      "filePath": "mem0/utils/http.py",
+      "lineRange": [
+        6,
+        13
+      ],
+      "summary": "把代理字符串或映射转换为 httpx.Client；无代理时返回空值供调用方使用默认 client。",
+      "tags": [
+        "utility",
+        "http-client",
+        "proxy"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:mem0/configs/embeddings/base.py",
+      "target": "class:mem0/configs/embeddings/base.py:BaseEmbedderConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/embeddings/base.py",
+      "target": "class:mem0/configs/embeddings/base.py:BaseEmbedderConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/embeddings/aws_bedrock.py",
+      "target": "class:mem0/embeddings/aws_bedrock.py:AWSBedrockEmbedding",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/embeddings/aws_bedrock.py",
+      "target": "class:mem0/embeddings/aws_bedrock.py:AWSBedrockEmbedding",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/embeddings/aws_bedrock.py:AWSBedrockEmbedding",
+      "target": "class:mem0/embeddings/base.py:EmbeddingBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/embeddings/azure_openai.py",
+      "target": "class:mem0/embeddings/azure_openai.py:AzureOpenAIEmbedding",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/embeddings/azure_openai.py",
+      "target": "class:mem0/embeddings/azure_openai.py:AzureOpenAIEmbedding",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/embeddings/azure_openai.py:AzureOpenAIEmbedding",
+      "target": "class:mem0/embeddings/base.py:EmbeddingBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/embeddings/base.py",
+      "target": "class:mem0/embeddings/base.py:EmbeddingBase",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/embeddings/base.py",
+      "target": "class:mem0/embeddings/base.py:EmbeddingBase",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/embeddings/fastembed.py",
+      "target": "class:mem0/embeddings/fastembed.py:FastEmbedEmbedding",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/embeddings/fastembed.py",
+      "target": "class:mem0/embeddings/fastembed.py:FastEmbedEmbedding",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/embeddings/fastembed.py:FastEmbedEmbedding",
+      "target": "class:mem0/embeddings/base.py:EmbeddingBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/embeddings/gemini.py",
+      "target": "class:mem0/embeddings/gemini.py:GoogleGenAIEmbedding",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/embeddings/gemini.py",
+      "target": "class:mem0/embeddings/gemini.py:GoogleGenAIEmbedding",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/embeddings/gemini.py:GoogleGenAIEmbedding",
+      "target": "class:mem0/embeddings/base.py:EmbeddingBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/embeddings/huggingface.py",
+      "target": "class:mem0/embeddings/huggingface.py:HuggingFaceEmbedding",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/embeddings/huggingface.py",
+      "target": "class:mem0/embeddings/huggingface.py:HuggingFaceEmbedding",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/embeddings/huggingface.py:HuggingFaceEmbedding",
+      "target": "class:mem0/embeddings/base.py:EmbeddingBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/embeddings/langchain.py",
+      "target": "class:mem0/embeddings/langchain.py:LangchainEmbedding",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/embeddings/langchain.py",
+      "target": "class:mem0/embeddings/langchain.py:LangchainEmbedding",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/embeddings/langchain.py:LangchainEmbedding",
+      "target": "class:mem0/embeddings/base.py:EmbeddingBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/embeddings/lmstudio.py",
+      "target": "class:mem0/embeddings/lmstudio.py:LMStudioEmbedding",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/embeddings/lmstudio.py",
+      "target": "class:mem0/embeddings/lmstudio.py:LMStudioEmbedding",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/embeddings/lmstudio.py:LMStudioEmbedding",
+      "target": "class:mem0/embeddings/base.py:EmbeddingBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/embeddings/mock.py",
+      "target": "class:mem0/embeddings/mock.py:MockEmbeddings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/embeddings/mock.py",
+      "target": "class:mem0/embeddings/mock.py:MockEmbeddings",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/embeddings/mock.py:MockEmbeddings",
+      "target": "class:mem0/embeddings/base.py:EmbeddingBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/embeddings/ollama.py",
+      "target": "class:mem0/embeddings/ollama.py:OllamaEmbedding",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/embeddings/ollama.py",
+      "target": "class:mem0/embeddings/ollama.py:OllamaEmbedding",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/embeddings/ollama.py:OllamaEmbedding",
+      "target": "class:mem0/embeddings/base.py:EmbeddingBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/embeddings/openai.py",
+      "target": "class:mem0/embeddings/openai.py:OpenAIEmbedding",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/embeddings/openai.py",
+      "target": "class:mem0/embeddings/openai.py:OpenAIEmbedding",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/embeddings/openai.py:OpenAIEmbedding",
+      "target": "class:mem0/embeddings/base.py:EmbeddingBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/embeddings/together.py",
+      "target": "class:mem0/embeddings/together.py:TogetherEmbedding",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/embeddings/together.py",
+      "target": "class:mem0/embeddings/together.py:TogetherEmbedding",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/embeddings/together.py:TogetherEmbedding",
+      "target": "class:mem0/embeddings/base.py:EmbeddingBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/embeddings/vertexai.py",
+      "target": "class:mem0/embeddings/vertexai.py:VertexAIEmbedding",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/embeddings/vertexai.py",
+      "target": "class:mem0/embeddings/vertexai.py:VertexAIEmbedding",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/embeddings/vertexai.py:VertexAIEmbedding",
+      "target": "class:mem0/embeddings/base.py:EmbeddingBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/utils/gcp_auth.py",
+      "target": "class:mem0/utils/gcp_auth.py:GCPAuthenticator",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/gcp_auth.py",
+      "target": "class:mem0/utils/gcp_auth.py:GCPAuthenticator",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/http.py",
+      "target": "function:mem0/utils/http.py:build_http_client",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/http.py",
+      "target": "function:mem0/utils/http.py:build_http_client",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/configs/embeddings/base.py",
+      "target": "file:mem0/configs/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/embeddings/base.py",
+      "target": "file:mem0/utils/http.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/aws_bedrock.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/aws_bedrock.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/azure_openai.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/azure_openai.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/azure_openai.py",
+      "target": "file:mem0/embeddings/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/base.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/fastembed.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/fastembed.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/gemini.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/gemini.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/huggingface.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/huggingface.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/huggingface.py",
+      "target": "file:mem0/embeddings/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/langchain.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/langchain.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/lmstudio.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/lmstudio.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/lmstudio.py",
+      "target": "file:mem0/embeddings/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/mock.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/ollama.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/ollama.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/openai.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/openai.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/openai.py",
+      "target": "file:mem0/embeddings/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/together.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/together.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/together.py",
+      "target": "file:mem0/embeddings/together.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/vertexai.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/vertexai.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/vertexai.py",
+      "target": "file:mem0/utils/gcp_auth.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

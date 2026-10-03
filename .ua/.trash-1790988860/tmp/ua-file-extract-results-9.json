@@ -1,0 +1,388 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 8,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 8,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 7,
+      "failed": 0,
+      "skipped": 1
+    }
+  },
+  "results": [
+    {
+      "path": "mem0/configs/vector_stores/valkey.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 32,
+      "nonEmptyLines": 26,
+      "classes": [
+        {
+          "name": "ValkeyConfig",
+          "startLine": 6,
+          "endLine": 32,
+          "methods": [
+            "validate_extra_fields"
+          ],
+          "properties": [
+            "valkey_url",
+            "collection_name",
+            "embedding_model_dims",
+            "timezone",
+            "index_type",
+            "hnsw_m",
+            "hnsw_ef_construction",
+            "hnsw_ef_runtime",
+            "cluster_mode"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ValkeyConfig",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 22
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "cls.model_fields.keys",
+          "lineNumber": 22
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 23
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "values.keys",
+          "lineNumber": 23
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "ValueError",
+          "lineNumber": 26
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 27
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 28
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/vector_stores/weaviate.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 29,
+      "classes": [
+        {
+          "name": "WeaviateConfig",
+          "startLine": 6,
+          "endLine": 41,
+          "methods": [
+            "check_connection_params",
+            "validate_extra_fields"
+          ],
+          "properties": [
+            "WeaviateClient",
+            "collection_name",
+            "embedding_model_dims",
+            "cluster_url",
+            "auth_client_secret",
+            "additional_headers"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "WeaviateConfig",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "check_connection_params",
+          "callee": "values.get",
+          "lineNumber": 20
+        },
+        {
+          "caller": "check_connection_params",
+          "callee": "ValueError",
+          "lineNumber": 23
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 30
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "cls.model_fields.keys",
+          "lineNumber": 30
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 31
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "values.keys",
+          "lineNumber": 31
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "ValueError",
+          "lineNumber": 35
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 36
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 36
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/embeddings/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "mem0/llms/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "mem0/memory/oss_notices_config.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 44,
+      "nonEmptyLines": 44,
+      "sections": [
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "variant_split",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "notices",
+          "level": 1,
+          "line": 4
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "mem0/proxy/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "mem0/utils/spacy_models.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 91,
+      "nonEmptyLines": 77,
+      "functions": [
+        {
+          "name": "_ensure_model_available",
+          "startLine": 21,
+          "endLine": 41,
+          "params": []
+        },
+        {
+          "name": "get_nlp_full",
+          "startLine": 44,
+          "endLine": 66,
+          "params": []
+        },
+        {
+          "name": "get_nlp_lemma",
+          "startLine": 69,
+          "endLine": 91,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "_ensure_model_available",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "get_nlp_full",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "get_nlp_lemma",
+          "line": 69,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "_ensure_model_available",
+          "callee": "ImportError",
+          "lineNumber": 26
+        },
+        {
+          "caller": "_ensure_model_available",
+          "callee": "spacy.util.is_package",
+          "lineNumber": 30
+        },
+        {
+          "caller": "_ensure_model_available",
+          "callee": "logger.info",
+          "lineNumber": 31
+        },
+        {
+          "caller": "_ensure_model_available",
+          "callee": "download",
+          "lineNumber": 35
+        },
+        {
+          "caller": "_ensure_model_available",
+          "callee": "logger.info",
+          "lineNumber": 36
+        },
+        {
+          "caller": "_ensure_model_available",
+          "callee": "RuntimeError",
+          "lineNumber": 38
+        },
+        {
+          "caller": "get_nlp_full",
+          "callee": "_ensure_model_available",
+          "lineNumber": 57
+        },
+        {
+          "caller": "get_nlp_full",
+          "callee": "spacy.load",
+          "lineNumber": 60
+        },
+        {
+          "caller": "get_nlp_full",
+          "callee": "logger.info",
+          "lineNumber": 61
+        },
+        {
+          "caller": "get_nlp_full",
+          "callee": "logger.warning",
+          "lineNumber": 63
+        },
+        {
+          "caller": "get_nlp_lemma",
+          "callee": "_ensure_model_available",
+          "lineNumber": 82
+        },
+        {
+          "caller": "get_nlp_lemma",
+          "callee": "spacy.load",
+          "lineNumber": 85
+        },
+        {
+          "caller": "get_nlp_lemma",
+          "callee": "logger.info",
+          "lineNumber": 86
+        },
+        {
+          "caller": "get_nlp_lemma",
+          "callee": "logger.warning",
+          "lineNumber": 88
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "mem0/vector_stores/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

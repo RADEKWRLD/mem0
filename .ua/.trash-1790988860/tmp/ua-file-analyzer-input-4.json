@@ -1,0 +1,165 @@
+{
+  "projectRoot": "/Users/cenghaoyang/mem0",
+  "batchFiles": [
+    {
+      "path": "mem0/configs/embeddings/base.py",
+      "language": "python",
+      "sizeLines": 111,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/embeddings/aws_bedrock.py",
+      "language": "python",
+      "sizeLines": 110,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/embeddings/azure_openai.py",
+      "language": "python",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/embeddings/base.py",
+      "language": "python",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/embeddings/fastembed.py",
+      "language": "python",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/embeddings/gemini.py",
+      "language": "python",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/embeddings/huggingface.py",
+      "language": "python",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/embeddings/langchain.py",
+      "language": "python",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/embeddings/lmstudio.py",
+      "language": "python",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/embeddings/mock.py",
+      "language": "python",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/embeddings/ollama.py",
+      "language": "python",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/embeddings/openai.py",
+      "language": "python",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/embeddings/together.py",
+      "language": "python",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/embeddings/vertexai.py",
+      "language": "python",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/utils/gcp_auth.py",
+      "language": "python",
+      "sizeLines": 166,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/utils/http.py",
+      "language": "python",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "mem0/configs/embeddings/base.py": [
+      "mem0/configs/base.py",
+      "mem0/utils/http.py"
+    ],
+    "mem0/embeddings/aws_bedrock.py": [
+      "mem0/configs/embeddings/base.py",
+      "mem0/embeddings/base.py"
+    ],
+    "mem0/embeddings/azure_openai.py": [
+      "mem0/configs/embeddings/base.py",
+      "mem0/embeddings/base.py",
+      "mem0/embeddings/openai.py"
+    ],
+    "mem0/embeddings/base.py": [
+      "mem0/configs/embeddings/base.py"
+    ],
+    "mem0/embeddings/fastembed.py": [
+      "mem0/configs/embeddings/base.py",
+      "mem0/embeddings/base.py"
+    ],
+    "mem0/embeddings/gemini.py": [
+      "mem0/configs/embeddings/base.py",
+      "mem0/embeddings/base.py"
+    ],
+    "mem0/embeddings/huggingface.py": [
+      "mem0/configs/embeddings/base.py",
+      "mem0/embeddings/base.py",
+      "mem0/embeddings/openai.py"
+    ],
+    "mem0/embeddings/langchain.py": [
+      "mem0/configs/embeddings/base.py",
+      "mem0/embeddings/base.py"
+    ],
+    "mem0/embeddings/lmstudio.py": [
+      "mem0/configs/embeddings/base.py",
+      "mem0/embeddings/base.py",
+      "mem0/embeddings/openai.py"
+    ],
+    "mem0/embeddings/mock.py": [
+      "mem0/embeddings/base.py"
+    ],
+    "mem0/embeddings/ollama.py": [
+      "mem0/configs/embeddings/base.py",
+      "mem0/embeddings/base.py"
+    ],
+    "mem0/embeddings/openai.py": [
+      "mem0/configs/embeddings/base.py",
+      "mem0/embeddings/base.py",
+      "mem0/embeddings/openai.py"
+    ],
+    "mem0/embeddings/together.py": [
+      "mem0/configs/embeddings/base.py",
+      "mem0/embeddings/base.py",
+      "mem0/embeddings/together.py"
+    ],
+    "mem0/embeddings/vertexai.py": [
+      "mem0/configs/embeddings/base.py",
+      "mem0/embeddings/base.py",
+      "mem0/utils/gcp_auth.py"
+    ],
+    "mem0/utils/gcp_auth.py": [],
+    "mem0/utils/http.py": []
+  }
+}

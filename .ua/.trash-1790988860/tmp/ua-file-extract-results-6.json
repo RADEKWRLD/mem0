@@ -1,0 +1,338 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 6,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 6,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 6,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "mem0/configs/base.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 81,
+      "nonEmptyLines": 70,
+      "classes": [
+        {
+          "name": "MemoryItem",
+          "startLine": 16,
+          "endLine": 26,
+          "methods": [],
+          "properties": [
+            "id",
+            "memory",
+            "hash",
+            "metadata",
+            "score",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "name": "MemoryConfig",
+          "startLine": 29,
+          "endLine": 57,
+          "methods": [],
+          "properties": [
+            "vector_store",
+            "llm",
+            "embedder",
+            "history_db_path",
+            "reranker",
+            "version",
+            "custom_instructions"
+          ]
+        },
+        {
+          "name": "AzureConfig",
+          "startLine": 60,
+          "endLine": 81,
+          "methods": [],
+          "properties": [
+            "api_key",
+            "azure_deployment",
+            "azure_endpoint",
+            "api_version",
+            "default_headers"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "MemoryItem",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "MemoryConfig",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "AzureConfig",
+          "line": 60,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 3,
+        "functionCount": 0,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "mem0/configs/llms/azure.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 66,
+      "nonEmptyLines": 60,
+      "classes": [
+        {
+          "name": "AzureOpenAIConfig",
+          "startLine": 7,
+          "endLine": 66,
+          "methods": [
+            "__init__"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AzureOpenAIConfig",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 51
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 51
+        },
+        {
+          "caller": "__init__",
+          "callee": "AzureConfig",
+          "lineNumber": 66
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/rerankers/config.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 7,
+      "classes": [
+        {
+          "name": "RerankerConfig",
+          "startLine": 6,
+          "endLine": 12,
+          "methods": [],
+          "properties": [
+            "provider",
+            "config"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RerankerConfig",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/embeddings/configs.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 27,
+      "classes": [
+        {
+          "name": "EmbedderConfig",
+          "startLine": 6,
+          "endLine": 31,
+          "methods": [
+            "validate_config"
+          ],
+          "properties": [
+            "provider",
+            "config"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "EmbedderConfig",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "validate_config",
+          "callee": "values.data.get",
+          "lineNumber": 15
+        },
+        {
+          "caller": "validate_config",
+          "callee": "ValueError",
+          "lineNumber": 31
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/llms/configs.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 31,
+      "classes": [
+        {
+          "name": "LlmConfig",
+          "startLine": 6,
+          "endLine": 35,
+          "methods": [
+            "validate_config"
+          ],
+          "properties": [
+            "provider",
+            "config"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "LlmConfig",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "validate_config",
+          "callee": "values.data.get",
+          "lineNumber": 12
+        },
+        {
+          "caller": "validate_config",
+          "callee": "ValueError",
+          "lineNumber": 35
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/vector_stores/configs.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 68,
+      "nonEmptyLines": 57,
+      "classes": [
+        {
+          "name": "VectorStoreConfig",
+          "startLine": 6,
+          "endLine": 68,
+          "methods": [
+            "validate_and_create_config"
+          ],
+          "properties": [
+            "provider",
+            "config",
+            "_provider_configs"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "VectorStoreConfig",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "validate_and_create_config",
+          "callee": "ValueError",
+          "lineNumber": 47
+        },
+        {
+          "caller": "validate_and_create_config",
+          "callee": "__import__",
+          "lineNumber": 49
+        },
+        {
+          "caller": "validate_and_create_config",
+          "callee": "getattr",
+          "lineNumber": 53
+        },
+        {
+          "caller": "validate_and_create_config",
+          "callee": "isinstance",
+          "lineNumber": 58
+        },
+        {
+          "caller": "validate_and_create_config",
+          "callee": "isinstance",
+          "lineNumber": 59
+        },
+        {
+          "caller": "validate_and_create_config",
+          "callee": "ValueError",
+          "lineNumber": 60
+        },
+        {
+          "caller": "validate_and_create_config",
+          "callee": "config_class",
+          "lineNumber": 67
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    }
+  ]
+}

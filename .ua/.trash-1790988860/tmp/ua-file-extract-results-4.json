@@ -1,0 +1,1686 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 16,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 16,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 16,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "mem0/configs/embeddings/base.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 111,
+      "nonEmptyLines": 98,
+      "classes": [
+        {
+          "name": "BaseEmbedderConfig",
+          "startLine": 9,
+          "endLine": 111,
+          "methods": [
+            "__init__"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "BaseEmbedderConfig",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "build_http_client",
+          "lineNumber": 84
+        },
+        {
+          "caller": "__init__",
+          "callee": "AzureConfig",
+          "lineNumber": 93
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.environ.get",
+          "lineNumber": 111
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/embeddings/aws_bedrock.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 110,
+      "nonEmptyLines": 87,
+      "classes": [
+        {
+          "name": "AWSBedrockEmbedding",
+          "startLine": 16,
+          "endLine": 110,
+          "methods": [
+            "__init__",
+            "_normalize_vector",
+            "_get_embedding",
+            "embed"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AWSBedrockEmbedding",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 23
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 23
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.environ.get",
+          "lineNumber": 28
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.environ.get",
+          "lineNumber": 29
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.environ.get",
+          "lineNumber": 30
+        },
+        {
+          "caller": "__init__",
+          "callee": "hasattr",
+          "lineNumber": 33
+        },
+        {
+          "caller": "__init__",
+          "callee": "hasattr",
+          "lineNumber": 35
+        },
+        {
+          "caller": "__init__",
+          "callee": "getattr",
+          "lineNumber": 40
+        },
+        {
+          "caller": "__init__",
+          "callee": "boto3.client",
+          "lineNumber": 46
+        },
+        {
+          "caller": "_normalize_vector",
+          "callee": "np.array",
+          "lineNumber": 56
+        },
+        {
+          "caller": "_normalize_vector",
+          "callee": "np.linalg.norm",
+          "lineNumber": 57
+        },
+        {
+          "caller": "_normalize_vector",
+          "callee": "norm_emb.tolist",
+          "lineNumber": 58
+        },
+        {
+          "caller": "_get_embedding",
+          "callee": "self.config.model.split",
+          "lineNumber": 64
+        },
+        {
+          "caller": "_get_embedding",
+          "callee": "json.dumps",
+          "lineNumber": 79
+        },
+        {
+          "caller": "_get_embedding",
+          "callee": "self.client.invoke_model",
+          "lineNumber": 82
+        },
+        {
+          "caller": "_get_embedding",
+          "callee": "json.loads",
+          "lineNumber": 89
+        },
+        {
+          "caller": "_get_embedding",
+          "callee": "response.get(\"body\").read",
+          "lineNumber": 89
+        },
+        {
+          "caller": "_get_embedding",
+          "callee": "response.get",
+          "lineNumber": 89
+        },
+        {
+          "caller": "_get_embedding",
+          "callee": "response_body.get",
+          "lineNumber": 92
+        },
+        {
+          "caller": "_get_embedding",
+          "callee": "response_body.get",
+          "lineNumber": 94
+        },
+        {
+          "caller": "_get_embedding",
+          "callee": "ValueError",
+          "lineNumber": 98
+        },
+        {
+          "caller": "embed",
+          "callee": "self._get_embedding",
+          "lineNumber": 110
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/embeddings/azure_openai.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 77,
+      "nonEmptyLines": 65,
+      "classes": [
+        {
+          "name": "AzureOpenAIEmbedding",
+          "startLine": 13,
+          "endLine": 77,
+          "methods": [
+            "__init__",
+            "embed",
+            "embed_batch"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AzureOpenAIEmbedding",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 15
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 15
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 17
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 18
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 19
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 20
+        },
+        {
+          "caller": "__init__",
+          "callee": "DefaultAzureCredential",
+          "lineNumber": 25
+        },
+        {
+          "caller": "__init__",
+          "callee": "get_bearer_token_provider",
+          "lineNumber": 26
+        },
+        {
+          "caller": "__init__",
+          "callee": "AzureOpenAI",
+          "lineNumber": 34
+        },
+        {
+          "caller": "embed",
+          "callee": "text.replace",
+          "lineNumber": 54
+        },
+        {
+          "caller": "embed",
+          "callee": "self.client.embeddings.create",
+          "lineNumber": 55
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "text.replace",
+          "lineNumber": 63
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "range",
+          "lineNumber": 65
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 65
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "self.client.embeddings.create",
+          "lineNumber": 67
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "all_embeddings.extend",
+          "lineNumber": 71
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "sorted",
+          "lineNumber": 71
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 72
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 72
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "ValueError",
+          "lineNumber": 73
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 74
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 74
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/embeddings/base.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 47,
+      "nonEmptyLines": 36,
+      "classes": [
+        {
+          "name": "EmbeddingBase",
+          "startLine": 7,
+          "endLine": 47,
+          "methods": [
+            "__init__",
+            "embed",
+            "embed_batch"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "EmbeddingBase",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "BaseEmbedderConfig",
+          "lineNumber": 16
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "self.embed",
+          "lineNumber": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/embeddings/fastembed.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 32,
+      "nonEmptyLines": 26,
+      "classes": [
+        {
+          "name": "FastEmbedEmbedding",
+          "startLine": 11,
+          "endLine": 32,
+          "methods": [
+            "__init__",
+            "embed"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "FastEmbedEmbedding",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 13
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 13
+        },
+        {
+          "caller": "__init__",
+          "callee": "TextEmbedding",
+          "lineNumber": 16
+        },
+        {
+          "caller": "embed",
+          "callee": "text.replace",
+          "lineNumber": 30
+        },
+        {
+          "caller": "embed",
+          "callee": "list",
+          "lineNumber": 31
+        },
+        {
+          "caller": "embed",
+          "callee": "self.dense_model.embed",
+          "lineNumber": 31
+        },
+        {
+          "caller": "embed",
+          "callee": "embeddings[0].tolist",
+          "lineNumber": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/embeddings/gemini.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 44,
+      "classes": [
+        {
+          "name": "GoogleGenAIEmbedding",
+          "startLine": 11,
+          "endLine": 56,
+          "methods": [
+            "__init__",
+            "embed",
+            "embed_batch"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "GoogleGenAIEmbedding",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 13
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 13
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 18
+        },
+        {
+          "caller": "__init__",
+          "callee": "genai.Client",
+          "lineNumber": 20
+        },
+        {
+          "caller": "embed",
+          "callee": "text.replace",
+          "lineNumber": 31
+        },
+        {
+          "caller": "embed",
+          "callee": "types.EmbedContentConfig",
+          "lineNumber": 34
+        },
+        {
+          "caller": "embed",
+          "callee": "self.client.models.embed_content",
+          "lineNumber": 37
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "types.EmbedContentConfig",
+          "lineNumber": 44
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "range",
+          "lineNumber": 47
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 47
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "t.replace",
+          "lineNumber": 48
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "self.client.models.embed_content",
+          "lineNumber": 49
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "all_embeddings.extend",
+          "lineNumber": 50
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 51
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 51
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "ValueError",
+          "lineNumber": 52
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 53
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 53
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/embeddings/huggingface.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 68,
+      "nonEmptyLines": 57,
+      "classes": [
+        {
+          "name": "HuggingFaceEmbedding",
+          "startLine": 16,
+          "endLine": 68,
+          "methods": [
+            "__init__",
+            "embed",
+            "embed_batch"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "HuggingFaceEmbedding",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 18
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 18
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 21
+        },
+        {
+          "caller": "__init__",
+          "callee": "OpenAI",
+          "lineNumber": 22
+        },
+        {
+          "caller": "__init__",
+          "callee": "SentenceTransformer",
+          "lineNumber": 27
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.model.get_sentence_embedding_dimension",
+          "lineNumber": 29
+        },
+        {
+          "caller": "embed",
+          "callee": "self.client.embeddings.create",
+          "lineNumber": 42
+        },
+        {
+          "caller": "embed",
+          "callee": "self.model.encode(text, convert_to_numpy=True).tolist",
+          "lineNumber": 46
+        },
+        {
+          "caller": "embed",
+          "callee": "self.model.encode",
+          "lineNumber": 46
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "self.client.embeddings.create",
+          "lineNumber": 52
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "sorted",
+          "lineNumber": 53
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 55
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 55
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "ValueError",
+          "lineNumber": 56
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 57
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 57
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "self.model.encode(texts, convert_to_numpy=True).tolist",
+          "lineNumber": 62
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "self.model.encode",
+          "lineNumber": 62
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 63
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 63
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "ValueError",
+          "lineNumber": 64
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 65
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 65
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/embeddings/langchain.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 25,
+      "classes": [
+        {
+          "name": "LangchainEmbedding",
+          "startLine": 12,
+          "endLine": 35,
+          "methods": [
+            "__init__",
+            "embed"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "LangchainEmbedding",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 14
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 14
+        },
+        {
+          "caller": "__init__",
+          "callee": "ValueError",
+          "lineNumber": 17
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 19
+        },
+        {
+          "caller": "__init__",
+          "callee": "ValueError",
+          "lineNumber": 20
+        },
+        {
+          "caller": "embed",
+          "callee": "self.langchain_model.embed_query",
+          "lineNumber": 35
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/embeddings/lmstudio.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 43,
+      "nonEmptyLines": 35,
+      "classes": [
+        {
+          "name": "LMStudioEmbedding",
+          "startLine": 9,
+          "endLine": 43,
+          "methods": [
+            "__init__",
+            "embed",
+            "embed_batch"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "LMStudioEmbedding",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 11
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 11
+        },
+        {
+          "caller": "__init__",
+          "callee": "OpenAI",
+          "lineNumber": 17
+        },
+        {
+          "caller": "embed",
+          "callee": "text.replace",
+          "lineNumber": 28
+        },
+        {
+          "caller": "embed",
+          "callee": "self.client.embeddings.create",
+          "lineNumber": 29
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "t.replace",
+          "lineNumber": 34
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "self.client.embeddings.create",
+          "lineNumber": 35
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "sorted",
+          "lineNumber": 36
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 38
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 38
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "ValueError",
+          "lineNumber": 39
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 40
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 40
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/embeddings/mock.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 8,
+      "classes": [
+        {
+          "name": "MockEmbeddings",
+          "startLine": 6,
+          "endLine": 11,
+          "methods": [
+            "embed"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "MockEmbeddings",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/embeddings/ollama.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 63,
+      "nonEmptyLines": 52,
+      "classes": [
+        {
+          "name": "OllamaEmbedding",
+          "startLine": 12,
+          "endLine": 63,
+          "methods": [
+            "__init__",
+            "_normalize_model_name",
+            "_ensure_model_exists",
+            "embed",
+            "embed_batch"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "OllamaEmbedding",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 14
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 14
+        },
+        {
+          "caller": "__init__",
+          "callee": "Client",
+          "lineNumber": 19
+        },
+        {
+          "caller": "__init__",
+          "callee": "self._ensure_model_exists",
+          "lineNumber": 20
+        },
+        {
+          "caller": "_ensure_model_exists",
+          "callee": "self.client.list",
+          "lineNumber": 30
+        },
+        {
+          "caller": "_ensure_model_exists",
+          "callee": "self._normalize_model_name",
+          "lineNumber": 31
+        },
+        {
+          "caller": "_ensure_model_exists",
+          "callee": "any",
+          "lineNumber": 32
+        },
+        {
+          "caller": "_ensure_model_exists",
+          "callee": "self._normalize_model_name",
+          "lineNumber": 33
+        },
+        {
+          "caller": "_ensure_model_exists",
+          "callee": "model.get",
+          "lineNumber": 33
+        },
+        {
+          "caller": "_ensure_model_exists",
+          "callee": "self._normalize_model_name",
+          "lineNumber": 34
+        },
+        {
+          "caller": "_ensure_model_exists",
+          "callee": "model.get",
+          "lineNumber": 34
+        },
+        {
+          "caller": "_ensure_model_exists",
+          "callee": "self.client.pull",
+          "lineNumber": 37
+        },
+        {
+          "caller": "embed",
+          "callee": "self.client.embed",
+          "lineNumber": 49
+        },
+        {
+          "caller": "embed",
+          "callee": "response.get",
+          "lineNumber": 50
+        },
+        {
+          "caller": "embed",
+          "callee": "ValueError",
+          "lineNumber": 52
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "self.client.embed",
+          "lineNumber": 59
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "response.get",
+          "lineNumber": 60
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 61
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 61
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "ValueError",
+          "lineNumber": 62
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 62
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 62
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/embeddings/openai.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 81,
+      "nonEmptyLines": 70,
+      "classes": [
+        {
+          "name": "OpenAIEmbedding",
+          "startLine": 11,
+          "endLine": 81,
+          "methods": [
+            "__init__",
+            "embed",
+            "embed_batch"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "OpenAIEmbedding",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 13
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 13
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 21
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 24
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 25
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.environ.get",
+          "lineNumber": 28
+        },
+        {
+          "caller": "__init__",
+          "callee": "warnings.warn",
+          "lineNumber": 29
+        },
+        {
+          "caller": "__init__",
+          "callee": "OpenAI",
+          "lineNumber": 35
+        },
+        {
+          "caller": "embed",
+          "callee": "text.replace",
+          "lineNumber": 47
+        },
+        {
+          "caller": "embed",
+          "callee": "self.client.embeddings.create",
+          "lineNumber": 55
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "text.replace",
+          "lineNumber": 63
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "range",
+          "lineNumber": 65
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 65
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "self.client.embeddings.create",
+          "lineNumber": 74
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "all_embeddings.extend",
+          "lineNumber": 75
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "sorted",
+          "lineNumber": 75
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 76
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 76
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "ValueError",
+          "lineNumber": 77
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 78
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 78
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/embeddings/together.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 43,
+      "nonEmptyLines": 34,
+      "classes": [
+        {
+          "name": "TogetherEmbedding",
+          "startLine": 10,
+          "endLine": 43,
+          "methods": [
+            "__init__",
+            "embed",
+            "embed_batch"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "TogetherEmbedding",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 12
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 12
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 15
+        },
+        {
+          "caller": "__init__",
+          "callee": "Together",
+          "lineNumber": 17
+        },
+        {
+          "caller": "embed",
+          "callee": "self.client.embeddings.create",
+          "lineNumber": 30
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "self.client.embeddings.create",
+          "lineNumber": 35
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "sorted",
+          "lineNumber": 36
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 38
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 38
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "ValueError",
+          "lineNumber": 39
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 40
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 40
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/embeddings/vertexai.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 85,
+      "nonEmptyLines": 71,
+      "classes": [
+        {
+          "name": "VertexAIEmbedding",
+          "startLine": 11,
+          "endLine": 85,
+          "methods": [
+            "__init__",
+            "embed",
+            "embed_batch"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "VertexAIEmbedding",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 13
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 13
+        },
+        {
+          "caller": "__init__",
+          "callee": "GCPAuthenticator.setup_vertex_ai",
+          "lineNumber": 27
+        },
+        {
+          "caller": "__init__",
+          "callee": "getattr",
+          "lineNumber": 28
+        },
+        {
+          "caller": "__init__",
+          "callee": "getattr",
+          "lineNumber": 30
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 37
+        },
+        {
+          "caller": "__init__",
+          "callee": "ValueError",
+          "lineNumber": 38
+        },
+        {
+          "caller": "__init__",
+          "callee": "TextEmbeddingModel.from_pretrained",
+          "lineNumber": 42
+        },
+        {
+          "caller": "embed",
+          "callee": "ValueError",
+          "lineNumber": 57
+        },
+        {
+          "caller": "embed",
+          "callee": "TextEmbeddingInput",
+          "lineNumber": 61
+        },
+        {
+          "caller": "embed",
+          "callee": "self.model.get_embeddings",
+          "lineNumber": 62
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "ValueError",
+          "lineNumber": 72
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "range",
+          "lineNumber": 75
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 75
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "TextEmbeddingInput",
+          "lineNumber": 77
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "self.model.get_embeddings",
+          "lineNumber": 78
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "all_embeddings.extend",
+          "lineNumber": 79
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 80
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 80
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "ValueError",
+          "lineNumber": 81
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 82
+        },
+        {
+          "caller": "embed_batch",
+          "callee": "len",
+          "lineNumber": 82
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/utils/gcp_auth.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 167,
+      "nonEmptyLines": 140,
+      "classes": [
+        {
+          "name": "GCPAuthenticator",
+          "startLine": 13,
+          "endLine": 167,
+          "methods": [
+            "get_credentials",
+            "setup_vertex_ai",
+            "get_genai_client"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "GCPAuthenticator",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "get_credentials",
+          "callee": "service_account.Credentials.from_service_account_info",
+          "lineNumber": 49
+        },
+        {
+          "caller": "get_credentials",
+          "callee": "service_account_json.get",
+          "lineNumber": 52
+        },
+        {
+          "caller": "get_credentials",
+          "callee": "os.path.isfile",
+          "lineNumber": 55
+        },
+        {
+          "caller": "get_credentials",
+          "callee": "service_account.Credentials.from_service_account_file",
+          "lineNumber": 56
+        },
+        {
+          "caller": "get_credentials",
+          "callee": "open",
+          "lineNumber": 60
+        },
+        {
+          "caller": "get_credentials",
+          "callee": "json.load",
+          "lineNumber": 61
+        },
+        {
+          "caller": "get_credentials",
+          "callee": "cred_data.get",
+          "lineNumber": 62
+        },
+        {
+          "caller": "get_credentials",
+          "callee": "os.getenv",
+          "lineNumber": 65
+        },
+        {
+          "caller": "get_credentials",
+          "callee": "os.getenv",
+          "lineNumber": 66
+        },
+        {
+          "caller": "get_credentials",
+          "callee": "os.path.isfile",
+          "lineNumber": 67
+        },
+        {
+          "caller": "get_credentials",
+          "callee": "service_account.Credentials.from_service_account_file",
+          "lineNumber": 68
+        },
+        {
+          "caller": "get_credentials",
+          "callee": "open",
+          "lineNumber": 72
+        },
+        {
+          "caller": "get_credentials",
+          "callee": "json.load",
+          "lineNumber": 73
+        },
+        {
+          "caller": "get_credentials",
+          "callee": "cred_data.get",
+          "lineNumber": 74
+        },
+        {
+          "caller": "get_credentials",
+          "callee": "default",
+          "lineNumber": 79
+        },
+        {
+          "caller": "get_credentials",
+          "callee": "ValueError",
+          "lineNumber": 81
+        },
+        {
+          "caller": "setup_vertex_ai",
+          "callee": "ImportError",
+          "lineNumber": 117
+        },
+        {
+          "caller": "setup_vertex_ai",
+          "callee": "GCPAuthenticator.get_credentials",
+          "lineNumber": 119
+        },
+        {
+          "caller": "setup_vertex_ai",
+          "callee": "os.getenv",
+          "lineNumber": 126
+        },
+        {
+          "caller": "setup_vertex_ai",
+          "callee": "ValueError",
+          "lineNumber": 129
+        },
+        {
+          "caller": "setup_vertex_ai",
+          "callee": "vertexai.init",
+          "lineNumber": 131
+        },
+        {
+          "caller": "get_genai_client",
+          "callee": "ImportError",
+          "lineNumber": 154
+        },
+        {
+          "caller": "get_genai_client",
+          "callee": "GenAIClient",
+          "lineNumber": 158
+        },
+        {
+          "caller": "get_genai_client",
+          "callee": "GCPAuthenticator.get_credentials",
+          "lineNumber": 161
+        },
+        {
+          "caller": "get_genai_client",
+          "callee": "GenAIClient",
+          "lineNumber": 167
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/utils/http.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 10,
+      "functions": [
+        {
+          "name": "build_http_client",
+          "startLine": 6,
+          "endLine": 13,
+          "params": [
+            "http_client_proxies"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "build_http_client",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build_http_client",
+          "callee": "isinstance",
+          "lineNumber": 9
+        },
+        {
+          "caller": "build_http_client",
+          "callee": "httpx.Client",
+          "lineNumber": 10
+        },
+        {
+          "caller": "build_http_client",
+          "callee": "httpx.HTTPTransport",
+          "lineNumber": 11
+        },
+        {
+          "caller": "build_http_client",
+          "callee": "http_client_proxies.items",
+          "lineNumber": 11
+        },
+        {
+          "caller": "build_http_client",
+          "callee": "httpx.Client",
+          "lineNumber": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

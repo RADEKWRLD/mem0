@@ -1,0 +1,293 @@
+{
+  "projectRoot": "/Users/cenghaoyang/mem0",
+  "batchFiles": [
+    {
+      "path": "mem0/configs/vector_stores/elasticsearch.py",
+      "language": "python",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/configs/vector_stores/milvus.py",
+      "language": "python",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/configs/vector_stores/opensearch.py",
+      "language": "python",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/configs/vector_stores/oracledb.py",
+      "language": "python",
+      "sizeLines": 115,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/configs/vector_stores/supabase.py",
+      "language": "python",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/configs/vector_stores/vertex_ai_vector_search.py",
+      "language": "python",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/azure_ai_search.py",
+      "language": "python",
+      "sizeLines": 431,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/azure_mysql.py",
+      "language": "python",
+      "sizeLines": 555,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/baidu.py",
+      "language": "python",
+      "sizeLines": 429,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/base.py",
+      "language": "python",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/cassandra.py",
+      "language": "python",
+      "sizeLines": 503,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/chroma.py",
+      "language": "python",
+      "sizeLines": 364,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/databricks.py",
+      "language": "python",
+      "sizeLines": 881,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/elasticsearch.py",
+      "language": "python",
+      "sizeLines": 309,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/faiss.py",
+      "language": "python",
+      "sizeLines": 648,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/langchain.py",
+      "language": "python",
+      "sizeLines": 216,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/milvus.py",
+      "language": "python",
+      "sizeLines": 374,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/mongodb.py",
+      "language": "python",
+      "sizeLines": 425,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/neptune_analytics.py",
+      "language": "python",
+      "sizeLines": 535,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/opensearch.py",
+      "language": "python",
+      "sizeLines": 414,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/oracledb.py",
+      "language": "python",
+      "sizeLines": 602,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/pgvector.py",
+      "language": "python",
+      "sizeLines": 563,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/pinecone.py",
+      "language": "python",
+      "sizeLines": 439,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/qdrant.py",
+      "language": "python",
+      "sizeLines": 606,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/redis.py",
+      "language": "python",
+      "sizeLines": 367,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/s3_vectors.py",
+      "language": "python",
+      "sizeLines": 223,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/supabase.py",
+      "language": "python",
+      "sizeLines": 259,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/turbopuffer.py",
+      "language": "python",
+      "sizeLines": 360,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/upstash_vector.py",
+      "language": "python",
+      "sizeLines": 360,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/valkey.py",
+      "language": "python",
+      "sizeLines": 812,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/vertex_ai_vector_search.py",
+      "language": "python",
+      "sizeLines": 647,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mem0/vector_stores/weaviate.py",
+      "language": "python",
+      "sizeLines": 384,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "mem0/configs/vector_stores/elasticsearch.py": [],
+    "mem0/configs/vector_stores/milvus.py": [],
+    "mem0/configs/vector_stores/opensearch.py": [],
+    "mem0/configs/vector_stores/oracledb.py": [],
+    "mem0/configs/vector_stores/supabase.py": [],
+    "mem0/configs/vector_stores/vertex_ai_vector_search.py": [],
+    "mem0/vector_stores/azure_ai_search.py": [
+      "mem0/memory/utils.py",
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/azure_mysql.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/baidu.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/base.py": [],
+    "mem0/vector_stores/cassandra.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/chroma.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/databricks.py": [
+      "mem0/memory/utils.py",
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/elasticsearch.py": [
+      "mem0/configs/vector_stores/elasticsearch.py",
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/faiss.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/langchain.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/milvus.py": [
+      "mem0/configs/vector_stores/milvus.py",
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/mongodb.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/neptune_analytics.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/opensearch.py": [
+      "mem0/configs/vector_stores/opensearch.py",
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/oracledb.py": [
+      "mem0/configs/vector_stores/oracledb.py",
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/pgvector.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/pinecone.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/qdrant.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/redis.py": [
+      "mem0/memory/utils.py",
+      "mem0/vector_stores/base.py",
+      "mem0/vector_stores/redis.py"
+    ],
+    "mem0/vector_stores/s3_vectors.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/supabase.py": [
+      "mem0/configs/vector_stores/supabase.py",
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/turbopuffer.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/upstash_vector.py": [
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/valkey.py": [
+      "mem0/memory/utils.py",
+      "mem0/vector_stores/base.py",
+      "mem0/vector_stores/valkey.py"
+    ],
+    "mem0/vector_stores/vertex_ai_vector_search.py": [
+      "mem0/configs/vector_stores/vertex_ai_vector_search.py",
+      "mem0/vector_stores/base.py"
+    ],
+    "mem0/vector_stores/weaviate.py": [
+      "mem0/vector_stores/base.py"
+    ]
+  }
+}

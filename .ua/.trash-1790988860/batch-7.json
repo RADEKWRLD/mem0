@@ -1,0 +1,140 @@
+{
+  "nodes": [
+    {
+      "id": "config:.pre-commit-config.yaml",
+      "type": "config",
+      "name": ".pre-commit-config.yaml",
+      "filePath": ".pre-commit-config.yaml",
+      "summary": "定义仓库提交前的自动检查钩子，用于在代码进入版本历史前执行统一的格式化与静态检查。",
+      "tags": ["configuration", "pre-commit", "linting", "development"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:AGENTS.md",
+      "type": "document",
+      "name": "AGENTS.md",
+      "filePath": "AGENTS.md",
+      "summary": "面向代码代理的仓库级协作手册，说明 monorepo 分区、各包工具链、贡献门槛、测试要求和禁止事项。",
+      "tags": ["documentation", "development", "repository-guide", "contribution"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:CODE_OF_CONDUCT.md",
+      "type": "document",
+      "name": "CODE_OF_CONDUCT.md",
+      "filePath": "CODE_OF_CONDUCT.md",
+      "summary": "规定社区行为准则、贡献行为要求、违规处理职责及分级执行流程，并强调对 AI 辅助贡献的透明与可验证性。",
+      "tags": ["documentation", "governance", "community", "contribution"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:CONTRIBUTING.md",
+      "type": "document",
+      "name": "CONTRIBUTING.md",
+      "filePath": "CONTRIBUTING.md",
+      "summary": "完整描述 Mem0 的贡献流程，覆盖 issue 接受门槛、CLA、仓库布局、Python 与 TypeScript 开发工作流、PR 检查清单和发布约定。",
+      "tags": ["documentation", "contribution", "development", "release-process"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:LLM.md",
+      "type": "document",
+      "name": "LLM.md",
+      "filePath": "LLM.md",
+      "summary": "为 LLM 消费场景提供覆盖安装、核心 API、配置体系、各类 provider、高级记忆能力、常见模式、集成示例和故障排查的综合参考。",
+      "tags": ["documentation", "llm-context", "api-reference", "integration-guide"],
+      "complexity": "complex"
+    },
+    {
+      "id": "pipeline:Makefile",
+      "type": "pipeline",
+      "name": "Makefile",
+      "filePath": "Makefile",
+      "summary": "汇总 Python SDK 的安装、格式化、排序、lint、文档、构建、发布、清理及多版本 pytest 命令，作为本地开发流水线入口。",
+      "tags": ["build-system", "development", "testing", "release-process"],
+      "complexity": "simple",
+      "languageNotes": "通过 Make targets 封装 Hatch、Ruff、isort、Pytest 与构建发布命令。"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "项目主入口文档，介绍 Mem0 的个性化 AI 记忆定位、研究亮点、SDK 与自托管快速开始、Cloud、CLI、Agent Skills 及生态集成。",
+      "tags": ["documentation", "entry-point", "quickstart", "project-overview"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:SECURITY.md",
+      "type": "document",
+      "name": "SECURITY.md",
+      "filePath": "SECURITY.md",
+      "summary": "说明安全漏洞的私密报告渠道、响应过程、公开披露原则和受支持版本策略。",
+      "tags": ["documentation", "security", "vulnerability-reporting", "governance"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:marketplace.json",
+      "type": "config",
+      "name": "marketplace.json",
+      "filePath": "marketplace.json",
+      "summary": "声明 Mem0 marketplace 的名称、界面元数据及可分发插件条目，用于插件市场发现与安装。",
+      "tags": ["configuration", "plugin-marketplace", "distribution", "metadata"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:pyproject.toml",
+      "type": "config",
+      "name": "pyproject.toml",
+      "filePath": "pyproject.toml",
+      "summary": "定义 mem0ai Python 包的构建元数据、核心与可选依赖、Hatch 多版本环境、pytest 选项以及 Ruff/isort 规则。",
+      "tags": ["configuration", "python", "dependency-management", "build-system"],
+      "complexity": "moderate",
+      "languageNotes": "以 Hatch 管理 Python 3.9 至 3.12 环境，并通过 optional dependency groups 隔离 provider 依赖。"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:AGENTS.md",
+      "target": "document:CONTRIBUTING.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:CODE_OF_CONDUCT.md",
+      "target": "document:CONTRIBUTING.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:CONTRIBUTING.md",
+      "target": "document:SECURITY.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:LLM.md",
+      "target": "document:README.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "pipeline:Makefile",
+      "target": "config:pyproject.toml",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:README.md",
+      "target": "config:marketplace.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

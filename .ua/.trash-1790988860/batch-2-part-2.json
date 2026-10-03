@@ -1,0 +1,1514 @@
+{
+  "nodes": [
+    {
+      "id": "file:mem0/llms/deepseek.py",
+      "type": "file",
+      "name": "deepseek.py",
+      "filePath": "mem0/llms/deepseek.py",
+      "summary": "实现 DeepSeek LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/llms/deepseek.py:DeepSeekLLM",
+      "type": "class",
+      "name": "DeepSeekLLM",
+      "filePath": "mem0/llms/deepseek.py",
+      "lineRange": [
+        13,
+        109
+      ],
+      "summary": "将统一 LLM 生成协议适配到 DeepSeek，处理消息、工具调用和响应解析差异。",
+      "tags": [
+        "llm",
+        "adapter",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/gemini.py",
+      "type": "file",
+      "name": "gemini.py",
+      "filePath": "mem0/llms/gemini.py",
+      "summary": "实现 Gemini LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/llms/gemini.py:GeminiLLM",
+      "type": "class",
+      "name": "GeminiLLM",
+      "filePath": "mem0/llms/gemini.py",
+      "lineRange": [
+        15,
+        228
+      ],
+      "summary": "将统一 LLM 生成协议适配到 Gemini，处理消息、工具调用和响应解析差异。",
+      "tags": [
+        "llm",
+        "adapter",
+        "service"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/llms/groq.py",
+      "type": "file",
+      "name": "groq.py",
+      "filePath": "mem0/llms/groq.py",
+      "summary": "实现 Groq LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/llms/groq.py:GroqLLM",
+      "type": "class",
+      "name": "GroqLLM",
+      "filePath": "mem0/llms/groq.py",
+      "lineRange": [
+        18,
+        119
+      ],
+      "summary": "将统一 LLM 生成协议适配到 Groq，处理消息、工具调用和响应解析差异。",
+      "tags": [
+        "llm",
+        "adapter",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/langchain.py",
+      "type": "file",
+      "name": "langchain.py",
+      "filePath": "mem0/llms/langchain.py",
+      "summary": "实现 LangChain LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/llms/langchain.py:LangchainLLM",
+      "type": "class",
+      "name": "LangchainLLM",
+      "filePath": "mem0/llms/langchain.py",
+      "lineRange": [
+        13,
+        97
+      ],
+      "summary": "将统一 LLM 生成协议适配到 LangChain，处理消息、工具调用和响应解析差异。",
+      "tags": [
+        "llm",
+        "adapter",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/litellm.py",
+      "type": "file",
+      "name": "litellm.py",
+      "filePath": "mem0/llms/litellm.py",
+      "summary": "实现 LiteLLM LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/llms/litellm.py:LiteLLM",
+      "type": "class",
+      "name": "LiteLLM",
+      "filePath": "mem0/llms/litellm.py",
+      "lineRange": [
+        16,
+        92
+      ],
+      "summary": "将统一 LLM 生成协议适配到 LiteLLM，处理消息、工具调用和响应解析差异。",
+      "tags": [
+        "llm",
+        "adapter",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/lmstudio.py",
+      "type": "file",
+      "name": "lmstudio.py",
+      "filePath": "mem0/llms/lmstudio.py",
+      "summary": "实现 LM Studio LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/llms/lmstudio.py:LMStudioLLM",
+      "type": "class",
+      "name": "LMStudioLLM",
+      "filePath": "mem0/llms/lmstudio.py",
+      "lineRange": [
+        12,
+        114
+      ],
+      "summary": "将统一 LLM 生成协议适配到 LM Studio，处理消息、工具调用和响应解析差异。",
+      "tags": [
+        "llm",
+        "adapter",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/minimax.py",
+      "type": "file",
+      "name": "minimax.py",
+      "filePath": "mem0/llms/minimax.py",
+      "summary": "实现 MiniMax LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/llms/minimax.py:MiniMaxLLM",
+      "type": "class",
+      "name": "MiniMaxLLM",
+      "filePath": "mem0/llms/minimax.py",
+      "lineRange": [
+        13,
+        114
+      ],
+      "summary": "将统一 LLM 生成协议适配到 MiniMax，处理消息、工具调用和响应解析差异。",
+      "tags": [
+        "llm",
+        "adapter",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/ollama.py",
+      "type": "file",
+      "name": "ollama.py",
+      "filePath": "mem0/llms/ollama.py",
+      "summary": "实现 Ollama LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/llms/ollama.py:OllamaLLM",
+      "type": "class",
+      "name": "OllamaLLM",
+      "filePath": "mem0/llms/ollama.py",
+      "lineRange": [
+        15,
+        144
+      ],
+      "summary": "将统一 LLM 生成协议适配到 Ollama，处理消息、工具调用和响应解析差异。",
+      "tags": [
+        "llm",
+        "adapter",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/openai.py",
+      "type": "file",
+      "name": "openai.py",
+      "filePath": "mem0/llms/openai.py",
+      "summary": "实现 OpenAI LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/llms/openai.py:OpenAILLM",
+      "type": "class",
+      "name": "OpenAILLM",
+      "filePath": "mem0/llms/openai.py",
+      "lineRange": [
+        14,
+        150
+      ],
+      "summary": "将统一 LLM 生成协议适配到 OpenAI，处理消息、工具调用和响应解析差异。",
+      "tags": [
+        "llm",
+        "adapter",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/openai_structured.py",
+      "type": "file",
+      "name": "openai_structured.py",
+      "filePath": "mem0/llms/openai_structured.py",
+      "summary": "实现 OpenAI Structured Outputs LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/llms/openai_structured.py:OpenAIStructuredLLM",
+      "type": "class",
+      "name": "OpenAIStructuredLLM",
+      "filePath": "mem0/llms/openai_structured.py",
+      "lineRange": [
+        10,
+        49
+      ],
+      "summary": "将统一 LLM 生成协议适配到 OpenAI Structured Outputs，处理消息、工具调用和响应解析差异。",
+      "tags": [
+        "llm",
+        "adapter",
+        "service"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/llms/sarvam.py",
+      "type": "file",
+      "name": "sarvam.py",
+      "filePath": "mem0/llms/sarvam.py",
+      "summary": "实现 Sarvam LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/llms/sarvam.py:SarvamLLM",
+      "type": "class",
+      "name": "SarvamLLM",
+      "filePath": "mem0/llms/sarvam.py",
+      "lineRange": [
+        10,
+        94
+      ],
+      "summary": "将统一 LLM 生成协议适配到 Sarvam，处理消息、工具调用和响应解析差异。",
+      "tags": [
+        "llm",
+        "adapter",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/together.py",
+      "type": "file",
+      "name": "together.py",
+      "filePath": "mem0/llms/together.py",
+      "summary": "实现 Together AI LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/llms/together.py:TogetherLLM",
+      "type": "class",
+      "name": "TogetherLLM",
+      "filePath": "mem0/llms/together.py",
+      "lineRange": [
+        15,
+        92
+      ],
+      "summary": "将统一 LLM 生成协议适配到 Together AI，处理消息、工具调用和响应解析差异。",
+      "tags": [
+        "llm",
+        "adapter",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/vllm.py",
+      "type": "file",
+      "name": "vllm.py",
+      "filePath": "mem0/llms/vllm.py",
+      "summary": "实现 vLLM LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/llms/vllm.py:VllmLLM",
+      "type": "class",
+      "name": "VllmLLM",
+      "filePath": "mem0/llms/vllm.py",
+      "lineRange": [
+        13,
+        108
+      ],
+      "summary": "将统一 LLM 生成协议适配到 vLLM，处理消息、工具调用和响应解析差异。",
+      "tags": [
+        "llm",
+        "adapter",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/xai.py",
+      "type": "file",
+      "name": "xai.py",
+      "filePath": "mem0/llms/xai.py",
+      "summary": "实现 xAI LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/llms/xai.py:XAILLM",
+      "type": "class",
+      "name": "XAILLM",
+      "filePath": "mem0/llms/xai.py",
+      "lineRange": [
+        13,
+        110
+      ],
+      "summary": "将统一 LLM 生成协议适配到 xAI，处理消息、工具调用和响应解析差异。",
+      "tags": [
+        "llm",
+        "adapter",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/memory/utils.py",
+      "type": "file",
+      "name": "utils.py",
+      "filePath": "mem0/memory/utils.py",
+      "summary": "提供记忆事实抽取、消息规范化、视觉消息处理、JSON 清洗与图关系消毒等共享工具。",
+      "tags": [
+        "memory",
+        "service",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:mem0/memory/utils.py:get_fact_retrieval_messages",
+      "type": "function",
+      "name": "get_fact_retrieval_messages",
+      "filePath": "mem0/memory/utils.py",
+      "lineRange": [
+        15,
+        28
+      ],
+      "summary": "转换或组织 get fact retrieval messages，形成 provider 与记忆流水线可消费的消息结构。",
+      "tags": [
+        "prompt-engineering",
+        "serialization",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/utils.py:get_fact_retrieval_messages_legacy",
+      "type": "function",
+      "name": "get_fact_retrieval_messages_legacy",
+      "filePath": "mem0/memory/utils.py",
+      "lineRange": [
+        31,
+        33
+      ],
+      "summary": "转换或组织 get fact retrieval messages legacy，形成 provider 与记忆流水线可消费的消息结构。",
+      "tags": [
+        "prompt-engineering",
+        "serialization",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/utils.py:ensure_json_instruction",
+      "type": "function",
+      "name": "ensure_json_instruction",
+      "filePath": "mem0/memory/utils.py",
+      "lineRange": [
+        36,
+        58
+      ],
+      "summary": "安全处理 ensure json instruction 的 JSON 表达与数据边界。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/utils.py:parse_messages",
+      "type": "function",
+      "name": "parse_messages",
+      "filePath": "mem0/memory/utils.py",
+      "lineRange": [
+        61,
+        76
+      ],
+      "summary": "转换或组织 parse messages，形成 provider 与记忆流水线可消费的消息结构。",
+      "tags": [
+        "prompt-engineering",
+        "serialization",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/utils.py:format_entities",
+      "type": "function",
+      "name": "format_entities",
+      "filePath": "mem0/memory/utils.py",
+      "lineRange": [
+        79,
+        88
+      ],
+      "summary": "实现 format entities 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/utils.py:normalize_facts",
+      "type": "function",
+      "name": "normalize_facts",
+      "filePath": "mem0/memory/utils.py",
+      "lineRange": [
+        90,
+        112
+      ],
+      "summary": "实现 normalize facts 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/utils.py:remove_code_blocks",
+      "type": "function",
+      "name": "remove_code_blocks",
+      "filePath": "mem0/memory/utils.py",
+      "lineRange": [
+        115,
+        137
+      ],
+      "summary": "实现 remove code blocks 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/utils.py:extract_json",
+      "type": "function",
+      "name": "extract_json",
+      "filePath": "mem0/memory/utils.py",
+      "lineRange": [
+        141,
+        158
+      ],
+      "summary": "从可能带 Markdown 代码块或额外文本的模型输出中提取并解析 JSON。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/utils.py:get_image_description",
+      "type": "function",
+      "name": "get_image_description",
+      "filePath": "mem0/memory/utils.py",
+      "lineRange": [
+        161,
+        183
+      ],
+      "summary": "实现 get image description 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/utils.py:parse_vision_messages",
+      "type": "function",
+      "name": "parse_vision_messages",
+      "filePath": "mem0/memory/utils.py",
+      "lineRange": [
+        186,
+        232
+      ],
+      "summary": "遍历多模态消息并用视觉模型描述图片，使后续记忆抽取可消费纯文本上下文。",
+      "tags": [
+        "prompt-engineering",
+        "serialization",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/utils.py:process_telemetry_filters",
+      "type": "function",
+      "name": "process_telemetry_filters",
+      "filePath": "mem0/memory/utils.py",
+      "lineRange": [
+        235,
+        250
+      ],
+      "summary": "构建或清洗 process telemetry filters 所需的过滤表达式，隔离不同后端的查询语法。",
+      "tags": [
+        "query-builder",
+        "filtering",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/memory/utils.py:sanitize_relationship_for_cypher",
+      "type": "function",
+      "name": "sanitize_relationship_for_cypher",
+      "filePath": "mem0/memory/utils.py",
+      "lineRange": [
+        253,
+        302
+      ],
+      "summary": "清洗关系名称并生成安全、稳定的 Cypher 关系标识。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:mem0/memory/utils.py:remove_spaces_from_entities",
+      "type": "function",
+      "name": "remove_spaces_from_entities",
+      "filePath": "mem0/memory/utils.py",
+      "lineRange": [
+        305,
+        329
+      ],
+      "summary": "实现 remove spaces from entities 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:mem0/llms/deepseek.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/deepseek.py",
+      "target": "file:mem0/configs/llms/deepseek.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/deepseek.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/deepseek.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/deepseek.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/deepseek.py",
+      "target": "class:mem0/llms/deepseek.py:DeepSeekLLM",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/llms/deepseek.py",
+      "target": "class:mem0/llms/deepseek.py:DeepSeekLLM",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/llms/deepseek.py:DeepSeekLLM",
+      "target": "class:mem0/llms/base.py:LLMBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/llms/gemini.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/gemini.py",
+      "target": "file:mem0/configs/llms/gemini.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/gemini.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/gemini.py",
+      "target": "class:mem0/llms/gemini.py:GeminiLLM",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/llms/gemini.py",
+      "target": "class:mem0/llms/gemini.py:GeminiLLM",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/llms/gemini.py:GeminiLLM",
+      "target": "class:mem0/llms/base.py:LLMBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/llms/groq.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/groq.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/groq.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/groq.py",
+      "target": "class:mem0/llms/groq.py:GroqLLM",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/llms/groq.py",
+      "target": "class:mem0/llms/groq.py:GroqLLM",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/llms/groq.py:GroqLLM",
+      "target": "class:mem0/llms/base.py:LLMBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/llms/langchain.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/langchain.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/langchain.py",
+      "target": "class:mem0/llms/langchain.py:LangchainLLM",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/llms/langchain.py",
+      "target": "class:mem0/llms/langchain.py:LangchainLLM",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/llms/langchain.py:LangchainLLM",
+      "target": "class:mem0/llms/base.py:LLMBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/llms/litellm.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/litellm.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/litellm.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/litellm.py",
+      "target": "class:mem0/llms/litellm.py:LiteLLM",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/llms/litellm.py",
+      "target": "class:mem0/llms/litellm.py:LiteLLM",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/llms/litellm.py:LiteLLM",
+      "target": "class:mem0/llms/base.py:LLMBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/llms/lmstudio.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/lmstudio.py",
+      "target": "file:mem0/configs/llms/lmstudio.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/lmstudio.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/lmstudio.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/lmstudio.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/lmstudio.py",
+      "target": "class:mem0/llms/lmstudio.py:LMStudioLLM",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/llms/lmstudio.py",
+      "target": "class:mem0/llms/lmstudio.py:LMStudioLLM",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/llms/lmstudio.py:LMStudioLLM",
+      "target": "class:mem0/llms/base.py:LLMBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/llms/minimax.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/minimax.py",
+      "target": "file:mem0/configs/llms/minimax.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/minimax.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/minimax.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/minimax.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/minimax.py",
+      "target": "class:mem0/llms/minimax.py:MiniMaxLLM",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/llms/minimax.py",
+      "target": "class:mem0/llms/minimax.py:MiniMaxLLM",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/llms/minimax.py:MiniMaxLLM",
+      "target": "class:mem0/llms/base.py:LLMBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/llms/ollama.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/ollama.py",
+      "target": "file:mem0/configs/llms/ollama.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/ollama.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/ollama.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/ollama.py",
+      "target": "class:mem0/llms/ollama.py:OllamaLLM",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/llms/ollama.py",
+      "target": "class:mem0/llms/ollama.py:OllamaLLM",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/llms/ollama.py:OllamaLLM",
+      "target": "class:mem0/llms/base.py:LLMBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/llms/openai.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/openai.py",
+      "target": "file:mem0/configs/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/openai.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/openai.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/openai.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/openai.py",
+      "target": "class:mem0/llms/openai.py:OpenAILLM",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/llms/openai.py",
+      "target": "class:mem0/llms/openai.py:OpenAILLM",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/llms/openai.py:OpenAILLM",
+      "target": "class:mem0/llms/base.py:LLMBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/llms/openai_structured.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/openai_structured.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/openai_structured.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/openai_structured.py",
+      "target": "class:mem0/llms/openai_structured.py:OpenAIStructuredLLM",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/llms/openai_structured.py",
+      "target": "class:mem0/llms/openai_structured.py:OpenAIStructuredLLM",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/llms/openai_structured.py:OpenAIStructuredLLM",
+      "target": "class:mem0/llms/base.py:LLMBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/llms/sarvam.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/sarvam.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/sarvam.py",
+      "target": "class:mem0/llms/sarvam.py:SarvamLLM",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/llms/sarvam.py",
+      "target": "class:mem0/llms/sarvam.py:SarvamLLM",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/llms/sarvam.py:SarvamLLM",
+      "target": "class:mem0/llms/base.py:LLMBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/llms/together.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/together.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/together.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/together.py",
+      "target": "class:mem0/llms/together.py:TogetherLLM",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/llms/together.py",
+      "target": "class:mem0/llms/together.py:TogetherLLM",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/llms/together.py:TogetherLLM",
+      "target": "class:mem0/llms/base.py:LLMBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/llms/vllm.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/vllm.py",
+      "target": "file:mem0/configs/llms/vllm.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/vllm.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/vllm.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/vllm.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/vllm.py",
+      "target": "class:mem0/llms/vllm.py:VllmLLM",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/llms/vllm.py",
+      "target": "class:mem0/llms/vllm.py:VllmLLM",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/llms/vllm.py:VllmLLM",
+      "target": "class:mem0/llms/base.py:LLMBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/llms/xai.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/xai.py",
+      "target": "file:mem0/configs/llms/xai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/xai.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/xai.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/xai.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/xai.py",
+      "target": "class:mem0/llms/xai.py:XAILLM",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/llms/xai.py",
+      "target": "class:mem0/llms/xai.py:XAILLM",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/llms/xai.py:XAILLM",
+      "target": "class:mem0/llms/base.py:LLMBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "file:mem0/configs/prompts.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:get_fact_retrieval_messages",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:get_fact_retrieval_messages",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:get_fact_retrieval_messages_legacy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:get_fact_retrieval_messages_legacy",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:ensure_json_instruction",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:ensure_json_instruction",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:parse_messages",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:parse_messages",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:format_entities",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:format_entities",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:normalize_facts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:normalize_facts",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:remove_code_blocks",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:remove_code_blocks",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:extract_json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:extract_json",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:get_image_description",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:get_image_description",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:parse_vision_messages",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:parse_vision_messages",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:process_telemetry_filters",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:process_telemetry_filters",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:sanitize_relationship_for_cypher",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:sanitize_relationship_for_cypher",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:remove_spaces_from_entities",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "function:mem0/memory/utils.py:remove_spaces_from_entities",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

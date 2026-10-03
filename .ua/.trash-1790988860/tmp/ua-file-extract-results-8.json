@@ -1,0 +1,1693 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 24,
+  "filesSkipped": [
+    ".gitmodules"
+  ],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 24,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 23,
+      "failed": 0,
+      "skipped": 1
+    }
+  },
+  "results": [
+    {
+      "path": "mem0/AGENTS.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 105,
+      "nonEmptyLines": 82,
+      "sections": [
+        {
+          "heading": "Python SDK (`mem0/`)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Commands",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Conventions",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "Layout",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "Provider pattern",
+          "level": 2,
+          "line": 45
+        },
+        {
+          "heading": "Adding a provider",
+          "level": 3,
+          "line": 57
+        },
+        {
+          "heading": "Public API",
+          "level": 2,
+          "line": 68
+        },
+        {
+          "heading": "Import paths",
+          "level": 3,
+          "line": 92
+        },
+        {
+          "heading": "Graph memory",
+          "level": 2,
+          "line": 103
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": "mem0/client/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "mem0/configs/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "mem0/configs/embeddings/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "mem0/configs/llms/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "mem0/configs/rerankers/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "mem0/configs/vector_stores/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "mem0/configs/vector_stores/azure_ai_search.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 57,
+      "nonEmptyLines": 48,
+      "classes": [
+        {
+          "name": "AzureAISearchConfig",
+          "startLine": 6,
+          "endLine": 57,
+          "methods": [
+            "validate_extra_fields"
+          ],
+          "properties": [
+            "collection_name",
+            "service_name",
+            "api_key",
+            "embedding_model_dims",
+            "compression_type",
+            "use_float16",
+            "hybrid_search",
+            "vector_filter_mode"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AzureAISearchConfig",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 28
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "cls.model_fields.keys",
+          "lineNumber": 28
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 29
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "values.keys",
+          "lineNumber": 29
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "ValueError",
+          "lineNumber": 34
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "ValueError",
+          "lineNumber": 41
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 42
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 43
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "values[\"compression_type\"].lower",
+          "lineNumber": 49
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "ValueError",
+          "lineNumber": 50
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 52
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/vector_stores/azure_mysql.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 97,
+      "nonEmptyLines": 79,
+      "classes": [
+        {
+          "name": "AzureMySQLConfig",
+          "startLine": 11,
+          "endLine": 97,
+          "methods": [
+            "validate_collection_name",
+            "check_auth",
+            "check_required_fields",
+            "validate_extra_fields"
+          ],
+          "properties": [
+            "host",
+            "port",
+            "user",
+            "password",
+            "database",
+            "collection_name",
+            "embedding_model_dims",
+            "use_azure_credential",
+            "ssl_ca",
+            "ssl_disabled",
+            "minconn",
+            "maxconn",
+            "connection_pool"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AzureMySQLConfig",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "validate_collection_name",
+          "callee": "_VALID_SQL_IDENTIFIER.match",
+          "lineNumber": 36
+        },
+        {
+          "caller": "validate_collection_name",
+          "callee": "ValueError",
+          "lineNumber": 37
+        },
+        {
+          "caller": "check_auth",
+          "callee": "values.get",
+          "lineNumber": 48
+        },
+        {
+          "caller": "check_auth",
+          "callee": "values.get",
+          "lineNumber": 51
+        },
+        {
+          "caller": "check_auth",
+          "callee": "values.get",
+          "lineNumber": 52
+        },
+        {
+          "caller": "check_auth",
+          "callee": "ValueError",
+          "lineNumber": 56
+        },
+        {
+          "caller": "check_required_fields",
+          "callee": "values.get",
+          "lineNumber": 67
+        },
+        {
+          "caller": "check_required_fields",
+          "callee": "values.get",
+          "lineNumber": 71
+        },
+        {
+          "caller": "check_required_fields",
+          "callee": "ValueError",
+          "lineNumber": 74
+        },
+        {
+          "caller": "check_required_fields",
+          "callee": "', '.join",
+          "lineNumber": 75
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 85
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "cls.model_fields.keys",
+          "lineNumber": 85
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 86
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "values.keys",
+          "lineNumber": 86
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "ValueError",
+          "lineNumber": 90
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 91
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 92
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/vector_stores/baidu.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 22,
+      "classes": [
+        {
+          "name": "BaiduDBConfig",
+          "startLine": 6,
+          "endLine": 27,
+          "methods": [
+            "validate_extra_fields"
+          ],
+          "properties": [
+            "endpoint",
+            "account",
+            "api_key",
+            "database_name",
+            "table_name",
+            "embedding_model_dims",
+            "metric_type"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BaiduDBConfig",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 18
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "cls.model_fields.keys",
+          "lineNumber": 18
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 19
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "values.keys",
+          "lineNumber": 19
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "ValueError",
+          "lineNumber": 22
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 23
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 23
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/vector_stores/cassandra.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 76,
+      "nonEmptyLines": 61,
+      "classes": [
+        {
+          "name": "CassandraConfig",
+          "startLine": 6,
+          "endLine": 75,
+          "methods": [
+            "check_auth",
+            "check_connection_config",
+            "validate_extra_fields"
+          ],
+          "properties": [
+            "contact_points",
+            "port",
+            "username",
+            "password",
+            "keyspace",
+            "collection_name",
+            "embedding_model_dims",
+            "secure_connect_bundle",
+            "protocol_version",
+            "load_balancing_policy"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "CassandraConfig",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "check_auth",
+          "callee": "values.get",
+          "lineNumber": 33
+        },
+        {
+          "caller": "check_auth",
+          "callee": "values.get",
+          "lineNumber": 34
+        },
+        {
+          "caller": "check_auth",
+          "callee": "ValueError",
+          "lineNumber": 38
+        },
+        {
+          "caller": "check_connection_config",
+          "callee": "values.get",
+          "lineNumber": 48
+        },
+        {
+          "caller": "check_connection_config",
+          "callee": "values.get",
+          "lineNumber": 49
+        },
+        {
+          "caller": "check_connection_config",
+          "callee": "ValueError",
+          "lineNumber": 53
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 63
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "cls.model_fields.keys",
+          "lineNumber": 63
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 64
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "values.keys",
+          "lineNumber": 64
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "ValueError",
+          "lineNumber": 68
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 69
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 70
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/vector_stores/chroma.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 58,
+      "nonEmptyLines": 45,
+      "classes": [
+        {
+          "name": "ChromaDbConfig",
+          "startLine": 6,
+          "endLine": 58,
+          "methods": [
+            "check_connection_config",
+            "validate_extra_fields"
+          ],
+          "properties": [
+            "Client",
+            "collection_name",
+            "client",
+            "path",
+            "host",
+            "port",
+            "api_key",
+            "tenant"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ChromaDbConfig",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "check_connection_config",
+          "callee": "values.get",
+          "lineNumber": 24
+        },
+        {
+          "caller": "check_connection_config",
+          "callee": "values.get",
+          "lineNumber": 24
+        },
+        {
+          "caller": "check_connection_config",
+          "callee": "values.get",
+          "lineNumber": 24
+        },
+        {
+          "caller": "check_connection_config",
+          "callee": "values.get",
+          "lineNumber": 25
+        },
+        {
+          "caller": "check_connection_config",
+          "callee": "values.get",
+          "lineNumber": 25
+        },
+        {
+          "caller": "check_connection_config",
+          "callee": "bool",
+          "lineNumber": 28
+        },
+        {
+          "caller": "check_connection_config",
+          "callee": "values.pop",
+          "lineNumber": 32
+        },
+        {
+          "caller": "check_connection_config",
+          "callee": "bool",
+          "lineNumber": 36
+        },
+        {
+          "caller": "check_connection_config",
+          "callee": "bool",
+          "lineNumber": 36
+        },
+        {
+          "caller": "check_connection_config",
+          "callee": "ValueError",
+          "lineNumber": 39
+        },
+        {
+          "caller": "check_connection_config",
+          "callee": "ValueError",
+          "lineNumber": 42
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 49
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "cls.model_fields.keys",
+          "lineNumber": 49
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 50
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "values.keys",
+          "lineNumber": 50
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "ValueError",
+          "lineNumber": 53
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 54
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 54
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/vector_stores/databricks.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 61,
+      "nonEmptyLines": 51,
+      "classes": [
+        {
+          "name": "DatabricksConfig",
+          "startLine": 8,
+          "endLine": 61,
+          "methods": [
+            "validate_extra_fields",
+            "validate_authentication"
+          ],
+          "properties": [
+            "workspace_url",
+            "access_token",
+            "client_id",
+            "client_secret",
+            "azure_client_id",
+            "azure_client_secret",
+            "endpoint_name",
+            "catalog",
+            "schema",
+            "table_name",
+            "collection_name",
+            "index_type",
+            "embedding_model_endpoint_name",
+            "embedding_dimension",
+            "endpoint_type",
+            "pipeline_type",
+            "warehouse_name",
+            "query_type"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DatabricksConfig",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 37
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "cls.model_fields.keys",
+          "lineNumber": 37
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 38
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "values.keys",
+          "lineNumber": 38
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "ValueError",
+          "lineNumber": 41
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 42
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 42
+        },
+        {
+          "caller": "validate_authentication",
+          "callee": "ValueError",
+          "lineNumber": 55
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/vector_stores/faiss.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 37,
+      "nonEmptyLines": 31,
+      "classes": [
+        {
+          "name": "FAISSConfig",
+          "startLine": 6,
+          "endLine": 37,
+          "methods": [
+            "validate_distance_strategy",
+            "validate_extra_fields"
+          ],
+          "properties": [
+            "collection_name",
+            "path",
+            "distance_strategy",
+            "normalize_L2",
+            "embedding_model_dims"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FAISSConfig",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "validate_distance_strategy",
+          "callee": "values.get",
+          "lineNumber": 20
+        },
+        {
+          "caller": "validate_distance_strategy",
+          "callee": "ValueError",
+          "lineNumber": 22
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 28
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "cls.model_fields.keys",
+          "lineNumber": 28
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 29
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "values.keys",
+          "lineNumber": 29
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "ValueError",
+          "lineNumber": 32
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 33
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 33
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/vector_stores/langchain.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 30,
+      "nonEmptyLines": 24,
+      "classes": [
+        {
+          "name": "LangchainConfig",
+          "startLine": 6,
+          "endLine": 30,
+          "methods": [
+            "validate_extra_fields"
+          ],
+          "properties": [
+            "VectorStore",
+            "client",
+            "collection_name"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "LangchainConfig",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 21
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "cls.model_fields.keys",
+          "lineNumber": 21
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 22
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "values.keys",
+          "lineNumber": 22
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "ValueError",
+          "lineNumber": 25
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 26
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 26
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/vector_stores/mongodb.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 21,
+      "classes": [
+        {
+          "name": "MongoDBConfig",
+          "startLine": 6,
+          "endLine": 27,
+          "methods": [
+            "validate_extra_fields"
+          ],
+          "properties": [
+            "db_name",
+            "collection_name",
+            "embedding_model_dims",
+            "mongo_uri"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "MongoDBConfig",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 17
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "cls.model_fields.keys",
+          "lineNumber": 17
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 18
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "values.keys",
+          "lineNumber": 18
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "ValueError",
+          "lineNumber": 21
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 22
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 23
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/vector_stores/neptune.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 40,
+      "nonEmptyLines": 30,
+      "classes": [
+        {
+          "name": "NeptuneAnalyticsConfig",
+          "startLine": 17,
+          "endLine": 40,
+          "methods": [
+            "validate_collection_name"
+          ],
+          "properties": [
+            "collection_name",
+            "endpoint"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "NeptuneAnalyticsConfig",
+          "line": 17,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "validate_collection_name",
+          "callee": "_VALID_CYPHER_IDENTIFIER.match",
+          "lineNumber": 33
+        },
+        {
+          "caller": "validate_collection_name",
+          "callee": "ValueError",
+          "lineNumber": 34
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/vector_stores/pgvector.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 54,
+      "nonEmptyLines": 46,
+      "classes": [
+        {
+          "name": "PGVectorConfig",
+          "startLine": 6,
+          "endLine": 54,
+          "methods": [
+            "check_auth_and_connection",
+            "validate_extra_fields"
+          ],
+          "properties": [
+            "dbname",
+            "collection_name",
+            "embedding_model_dims",
+            "user",
+            "password",
+            "host",
+            "port",
+            "diskann",
+            "hnsw",
+            "minconn",
+            "maxconn",
+            "sslmode",
+            "connection_string",
+            "connection_pool"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PGVectorConfig",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "check_auth_and_connection",
+          "callee": "values.get",
+          "lineNumber": 26
+        },
+        {
+          "caller": "check_auth_and_connection",
+          "callee": "values.get",
+          "lineNumber": 30
+        },
+        {
+          "caller": "check_auth_and_connection",
+          "callee": "values.get",
+          "lineNumber": 34
+        },
+        {
+          "caller": "check_auth_and_connection",
+          "callee": "values.get",
+          "lineNumber": 34
+        },
+        {
+          "caller": "check_auth_and_connection",
+          "callee": "values.get",
+          "lineNumber": 35
+        },
+        {
+          "caller": "check_auth_and_connection",
+          "callee": "values.get",
+          "lineNumber": 35
+        },
+        {
+          "caller": "check_auth_and_connection",
+          "callee": "ValueError",
+          "lineNumber": 37
+        },
+        {
+          "caller": "check_auth_and_connection",
+          "callee": "ValueError",
+          "lineNumber": 39
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 45
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "cls.model_fields.keys",
+          "lineNumber": 45
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 46
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "values.keys",
+          "lineNumber": 46
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "ValueError",
+          "lineNumber": 49
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 50
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 50
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/vector_stores/pinecone.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 55,
+      "nonEmptyLines": 47,
+      "classes": [
+        {
+          "name": "PineconeConfig",
+          "startLine": 7,
+          "endLine": 55,
+          "methods": [
+            "check_api_key_or_client",
+            "check_pod_or_serverless",
+            "validate_extra_fields"
+          ],
+          "properties": [
+            "collection_name",
+            "embedding_model_dims",
+            "client",
+            "api_key",
+            "environment",
+            "serverless_config",
+            "pod_config",
+            "hybrid_search",
+            "metric",
+            "batch_size",
+            "extra_params",
+            "namespace"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PineconeConfig",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "check_api_key_or_client",
+          "callee": "values.get",
+          "lineNumber": 26
+        },
+        {
+          "caller": "check_api_key_or_client",
+          "callee": "values.get",
+          "lineNumber": 26
+        },
+        {
+          "caller": "check_api_key_or_client",
+          "callee": "ValueError",
+          "lineNumber": 28
+        },
+        {
+          "caller": "check_pod_or_serverless",
+          "callee": "values.get",
+          "lineNumber": 36
+        },
+        {
+          "caller": "check_pod_or_serverless",
+          "callee": "values.get",
+          "lineNumber": 36
+        },
+        {
+          "caller": "check_pod_or_serverless",
+          "callee": "ValueError",
+          "lineNumber": 38
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 46
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "cls.model_fields.keys",
+          "lineNumber": 46
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 47
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "values.keys",
+          "lineNumber": 47
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "ValueError",
+          "lineNumber": 50
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 51
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 51
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/vector_stores/qdrant.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 51,
+      "nonEmptyLines": 43,
+      "classes": [
+        {
+          "name": "QdrantConfig",
+          "startLine": 6,
+          "endLine": 51,
+          "methods": [
+            "check_host_port_or_path",
+            "validate_extra_fields"
+          ],
+          "properties": [
+            "QdrantClient",
+            "collection_name",
+            "embedding_model_dims",
+            "client",
+            "host",
+            "port",
+            "path",
+            "url",
+            "api_key",
+            "https",
+            "on_disk"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "QdrantConfig",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "check_host_port_or_path",
+          "callee": "values.get",
+          "lineNumber": 29
+        },
+        {
+          "caller": "check_host_port_or_path",
+          "callee": "values.get",
+          "lineNumber": 30
+        },
+        {
+          "caller": "check_host_port_or_path",
+          "callee": "values.get",
+          "lineNumber": 31
+        },
+        {
+          "caller": "check_host_port_or_path",
+          "callee": "values.get",
+          "lineNumber": 32
+        },
+        {
+          "caller": "check_host_port_or_path",
+          "callee": "values.get",
+          "lineNumber": 33
+        },
+        {
+          "caller": "check_host_port_or_path",
+          "callee": "ValueError",
+          "lineNumber": 36
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 42
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "cls.model_fields.keys",
+          "lineNumber": 42
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 43
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "values.keys",
+          "lineNumber": 43
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "ValueError",
+          "lineNumber": 46
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 47
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/vector_stores/redis.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 6,
+      "classes": [
+        {
+          "name": "RedisDBConfig",
+          "startLine": 4,
+          "endLine": 9,
+          "methods": [],
+          "properties": [
+            "redis_url",
+            "collection_name",
+            "embedding_model_dims"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RedisDBConfig",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/vector_stores/s3_vectors.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 28,
+      "nonEmptyLines": 23,
+      "classes": [
+        {
+          "name": "S3VectorsConfig",
+          "startLine": 6,
+          "endLine": 28,
+          "methods": [
+            "validate_extra_fields"
+          ],
+          "properties": [
+            "vector_bucket_name",
+            "collection_name",
+            "embedding_model_dims",
+            "distance_metric",
+            "region_name"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "S3VectorsConfig",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 19
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "cls.model_fields.keys",
+          "lineNumber": 19
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 20
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "values.keys",
+          "lineNumber": 20
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "ValueError",
+          "lineNumber": 23
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 24
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 24
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/vector_stores/turbopuffer.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 45,
+      "nonEmptyLines": 39,
+      "classes": [
+        {
+          "name": "TurbopufferConfig",
+          "startLine": 7,
+          "endLine": 45,
+          "methods": [
+            "check_api_key",
+            "validate_extra_fields"
+          ],
+          "properties": [
+            "collection_name",
+            "embedding_model_dims",
+            "api_key",
+            "region",
+            "distance_metric",
+            "batch_size",
+            "extra_params"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "TurbopufferConfig",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "check_api_key",
+          "callee": "values.get",
+          "lineNumber": 25
+        },
+        {
+          "caller": "check_api_key",
+          "callee": "ValueError",
+          "lineNumber": 27
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 35
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "cls.model_fields.keys",
+          "lineNumber": 35
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "set",
+          "lineNumber": 36
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "values.keys",
+          "lineNumber": 36
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "ValueError",
+          "lineNumber": 39
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 40
+        },
+        {
+          "caller": "validate_extra_fields",
+          "callee": "', '.join",
+          "lineNumber": 41
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/vector_stores/upstash_vector.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 32,
+      "classes": [
+        {
+          "name": "UpstashVectorConfig",
+          "startLine": 12,
+          "endLine": 41,
+          "methods": [
+            "check_credentials_or_client"
+          ],
+          "properties": [
+            "Index",
+            "url",
+            "token",
+            "client",
+            "collection_name",
+            "enable_embeddings"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "UpstashVectorConfig",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "check_credentials_or_client",
+          "callee": "values.get",
+          "lineNumber": 26
+        },
+        {
+          "caller": "check_credentials_or_client",
+          "callee": "values.get",
+          "lineNumber": 27
+        },
+        {
+          "caller": "check_credentials_or_client",
+          "callee": "os.environ.get",
+          "lineNumber": 27
+        },
+        {
+          "caller": "check_credentials_or_client",
+          "callee": "values.get",
+          "lineNumber": 28
+        },
+        {
+          "caller": "check_credentials_or_client",
+          "callee": "os.environ.get",
+          "lineNumber": 28
+        },
+        {
+          "caller": "check_credentials_or_client",
+          "callee": "ValueError",
+          "lineNumber": 31
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    }
+  ]
+}

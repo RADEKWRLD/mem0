@@ -1,0 +1,2842 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "louvain",
+  "totalFiles": 161,
+  "totalBatches": 9,
+  "exportsByPath": {
+    ".gitmodules": [],
+    "mem0/__init__.py": [],
+    "mem0/client/__init__.py": [],
+    "mem0/client/main.py": [
+      "_profile_settings_payload",
+      "_validate_and_trim_search_query",
+      "_encode_path_segment",
+      "_maybe_alias_anon_to_email",
+      "_sdk_version",
+      "_apply_client_headers",
+      "_bounded_stack",
+      "_client_headers",
+      "_client_stack",
+      "MemoryClient",
+      "AsyncMemoryClient"
+    ],
+    "mem0/client/project.py": [
+      "ProjectConfig",
+      "BaseProject",
+      "Project",
+      "AsyncProject"
+    ],
+    "mem0/client/types.py": [
+      "AddMemoryOptions",
+      "SearchMemoryOptions",
+      "GetAllMemoryOptions",
+      "DeleteAllMemoryOptions",
+      "UpdateMemoryOptions",
+      "ProjectUpdateOptions"
+    ],
+    "mem0/client/utils.py": [
+      "APIError",
+      "_handle_http_error",
+      "_handle_request_error",
+      "api_error_handler"
+    ],
+    "mem0/configs/__init__.py": [],
+    "mem0/configs/base.py": [
+      "MemoryItem",
+      "MemoryConfig",
+      "AzureConfig"
+    ],
+    "mem0/configs/embeddings/__init__.py": [],
+    "mem0/configs/embeddings/base.py": [
+      "BaseEmbedderConfig"
+    ],
+    "mem0/configs/enums.py": [
+      "MemoryType"
+    ],
+    "mem0/configs/llms/__init__.py": [],
+    "mem0/configs/llms/anthropic.py": [
+      "AnthropicConfig"
+    ],
+    "mem0/configs/llms/aws_bedrock.py": [
+      "AWSBedrockConfig"
+    ],
+    "mem0/configs/llms/azure.py": [
+      "AzureOpenAIConfig"
+    ],
+    "mem0/configs/llms/base.py": [
+      "BaseLlmConfig"
+    ],
+    "mem0/configs/llms/deepseek.py": [
+      "DeepSeekConfig"
+    ],
+    "mem0/configs/llms/gemini.py": [
+      "GeminiConfig"
+    ],
+    "mem0/configs/llms/lmstudio.py": [
+      "LMStudioConfig"
+    ],
+    "mem0/configs/llms/minimax.py": [
+      "MinimaxConfig"
+    ],
+    "mem0/configs/llms/ollama.py": [
+      "OllamaConfig"
+    ],
+    "mem0/configs/llms/openai.py": [
+      "OpenAIConfig"
+    ],
+    "mem0/configs/llms/vllm.py": [
+      "VllmConfig"
+    ],
+    "mem0/configs/llms/xai.py": [
+      "XAIConfig"
+    ],
+    "mem0/configs/prompts.py": [
+      "get_update_memory_messages",
+      "_truncate_content",
+      "_format_summary",
+      "_format_conversation_history",
+      "_serialize_memories",
+      "_format_new_messages",
+      "_resolve_dates",
+      "generate_additive_extraction_prompt"
+    ],
+    "mem0/configs/rerankers/__init__.py": [],
+    "mem0/configs/rerankers/base.py": [
+      "BaseRerankerConfig"
+    ],
+    "mem0/configs/rerankers/cohere.py": [
+      "CohereRerankerConfig"
+    ],
+    "mem0/configs/rerankers/config.py": [
+      "RerankerConfig"
+    ],
+    "mem0/configs/rerankers/huggingface.py": [
+      "HuggingFaceRerankerConfig"
+    ],
+    "mem0/configs/rerankers/llm.py": [
+      "LLMRerankerConfig"
+    ],
+    "mem0/configs/rerankers/sentence_transformer.py": [
+      "SentenceTransformerRerankerConfig"
+    ],
+    "mem0/configs/rerankers/zero_entropy.py": [
+      "ZeroEntropyRerankerConfig"
+    ],
+    "mem0/configs/vector_stores/__init__.py": [],
+    "mem0/configs/vector_stores/azure_ai_search.py": [
+      "AzureAISearchConfig"
+    ],
+    "mem0/configs/vector_stores/azure_mysql.py": [
+      "AzureMySQLConfig"
+    ],
+    "mem0/configs/vector_stores/baidu.py": [
+      "BaiduDBConfig"
+    ],
+    "mem0/configs/vector_stores/cassandra.py": [
+      "CassandraConfig"
+    ],
+    "mem0/configs/vector_stores/chroma.py": [
+      "ChromaDbConfig"
+    ],
+    "mem0/configs/vector_stores/databricks.py": [
+      "DatabricksConfig"
+    ],
+    "mem0/configs/vector_stores/elasticsearch.py": [
+      "ElasticsearchConfig"
+    ],
+    "mem0/configs/vector_stores/faiss.py": [
+      "FAISSConfig"
+    ],
+    "mem0/configs/vector_stores/langchain.py": [
+      "LangchainConfig"
+    ],
+    "mem0/configs/vector_stores/milvus.py": [
+      "MetricType",
+      "MilvusDBConfig"
+    ],
+    "mem0/configs/vector_stores/mongodb.py": [
+      "MongoDBConfig"
+    ],
+    "mem0/configs/vector_stores/neptune.py": [
+      "NeptuneAnalyticsConfig"
+    ],
+    "mem0/configs/vector_stores/opensearch.py": [
+      "OpenSearchConfig"
+    ],
+    "mem0/configs/vector_stores/oracledb.py": [
+      "_quote_identifier",
+      "HnswParams",
+      "IvfParams",
+      "OracleAIVectorSearchConfig"
+    ],
+    "mem0/configs/vector_stores/pgvector.py": [
+      "PGVectorConfig"
+    ],
+    "mem0/configs/vector_stores/pinecone.py": [
+      "PineconeConfig"
+    ],
+    "mem0/configs/vector_stores/qdrant.py": [
+      "QdrantConfig"
+    ],
+    "mem0/configs/vector_stores/redis.py": [
+      "RedisDBConfig"
+    ],
+    "mem0/configs/vector_stores/s3_vectors.py": [
+      "S3VectorsConfig"
+    ],
+    "mem0/configs/vector_stores/supabase.py": [
+      "IndexMethod",
+      "IndexMeasure",
+      "SupabaseConfig"
+    ],
+    "mem0/configs/vector_stores/turbopuffer.py": [
+      "TurbopufferConfig"
+    ],
+    "mem0/configs/vector_stores/upstash_vector.py": [
+      "UpstashVectorConfig"
+    ],
+    "mem0/configs/vector_stores/valkey.py": [
+      "ValkeyConfig"
+    ],
+    "mem0/configs/vector_stores/vertex_ai_vector_search.py": [
+      "GoogleMatchingEngineConfig"
+    ],
+    "mem0/configs/vector_stores/weaviate.py": [
+      "WeaviateConfig"
+    ],
+    "mem0/embeddings/__init__.py": [],
+    "mem0/embeddings/aws_bedrock.py": [
+      "AWSBedrockEmbedding"
+    ],
+    "mem0/embeddings/azure_openai.py": [
+      "AzureOpenAIEmbedding"
+    ],
+    "mem0/embeddings/base.py": [
+      "EmbeddingBase"
+    ],
+    "mem0/embeddings/configs.py": [
+      "EmbedderConfig"
+    ],
+    "mem0/embeddings/fastembed.py": [
+      "FastEmbedEmbedding"
+    ],
+    "mem0/embeddings/gemini.py": [
+      "GoogleGenAIEmbedding"
+    ],
+    "mem0/embeddings/huggingface.py": [
+      "HuggingFaceEmbedding"
+    ],
+    "mem0/embeddings/langchain.py": [
+      "LangchainEmbedding"
+    ],
+    "mem0/embeddings/lmstudio.py": [
+      "LMStudioEmbedding"
+    ],
+    "mem0/embeddings/mock.py": [
+      "MockEmbeddings"
+    ],
+    "mem0/embeddings/ollama.py": [
+      "OllamaEmbedding"
+    ],
+    "mem0/embeddings/openai.py": [
+      "OpenAIEmbedding"
+    ],
+    "mem0/embeddings/together.py": [
+      "TogetherEmbedding"
+    ],
+    "mem0/embeddings/vertexai.py": [
+      "VertexAIEmbedding"
+    ],
+    "mem0/exceptions.py": [
+      "MemoryError",
+      "AuthenticationError",
+      "RateLimitError",
+      "ValidationError",
+      "MemoryNotFoundError",
+      "NetworkError",
+      "ConfigurationError",
+      "MemoryQuotaExceededError",
+      "MemoryCorruptionError",
+      "VectorSearchError",
+      "CacheError",
+      "VectorStoreError",
+      "EmbeddingError",
+      "LLMError",
+      "DatabaseError",
+      "DependencyError",
+      "create_exception_from_response"
+    ],
+    "mem0/llms/__init__.py": [],
+    "mem0/llms/anthropic.py": [
+      "AnthropicLLM"
+    ],
+    "mem0/llms/aws_bedrock.py": [
+      "extract_provider",
+      "AWSBedrockLLM"
+    ],
+    "mem0/llms/azure_openai.py": [
+      "AzureOpenAILLM"
+    ],
+    "mem0/llms/azure_openai_structured.py": [
+      "AzureOpenAIStructuredLLM"
+    ],
+    "mem0/llms/base.py": [
+      "LLMBase"
+    ],
+    "mem0/llms/configs.py": [
+      "LlmConfig"
+    ],
+    "mem0/llms/deepseek.py": [
+      "DeepSeekLLM"
+    ],
+    "mem0/llms/gemini.py": [
+      "GeminiLLM"
+    ],
+    "mem0/llms/groq.py": [
+      "GroqLLM"
+    ],
+    "mem0/llms/langchain.py": [
+      "LangchainLLM"
+    ],
+    "mem0/llms/litellm.py": [
+      "LiteLLM"
+    ],
+    "mem0/llms/lmstudio.py": [
+      "LMStudioLLM"
+    ],
+    "mem0/llms/minimax.py": [
+      "MiniMaxLLM"
+    ],
+    "mem0/llms/ollama.py": [
+      "OllamaLLM"
+    ],
+    "mem0/llms/openai.py": [
+      "OpenAILLM"
+    ],
+    "mem0/llms/openai_structured.py": [
+      "OpenAIStructuredLLM"
+    ],
+    "mem0/llms/sarvam.py": [
+      "SarvamLLM"
+    ],
+    "mem0/llms/together.py": [
+      "TogetherLLM"
+    ],
+    "mem0/llms/vllm.py": [
+      "VllmLLM"
+    ],
+    "mem0/llms/xai.py": [
+      "XAILLM"
+    ],
+    "mem0/memory/__init__.py": [],
+    "mem0/memory/base.py": [
+      "MemoryBase"
+    ],
+    "mem0/memory/main.py": [
+      "_vector_store_list_rows",
+      "_strip_identity_keys",
+      "_reject_top_level_entity_params",
+      "_validate_and_trim_entity_id",
+      "_validate_search_params",
+      "_validate_and_trim_search_query",
+      "_is_sensitive_field",
+      "_safe_deepcopy_config",
+      "_normalize_iso_timestamp_to_utc",
+      "_build_filters_and_metadata",
+      "_escape_scope_value",
+      "_build_session_scope",
+      "_entity_collection_name",
+      "_normalize_expiration_date",
+      "_payload_is_expired",
+      "_OSSProject",
+      "_AsyncOSSProject",
+      "Memory",
+      "AsyncMemory"
+    ],
+    "mem0/memory/notices.py": [
+      "StaticFlagResult",
+      "_load_bundled_config",
+      "_fetch_remote_config",
+      "_get_notice_config",
+      "_evaluate_notice_flags",
+      "display_first_run_notice",
+      "display_first_run_notice_async",
+      "display_temporal_usage_notice",
+      "display_temporal_usage_notice_async",
+      "detect_decay_usage_from_delete",
+      "detect_decay_usage_from_delete_all",
+      "display_decay_usage_notice",
+      "display_decay_usage_notice_async",
+      "detect_scale_threshold_from_top_k",
+      "detect_scale_threshold_from_add_result",
+      "display_scale_threshold_notice",
+      "display_scale_threshold_notice_async",
+      "display_performance_slow_query_notice",
+      "display_performance_slow_query_notice_async",
+      "get_temporal_feature_error_message",
+      "get_temporal_feature_error_message_async",
+      "get_decay_feature_error_message",
+      "get_decay_feature_error_message_async",
+      "_get_feature_error_message",
+      "detect_temporal_usage_from_metadata",
+      "detect_temporal_usage_from_search",
+      "_claim_first_run_notice",
+      "_update_first_run_variant",
+      "_feature_error_at_capacity",
+      "_record_feature_error_opportunity",
+      "_recent_feature_error_entries",
+      "_temporal_usage_at_capacity",
+      "_record_temporal_usage_opportunity",
+      "_recent_temporal_usage_entries",
+      "_decay_usage_at_capacity",
+      "_record_decay_usage_opportunity",
+      "_recent_decay_usage_entries",
+      "_scale_threshold_at_capacity",
+      "_record_scale_threshold_opportunity",
+      "_mark_scale_memory_count_threshold_evaluated",
+      "_recent_scale_threshold_entries",
+      "_performance_slow_query_at_capacity",
+      "_record_performance_slow_query_opportunity",
+      "_recent_performance_slow_query_entries",
+      "_parse_datetime",
+      "_get_notice_state",
+      "_count_added_memories",
+      "_get_provider_memory_count",
+      "_extract_count",
+      "_render_scale_copy",
+      "_coerce_nonnegative_int",
+      "_coerce_mapping",
+      "_walk_mapping",
+      "_is_temporal_key",
+      "_looks_temporal_value",
+      "_has_temporal_filter"
+    ],
+    "mem0/memory/setup.py": [
+      "_config_path",
+      "_load_config",
+      "_write_config",
+      "setup_config",
+      "get_user_id",
+      "read_anon_ids",
+      "_alias_pair_marker",
+      "is_aliased",
+      "mark_aliased",
+      "get_or_create_user_id"
+    ],
+    "mem0/memory/storage.py": [
+      "SQLiteManager"
+    ],
+    "mem0/memory/telemetry.py": [
+      "_parse_sample_rate",
+      "_sampling_before_send",
+      "AnonymousTelemetry",
+      "_get_oss_telemetry",
+      "_shutdown_oss_telemetry",
+      "capture_event",
+      "capture_client_event"
+    ],
+    "mem0/memory/utils.py": [
+      "get_fact_retrieval_messages",
+      "get_fact_retrieval_messages_legacy",
+      "ensure_json_instruction",
+      "parse_messages",
+      "format_entities",
+      "normalize_facts",
+      "remove_code_blocks",
+      "extract_json",
+      "get_image_description",
+      "parse_vision_messages",
+      "process_telemetry_filters",
+      "sanitize_relationship_for_cypher",
+      "remove_spaces_from_entities"
+    ],
+    "mem0/proxy/__init__.py": [],
+    "mem0/proxy/main.py": [
+      "Mem0",
+      "Chat",
+      "Completions"
+    ],
+    "mem0/reranker/__init__.py": [],
+    "mem0/reranker/base.py": [
+      "BaseReranker"
+    ],
+    "mem0/reranker/cohere_reranker.py": [
+      "CohereReranker"
+    ],
+    "mem0/reranker/huggingface_reranker.py": [
+      "HuggingFaceReranker"
+    ],
+    "mem0/reranker/llm_reranker.py": [
+      "LLMReranker"
+    ],
+    "mem0/reranker/sentence_transformer_reranker.py": [
+      "SentenceTransformerReranker"
+    ],
+    "mem0/reranker/zero_entropy_reranker.py": [
+      "ZeroEntropyReranker"
+    ],
+    "mem0/utils/entity_extraction.py": [
+      "_EntityCandidate",
+      "_is_sentence_start",
+      "_strip_generic_ending",
+      "_lemmatize_compound",
+      "_has_artifacts",
+      "_clean_text",
+      "_norm_text",
+      "_looks_like_technical_identifier",
+      "_has_internal_cap_or_digit",
+      "_looks_like_metric_count_token",
+      "_is_metric_list_context",
+      "_strip_trailing_metric_counts",
+      "_is_list_item_name_token",
+      "_is_name_like_token",
+      "_is_bad_single_name_token",
+      "_add_candidate",
+      "_add_ner_candidates",
+      "_add_technical_identifier_candidates",
+      "_add_proper_name_candidates",
+      "_add_quoted_candidates",
+      "_add_topic_phrase_candidates",
+      "_spans_overlap",
+      "_resolve_candidates",
+      "_extract_entities_from_doc",
+      "extract_entities",
+      "extract_entities_batch"
+    ],
+    "mem0/utils/factory.py": [
+      "load_class",
+      "LlmFactory",
+      "EmbedderFactory",
+      "VectorStoreFactory",
+      "RerankerFactory"
+    ],
+    "mem0/utils/gcp_auth.py": [
+      "GCPAuthenticator"
+    ],
+    "mem0/utils/http.py": [
+      "build_http_client"
+    ],
+    "mem0/utils/lemmatization.py": [
+      "lemmatize_for_bm25"
+    ],
+    "mem0/utils/scoring.py": [
+      "get_bm25_params",
+      "normalize_bm25",
+      "score_and_rank"
+    ],
+    "mem0/utils/spacy_models.py": [
+      "_ensure_model_available",
+      "get_nlp_full",
+      "get_nlp_lemma"
+    ],
+    "mem0/vector_stores/__init__.py": [],
+    "mem0/vector_stores/azure_ai_search.py": [
+      "OutputData",
+      "AzureAISearch"
+    ],
+    "mem0/vector_stores/azure_mysql.py": [
+      "_validate_identifier",
+      "OutputData",
+      "AzureMySQL"
+    ],
+    "mem0/vector_stores/baidu.py": [
+      "OutputData",
+      "BaiduDB"
+    ],
+    "mem0/vector_stores/base.py": [
+      "VectorStoreBase"
+    ],
+    "mem0/vector_stores/cassandra.py": [
+      "_validate_identifier",
+      "OutputData",
+      "CassandraDB"
+    ],
+    "mem0/vector_stores/chroma.py": [
+      "OutputData",
+      "ChromaDB"
+    ],
+    "mem0/vector_stores/configs.py": [
+      "VectorStoreConfig"
+    ],
+    "mem0/vector_stores/databricks.py": [
+      "MemoryResult",
+      "_validate_identifier",
+      "Databricks"
+    ],
+    "mem0/vector_stores/elasticsearch.py": [
+      "OutputData",
+      "_validate_filter",
+      "ElasticsearchDB"
+    ],
+    "mem0/vector_stores/faiss.py": [
+      "SafeUnpickler",
+      "_safe_pickle_load",
+      "_validate_docstore_structure",
+      "OutputData",
+      "FAISS"
+    ],
+    "mem0/vector_stores/langchain.py": [
+      "OutputData",
+      "Langchain"
+    ],
+    "mem0/vector_stores/milvus.py": [
+      "OutputData",
+      "MilvusDB"
+    ],
+    "mem0/vector_stores/mongodb.py": [
+      "OutputData",
+      "MongoDB"
+    ],
+    "mem0/vector_stores/neptune_analytics.py": [
+      "_validate_filter",
+      "_escape_cypher",
+      "OutputData",
+      "NeptuneAnalyticsVector"
+    ],
+    "mem0/vector_stores/opensearch.py": [
+      "_validate_filter",
+      "_build_filter_clauses",
+      "OutputData",
+      "OpenSearchDB"
+    ],
+    "mem0/vector_stores/oracledb.py": [
+      "OutputData",
+      "_validate_metadata_key",
+      "_convert_distance_to_score",
+      "_json_path",
+      "_bind_filter_value",
+      "_json_exists",
+      "_validate_scalar_operand",
+      "_build_field_condition",
+      "_build_filter_group",
+      "OracleAIVectorSearch"
+    ],
+    "mem0/vector_stores/pgvector.py": [
+      "_build_filter_conditions",
+      "_with_sslmode",
+      "OutputData",
+      "PGVector"
+    ],
+    "mem0/vector_stores/pinecone.py": [
+      "OutputData",
+      "PineconeDB"
+    ],
+    "mem0/vector_stores/qdrant.py": [
+      "Qdrant"
+    ],
+    "mem0/vector_stores/redis.py": [
+      "MemoryResult",
+      "RedisDB"
+    ],
+    "mem0/vector_stores/s3_vectors.py": [
+      "OutputData",
+      "S3Vectors"
+    ],
+    "mem0/vector_stores/supabase.py": [
+      "OutputData",
+      "Supabase"
+    ],
+    "mem0/vector_stores/turbopuffer.py": [
+      "OutputData",
+      "TurbopufferDB"
+    ],
+    "mem0/vector_stores/upstash_vector.py": [
+      "_validate_filter",
+      "OutputData",
+      "UpstashVector"
+    ],
+    "mem0/vector_stores/valkey.py": [
+      "OutputData",
+      "ValkeyDB"
+    ],
+    "mem0/vector_stores/vertex_ai_vector_search.py": [
+      "OutputData",
+      "GoogleMatchingEngine"
+    ],
+    "mem0/vector_stores/weaviate.py": [
+      "OutputData",
+      "Weaviate"
+    ]
+  },
+  "batches": [
+    {
+      "batchIndex": 1,
+      "files": [
+        {
+          "path": "mem0/configs/vector_stores/elasticsearch.py",
+          "language": "python",
+          "sizeLines": 68,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/vector_stores/milvus.py",
+          "language": "python",
+          "sizeLines": 42,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/vector_stores/opensearch.py",
+          "language": "python",
+          "sizeLines": 49,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/vector_stores/oracledb.py",
+          "language": "python",
+          "sizeLines": 115,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/vector_stores/supabase.py",
+          "language": "python",
+          "sizeLines": 46,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/vector_stores/vertex_ai_vector_search.py",
+          "language": "python",
+          "sizeLines": 28,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/azure_ai_search.py",
+          "language": "python",
+          "sizeLines": 431,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/azure_mysql.py",
+          "language": "python",
+          "sizeLines": 555,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/baidu.py",
+          "language": "python",
+          "sizeLines": 429,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/base.py",
+          "language": "python",
+          "sizeLines": 100,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/cassandra.py",
+          "language": "python",
+          "sizeLines": 503,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/chroma.py",
+          "language": "python",
+          "sizeLines": 364,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/databricks.py",
+          "language": "python",
+          "sizeLines": 881,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/elasticsearch.py",
+          "language": "python",
+          "sizeLines": 309,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/faiss.py",
+          "language": "python",
+          "sizeLines": 648,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/langchain.py",
+          "language": "python",
+          "sizeLines": 216,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/milvus.py",
+          "language": "python",
+          "sizeLines": 374,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/mongodb.py",
+          "language": "python",
+          "sizeLines": 425,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/neptune_analytics.py",
+          "language": "python",
+          "sizeLines": 535,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/opensearch.py",
+          "language": "python",
+          "sizeLines": 414,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/oracledb.py",
+          "language": "python",
+          "sizeLines": 602,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/pgvector.py",
+          "language": "python",
+          "sizeLines": 563,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/pinecone.py",
+          "language": "python",
+          "sizeLines": 439,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/qdrant.py",
+          "language": "python",
+          "sizeLines": 606,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/redis.py",
+          "language": "python",
+          "sizeLines": 367,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/s3_vectors.py",
+          "language": "python",
+          "sizeLines": 223,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/supabase.py",
+          "language": "python",
+          "sizeLines": 259,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/turbopuffer.py",
+          "language": "python",
+          "sizeLines": 360,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/upstash_vector.py",
+          "language": "python",
+          "sizeLines": 360,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/valkey.py",
+          "language": "python",
+          "sizeLines": 812,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/vertex_ai_vector_search.py",
+          "language": "python",
+          "sizeLines": 647,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/weaviate.py",
+          "language": "python",
+          "sizeLines": 384,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "mem0/configs/vector_stores/elasticsearch.py": [],
+        "mem0/configs/vector_stores/milvus.py": [],
+        "mem0/configs/vector_stores/opensearch.py": [],
+        "mem0/configs/vector_stores/oracledb.py": [],
+        "mem0/configs/vector_stores/supabase.py": [],
+        "mem0/configs/vector_stores/vertex_ai_vector_search.py": [],
+        "mem0/vector_stores/azure_ai_search.py": [
+          "mem0/memory/utils.py",
+          "mem0/vector_stores/base.py"
+        ],
+        "mem0/vector_stores/azure_mysql.py": [
+          "mem0/vector_stores/base.py"
+        ],
+        "mem0/vector_stores/baidu.py": [
+          "mem0/vector_stores/base.py"
+        ],
+        "mem0/vector_stores/base.py": [],
+        "mem0/vector_stores/cassandra.py": [
+          "mem0/vector_stores/base.py"
+        ],
+        "mem0/vector_stores/chroma.py": [
+          "mem0/vector_stores/base.py"
+        ],
+        "mem0/vector_stores/databricks.py": [
+          "mem0/memory/utils.py",
+          "mem0/vector_stores/base.py"
+        ],
+        "mem0/vector_stores/elasticsearch.py": [
+          "mem0/configs/vector_stores/elasticsearch.py",
+          "mem0/vector_stores/base.py"
+        ],
+        "mem0/vector_stores/faiss.py": [
+          "mem0/vector_stores/base.py"
+        ],
+        "mem0/vector_stores/langchain.py": [
+          "mem0/vector_stores/base.py"
+        ],
+        "mem0/vector_stores/milvus.py": [
+          "mem0/configs/vector_stores/milvus.py",
+          "mem0/vector_stores/base.py"
+        ],
+        "mem0/vector_stores/mongodb.py": [
+          "mem0/vector_stores/base.py"
+        ],
+        "mem0/vector_stores/neptune_analytics.py": [
+          "mem0/vector_stores/base.py"
+        ],
+        "mem0/vector_stores/opensearch.py": [
+          "mem0/configs/vector_stores/opensearch.py",
+          "mem0/vector_stores/base.py"
+        ],
+        "mem0/vector_stores/oracledb.py": [
+          "mem0/configs/vector_stores/oracledb.py",
+          "mem0/vector_stores/base.py"
+        ],
+        "mem0/vector_stores/pgvector.py": [
+          "mem0/vector_stores/base.py"
+        ],
+        "mem0/vector_stores/pinecone.py": [
+          "mem0/vector_stores/base.py"
+        ],
+        "mem0/vector_stores/qdrant.py": [
+          "mem0/vector_stores/base.py"
+        ],
+        "mem0/vector_stores/redis.py": [
+          "mem0/memory/utils.py",
+          "mem0/vector_stores/base.py",
+          "mem0/vector_stores/redis.py"
+        ],
+        "mem0/vector_stores/s3_vectors.py": [
+          "mem0/vector_stores/base.py"
+        ],
+        "mem0/vector_stores/supabase.py": [
+          "mem0/configs/vector_stores/supabase.py",
+          "mem0/vector_stores/base.py"
+        ],
+        "mem0/vector_stores/turbopuffer.py": [
+          "mem0/vector_stores/base.py"
+        ],
+        "mem0/vector_stores/upstash_vector.py": [
+          "mem0/vector_stores/base.py"
+        ],
+        "mem0/vector_stores/valkey.py": [
+          "mem0/memory/utils.py",
+          "mem0/vector_stores/base.py",
+          "mem0/vector_stores/valkey.py"
+        ],
+        "mem0/vector_stores/vertex_ai_vector_search.py": [
+          "mem0/configs/vector_stores/vertex_ai_vector_search.py",
+          "mem0/vector_stores/base.py"
+        ],
+        "mem0/vector_stores/weaviate.py": [
+          "mem0/vector_stores/base.py"
+        ]
+      },
+      "neighborMap": {
+        "mem0/vector_stores/azure_ai_search.py": [
+          {
+            "path": "mem0/memory/utils.py",
+            "batchIndex": 2,
+            "symbols": [
+              "get_fact_retrieval_messages",
+              "get_fact_retrieval_messages_legacy",
+              "ensure_json_instruction",
+              "parse_messages",
+              "format_entities",
+              "normalize_facts",
+              "remove_code_blocks",
+              "extract_json",
+              "get_image_description",
+              "parse_vision_messages",
+              "process_telemetry_filters",
+              "sanitize_relationship_for_cypher",
+              "remove_spaces_from_entities"
+            ]
+          }
+        ],
+        "mem0/vector_stores/base.py": [
+          {
+            "path": "mem0/memory/main.py",
+            "batchIndex": 3,
+            "symbols": [
+              "_vector_store_list_rows",
+              "_strip_identity_keys",
+              "_reject_top_level_entity_params",
+              "_validate_and_trim_entity_id",
+              "_validate_search_params",
+              "_validate_and_trim_search_query",
+              "_is_sensitive_field",
+              "_safe_deepcopy_config",
+              "_normalize_iso_timestamp_to_utc",
+              "_build_filters_and_metadata",
+              "_escape_scope_value",
+              "_build_session_scope",
+              "_entity_collection_name",
+              "_normalize_expiration_date",
+              "_payload_is_expired",
+              "_OSSProject",
+              "_AsyncOSSProject",
+              "Memory",
+              "AsyncMemory"
+            ]
+          }
+        ],
+        "mem0/vector_stores/databricks.py": [
+          {
+            "path": "mem0/memory/utils.py",
+            "batchIndex": 2,
+            "symbols": [
+              "get_fact_retrieval_messages",
+              "get_fact_retrieval_messages_legacy",
+              "ensure_json_instruction",
+              "parse_messages",
+              "format_entities",
+              "normalize_facts",
+              "remove_code_blocks",
+              "extract_json",
+              "get_image_description",
+              "parse_vision_messages",
+              "process_telemetry_filters",
+              "sanitize_relationship_for_cypher",
+              "remove_spaces_from_entities"
+            ]
+          }
+        ],
+        "mem0/vector_stores/redis.py": [
+          {
+            "path": "mem0/memory/utils.py",
+            "batchIndex": 2,
+            "symbols": [
+              "get_fact_retrieval_messages",
+              "get_fact_retrieval_messages_legacy",
+              "ensure_json_instruction",
+              "parse_messages",
+              "format_entities",
+              "normalize_facts",
+              "remove_code_blocks",
+              "extract_json",
+              "get_image_description",
+              "parse_vision_messages",
+              "process_telemetry_filters",
+              "sanitize_relationship_for_cypher",
+              "remove_spaces_from_entities"
+            ]
+          }
+        ],
+        "mem0/vector_stores/valkey.py": [
+          {
+            "path": "mem0/memory/utils.py",
+            "batchIndex": 2,
+            "symbols": [
+              "get_fact_retrieval_messages",
+              "get_fact_retrieval_messages_legacy",
+              "ensure_json_instruction",
+              "parse_messages",
+              "format_entities",
+              "normalize_facts",
+              "remove_code_blocks",
+              "extract_json",
+              "get_image_description",
+              "parse_vision_messages",
+              "process_telemetry_filters",
+              "sanitize_relationship_for_cypher",
+              "remove_spaces_from_entities"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 2,
+      "files": [
+        {
+          "path": "mem0/configs/llms/anthropic.py",
+          "language": "python",
+          "sizeLines": 59,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/llms/aws_bedrock.py",
+          "language": "python",
+          "sizeLines": 202,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/llms/base.py",
+          "language": "python",
+          "sizeLines": 78,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/llms/deepseek.py",
+          "language": "python",
+          "sizeLines": 56,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/llms/gemini.py",
+          "language": "python",
+          "sizeLines": 64,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/llms/lmstudio.py",
+          "language": "python",
+          "sizeLines": 59,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/llms/minimax.py",
+          "language": "python",
+          "sizeLines": 56,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/llms/ollama.py",
+          "language": "python",
+          "sizeLines": 56,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/llms/openai.py",
+          "language": "python",
+          "sizeLines": 92,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/llms/vllm.py",
+          "language": "python",
+          "sizeLines": 57,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/llms/xai.py",
+          "language": "python",
+          "sizeLines": 55,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/llms/anthropic.py",
+          "language": "python",
+          "sizeLines": 159,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/llms/aws_bedrock.py",
+          "language": "python",
+          "sizeLines": 728,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/llms/azure_openai.py",
+          "language": "python",
+          "sizeLines": 166,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/llms/azure_openai_structured.py",
+          "language": "python",
+          "sizeLines": 153,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/llms/base.py",
+          "language": "python",
+          "sizeLines": 170,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/llms/deepseek.py",
+          "language": "python",
+          "sizeLines": 109,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/llms/gemini.py",
+          "language": "python",
+          "sizeLines": 228,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/llms/groq.py",
+          "language": "python",
+          "sizeLines": 119,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/llms/langchain.py",
+          "language": "python",
+          "sizeLines": 97,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/llms/litellm.py",
+          "language": "python",
+          "sizeLines": 92,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/llms/lmstudio.py",
+          "language": "python",
+          "sizeLines": 114,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/llms/minimax.py",
+          "language": "python",
+          "sizeLines": 114,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/llms/ollama.py",
+          "language": "python",
+          "sizeLines": 144,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/llms/openai.py",
+          "language": "python",
+          "sizeLines": 150,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/llms/openai_structured.py",
+          "language": "python",
+          "sizeLines": 49,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/llms/sarvam.py",
+          "language": "python",
+          "sizeLines": 94,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/llms/together.py",
+          "language": "python",
+          "sizeLines": 92,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/llms/vllm.py",
+          "language": "python",
+          "sizeLines": 108,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/llms/xai.py",
+          "language": "python",
+          "sizeLines": 110,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/memory/utils.py",
+          "language": "python",
+          "sizeLines": 330,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "mem0/configs/llms/anthropic.py": [
+          "mem0/configs/llms/base.py"
+        ],
+        "mem0/configs/llms/aws_bedrock.py": [
+          "mem0/configs/llms/base.py"
+        ],
+        "mem0/configs/llms/base.py": [
+          "mem0/utils/http.py"
+        ],
+        "mem0/configs/llms/deepseek.py": [
+          "mem0/configs/llms/base.py"
+        ],
+        "mem0/configs/llms/gemini.py": [
+          "mem0/configs/llms/base.py"
+        ],
+        "mem0/configs/llms/lmstudio.py": [
+          "mem0/configs/llms/base.py"
+        ],
+        "mem0/configs/llms/minimax.py": [
+          "mem0/configs/llms/base.py"
+        ],
+        "mem0/configs/llms/ollama.py": [
+          "mem0/configs/llms/base.py"
+        ],
+        "mem0/configs/llms/openai.py": [
+          "mem0/configs/llms/base.py"
+        ],
+        "mem0/configs/llms/vllm.py": [
+          "mem0/configs/llms/base.py"
+        ],
+        "mem0/configs/llms/xai.py": [
+          "mem0/configs/llms/base.py"
+        ],
+        "mem0/llms/anthropic.py": [
+          "mem0/configs/llms/anthropic.py",
+          "mem0/configs/llms/base.py",
+          "mem0/llms/base.py"
+        ],
+        "mem0/llms/aws_bedrock.py": [
+          "mem0/configs/llms/aws_bedrock.py",
+          "mem0/configs/llms/base.py",
+          "mem0/llms/base.py",
+          "mem0/memory/utils.py"
+        ],
+        "mem0/llms/azure_openai.py": [
+          "mem0/configs/llms/azure.py",
+          "mem0/configs/llms/base.py",
+          "mem0/llms/base.py",
+          "mem0/llms/openai.py",
+          "mem0/memory/utils.py"
+        ],
+        "mem0/llms/azure_openai_structured.py": [
+          "mem0/configs/llms/base.py",
+          "mem0/llms/base.py",
+          "mem0/llms/openai.py",
+          "mem0/memory/utils.py"
+        ],
+        "mem0/llms/base.py": [
+          "mem0/configs/llms/base.py"
+        ],
+        "mem0/llms/deepseek.py": [
+          "mem0/configs/llms/base.py",
+          "mem0/configs/llms/deepseek.py",
+          "mem0/llms/base.py",
+          "mem0/llms/openai.py",
+          "mem0/memory/utils.py"
+        ],
+        "mem0/llms/gemini.py": [
+          "mem0/configs/llms/base.py",
+          "mem0/configs/llms/gemini.py",
+          "mem0/llms/base.py"
+        ],
+        "mem0/llms/groq.py": [
+          "mem0/configs/llms/base.py",
+          "mem0/llms/base.py",
+          "mem0/memory/utils.py"
+        ],
+        "mem0/llms/langchain.py": [
+          "mem0/configs/llms/base.py",
+          "mem0/llms/base.py"
+        ],
+        "mem0/llms/litellm.py": [
+          "mem0/configs/llms/base.py",
+          "mem0/llms/base.py",
+          "mem0/memory/utils.py"
+        ],
+        "mem0/llms/lmstudio.py": [
+          "mem0/configs/llms/base.py",
+          "mem0/configs/llms/lmstudio.py",
+          "mem0/llms/base.py",
+          "mem0/llms/openai.py",
+          "mem0/memory/utils.py"
+        ],
+        "mem0/llms/minimax.py": [
+          "mem0/configs/llms/base.py",
+          "mem0/configs/llms/minimax.py",
+          "mem0/llms/base.py",
+          "mem0/llms/openai.py",
+          "mem0/memory/utils.py"
+        ],
+        "mem0/llms/ollama.py": [
+          "mem0/configs/llms/base.py",
+          "mem0/configs/llms/ollama.py",
+          "mem0/llms/base.py",
+          "mem0/memory/utils.py"
+        ],
+        "mem0/llms/openai.py": [
+          "mem0/configs/llms/base.py",
+          "mem0/configs/llms/openai.py",
+          "mem0/llms/base.py",
+          "mem0/llms/openai.py",
+          "mem0/memory/utils.py"
+        ],
+        "mem0/llms/openai_structured.py": [
+          "mem0/configs/llms/base.py",
+          "mem0/llms/base.py",
+          "mem0/llms/openai.py"
+        ],
+        "mem0/llms/sarvam.py": [
+          "mem0/configs/llms/base.py",
+          "mem0/llms/base.py"
+        ],
+        "mem0/llms/together.py": [
+          "mem0/configs/llms/base.py",
+          "mem0/llms/base.py",
+          "mem0/memory/utils.py"
+        ],
+        "mem0/llms/vllm.py": [
+          "mem0/configs/llms/base.py",
+          "mem0/configs/llms/vllm.py",
+          "mem0/llms/base.py",
+          "mem0/llms/openai.py",
+          "mem0/memory/utils.py"
+        ],
+        "mem0/llms/xai.py": [
+          "mem0/configs/llms/base.py",
+          "mem0/configs/llms/xai.py",
+          "mem0/llms/base.py",
+          "mem0/llms/openai.py",
+          "mem0/memory/utils.py"
+        ],
+        "mem0/memory/utils.py": [
+          "mem0/configs/prompts.py"
+        ]
+      },
+      "neighborMap": {
+        "mem0/configs/llms/anthropic.py": [
+          {
+            "path": "mem0/utils/factory.py",
+            "batchIndex": 5,
+            "symbols": [
+              "load_class",
+              "LlmFactory",
+              "EmbedderFactory",
+              "VectorStoreFactory",
+              "RerankerFactory"
+            ]
+          }
+        ],
+        "mem0/configs/llms/aws_bedrock.py": [
+          {
+            "path": "mem0/utils/factory.py",
+            "batchIndex": 5,
+            "symbols": [
+              "load_class",
+              "LlmFactory",
+              "EmbedderFactory",
+              "VectorStoreFactory",
+              "RerankerFactory"
+            ]
+          }
+        ],
+        "mem0/configs/llms/base.py": [
+          {
+            "path": "mem0/utils/http.py",
+            "batchIndex": 4,
+            "symbols": [
+              "build_http_client"
+            ]
+          },
+          {
+            "path": "mem0/configs/llms/azure.py",
+            "batchIndex": 6,
+            "symbols": [
+              "AzureOpenAIConfig"
+            ]
+          },
+          {
+            "path": "mem0/utils/factory.py",
+            "batchIndex": 5,
+            "symbols": [
+              "load_class",
+              "LlmFactory",
+              "EmbedderFactory",
+              "VectorStoreFactory",
+              "RerankerFactory"
+            ]
+          }
+        ],
+        "mem0/configs/llms/deepseek.py": [
+          {
+            "path": "mem0/utils/factory.py",
+            "batchIndex": 5,
+            "symbols": [
+              "load_class",
+              "LlmFactory",
+              "EmbedderFactory",
+              "VectorStoreFactory",
+              "RerankerFactory"
+            ]
+          }
+        ],
+        "mem0/configs/llms/gemini.py": [
+          {
+            "path": "mem0/utils/factory.py",
+            "batchIndex": 5,
+            "symbols": [
+              "load_class",
+              "LlmFactory",
+              "EmbedderFactory",
+              "VectorStoreFactory",
+              "RerankerFactory"
+            ]
+          }
+        ],
+        "mem0/configs/llms/lmstudio.py": [
+          {
+            "path": "mem0/utils/factory.py",
+            "batchIndex": 5,
+            "symbols": [
+              "load_class",
+              "LlmFactory",
+              "EmbedderFactory",
+              "VectorStoreFactory",
+              "RerankerFactory"
+            ]
+          }
+        ],
+        "mem0/configs/llms/minimax.py": [
+          {
+            "path": "mem0/utils/factory.py",
+            "batchIndex": 5,
+            "symbols": [
+              "load_class",
+              "LlmFactory",
+              "EmbedderFactory",
+              "VectorStoreFactory",
+              "RerankerFactory"
+            ]
+          }
+        ],
+        "mem0/configs/llms/ollama.py": [
+          {
+            "path": "mem0/utils/factory.py",
+            "batchIndex": 5,
+            "symbols": [
+              "load_class",
+              "LlmFactory",
+              "EmbedderFactory",
+              "VectorStoreFactory",
+              "RerankerFactory"
+            ]
+          }
+        ],
+        "mem0/configs/llms/openai.py": [
+          {
+            "path": "mem0/utils/factory.py",
+            "batchIndex": 5,
+            "symbols": [
+              "load_class",
+              "LlmFactory",
+              "EmbedderFactory",
+              "VectorStoreFactory",
+              "RerankerFactory"
+            ]
+          }
+        ],
+        "mem0/configs/llms/vllm.py": [
+          {
+            "path": "mem0/utils/factory.py",
+            "batchIndex": 5,
+            "symbols": [
+              "load_class",
+              "LlmFactory",
+              "EmbedderFactory",
+              "VectorStoreFactory",
+              "RerankerFactory"
+            ]
+          }
+        ],
+        "mem0/configs/llms/xai.py": [
+          {
+            "path": "mem0/utils/factory.py",
+            "batchIndex": 5,
+            "symbols": [
+              "load_class",
+              "LlmFactory",
+              "EmbedderFactory",
+              "VectorStoreFactory",
+              "RerankerFactory"
+            ]
+          }
+        ],
+        "mem0/llms/azure_openai.py": [
+          {
+            "path": "mem0/configs/llms/azure.py",
+            "batchIndex": 6,
+            "symbols": [
+              "AzureOpenAIConfig"
+            ]
+          }
+        ],
+        "mem0/memory/utils.py": [
+          {
+            "path": "mem0/configs/prompts.py",
+            "batchIndex": 3,
+            "symbols": [
+              "get_update_memory_messages",
+              "_truncate_content",
+              "_format_summary",
+              "_format_conversation_history",
+              "_serialize_memories",
+              "_format_new_messages",
+              "_resolve_dates",
+              "generate_additive_extraction_prompt"
+            ]
+          },
+          {
+            "path": "mem0/memory/main.py",
+            "batchIndex": 3,
+            "symbols": [
+              "_vector_store_list_rows",
+              "_strip_identity_keys",
+              "_reject_top_level_entity_params",
+              "_validate_and_trim_entity_id",
+              "_validate_search_params",
+              "_validate_and_trim_search_query",
+              "_is_sensitive_field",
+              "_safe_deepcopy_config",
+              "_normalize_iso_timestamp_to_utc",
+              "_build_filters_and_metadata",
+              "_escape_scope_value",
+              "_build_session_scope",
+              "_entity_collection_name",
+              "_normalize_expiration_date",
+              "_payload_is_expired",
+              "_OSSProject",
+              "_AsyncOSSProject",
+              "Memory",
+              "AsyncMemory"
+            ]
+          },
+          {
+            "path": "mem0/vector_stores/azure_ai_search.py",
+            "batchIndex": 1,
+            "symbols": [
+              "OutputData",
+              "AzureAISearch"
+            ]
+          },
+          {
+            "path": "mem0/vector_stores/databricks.py",
+            "batchIndex": 1,
+            "symbols": [
+              "MemoryResult",
+              "_validate_identifier",
+              "Databricks"
+            ]
+          },
+          {
+            "path": "mem0/vector_stores/redis.py",
+            "batchIndex": 1,
+            "symbols": [
+              "MemoryResult",
+              "RedisDB"
+            ]
+          },
+          {
+            "path": "mem0/vector_stores/valkey.py",
+            "batchIndex": 1,
+            "symbols": [
+              "OutputData",
+              "ValkeyDB"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 3,
+      "files": [
+        {
+          "path": "mem0/__init__.py",
+          "language": "python",
+          "sizeLines": 6,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/client/main.py",
+          "language": "python",
+          "sizeLines": 2282,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/client/project.py",
+          "language": "python",
+          "sizeLines": 944,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/client/types.py",
+          "language": "python",
+          "sizeLines": 121,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/client/utils.py",
+          "language": "python",
+          "sizeLines": 127,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/enums.py",
+          "language": "python",
+          "sizeLines": 7,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/prompts.py",
+          "language": "python",
+          "sizeLines": 1062,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/exceptions.py",
+          "language": "python",
+          "sizeLines": 484,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/memory/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/memory/base.py",
+          "language": "python",
+          "sizeLines": 63,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/memory/main.py",
+          "language": "python",
+          "sizeLines": 3912,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/memory/notices.py",
+          "language": "python",
+          "sizeLines": 1667,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/memory/setup.py",
+          "language": "python",
+          "sizeLines": 166,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/memory/storage.py",
+          "language": "python",
+          "sizeLines": 347,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/memory/telemetry.py",
+          "language": "python",
+          "sizeLines": 241,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/proxy/main.py",
+          "language": "python",
+          "sizeLines": 186,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/utils/entity_extraction.py",
+          "language": "python",
+          "sizeLines": 772,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/utils/lemmatization.py",
+          "language": "python",
+          "sizeLines": 50,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/utils/scoring.py",
+          "language": "python",
+          "sizeLines": 139,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "mem0/__init__.py": [
+          "mem0/client/main.py",
+          "mem0/memory/main.py"
+        ],
+        "mem0/client/main.py": [
+          "mem0/client/project.py",
+          "mem0/client/types.py",
+          "mem0/client/utils.py",
+          "mem0/memory/setup.py",
+          "mem0/memory/telemetry.py"
+        ],
+        "mem0/client/project.py": [
+          "mem0/client/utils.py",
+          "mem0/memory/telemetry.py"
+        ],
+        "mem0/client/types.py": [],
+        "mem0/client/utils.py": [
+          "mem0/exceptions.py"
+        ],
+        "mem0/configs/enums.py": [],
+        "mem0/configs/prompts.py": [],
+        "mem0/exceptions.py": [],
+        "mem0/memory/__init__.py": [],
+        "mem0/memory/base.py": [],
+        "mem0/memory/main.py": [
+          "mem0/configs/base.py",
+          "mem0/configs/enums.py",
+          "mem0/configs/prompts.py",
+          "mem0/exceptions.py",
+          "mem0/memory/base.py",
+          "mem0/memory/notices.py",
+          "mem0/memory/setup.py",
+          "mem0/memory/storage.py",
+          "mem0/memory/telemetry.py",
+          "mem0/memory/utils.py",
+          "mem0/utils/entity_extraction.py",
+          "mem0/utils/factory.py",
+          "mem0/utils/lemmatization.py",
+          "mem0/utils/scoring.py",
+          "mem0/vector_stores/base.py"
+        ],
+        "mem0/memory/notices.py": [
+          "mem0/memory/__init__.py",
+          "mem0/memory/setup.py"
+        ],
+        "mem0/memory/setup.py": [],
+        "mem0/memory/storage.py": [],
+        "mem0/memory/telemetry.py": [
+          "mem0/__init__.py",
+          "mem0/memory/setup.py"
+        ],
+        "mem0/proxy/main.py": [
+          "mem0/__init__.py",
+          "mem0/configs/prompts.py",
+          "mem0/memory/telemetry.py"
+        ],
+        "mem0/utils/entity_extraction.py": [],
+        "mem0/utils/lemmatization.py": [],
+        "mem0/utils/scoring.py": []
+      },
+      "neighborMap": {
+        "mem0/configs/prompts.py": [
+          {
+            "path": "mem0/memory/utils.py",
+            "batchIndex": 2,
+            "symbols": [
+              "get_fact_retrieval_messages",
+              "get_fact_retrieval_messages_legacy",
+              "ensure_json_instruction",
+              "parse_messages",
+              "format_entities",
+              "normalize_facts",
+              "remove_code_blocks",
+              "extract_json",
+              "get_image_description",
+              "parse_vision_messages",
+              "process_telemetry_filters",
+              "sanitize_relationship_for_cypher",
+              "remove_spaces_from_entities"
+            ]
+          }
+        ],
+        "mem0/memory/main.py": [
+          {
+            "path": "mem0/configs/base.py",
+            "batchIndex": 6,
+            "symbols": [
+              "MemoryItem",
+              "MemoryConfig",
+              "AzureConfig"
+            ]
+          },
+          {
+            "path": "mem0/memory/utils.py",
+            "batchIndex": 2,
+            "symbols": [
+              "get_fact_retrieval_messages",
+              "get_fact_retrieval_messages_legacy",
+              "ensure_json_instruction",
+              "parse_messages",
+              "format_entities",
+              "normalize_facts",
+              "remove_code_blocks",
+              "extract_json",
+              "get_image_description",
+              "parse_vision_messages",
+              "process_telemetry_filters",
+              "sanitize_relationship_for_cypher",
+              "remove_spaces_from_entities"
+            ]
+          },
+          {
+            "path": "mem0/utils/factory.py",
+            "batchIndex": 5,
+            "symbols": [
+              "load_class",
+              "LlmFactory",
+              "EmbedderFactory",
+              "VectorStoreFactory",
+              "RerankerFactory"
+            ]
+          },
+          {
+            "path": "mem0/vector_stores/base.py",
+            "batchIndex": 1,
+            "symbols": [
+              "VectorStoreBase"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 4,
+      "files": [
+        {
+          "path": "mem0/configs/embeddings/base.py",
+          "language": "python",
+          "sizeLines": 111,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/embeddings/aws_bedrock.py",
+          "language": "python",
+          "sizeLines": 110,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/embeddings/azure_openai.py",
+          "language": "python",
+          "sizeLines": 77,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/embeddings/base.py",
+          "language": "python",
+          "sizeLines": 47,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/embeddings/fastembed.py",
+          "language": "python",
+          "sizeLines": 32,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/embeddings/gemini.py",
+          "language": "python",
+          "sizeLines": 56,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/embeddings/huggingface.py",
+          "language": "python",
+          "sizeLines": 68,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/embeddings/langchain.py",
+          "language": "python",
+          "sizeLines": 35,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/embeddings/lmstudio.py",
+          "language": "python",
+          "sizeLines": 43,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/embeddings/mock.py",
+          "language": "python",
+          "sizeLines": 11,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/embeddings/ollama.py",
+          "language": "python",
+          "sizeLines": 63,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/embeddings/openai.py",
+          "language": "python",
+          "sizeLines": 81,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/embeddings/together.py",
+          "language": "python",
+          "sizeLines": 43,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/embeddings/vertexai.py",
+          "language": "python",
+          "sizeLines": 85,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/utils/gcp_auth.py",
+          "language": "python",
+          "sizeLines": 166,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/utils/http.py",
+          "language": "python",
+          "sizeLines": 13,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "mem0/configs/embeddings/base.py": [
+          "mem0/configs/base.py",
+          "mem0/utils/http.py"
+        ],
+        "mem0/embeddings/aws_bedrock.py": [
+          "mem0/configs/embeddings/base.py",
+          "mem0/embeddings/base.py"
+        ],
+        "mem0/embeddings/azure_openai.py": [
+          "mem0/configs/embeddings/base.py",
+          "mem0/embeddings/base.py",
+          "mem0/embeddings/openai.py"
+        ],
+        "mem0/embeddings/base.py": [
+          "mem0/configs/embeddings/base.py"
+        ],
+        "mem0/embeddings/fastembed.py": [
+          "mem0/configs/embeddings/base.py",
+          "mem0/embeddings/base.py"
+        ],
+        "mem0/embeddings/gemini.py": [
+          "mem0/configs/embeddings/base.py",
+          "mem0/embeddings/base.py"
+        ],
+        "mem0/embeddings/huggingface.py": [
+          "mem0/configs/embeddings/base.py",
+          "mem0/embeddings/base.py",
+          "mem0/embeddings/openai.py"
+        ],
+        "mem0/embeddings/langchain.py": [
+          "mem0/configs/embeddings/base.py",
+          "mem0/embeddings/base.py"
+        ],
+        "mem0/embeddings/lmstudio.py": [
+          "mem0/configs/embeddings/base.py",
+          "mem0/embeddings/base.py",
+          "mem0/embeddings/openai.py"
+        ],
+        "mem0/embeddings/mock.py": [
+          "mem0/embeddings/base.py"
+        ],
+        "mem0/embeddings/ollama.py": [
+          "mem0/configs/embeddings/base.py",
+          "mem0/embeddings/base.py"
+        ],
+        "mem0/embeddings/openai.py": [
+          "mem0/configs/embeddings/base.py",
+          "mem0/embeddings/base.py",
+          "mem0/embeddings/openai.py"
+        ],
+        "mem0/embeddings/together.py": [
+          "mem0/configs/embeddings/base.py",
+          "mem0/embeddings/base.py",
+          "mem0/embeddings/together.py"
+        ],
+        "mem0/embeddings/vertexai.py": [
+          "mem0/configs/embeddings/base.py",
+          "mem0/embeddings/base.py",
+          "mem0/utils/gcp_auth.py"
+        ],
+        "mem0/utils/gcp_auth.py": [],
+        "mem0/utils/http.py": []
+      },
+      "neighborMap": {
+        "mem0/configs/embeddings/base.py": [
+          {
+            "path": "mem0/configs/base.py",
+            "batchIndex": 6,
+            "symbols": [
+              "MemoryItem",
+              "MemoryConfig",
+              "AzureConfig"
+            ]
+          },
+          {
+            "path": "mem0/utils/factory.py",
+            "batchIndex": 5,
+            "symbols": [
+              "load_class",
+              "LlmFactory",
+              "EmbedderFactory",
+              "VectorStoreFactory",
+              "RerankerFactory"
+            ]
+          }
+        ],
+        "mem0/embeddings/mock.py": [
+          {
+            "path": "mem0/utils/factory.py",
+            "batchIndex": 5,
+            "symbols": [
+              "load_class",
+              "LlmFactory",
+              "EmbedderFactory",
+              "VectorStoreFactory",
+              "RerankerFactory"
+            ]
+          }
+        ],
+        "mem0/utils/http.py": [
+          {
+            "path": "mem0/configs/llms/base.py",
+            "batchIndex": 2,
+            "symbols": [
+              "BaseLlmConfig"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 5,
+      "files": [
+        {
+          "path": "mem0/configs/rerankers/base.py",
+          "language": "python",
+          "sizeLines": 17,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/rerankers/cohere.py",
+          "language": "python",
+          "sizeLines": 16,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/rerankers/huggingface.py",
+          "language": "python",
+          "sizeLines": 17,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/rerankers/llm.py",
+          "language": "python",
+          "sizeLines": 54,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/rerankers/sentence_transformer.py",
+          "language": "python",
+          "sizeLines": 16,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/rerankers/zero_entropy.py",
+          "language": "python",
+          "sizeLines": 28,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/reranker/__init__.py",
+          "language": "python",
+          "sizeLines": 18,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/reranker/base.py",
+          "language": "python",
+          "sizeLines": 19,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/reranker/cohere_reranker.py",
+          "language": "python",
+          "sizeLines": 92,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/reranker/huggingface_reranker.py",
+          "language": "python",
+          "sizeLines": 172,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/reranker/llm_reranker.py",
+          "language": "python",
+          "sizeLines": 172,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/reranker/sentence_transformer_reranker.py",
+          "language": "python",
+          "sizeLines": 119,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/reranker/zero_entropy_reranker.py",
+          "language": "python",
+          "sizeLines": 103,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/utils/factory.py",
+          "language": "python",
+          "sizeLines": 280,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "mem0/configs/rerankers/base.py": [],
+        "mem0/configs/rerankers/cohere.py": [
+          "mem0/configs/rerankers/base.py"
+        ],
+        "mem0/configs/rerankers/huggingface.py": [
+          "mem0/configs/rerankers/base.py"
+        ],
+        "mem0/configs/rerankers/llm.py": [
+          "mem0/configs/rerankers/base.py"
+        ],
+        "mem0/configs/rerankers/sentence_transformer.py": [
+          "mem0/configs/rerankers/base.py"
+        ],
+        "mem0/configs/rerankers/zero_entropy.py": [
+          "mem0/configs/rerankers/base.py"
+        ],
+        "mem0/reranker/__init__.py": [
+          "mem0/reranker/base.py",
+          "mem0/reranker/cohere_reranker.py",
+          "mem0/reranker/huggingface_reranker.py",
+          "mem0/reranker/llm_reranker.py",
+          "mem0/reranker/sentence_transformer_reranker.py",
+          "mem0/reranker/zero_entropy_reranker.py"
+        ],
+        "mem0/reranker/base.py": [],
+        "mem0/reranker/cohere_reranker.py": [
+          "mem0/reranker/base.py"
+        ],
+        "mem0/reranker/huggingface_reranker.py": [
+          "mem0/configs/rerankers/base.py",
+          "mem0/configs/rerankers/huggingface.py",
+          "mem0/reranker/base.py"
+        ],
+        "mem0/reranker/llm_reranker.py": [
+          "mem0/configs/rerankers/base.py",
+          "mem0/configs/rerankers/llm.py",
+          "mem0/reranker/base.py",
+          "mem0/utils/factory.py"
+        ],
+        "mem0/reranker/sentence_transformer_reranker.py": [
+          "mem0/configs/rerankers/base.py",
+          "mem0/configs/rerankers/sentence_transformer.py",
+          "mem0/reranker/base.py"
+        ],
+        "mem0/reranker/zero_entropy_reranker.py": [
+          "mem0/reranker/base.py"
+        ],
+        "mem0/utils/factory.py": [
+          "mem0/configs/embeddings/base.py",
+          "mem0/configs/llms/anthropic.py",
+          "mem0/configs/llms/aws_bedrock.py",
+          "mem0/configs/llms/azure.py",
+          "mem0/configs/llms/base.py",
+          "mem0/configs/llms/deepseek.py",
+          "mem0/configs/llms/gemini.py",
+          "mem0/configs/llms/lmstudio.py",
+          "mem0/configs/llms/minimax.py",
+          "mem0/configs/llms/ollama.py",
+          "mem0/configs/llms/openai.py",
+          "mem0/configs/llms/vllm.py",
+          "mem0/configs/llms/xai.py",
+          "mem0/configs/rerankers/base.py",
+          "mem0/configs/rerankers/cohere.py",
+          "mem0/configs/rerankers/huggingface.py",
+          "mem0/configs/rerankers/llm.py",
+          "mem0/configs/rerankers/sentence_transformer.py",
+          "mem0/configs/rerankers/zero_entropy.py",
+          "mem0/embeddings/mock.py"
+        ]
+      },
+      "neighborMap": {
+        "mem0/utils/factory.py": [
+          {
+            "path": "mem0/configs/embeddings/base.py",
+            "batchIndex": 4,
+            "symbols": [
+              "BaseEmbedderConfig"
+            ]
+          },
+          {
+            "path": "mem0/configs/llms/anthropic.py",
+            "batchIndex": 2,
+            "symbols": [
+              "AnthropicConfig"
+            ]
+          },
+          {
+            "path": "mem0/configs/llms/aws_bedrock.py",
+            "batchIndex": 2,
+            "symbols": [
+              "AWSBedrockConfig"
+            ]
+          },
+          {
+            "path": "mem0/configs/llms/azure.py",
+            "batchIndex": 6,
+            "symbols": [
+              "AzureOpenAIConfig"
+            ]
+          },
+          {
+            "path": "mem0/configs/llms/base.py",
+            "batchIndex": 2,
+            "symbols": [
+              "BaseLlmConfig"
+            ]
+          },
+          {
+            "path": "mem0/configs/llms/deepseek.py",
+            "batchIndex": 2,
+            "symbols": [
+              "DeepSeekConfig"
+            ]
+          },
+          {
+            "path": "mem0/configs/llms/gemini.py",
+            "batchIndex": 2,
+            "symbols": [
+              "GeminiConfig"
+            ]
+          },
+          {
+            "path": "mem0/configs/llms/lmstudio.py",
+            "batchIndex": 2,
+            "symbols": [
+              "LMStudioConfig"
+            ]
+          },
+          {
+            "path": "mem0/configs/llms/minimax.py",
+            "batchIndex": 2,
+            "symbols": [
+              "MinimaxConfig"
+            ]
+          },
+          {
+            "path": "mem0/configs/llms/ollama.py",
+            "batchIndex": 2,
+            "symbols": [
+              "OllamaConfig"
+            ]
+          },
+          {
+            "path": "mem0/configs/llms/openai.py",
+            "batchIndex": 2,
+            "symbols": [
+              "OpenAIConfig"
+            ]
+          },
+          {
+            "path": "mem0/configs/llms/vllm.py",
+            "batchIndex": 2,
+            "symbols": [
+              "VllmConfig"
+            ]
+          },
+          {
+            "path": "mem0/configs/llms/xai.py",
+            "batchIndex": 2,
+            "symbols": [
+              "XAIConfig"
+            ]
+          },
+          {
+            "path": "mem0/embeddings/mock.py",
+            "batchIndex": 4,
+            "symbols": [
+              "MockEmbeddings"
+            ]
+          },
+          {
+            "path": "mem0/memory/main.py",
+            "batchIndex": 3,
+            "symbols": [
+              "_vector_store_list_rows",
+              "_strip_identity_keys",
+              "_reject_top_level_entity_params",
+              "_validate_and_trim_entity_id",
+              "_validate_search_params",
+              "_validate_and_trim_search_query",
+              "_is_sensitive_field",
+              "_safe_deepcopy_config",
+              "_normalize_iso_timestamp_to_utc",
+              "_build_filters_and_metadata",
+              "_escape_scope_value",
+              "_build_session_scope",
+              "_entity_collection_name",
+              "_normalize_expiration_date",
+              "_payload_is_expired",
+              "_OSSProject",
+              "_AsyncOSSProject",
+              "Memory",
+              "AsyncMemory"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 6,
+      "files": [
+        {
+          "path": "mem0/configs/base.py",
+          "language": "python",
+          "sizeLines": 81,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/llms/azure.py",
+          "language": "python",
+          "sizeLines": 66,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/rerankers/config.py",
+          "language": "python",
+          "sizeLines": 12,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/embeddings/configs.py",
+          "language": "python",
+          "sizeLines": 31,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/llms/configs.py",
+          "language": "python",
+          "sizeLines": 35,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/configs.py",
+          "language": "python",
+          "sizeLines": 68,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "mem0/configs/base.py": [
+          "mem0/configs/rerankers/config.py",
+          "mem0/embeddings/configs.py",
+          "mem0/llms/configs.py",
+          "mem0/vector_stores/configs.py"
+        ],
+        "mem0/configs/llms/azure.py": [
+          "mem0/configs/base.py",
+          "mem0/configs/llms/base.py"
+        ],
+        "mem0/configs/rerankers/config.py": [],
+        "mem0/embeddings/configs.py": [],
+        "mem0/llms/configs.py": [],
+        "mem0/vector_stores/configs.py": []
+      },
+      "neighborMap": {
+        "mem0/configs/base.py": [
+          {
+            "path": "mem0/configs/embeddings/base.py",
+            "batchIndex": 4,
+            "symbols": [
+              "BaseEmbedderConfig"
+            ]
+          },
+          {
+            "path": "mem0/memory/main.py",
+            "batchIndex": 3,
+            "symbols": [
+              "_vector_store_list_rows",
+              "_strip_identity_keys",
+              "_reject_top_level_entity_params",
+              "_validate_and_trim_entity_id",
+              "_validate_search_params",
+              "_validate_and_trim_search_query",
+              "_is_sensitive_field",
+              "_safe_deepcopy_config",
+              "_normalize_iso_timestamp_to_utc",
+              "_build_filters_and_metadata",
+              "_escape_scope_value",
+              "_build_session_scope",
+              "_entity_collection_name",
+              "_normalize_expiration_date",
+              "_payload_is_expired",
+              "_OSSProject",
+              "_AsyncOSSProject",
+              "Memory",
+              "AsyncMemory"
+            ]
+          }
+        ],
+        "mem0/configs/llms/azure.py": [
+          {
+            "path": "mem0/configs/llms/base.py",
+            "batchIndex": 2,
+            "symbols": [
+              "BaseLlmConfig"
+            ]
+          },
+          {
+            "path": "mem0/llms/azure_openai.py",
+            "batchIndex": 2,
+            "symbols": [
+              "AzureOpenAILLM"
+            ]
+          },
+          {
+            "path": "mem0/utils/factory.py",
+            "batchIndex": 5,
+            "symbols": [
+              "load_class",
+              "LlmFactory",
+              "EmbedderFactory",
+              "VectorStoreFactory",
+              "RerankerFactory"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 7,
+      "files": [
+        {
+          "path": ".pre-commit-config.yaml",
+          "language": "yaml",
+          "sizeLines": 16,
+          "fileCategory": "config"
+        },
+        {
+          "path": "AGENTS.md",
+          "language": "markdown",
+          "sizeLines": 175,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "language": "markdown",
+          "sizeLines": 181,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "language": "markdown",
+          "sizeLines": 256,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "LLM.md",
+          "language": "markdown",
+          "sizeLines": 1324,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "Makefile",
+          "language": "makefile",
+          "sizeLines": 52,
+          "fileCategory": "infra"
+        },
+        {
+          "path": "README.md",
+          "language": "markdown",
+          "sizeLines": 269,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "SECURITY.md",
+          "language": "markdown",
+          "sizeLines": 54,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "marketplace.json",
+          "language": "json",
+          "sizeLines": 19,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pyproject.toml",
+          "language": "toml",
+          "sizeLines": 174,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        ".pre-commit-config.yaml": [],
+        "AGENTS.md": [],
+        "CODE_OF_CONDUCT.md": [],
+        "CONTRIBUTING.md": [],
+        "LLM.md": [],
+        "Makefile": [],
+        "README.md": [],
+        "SECURITY.md": [],
+        "marketplace.json": [],
+        "pyproject.toml": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 8,
+      "files": [
+        {
+          "path": ".gitmodules",
+          "language": "unknown",
+          "sizeLines": 4,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/AGENTS.md",
+          "language": "markdown",
+          "sizeLines": 105,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "mem0/client/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/embeddings/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/llms/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/rerankers/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/vector_stores/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/vector_stores/azure_ai_search.py",
+          "language": "python",
+          "sizeLines": 57,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/vector_stores/azure_mysql.py",
+          "language": "python",
+          "sizeLines": 97,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/vector_stores/baidu.py",
+          "language": "python",
+          "sizeLines": 27,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/vector_stores/cassandra.py",
+          "language": "python",
+          "sizeLines": 76,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/vector_stores/chroma.py",
+          "language": "python",
+          "sizeLines": 58,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/vector_stores/databricks.py",
+          "language": "python",
+          "sizeLines": 61,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/vector_stores/faiss.py",
+          "language": "python",
+          "sizeLines": 37,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/vector_stores/langchain.py",
+          "language": "python",
+          "sizeLines": 30,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/vector_stores/mongodb.py",
+          "language": "python",
+          "sizeLines": 27,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/vector_stores/neptune.py",
+          "language": "python",
+          "sizeLines": 40,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/vector_stores/pgvector.py",
+          "language": "python",
+          "sizeLines": 54,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/vector_stores/pinecone.py",
+          "language": "python",
+          "sizeLines": 55,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/vector_stores/qdrant.py",
+          "language": "python",
+          "sizeLines": 51,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/vector_stores/redis.py",
+          "language": "python",
+          "sizeLines": 9,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/vector_stores/s3_vectors.py",
+          "language": "python",
+          "sizeLines": 28,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/vector_stores/turbopuffer.py",
+          "language": "python",
+          "sizeLines": 45,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/vector_stores/upstash_vector.py",
+          "language": "python",
+          "sizeLines": 41,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        ".gitmodules": [],
+        "mem0/AGENTS.md": [],
+        "mem0/client/__init__.py": [],
+        "mem0/configs/__init__.py": [],
+        "mem0/configs/embeddings/__init__.py": [],
+        "mem0/configs/llms/__init__.py": [],
+        "mem0/configs/rerankers/__init__.py": [],
+        "mem0/configs/vector_stores/__init__.py": [],
+        "mem0/configs/vector_stores/azure_ai_search.py": [],
+        "mem0/configs/vector_stores/azure_mysql.py": [],
+        "mem0/configs/vector_stores/baidu.py": [],
+        "mem0/configs/vector_stores/cassandra.py": [],
+        "mem0/configs/vector_stores/chroma.py": [],
+        "mem0/configs/vector_stores/databricks.py": [],
+        "mem0/configs/vector_stores/faiss.py": [],
+        "mem0/configs/vector_stores/langchain.py": [],
+        "mem0/configs/vector_stores/mongodb.py": [],
+        "mem0/configs/vector_stores/neptune.py": [],
+        "mem0/configs/vector_stores/pgvector.py": [],
+        "mem0/configs/vector_stores/pinecone.py": [],
+        "mem0/configs/vector_stores/qdrant.py": [],
+        "mem0/configs/vector_stores/redis.py": [],
+        "mem0/configs/vector_stores/s3_vectors.py": [],
+        "mem0/configs/vector_stores/turbopuffer.py": [],
+        "mem0/configs/vector_stores/upstash_vector.py": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 9,
+      "files": [
+        {
+          "path": "mem0/configs/vector_stores/valkey.py",
+          "language": "python",
+          "sizeLines": 32,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/configs/vector_stores/weaviate.py",
+          "language": "python",
+          "sizeLines": 41,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/embeddings/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/llms/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/memory/oss_notices_config.json",
+          "language": "json",
+          "sizeLines": 44,
+          "fileCategory": "config"
+        },
+        {
+          "path": "mem0/proxy/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/utils/spacy_models.py",
+          "language": "python",
+          "sizeLines": 91,
+          "fileCategory": "code"
+        },
+        {
+          "path": "mem0/vector_stores/__init__.py",
+          "language": "python",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "mem0/configs/vector_stores/valkey.py": [],
+        "mem0/configs/vector_stores/weaviate.py": [],
+        "mem0/embeddings/__init__.py": [],
+        "mem0/llms/__init__.py": [],
+        "mem0/memory/oss_notices_config.json": [],
+        "mem0/proxy/__init__.py": [],
+        "mem0/utils/spacy_models.py": [],
+        "mem0/vector_stores/__init__.py": []
+      },
+      "neighborMap": {}
+    }
+  ]
+}

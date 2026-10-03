@@ -1,0 +1,4499 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 31,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 31,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 31,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "mem0/configs/llms/anthropic.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 59,
+      "nonEmptyLines": 53,
+      "classes": [
+        {
+          "name": "AnthropicConfig",
+          "startLine": 6,
+          "endLine": 59,
+          "methods": [
+            "__init__"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AnthropicConfig",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 45
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 45
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/llms/aws_bedrock.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 202,
+      "nonEmptyLines": 171,
+      "classes": [
+        {
+          "name": "AWSBedrockConfig",
+          "startLine": 7,
+          "endLine": 202,
+          "methods": [
+            "__init__",
+            "provider",
+            "model_name",
+            "get_model_config",
+            "get_aws_config",
+            "validate_model_format",
+            "get_supported_regions",
+            "get_model_capabilities"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AWSBedrockConfig",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 52
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 52
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 63
+        },
+        {
+          "caller": "provider",
+          "callee": "self.model.split",
+          "lineNumber": 74
+        },
+        {
+          "caller": "model_name",
+          "callee": "\".\".join",
+          "lineNumber": 81
+        },
+        {
+          "caller": "model_name",
+          "callee": "self.model.split",
+          "lineNumber": 81
+        },
+        {
+          "caller": "get_model_config",
+          "callee": "base_config.update",
+          "lineNumber": 96
+        },
+        {
+          "caller": "get_aws_config",
+          "callee": "os.getenv",
+          "lineNumber": 107
+        },
+        {
+          "caller": "get_aws_config",
+          "callee": "os.getenv",
+          "lineNumber": 110
+        },
+        {
+          "caller": "get_aws_config",
+          "callee": "os.getenv",
+          "lineNumber": 113
+        },
+        {
+          "caller": "get_aws_config",
+          "callee": "os.getenv",
+          "lineNumber": 116
+        },
+        {
+          "caller": "validate_model_format",
+          "callee": "self.model.split",
+          "lineNumber": 134
+        },
+        {
+          "caller": "get_model_capabilities",
+          "callee": "capabilities.update",
+          "lineNumber": 173
+        },
+        {
+          "caller": "get_model_capabilities",
+          "callee": "capabilities.update",
+          "lineNumber": 180
+        },
+        {
+          "caller": "get_model_capabilities",
+          "callee": "capabilities.update",
+          "lineNumber": 187
+        },
+        {
+          "caller": "get_model_capabilities",
+          "callee": "capabilities.update",
+          "lineNumber": 192
+        },
+        {
+          "caller": "get_model_capabilities",
+          "callee": "capabilities.update",
+          "lineNumber": 197
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/llms/base.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 78,
+      "nonEmptyLines": 72,
+      "classes": [
+        {
+          "name": "BaseLlmConfig",
+          "startLine": 7,
+          "endLine": 78,
+          "methods": [
+            "__init__"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "BaseLlmConfig",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "build_http_client",
+          "lineNumber": 78
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/llms/deepseek.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 50,
+      "classes": [
+        {
+          "name": "DeepSeekConfig",
+          "startLine": 6,
+          "endLine": 56,
+          "methods": [
+            "__init__"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DeepSeekConfig",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 43
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 43
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/llms/gemini.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 64,
+      "nonEmptyLines": 57,
+      "classes": [
+        {
+          "name": "GeminiConfig",
+          "startLine": 7,
+          "endLine": 64,
+          "methods": [
+            "__init__"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "GeminiConfig",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 48
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 48
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv(\"GOOGLE_GENAI_USE_VERTEXAI\", \"\").lower",
+          "lineNumber": 61
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 61
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 63
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 64
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/llms/lmstudio.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 59,
+      "nonEmptyLines": 53,
+      "classes": [
+        {
+          "name": "LMStudioConfig",
+          "startLine": 6,
+          "endLine": 59,
+          "methods": [
+            "__init__"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "LMStudioConfig",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 45
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 45
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/llms/minimax.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 50,
+      "classes": [
+        {
+          "name": "MinimaxConfig",
+          "startLine": 6,
+          "endLine": 56,
+          "methods": [
+            "__init__"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "MinimaxConfig",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 43
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 43
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/llms/ollama.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 50,
+      "classes": [
+        {
+          "name": "OllamaConfig",
+          "startLine": 6,
+          "endLine": 56,
+          "methods": [
+            "__init__"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "OllamaConfig",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 43
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 43
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/llms/openai.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 92,
+      "nonEmptyLines": 85,
+      "classes": [
+        {
+          "name": "OpenAIConfig",
+          "startLine": 6,
+          "endLine": 92,
+          "methods": [
+            "__init__"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "OpenAIConfig",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 68
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 68
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/llms/vllm.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 57,
+      "nonEmptyLines": 51,
+      "classes": [
+        {
+          "name": "VllmConfig",
+          "startLine": 7,
+          "endLine": 57,
+          "methods": [
+            "__init__"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "VllmConfig",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 44
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 44
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 57
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/configs/llms/xai.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 55,
+      "nonEmptyLines": 49,
+      "classes": [
+        {
+          "name": "XAIConfig",
+          "startLine": 6,
+          "endLine": 55,
+          "methods": [
+            "__init__"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "XAIConfig",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 42
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 42
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/llms/anthropic.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 159,
+      "nonEmptyLines": 133,
+      "classes": [
+        {
+          "name": "AnthropicLLM",
+          "startLine": 14,
+          "endLine": 159,
+          "methods": [
+            "__init__",
+            "_enable_sampling_parameters",
+            "_get_common_params",
+            "generate_response",
+            "_parse_response"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AnthropicLLM",
+          "line": 14,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "AnthropicConfig",
+          "lineNumber": 18
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 19
+        },
+        {
+          "caller": "__init__",
+          "callee": "AnthropicConfig",
+          "lineNumber": 20
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 21
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 21
+        },
+        {
+          "caller": "__init__",
+          "callee": "AnthropicConfig",
+          "lineNumber": 23
+        },
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 35
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 35
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 40
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 41
+        },
+        {
+          "caller": "__init__",
+          "callee": "anthropic.Anthropic",
+          "lineNumber": 45
+        },
+        {
+          "caller": "_enable_sampling_parameters",
+          "callee": "getattr",
+          "lineNumber": 49
+        },
+        {
+          "caller": "_enable_sampling_parameters",
+          "callee": "self.config.model.lower",
+          "lineNumber": 53
+        },
+        {
+          "caller": "_enable_sampling_parameters",
+          "callee": "model_name.rsplit(\"[\", 1)[0].split",
+          "lineNumber": 54
+        },
+        {
+          "caller": "_enable_sampling_parameters",
+          "callee": "model_name.rsplit",
+          "lineNumber": 54
+        },
+        {
+          "caller": "_enable_sampling_parameters",
+          "callee": "int",
+          "lineNumber": 59
+        },
+        {
+          "caller": "_enable_sampling_parameters",
+          "callee": "major.isdigit",
+          "lineNumber": 59
+        },
+        {
+          "caller": "_enable_sampling_parameters",
+          "callee": "int",
+          "lineNumber": 60
+        },
+        {
+          "caller": "_enable_sampling_parameters",
+          "callee": "minor.isdigit",
+          "lineNumber": 60
+        },
+        {
+          "caller": "_get_common_params",
+          "callee": "self._enable_sampling_parameters",
+          "lineNumber": 85
+        },
+        {
+          "caller": "_get_common_params",
+          "callee": "params.update",
+          "lineNumber": 94
+        },
+        {
+          "caller": "generate_response",
+          "callee": "filtered_messages.append",
+          "lineNumber": 125
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._get_supported_params",
+          "lineNumber": 127
+        },
+        {
+          "caller": "generate_response",
+          "callee": "params.update",
+          "lineNumber": 128
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self.client.messages.create",
+          "lineNumber": 140
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._parse_response",
+          "lineNumber": 141
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "result[\"tool_calls\"].append",
+          "lineNumber": 150
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/llms/aws_bedrock.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 728,
+      "nonEmptyLines": 624,
+      "functions": [
+        {
+          "name": "extract_provider",
+          "startLine": 26,
+          "endLine": 37,
+          "params": [
+            "model",
+            "explicit_provider"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AWSBedrockLLM",
+          "startLine": 40,
+          "endLine": 728,
+          "methods": [
+            "__init__",
+            "_initialize_aws_client",
+            "_test_connection",
+            "_initialize_provider_settings",
+            "_format_messages_anthropic",
+            "_format_messages_cohere",
+            "_format_messages_amazon",
+            "_format_messages_meta",
+            "_format_messages_mistral",
+            "_format_messages_generic",
+            "_merge_optional_top_p",
+            "_prepare_input",
+            "_convert_tool_format",
+            "_parse_response",
+            "generate_response",
+            "_convert_tools_to_converse_format",
+            "_default_max_tokens_for_converse",
+            "_build_inference_config",
+            "_generate_with_tools",
+            "_generate_standard",
+            "list_available_models",
+            "get_model_capabilities",
+            "validate_model_access"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "extract_provider",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "AWSBedrockLLM",
+          "line": 40,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "extract_provider",
+          "callee": "ValueError",
+          "lineNumber": 30
+        },
+        {
+          "caller": "extract_provider",
+          "callee": "', '.join",
+          "lineNumber": 31
+        },
+        {
+          "caller": "extract_provider",
+          "callee": "re.search",
+          "lineNumber": 35
+        },
+        {
+          "caller": "extract_provider",
+          "callee": "re.escape",
+          "lineNumber": 35
+        },
+        {
+          "caller": "extract_provider",
+          "callee": "ValueError",
+          "lineNumber": 37
+        },
+        {
+          "caller": "__init__",
+          "callee": "AWSBedrockConfig",
+          "lineNumber": 56
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 57
+        },
+        {
+          "caller": "__init__",
+          "callee": "AWSBedrockConfig",
+          "lineNumber": 58
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 59
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 59
+        },
+        {
+          "caller": "__init__",
+          "callee": "AWSBedrockConfig",
+          "lineNumber": 61
+        },
+        {
+          "caller": "__init__",
+          "callee": "getattr",
+          "lineNumber": 67
+        },
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 70
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 70
+        },
+        {
+          "caller": "__init__",
+          "callee": "self._initialize_aws_client",
+          "lineNumber": 74
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.config.get_model_config",
+          "lineNumber": 77
+        },
+        {
+          "caller": "__init__",
+          "callee": "extract_provider",
+          "lineNumber": 78
+        },
+        {
+          "caller": "__init__",
+          "callee": "self._initialize_provider_settings",
+          "lineNumber": 81
+        },
+        {
+          "caller": "_initialize_aws_client",
+          "callee": "self.config.get_aws_config",
+          "lineNumber": 86
+        },
+        {
+          "caller": "_initialize_aws_client",
+          "callee": "boto3.client",
+          "lineNumber": 89
+        },
+        {
+          "caller": "_initialize_aws_client",
+          "callee": "self._test_connection",
+          "lineNumber": 92
+        },
+        {
+          "caller": "_initialize_aws_client",
+          "callee": "ValueError",
+          "lineNumber": 95
+        },
+        {
+          "caller": "_initialize_aws_client",
+          "callee": "ValueError",
+          "lineNumber": 102
+        },
+        {
+          "caller": "_initialize_aws_client",
+          "callee": "ValueError",
+          "lineNumber": 107
+        },
+        {
+          "caller": "_test_connection",
+          "callee": "boto3.client",
+          "lineNumber": 113
+        },
+        {
+          "caller": "_test_connection",
+          "callee": "self.config.get_aws_config",
+          "lineNumber": 113
+        },
+        {
+          "caller": "_test_connection",
+          "callee": "bedrock_client.list_foundation_models",
+          "lineNumber": 114
+        },
+        {
+          "caller": "_test_connection",
+          "callee": "logger.warning",
+          "lineNumber": 119
+        },
+        {
+          "caller": "_test_connection",
+          "callee": "logger.info",
+          "lineNumber": 120
+        },
+        {
+          "caller": "_test_connection",
+          "callee": "', '.join",
+          "lineNumber": 120
+        },
+        {
+          "caller": "_test_connection",
+          "callee": "logger.warning",
+          "lineNumber": 123
+        },
+        {
+          "caller": "_format_messages_anthropic",
+          "callee": "formatted_messages.append",
+          "lineNumber": 166
+        },
+        {
+          "caller": "_format_messages_anthropic",
+          "callee": "formatted_messages.append",
+          "lineNumber": 169
+        },
+        {
+          "caller": "_format_messages_cohere",
+          "callee": "message[\"role\"].capitalize",
+          "lineNumber": 178
+        },
+        {
+          "caller": "_format_messages_cohere",
+          "callee": "formatted_messages.append",
+          "lineNumber": 180
+        },
+        {
+          "caller": "_format_messages_cohere",
+          "callee": "\"\\n\".join",
+          "lineNumber": 182
+        },
+        {
+          "caller": "_format_messages_amazon",
+          "callee": "formatted_messages.append",
+          "lineNumber": 194
+        },
+        {
+          "caller": "_format_messages_amazon",
+          "callee": "formatted_messages.append",
+          "lineNumber": 196
+        },
+        {
+          "caller": "_format_messages_amazon",
+          "callee": "formatted_messages.append",
+          "lineNumber": 198
+        },
+        {
+          "caller": "_format_messages_meta",
+          "callee": "message[\"role\"].capitalize",
+          "lineNumber": 207
+        },
+        {
+          "caller": "_format_messages_meta",
+          "callee": "formatted_messages.append",
+          "lineNumber": 209
+        },
+        {
+          "caller": "_format_messages_meta",
+          "callee": "\"\\n\".join",
+          "lineNumber": 211
+        },
+        {
+          "caller": "_format_messages_mistral",
+          "callee": "formatted_messages.append",
+          "lineNumber": 223
+        },
+        {
+          "caller": "_format_messages_mistral",
+          "callee": "formatted_messages.append",
+          "lineNumber": 225
+        },
+        {
+          "caller": "_format_messages_mistral",
+          "callee": "formatted_messages.append",
+          "lineNumber": 227
+        },
+        {
+          "caller": "_format_messages_generic",
+          "callee": "message[\"role\"].capitalize",
+          "lineNumber": 236
+        },
+        {
+          "caller": "_format_messages_generic",
+          "callee": "formatted_messages.append",
+          "lineNumber": 238
+        },
+        {
+          "caller": "_format_messages_generic",
+          "callee": "\"\".join",
+          "lineNumber": 240
+        },
+        {
+          "caller": "_merge_optional_top_p",
+          "callee": "self.model_config.get",
+          "lineNumber": 244
+        },
+        {
+          "caller": "_prepare_input",
+          "callee": "provider_mappings[self.provider].items",
+          "lineNumber": 273
+        },
+        {
+          "caller": "_prepare_input",
+          "callee": "input_body.pop",
+          "lineNumber": 279
+        },
+        {
+          "caller": "_prepare_input",
+          "callee": "self.config.model.lower",
+          "lineNumber": 282
+        },
+        {
+          "caller": "_prepare_input",
+          "callee": "self.model_config.get",
+          "lineNumber": 286
+        },
+        {
+          "caller": "_prepare_input",
+          "callee": "self.model_config.get",
+          "lineNumber": 287
+        },
+        {
+          "caller": "_prepare_input",
+          "callee": "self._merge_optional_top_p",
+          "lineNumber": 289
+        },
+        {
+          "caller": "_prepare_input",
+          "callee": "self.model_config.get",
+          "lineNumber": 293
+        },
+        {
+          "caller": "_prepare_input",
+          "callee": "self.model_config.get",
+          "lineNumber": 294
+        },
+        {
+          "caller": "_prepare_input",
+          "callee": "self._merge_optional_top_p",
+          "lineNumber": 296
+        },
+        {
+          "caller": "_prepare_input",
+          "callee": "self.model_config.get",
+          "lineNumber": 301
+        },
+        {
+          "caller": "_prepare_input",
+          "callee": "self.model_config.get",
+          "lineNumber": 302
+        },
+        {
+          "caller": "_prepare_input",
+          "callee": "self._merge_optional_top_p",
+          "lineNumber": 305
+        },
+        {
+          "caller": "_prepare_input",
+          "callee": "self.model_config.get",
+          "lineNumber": 309
+        },
+        {
+          "caller": "_prepare_input",
+          "callee": "self.model_config.get",
+          "lineNumber": 310
+        },
+        {
+          "caller": "_prepare_input",
+          "callee": "self._merge_optional_top_p",
+          "lineNumber": 312
+        },
+        {
+          "caller": "_prepare_input",
+          "callee": "self.model_config.get",
+          "lineNumber": 316
+        },
+        {
+          "caller": "_prepare_input",
+          "callee": "self.model_config.get",
+          "lineNumber": 317
+        },
+        {
+          "caller": "_prepare_input",
+          "callee": "self._merge_optional_top_p",
+          "lineNumber": 319
+        },
+        {
+          "caller": "_prepare_input",
+          "callee": "input_body.update",
+          "lineNumber": 322
+        },
+        {
+          "caller": "_convert_tool_format",
+          "callee": "function.get",
+          "lineNumber": 344
+        },
+        {
+          "caller": "_convert_tool_format",
+          "callee": "function[\"parameters\"].get",
+          "lineNumber": 349
+        },
+        {
+          "caller": "_convert_tool_format",
+          "callee": "function[\"parameters\"].get(\"properties\", {}).items",
+          "lineNumber": 356
+        },
+        {
+          "caller": "_convert_tool_format",
+          "callee": "function[\"parameters\"].get",
+          "lineNumber": 356
+        },
+        {
+          "caller": "_convert_tool_format",
+          "callee": "new_tools.append",
+          "lineNumber": 359
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "response.get(\"output\", {}).get(\"message\", {}).get",
+          "lineNumber": 380
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "response.get(\"output\", {}).get",
+          "lineNumber": 380
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "response.get",
+          "lineNumber": 380
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "processed_response[\"tool_calls\"].append",
+          "lineNumber": 383
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "json.loads",
+          "lineNumber": 386
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "extract_json",
+          "lineNumber": 386
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "json.dumps",
+          "lineNumber": 386
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "response.get(\"body\").read().decode",
+          "lineNumber": 394
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "response.get(\"body\").read",
+          "lineNumber": 394
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "response.get",
+          "lineNumber": 394
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "json.loads",
+          "lineNumber": 395
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "response_json.get(\"content\", [{\"text\": \"\"}])[0].get",
+          "lineNumber": 399
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "response_json.get",
+          "lineNumber": 399
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "self.config.model.lower",
+          "lineNumber": 402
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "response_json.get",
+          "lineNumber": 410
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "response_json.get",
+          "lineNumber": 412
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "response_json.get(\"outputs\", [{\"text\": \"\"}])[0].get",
+          "lineNumber": 414
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "response_json.get",
+          "lineNumber": 414
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "response_json.get(\"generations\", [{\"text\": \"\"}])[0].get",
+          "lineNumber": 416
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "response_json.get",
+          "lineNumber": 416
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "response_json.get(\"completions\", [{\"data\": {\"text\": \"\"}}])[0].get(\"data\", {}).get",
+          "lineNumber": 418
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "response_json.get(\"completions\", [{\"data\": {\"text\": \"\"}}])[0].get",
+          "lineNumber": 418
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "response_json.get",
+          "lineNumber": 418
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "isinstance",
+          "lineNumber": 423
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "response_json[field][0].get",
+          "lineNumber": 424
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "isinstance",
+          "lineNumber": 425
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "str",
+          "lineNumber": 429
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "logger.warning",
+          "lineNumber": 432
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._generate_with_tools",
+          "lineNumber": 461
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._generate_standard",
+          "lineNumber": 464
+        },
+        {
+          "caller": "generate_response",
+          "callee": "logger.error",
+          "lineNumber": 467
+        },
+        {
+          "caller": "generate_response",
+          "callee": "RuntimeError",
+          "lineNumber": 468
+        },
+        {
+          "caller": "_convert_tools_to_converse_format",
+          "callee": "tool.get",
+          "lineNumber": 478
+        },
+        {
+          "caller": "_convert_tools_to_converse_format",
+          "callee": "func.get",
+          "lineNumber": 483
+        },
+        {
+          "caller": "_convert_tools_to_converse_format",
+          "callee": "func.get",
+          "lineNumber": 485
+        },
+        {
+          "caller": "_convert_tools_to_converse_format",
+          "callee": "converse_tools.append",
+          "lineNumber": 489
+        },
+        {
+          "caller": "_default_max_tokens_for_converse",
+          "callee": "(self.config.model or \"\").lower",
+          "lineNumber": 495
+        },
+        {
+          "caller": "_build_inference_config",
+          "callee": "self.model_config.get",
+          "lineNumber": 508
+        },
+        {
+          "caller": "_build_inference_config",
+          "callee": "self._default_max_tokens_for_converse",
+          "lineNumber": 508
+        },
+        {
+          "caller": "_build_inference_config",
+          "callee": "self.model_config.get",
+          "lineNumber": 509
+        },
+        {
+          "caller": "_build_inference_config",
+          "callee": "self.model_config.get",
+          "lineNumber": 512
+        },
+        {
+          "caller": "_build_inference_config",
+          "callee": "logger.debug",
+          "lineNumber": 518
+        },
+        {
+          "caller": "_generate_with_tools",
+          "callee": "self._format_messages_anthropic",
+          "lineNumber": 529
+        },
+        {
+          "caller": "_generate_with_tools",
+          "callee": "self._format_messages_amazon",
+          "lineNumber": 531
+        },
+        {
+          "caller": "_generate_with_tools",
+          "callee": "self._convert_tools_to_converse_format",
+          "lineNumber": 538
+        },
+        {
+          "caller": "_generate_with_tools",
+          "callee": "self._build_inference_config",
+          "lineNumber": 546
+        },
+        {
+          "caller": "_generate_with_tools",
+          "callee": "self.client.converse",
+          "lineNumber": 558
+        },
+        {
+          "caller": "_generate_with_tools",
+          "callee": "self._parse_response",
+          "lineNumber": 560
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "self._format_messages_anthropic",
+          "lineNumber": 566
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "self._build_inference_config",
+          "lineNumber": 572
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "self.client.converse",
+          "lineNumber": 580
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "hasattr",
+          "lineNumber": 586
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "hasattr",
+          "lineNumber": 586
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "hasattr",
+          "lineNumber": 588
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "str",
+          "lineNumber": 597
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "msg.get",
+          "lineNumber": 609
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "msg.get",
+          "lineNumber": 610
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "isinstance",
+          "lineNumber": 611
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "str",
+          "lineNumber": 612
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "system_parts.append",
+          "lineNumber": 614
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "converse_messages.append",
+          "lineNumber": 616
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "self._build_inference_config",
+          "lineNumber": 622
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "\"\\n\".join",
+          "lineNumber": 625
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "self.client.converse",
+          "lineNumber": 626
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "self.config.model.lower",
+          "lineNumber": 632
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "self._format_messages_amazon",
+          "lineNumber": 634
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "self.client.converse",
+          "lineNumber": 635
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "self._build_inference_config",
+          "lineNumber": 638
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "self._parse_response",
+          "lineNumber": 640
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "self._format_messages_generic",
+          "lineNumber": 645
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "self._format_messages",
+          "lineNumber": 647
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "self._prepare_input",
+          "lineNumber": 648
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "json.dumps",
+          "lineNumber": 651
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "self.client.invoke_model",
+          "lineNumber": 654
+        },
+        {
+          "caller": "_generate_standard",
+          "callee": "self._parse_response",
+          "lineNumber": 661
+        },
+        {
+          "caller": "list_available_models",
+          "callee": "boto3.client",
+          "lineNumber": 666
+        },
+        {
+          "caller": "list_available_models",
+          "callee": "self.config.get_aws_config",
+          "lineNumber": 666
+        },
+        {
+          "caller": "list_available_models",
+          "callee": "bedrock_client.list_foundation_models",
+          "lineNumber": 667
+        },
+        {
+          "caller": "list_available_models",
+          "callee": "extract_provider",
+          "lineNumber": 671
+        },
+        {
+          "caller": "list_available_models",
+          "callee": "models.append",
+          "lineNumber": 672
+        },
+        {
+          "caller": "list_available_models",
+          "callee": "model[\"modelId\"].split",
+          "lineNumber": 676
+        },
+        {
+          "caller": "list_available_models",
+          "callee": "model.get",
+          "lineNumber": 679
+        },
+        {
+          "caller": "list_available_models",
+          "callee": "model.get",
+          "lineNumber": 680
+        },
+        {
+          "caller": "list_available_models",
+          "callee": "model.get",
+          "lineNumber": 681
+        },
+        {
+          "caller": "list_available_models",
+          "callee": "model.get",
+          "lineNumber": 682
+        },
+        {
+          "caller": "list_available_models",
+          "callee": "model.get",
+          "lineNumber": 683
+        },
+        {
+          "caller": "list_available_models",
+          "callee": "logger.warning",
+          "lineNumber": 690
+        },
+        {
+          "caller": "get_model_capabilities",
+          "callee": "self.model_config.get",
+          "lineNumber": 702
+        },
+        {
+          "caller": "validate_model_access",
+          "callee": "self.config.model.lower",
+          "lineNumber": 709
+        },
+        {
+          "caller": "validate_model_access",
+          "callee": "self.client.converse",
+          "lineNumber": 712
+        },
+        {
+          "caller": "validate_model_access",
+          "callee": "json.dumps",
+          "lineNumber": 719
+        },
+        {
+          "caller": "validate_model_access",
+          "callee": "self.client.invoke_model",
+          "lineNumber": 720
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/llms/azure_openai.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 166,
+      "nonEmptyLines": 140,
+      "classes": [
+        {
+          "name": "AzureOpenAILLM",
+          "startLine": 17,
+          "endLine": 166,
+          "methods": [
+            "__init__",
+            "_rewrite_assistant_keyword",
+            "_parse_response",
+            "generate_response"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AzureOpenAILLM",
+          "line": 17,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "AzureOpenAIConfig",
+          "lineNumber": 21
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 22
+        },
+        {
+          "caller": "__init__",
+          "callee": "AzureOpenAIConfig",
+          "lineNumber": 23
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 24
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 24
+        },
+        {
+          "caller": "__init__",
+          "callee": "AzureOpenAIConfig",
+          "lineNumber": 26
+        },
+        {
+          "caller": "__init__",
+          "callee": "getattr",
+          "lineNumber": 35
+        },
+        {
+          "caller": "__init__",
+          "callee": "getattr",
+          "lineNumber": 37
+        },
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 40
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 40
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 46
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 47
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 48
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 49
+        },
+        {
+          "caller": "__init__",
+          "callee": "DefaultAzureCredential",
+          "lineNumber": 54
+        },
+        {
+          "caller": "__init__",
+          "callee": "get_bearer_token_provider",
+          "lineNumber": 55
+        },
+        {
+          "caller": "__init__",
+          "callee": "AzureOpenAI",
+          "lineNumber": 63
+        },
+        {
+          "caller": "_rewrite_assistant_keyword",
+          "callee": "copy.deepcopy",
+          "lineNumber": 87
+        },
+        {
+          "caller": "_rewrite_assistant_keyword",
+          "callee": "messages[-1].get",
+          "lineNumber": 88
+        },
+        {
+          "caller": "_rewrite_assistant_keyword",
+          "callee": "isinstance",
+          "lineNumber": 89
+        },
+        {
+          "caller": "_rewrite_assistant_keyword",
+          "callee": "last_content.replace",
+          "lineNumber": 90
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "processed_response[\"tool_calls\"].append",
+          "lineNumber": 112
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "json.loads",
+          "lineNumber": 115
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "extract_json",
+          "lineNumber": 115
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._rewrite_assistant_keyword",
+          "lineNumber": 149
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._get_supported_params",
+          "lineNumber": 151
+        },
+        {
+          "caller": "generate_response",
+          "callee": "params.update",
+          "lineNumber": 154
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self.client.chat.completions.create",
+          "lineNumber": 165
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._parse_response",
+          "lineNumber": 166
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/llms/azure_openai_structured.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 153,
+      "nonEmptyLines": 130,
+      "classes": [
+        {
+          "name": "AzureOpenAIStructuredLLM",
+          "startLine": 16,
+          "endLine": 153,
+          "methods": [
+            "__init__",
+            "generate_response",
+            "_rewrite_assistant_keyword",
+            "_parse_response"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AzureOpenAIStructuredLLM",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 18
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 18
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 24
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 25
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 26
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 27
+        },
+        {
+          "caller": "__init__",
+          "callee": "DefaultAzureCredential",
+          "lineNumber": 32
+        },
+        {
+          "caller": "__init__",
+          "callee": "get_bearer_token_provider",
+          "lineNumber": 33
+        },
+        {
+          "caller": "__init__",
+          "callee": "AzureOpenAI",
+          "lineNumber": 42
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._rewrite_assistant_keyword",
+          "lineNumber": 74
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._is_reasoning_model",
+          "lineNumber": 76
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._uses_max_completion_tokens",
+          "lineNumber": 88
+        },
+        {
+          "caller": "generate_response",
+          "callee": "getattr",
+          "lineNumber": 93
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self.client.chat.completions.create",
+          "lineNumber": 102
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._parse_response",
+          "lineNumber": 103
+        },
+        {
+          "caller": "_rewrite_assistant_keyword",
+          "callee": "copy.deepcopy",
+          "lineNumber": 119
+        },
+        {
+          "caller": "_rewrite_assistant_keyword",
+          "callee": "messages[-1].get",
+          "lineNumber": 120
+        },
+        {
+          "caller": "_rewrite_assistant_keyword",
+          "callee": "isinstance",
+          "lineNumber": 121
+        },
+        {
+          "caller": "_rewrite_assistant_keyword",
+          "callee": "last_content.replace",
+          "lineNumber": 122
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "processed_response[\"tool_calls\"].append",
+          "lineNumber": 144
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "json.loads",
+          "lineNumber": 147
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "extract_json",
+          "lineNumber": 147
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/llms/base.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 170,
+      "nonEmptyLines": 135,
+      "classes": [
+        {
+          "name": "LLMBase",
+          "startLine": 7,
+          "endLine": 170,
+          "methods": [
+            "__init__",
+            "_validate_config",
+            "_is_reasoning_model",
+            "_uses_max_completion_tokens",
+            "_get_supported_params",
+            "generate_response",
+            "_get_common_params"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "LLMBase",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "BaseLlmConfig",
+          "lineNumber": 20
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 21
+        },
+        {
+          "caller": "__init__",
+          "callee": "BaseLlmConfig",
+          "lineNumber": 23
+        },
+        {
+          "caller": "__init__",
+          "callee": "self._validate_config",
+          "lineNumber": 28
+        },
+        {
+          "caller": "_validate_config",
+          "callee": "hasattr",
+          "lineNumber": 35
+        },
+        {
+          "caller": "_validate_config",
+          "callee": "ValueError",
+          "lineNumber": 36
+        },
+        {
+          "caller": "_is_reasoning_model",
+          "callee": "getattr",
+          "lineNumber": 54
+        },
+        {
+          "caller": "_is_reasoning_model",
+          "callee": "model.lower",
+          "lineNumber": 63
+        },
+        {
+          "caller": "_is_reasoning_model",
+          "callee": "model_lower.rsplit",
+          "lineNumber": 65
+        },
+        {
+          "caller": "_is_reasoning_model",
+          "callee": "any",
+          "lineNumber": 72
+        },
+        {
+          "caller": "_is_reasoning_model",
+          "callee": "base_model.startswith",
+          "lineNumber": 72
+        },
+        {
+          "caller": "_uses_max_completion_tokens",
+          "callee": "(model or \"\").lower().rsplit",
+          "lineNumber": 93
+        },
+        {
+          "caller": "_uses_max_completion_tokens",
+          "callee": "(model or \"\").lower",
+          "lineNumber": 93
+        },
+        {
+          "caller": "_uses_max_completion_tokens",
+          "callee": "base_model.startswith",
+          "lineNumber": 94
+        },
+        {
+          "caller": "_get_supported_params",
+          "callee": "getattr",
+          "lineNumber": 107
+        },
+        {
+          "caller": "_get_supported_params",
+          "callee": "self._is_reasoning_model",
+          "lineNumber": 109
+        },
+        {
+          "caller": "_get_supported_params",
+          "callee": "getattr",
+          "lineNumber": 122
+        },
+        {
+          "caller": "_get_supported_params",
+          "callee": "self._get_common_params",
+          "lineNumber": 129
+        },
+        {
+          "caller": "_get_common_params",
+          "callee": "getattr",
+          "lineNumber": 161
+        },
+        {
+          "caller": "_get_common_params",
+          "callee": "self._uses_max_completion_tokens",
+          "lineNumber": 162
+        },
+        {
+          "caller": "_get_common_params",
+          "callee": "params.update",
+          "lineNumber": 168
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/llms/deepseek.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 109,
+      "nonEmptyLines": 92,
+      "classes": [
+        {
+          "name": "DeepSeekLLM",
+          "startLine": 13,
+          "endLine": 109,
+          "methods": [
+            "__init__",
+            "_parse_response",
+            "generate_response"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DeepSeekLLM",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "DeepSeekConfig",
+          "lineNumber": 17
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 18
+        },
+        {
+          "caller": "__init__",
+          "callee": "DeepSeekConfig",
+          "lineNumber": 19
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 20
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 20
+        },
+        {
+          "caller": "__init__",
+          "callee": "DeepSeekConfig",
+          "lineNumber": 22
+        },
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 34
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 34
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 39
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 40
+        },
+        {
+          "caller": "__init__",
+          "callee": "OpenAI",
+          "lineNumber": 41
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "processed_response[\"tool_calls\"].append",
+          "lineNumber": 62
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "json.loads",
+          "lineNumber": 65
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "extract_json",
+          "lineNumber": 65
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._get_supported_params",
+          "lineNumber": 94
+        },
+        {
+          "caller": "generate_response",
+          "callee": "params.update",
+          "lineNumber": 95
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self.client.chat.completions.create",
+          "lineNumber": 108
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._parse_response",
+          "lineNumber": 109
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/llms/gemini.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 228,
+      "nonEmptyLines": 189,
+      "classes": [
+        {
+          "name": "GeminiLLM",
+          "startLine": 15,
+          "endLine": 228,
+          "methods": [
+            "__init__",
+            "_parse_response",
+            "_reformat_messages",
+            "_reformat_tools",
+            "generate_response"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "GeminiLLM",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "GeminiConfig",
+          "lineNumber": 19
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 20
+        },
+        {
+          "caller": "__init__",
+          "callee": "GeminiConfig",
+          "lineNumber": 21
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 22
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 22
+        },
+        {
+          "caller": "__init__",
+          "callee": "GeminiConfig",
+          "lineNumber": 23
+        },
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 34
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 34
+        },
+        {
+          "caller": "__init__",
+          "callee": "genai.Client",
+          "lineNumber": 40
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 42
+        },
+        {
+          "caller": "__init__",
+          "callee": "genai.Client",
+          "lineNumber": 43
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "hasattr",
+          "lineNumber": 69
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "hasattr",
+          "lineNumber": 75
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "processed_response[\"tool_calls\"].append",
+          "lineNumber": 77
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "dict",
+          "lineNumber": 80
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "hasattr",
+          "lineNumber": 88
+        },
+        {
+          "caller": "_reformat_messages",
+          "callee": "types.Content",
+          "lineNumber": 109
+        },
+        {
+          "caller": "_reformat_messages",
+          "callee": "types.Part",
+          "lineNumber": 110
+        },
+        {
+          "caller": "_reformat_messages",
+          "callee": "contents.append",
+          "lineNumber": 113
+        },
+        {
+          "caller": "remove_additional_properties",
+          "callee": "isinstance",
+          "lineNumber": 130
+        },
+        {
+          "caller": "remove_additional_properties",
+          "callee": "remove_additional_properties",
+          "lineNumber": 132
+        },
+        {
+          "caller": "remove_additional_properties",
+          "callee": "data.items",
+          "lineNumber": 133
+        },
+        {
+          "caller": "_reformat_tools",
+          "callee": "tool[\"function\"].copy",
+          "lineNumber": 143
+        },
+        {
+          "caller": "_reformat_tools",
+          "callee": "remove_additional_properties",
+          "lineNumber": 144
+        },
+        {
+          "caller": "_reformat_tools",
+          "callee": "types.FunctionDeclaration",
+          "lineNumber": 146
+        },
+        {
+          "caller": "_reformat_tools",
+          "callee": "cleaned_func.get",
+          "lineNumber": 148
+        },
+        {
+          "caller": "_reformat_tools",
+          "callee": "cleaned_func.get",
+          "lineNumber": 149
+        },
+        {
+          "caller": "_reformat_tools",
+          "callee": "function_declarations.append",
+          "lineNumber": 151
+        },
+        {
+          "caller": "_reformat_tools",
+          "callee": "types.Tool",
+          "lineNumber": 153
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._reformat_messages",
+          "lineNumber": 179
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._reformat_tools",
+          "lineNumber": 201
+        },
+        {
+          "caller": "generate_response",
+          "callee": "types.ToolConfig",
+          "lineNumber": 212
+        },
+        {
+          "caller": "generate_response",
+          "callee": "types.FunctionCallingConfig",
+          "lineNumber": 213
+        },
+        {
+          "caller": "generate_response",
+          "callee": "types.GenerateContentConfig",
+          "lineNumber": 222
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self.client.models.generate_content",
+          "lineNumber": 224
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._parse_response",
+          "lineNumber": 228
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/llms/groq.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 119,
+      "nonEmptyLines": 101,
+      "classes": [
+        {
+          "name": "GroqLLM",
+          "startLine": 18,
+          "endLine": 119,
+          "methods": [
+            "__init__",
+            "_supports_json_mode",
+            "_parse_response",
+            "generate_response"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "GroqLLM",
+          "line": 18,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 20
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 20
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 25
+        },
+        {
+          "caller": "__init__",
+          "callee": "Groq",
+          "lineNumber": 26
+        },
+        {
+          "caller": "_supports_json_mode",
+          "callee": "isinstance",
+          "lineNumber": 38
+        },
+        {
+          "caller": "_supports_json_mode",
+          "callee": "model.lower().rsplit",
+          "lineNumber": 43
+        },
+        {
+          "caller": "_supports_json_mode",
+          "callee": "model.lower",
+          "lineNumber": 43
+        },
+        {
+          "caller": "_supports_json_mode",
+          "callee": "base_model.startswith",
+          "lineNumber": 44
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "processed_response[\"tool_calls\"].append",
+          "lineNumber": 65
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "json.loads",
+          "lineNumber": 68
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "extract_json",
+          "lineNumber": 68
+        },
+        {
+          "caller": "generate_response",
+          "callee": "isinstance",
+          "lineNumber": 103
+        },
+        {
+          "caller": "generate_response",
+          "callee": "response_format.get",
+          "lineNumber": 103
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._supports_json_mode",
+          "lineNumber": 107
+        },
+        {
+          "caller": "generate_response",
+          "callee": "logger.debug",
+          "lineNumber": 108
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self.client.chat.completions.create",
+          "lineNumber": 118
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._parse_response",
+          "lineNumber": 119
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/llms/langchain.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 97,
+      "nonEmptyLines": 77,
+      "classes": [
+        {
+          "name": "LangchainLLM",
+          "startLine": 13,
+          "endLine": 97,
+          "methods": [
+            "__init__",
+            "_parse_response",
+            "generate_response"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "LangchainLLM",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 15
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 15
+        },
+        {
+          "caller": "__init__",
+          "callee": "ValueError",
+          "lineNumber": 18
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 20
+        },
+        {
+          "caller": "__init__",
+          "callee": "ValueError",
+          "lineNumber": 21
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "processed_response[\"tool_calls\"].append",
+          "lineNumber": 45
+        },
+        {
+          "caller": "generate_response",
+          "callee": "langchain_messages.append",
+          "lineNumber": 83
+        },
+        {
+          "caller": "generate_response",
+          "callee": "langchain_messages.append",
+          "lineNumber": 85
+        },
+        {
+          "caller": "generate_response",
+          "callee": "langchain_messages.append",
+          "lineNumber": 87
+        },
+        {
+          "caller": "generate_response",
+          "callee": "ValueError",
+          "lineNumber": 90
+        },
+        {
+          "caller": "generate_response",
+          "callee": "langchain_model.bind_tools",
+          "lineNumber": 94
+        },
+        {
+          "caller": "generate_response",
+          "callee": "langchain_model.invoke",
+          "lineNumber": 96
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._parse_response",
+          "lineNumber": 97
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/llms/litellm.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 92,
+      "nonEmptyLines": 77,
+      "classes": [
+        {
+          "name": "LiteLLM",
+          "startLine": 16,
+          "endLine": 92,
+          "methods": [
+            "__init__",
+            "_parse_response",
+            "generate_response"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "LiteLLM",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 18
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 18
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "processed_response[\"tool_calls\"].append",
+          "lineNumber": 42
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "json.loads",
+          "lineNumber": 45
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "extract_json",
+          "lineNumber": 45
+        },
+        {
+          "caller": "generate_response",
+          "callee": "litellm.supports_function_calling",
+          "lineNumber": 72
+        },
+        {
+          "caller": "generate_response",
+          "callee": "ValueError",
+          "lineNumber": 73
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._uses_max_completion_tokens",
+          "lineNumber": 81
+        },
+        {
+          "caller": "generate_response",
+          "callee": "litellm.completion",
+          "lineNumber": 91
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._parse_response",
+          "lineNumber": 92
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/llms/lmstudio.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 114,
+      "nonEmptyLines": 96,
+      "classes": [
+        {
+          "name": "LMStudioLLM",
+          "startLine": 12,
+          "endLine": 114,
+          "methods": [
+            "__init__",
+            "_parse_response",
+            "generate_response"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "LMStudioLLM",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "LMStudioConfig",
+          "lineNumber": 16
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 17
+        },
+        {
+          "caller": "__init__",
+          "callee": "LMStudioConfig",
+          "lineNumber": 18
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 19
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 19
+        },
+        {
+          "caller": "__init__",
+          "callee": "LMStudioConfig",
+          "lineNumber": 21
+        },
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 33
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 33
+        },
+        {
+          "caller": "__init__",
+          "callee": "OpenAI",
+          "lineNumber": 41
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "processed_response[\"tool_calls\"].append",
+          "lineNumber": 62
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "json.loads",
+          "lineNumber": 65
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "extract_json",
+          "lineNumber": 65
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._get_supported_params",
+          "lineNumber": 94
+        },
+        {
+          "caller": "generate_response",
+          "callee": "params.update",
+          "lineNumber": 95
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self.client.chat.completions.create",
+          "lineNumber": 113
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._parse_response",
+          "lineNumber": 114
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/llms/minimax.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 114,
+      "nonEmptyLines": 96,
+      "classes": [
+        {
+          "name": "MiniMaxLLM",
+          "startLine": 13,
+          "endLine": 114,
+          "methods": [
+            "__init__",
+            "_parse_response",
+            "generate_response"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "MiniMaxLLM",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "MinimaxConfig",
+          "lineNumber": 17
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 18
+        },
+        {
+          "caller": "__init__",
+          "callee": "MinimaxConfig",
+          "lineNumber": 19
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 20
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 20
+        },
+        {
+          "caller": "__init__",
+          "callee": "MinimaxConfig",
+          "lineNumber": 22
+        },
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 34
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 34
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 39
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 42
+        },
+        {
+          "caller": "__init__",
+          "callee": "OpenAI",
+          "lineNumber": 45
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "processed_response[\"tool_calls\"].append",
+          "lineNumber": 66
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "json.loads",
+          "lineNumber": 69
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "extract_json",
+          "lineNumber": 69
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._get_supported_params",
+          "lineNumber": 98
+        },
+        {
+          "caller": "generate_response",
+          "callee": "params.update",
+          "lineNumber": 99
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self.client.chat.completions.create",
+          "lineNumber": 113
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._parse_response",
+          "lineNumber": 114
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/llms/ollama.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 144,
+      "nonEmptyLines": 120,
+      "classes": [
+        {
+          "name": "OllamaLLM",
+          "startLine": 15,
+          "endLine": 144,
+          "methods": [
+            "__init__",
+            "_parse_response",
+            "generate_response"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "OllamaLLM",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "OllamaConfig",
+          "lineNumber": 19
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 20
+        },
+        {
+          "caller": "__init__",
+          "callee": "OllamaConfig",
+          "lineNumber": 21
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 22
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 22
+        },
+        {
+          "caller": "__init__",
+          "callee": "OllamaConfig",
+          "lineNumber": 24
+        },
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 36
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 36
+        },
+        {
+          "caller": "__init__",
+          "callee": "Client",
+          "lineNumber": 41
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "isinstance",
+          "lineNumber": 55
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "isinstance",
+          "lineNumber": 66
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "response.get(\"message\", {}).get",
+          "lineNumber": 67
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "response.get",
+          "lineNumber": 67
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "getattr",
+          "lineNumber": 69
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "isinstance",
+          "lineNumber": 72
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "tool_call.get",
+          "lineNumber": 73
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "fn.get",
+          "lineNumber": 74
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "fn.get",
+          "lineNumber": 75
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "getattr",
+          "lineNumber": 77
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "getattr",
+          "lineNumber": 78
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "getattr",
+          "lineNumber": 79
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "isinstance",
+          "lineNumber": 81
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "json.loads",
+          "lineNumber": 82
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "extract_json",
+          "lineNumber": 82
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "processed_response[\"tool_calls\"].append",
+          "lineNumber": 84
+        },
+        {
+          "caller": "generate_response",
+          "callee": "response_format.get",
+          "lineNumber": 120
+        },
+        {
+          "caller": "generate_response",
+          "callee": "dict",
+          "lineNumber": 122
+        },
+        {
+          "caller": "generate_response",
+          "callee": "messages.append",
+          "lineNumber": 126
+        },
+        {
+          "caller": "generate_response",
+          "callee": "params.pop",
+          "lineNumber": 138
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self.client.chat",
+          "lineNumber": 143
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._parse_response",
+          "lineNumber": 144
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/llms/openai.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 150,
+      "nonEmptyLines": 128,
+      "classes": [
+        {
+          "name": "OpenAILLM",
+          "startLine": 14,
+          "endLine": 150,
+          "methods": [
+            "__init__",
+            "_parse_response",
+            "generate_response"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "OpenAILLM",
+          "line": 14,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "OpenAIConfig",
+          "lineNumber": 18
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 19
+        },
+        {
+          "caller": "__init__",
+          "callee": "OpenAIConfig",
+          "lineNumber": 20
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 21
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 21
+        },
+        {
+          "caller": "__init__",
+          "callee": "OpenAIConfig",
+          "lineNumber": 23
+        },
+        {
+          "caller": "__init__",
+          "callee": "getattr",
+          "lineNumber": 32
+        },
+        {
+          "caller": "__init__",
+          "callee": "getattr",
+          "lineNumber": 34
+        },
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 37
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 37
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.environ.get",
+          "lineNumber": 42
+        },
+        {
+          "caller": "__init__",
+          "callee": "OpenAI",
+          "lineNumber": 43
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.environ.get",
+          "lineNumber": 44
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 46
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 50
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 51
+        },
+        {
+          "caller": "__init__",
+          "callee": "OpenAI",
+          "lineNumber": 53
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "processed_response[\"tool_calls\"].append",
+          "lineNumber": 74
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "json.loads",
+          "lineNumber": 77
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "extract_json",
+          "lineNumber": 77
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._get_supported_params",
+          "lineNumber": 106
+        },
+        {
+          "caller": "generate_response",
+          "callee": "params.update",
+          "lineNumber": 108
+        },
+        {
+          "caller": "generate_response",
+          "callee": "os.getenv",
+          "lineNumber": 113
+        },
+        {
+          "caller": "generate_response",
+          "callee": "params.pop",
+          "lineNumber": 118
+        },
+        {
+          "caller": "generate_response",
+          "callee": "params.update",
+          "lineNumber": 127
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self.client.chat.completions.create",
+          "lineNumber": 141
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._parse_response",
+          "lineNumber": 142
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self.config.response_callback",
+          "lineNumber": 145
+        },
+        {
+          "caller": "generate_response",
+          "callee": "logging.error",
+          "lineNumber": 148
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/llms/openai_structured.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 49,
+      "nonEmptyLines": 37,
+      "classes": [
+        {
+          "name": "OpenAIStructuredLLM",
+          "startLine": 10,
+          "endLine": 49,
+          "methods": [
+            "__init__",
+            "generate_response"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "OpenAIStructuredLLM",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 12
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 12
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 17
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 18
+        },
+        {
+          "caller": "__init__",
+          "callee": "OpenAI",
+          "lineNumber": 19
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._get_supported_params",
+          "lineNumber": 39
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self.client.beta.chat.completions.parse",
+          "lineNumber": 48
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/llms/sarvam.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 94,
+      "nonEmptyLines": 70,
+      "classes": [
+        {
+          "name": "SarvamLLM",
+          "startLine": 10,
+          "endLine": 94,
+          "methods": [
+            "__init__",
+            "generate_response"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SarvamLLM",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 12
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 12
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 19
+        },
+        {
+          "caller": "__init__",
+          "callee": "ValueError",
+          "lineNumber": 22
+        },
+        {
+          "caller": "__init__",
+          "callee": "getattr",
+          "lineNumber": 28
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 28
+        },
+        {
+          "caller": "generate_response",
+          "callee": "isinstance",
+          "lineNumber": 52
+        },
+        {
+          "caller": "generate_response",
+          "callee": "isinstance",
+          "lineNumber": 66
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self.config.model.get",
+          "lineNumber": 68
+        },
+        {
+          "caller": "generate_response",
+          "callee": "params.update",
+          "lineNumber": 78
+        },
+        {
+          "caller": "generate_response",
+          "callee": "requests.post",
+          "lineNumber": 81
+        },
+        {
+          "caller": "generate_response",
+          "callee": "response.raise_for_status",
+          "lineNumber": 82
+        },
+        {
+          "caller": "generate_response",
+          "callee": "response.json",
+          "lineNumber": 84
+        },
+        {
+          "caller": "generate_response",
+          "callee": "len",
+          "lineNumber": 86
+        },
+        {
+          "caller": "generate_response",
+          "callee": "ValueError",
+          "lineNumber": 89
+        },
+        {
+          "caller": "generate_response",
+          "callee": "RuntimeError",
+          "lineNumber": 92
+        },
+        {
+          "caller": "generate_response",
+          "callee": "ValueError",
+          "lineNumber": 94
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/llms/together.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 92,
+      "nonEmptyLines": 77,
+      "classes": [
+        {
+          "name": "TogetherLLM",
+          "startLine": 15,
+          "endLine": 92,
+          "methods": [
+            "__init__",
+            "_parse_response",
+            "generate_response"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "TogetherLLM",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 17
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 17
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 22
+        },
+        {
+          "caller": "__init__",
+          "callee": "Together",
+          "lineNumber": 23
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "processed_response[\"tool_calls\"].append",
+          "lineNumber": 44
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "json.loads",
+          "lineNumber": 47
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "extract_json",
+          "lineNumber": 47
+        },
+        {
+          "caller": "generate_response",
+          "callee": "params.update",
+          "lineNumber": 84
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self.client.chat.completions.create",
+          "lineNumber": 91
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._parse_response",
+          "lineNumber": 92
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/llms/vllm.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 108,
+      "nonEmptyLines": 91,
+      "classes": [
+        {
+          "name": "VllmLLM",
+          "startLine": 13,
+          "endLine": 108,
+          "methods": [
+            "__init__",
+            "_parse_response",
+            "generate_response"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "VllmLLM",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "VllmConfig",
+          "lineNumber": 17
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 18
+        },
+        {
+          "caller": "__init__",
+          "callee": "VllmConfig",
+          "lineNumber": 19
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 20
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 20
+        },
+        {
+          "caller": "__init__",
+          "callee": "VllmConfig",
+          "lineNumber": 22
+        },
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 34
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 34
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 39
+        },
+        {
+          "caller": "__init__",
+          "callee": "OpenAI",
+          "lineNumber": 40
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "processed_response[\"tool_calls\"].append",
+          "lineNumber": 61
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "json.loads",
+          "lineNumber": 64
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "extract_json",
+          "lineNumber": 64
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._get_supported_params",
+          "lineNumber": 93
+        },
+        {
+          "caller": "generate_response",
+          "callee": "params.update",
+          "lineNumber": 94
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self.client.chat.completions.create",
+          "lineNumber": 107
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._parse_response",
+          "lineNumber": 108
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/llms/xai.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 110,
+      "nonEmptyLines": 93,
+      "classes": [
+        {
+          "name": "XAILLM",
+          "startLine": 13,
+          "endLine": 110,
+          "methods": [
+            "__init__",
+            "_parse_response",
+            "generate_response"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "XAILLM",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "XAIConfig",
+          "lineNumber": 17
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 18
+        },
+        {
+          "caller": "__init__",
+          "callee": "XAIConfig",
+          "lineNumber": 19
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 20
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 20
+        },
+        {
+          "caller": "__init__",
+          "callee": "XAIConfig",
+          "lineNumber": 22
+        },
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 34
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 34
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 39
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 40
+        },
+        {
+          "caller": "__init__",
+          "callee": "OpenAI",
+          "lineNumber": 41
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "processed_response[\"tool_calls\"].append",
+          "lineNumber": 62
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "json.loads",
+          "lineNumber": 65
+        },
+        {
+          "caller": "_parse_response",
+          "callee": "extract_json",
+          "lineNumber": 65
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._get_supported_params",
+          "lineNumber": 95
+        },
+        {
+          "caller": "generate_response",
+          "callee": "params.update",
+          "lineNumber": 96
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self.client.chat.completions.create",
+          "lineNumber": 109
+        },
+        {
+          "caller": "generate_response",
+          "callee": "self._parse_response",
+          "lineNumber": 110
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mem0/memory/utils.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 330,
+      "nonEmptyLines": 282,
+      "functions": [
+        {
+          "name": "get_fact_retrieval_messages",
+          "startLine": 15,
+          "endLine": 28,
+          "params": [
+            "message",
+            "is_agent_memory"
+          ]
+        },
+        {
+          "name": "get_fact_retrieval_messages_legacy",
+          "startLine": 31,
+          "endLine": 33,
+          "params": [
+            "message"
+          ]
+        },
+        {
+          "name": "ensure_json_instruction",
+          "startLine": 36,
+          "endLine": 58,
+          "params": [
+            "system_prompt",
+            "user_prompt"
+          ]
+        },
+        {
+          "name": "parse_messages",
+          "startLine": 61,
+          "endLine": 76,
+          "params": [
+            "messages"
+          ]
+        },
+        {
+          "name": "format_entities",
+          "startLine": 79,
+          "endLine": 88,
+          "params": [
+            "entities"
+          ]
+        },
+        {
+          "name": "normalize_facts",
+          "startLine": 90,
+          "endLine": 112,
+          "params": [
+            "raw_facts"
+          ]
+        },
+        {
+          "name": "remove_code_blocks",
+          "startLine": 115,
+          "endLine": 137,
+          "params": [
+            "content"
+          ]
+        },
+        {
+          "name": "extract_json",
+          "startLine": 141,
+          "endLine": 158,
+          "params": [
+            "text"
+          ]
+        },
+        {
+          "name": "get_image_description",
+          "startLine": 161,
+          "endLine": 183,
+          "params": [
+            "image_obj",
+            "llm",
+            "vision_details"
+          ]
+        },
+        {
+          "name": "parse_vision_messages",
+          "startLine": 186,
+          "endLine": 232,
+          "params": [
+            "messages",
+            "llm",
+            "vision_details"
+          ]
+        },
+        {
+          "name": "process_telemetry_filters",
+          "startLine": 235,
+          "endLine": 250,
+          "params": [
+            "filters"
+          ]
+        },
+        {
+          "name": "sanitize_relationship_for_cypher",
+          "startLine": 253,
+          "endLine": 302,
+          "params": [
+            "relationship"
+          ]
+        },
+        {
+          "name": "remove_spaces_from_entities",
+          "startLine": 305,
+          "endLine": 329,
+          "params": [
+            "entity_list",
+            "sanitize_relationship"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "get_fact_retrieval_messages",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "get_fact_retrieval_messages_legacy",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "ensure_json_instruction",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "parse_messages",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "format_entities",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "normalize_facts",
+          "line": 90,
+          "isDefault": false
+        },
+        {
+          "name": "remove_code_blocks",
+          "line": 115,
+          "isDefault": false
+        },
+        {
+          "name": "extract_json",
+          "line": 141,
+          "isDefault": false
+        },
+        {
+          "name": "get_image_description",
+          "line": 161,
+          "isDefault": false
+        },
+        {
+          "name": "parse_vision_messages",
+          "line": 186,
+          "isDefault": false
+        },
+        {
+          "name": "process_telemetry_filters",
+          "line": 235,
+          "isDefault": false
+        },
+        {
+          "name": "sanitize_relationship_for_cypher",
+          "line": 253,
+          "isDefault": false
+        },
+        {
+          "name": "remove_spaces_from_entities",
+          "line": 305,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ensure_json_instruction",
+          "callee": "(system_prompt + user_prompt).lower",
+          "lineNumber": 52
+        },
+        {
+          "caller": "parse_messages",
+          "callee": "msg.get",
+          "lineNumber": 64
+        },
+        {
+          "caller": "parse_messages",
+          "callee": "msg.get",
+          "lineNumber": 65
+        },
+        {
+          "caller": "format_entities",
+          "callee": "formatted_lines.append",
+          "lineNumber": 86
+        },
+        {
+          "caller": "format_entities",
+          "callee": "\"\\n\".join",
+          "lineNumber": 88
+        },
+        {
+          "caller": "normalize_facts",
+          "callee": "isinstance",
+          "lineNumber": 101
+        },
+        {
+          "caller": "normalize_facts",
+          "callee": "isinstance",
+          "lineNumber": 103
+        },
+        {
+          "caller": "normalize_facts",
+          "callee": "item.get",
+          "lineNumber": 104
+        },
+        {
+          "caller": "normalize_facts",
+          "callee": "item.get",
+          "lineNumber": 104
+        },
+        {
+          "caller": "normalize_facts",
+          "callee": "logger.warning",
+          "lineNumber": 106
+        },
+        {
+          "caller": "normalize_facts",
+          "callee": "str",
+          "lineNumber": 109
+        },
+        {
+          "caller": "normalize_facts",
+          "callee": "normalized.append",
+          "lineNumber": 111
+        },
+        {
+          "caller": "remove_code_blocks",
+          "callee": "isinstance",
+          "lineNumber": 124
+        },
+        {
+          "caller": "remove_code_blocks",
+          "callee": "isinstance",
+          "lineNumber": 127
+        },
+        {
+          "caller": "remove_code_blocks",
+          "callee": "parts.append",
+          "lineNumber": 128
+        },
+        {
+          "caller": "remove_code_blocks",
+          "callee": "isinstance",
+          "lineNumber": 129
+        },
+        {
+          "caller": "remove_code_blocks",
+          "callee": "parts.append",
+          "lineNumber": 130
+        },
+        {
+          "caller": "remove_code_blocks",
+          "callee": "block.get",
+          "lineNumber": 130
+        },
+        {
+          "caller": "remove_code_blocks",
+          "callee": "\"\".join",
+          "lineNumber": 131
+        },
+        {
+          "caller": "remove_code_blocks",
+          "callee": "isinstance",
+          "lineNumber": 132
+        },
+        {
+          "caller": "remove_code_blocks",
+          "callee": "re.match",
+          "lineNumber": 135
+        },
+        {
+          "caller": "remove_code_blocks",
+          "callee": "content.strip",
+          "lineNumber": 135
+        },
+        {
+          "caller": "remove_code_blocks",
+          "callee": "match.group(1).strip",
+          "lineNumber": 136
+        },
+        {
+          "caller": "remove_code_blocks",
+          "callee": "match.group",
+          "lineNumber": 136
+        },
+        {
+          "caller": "remove_code_blocks",
+          "callee": "content.strip",
+          "lineNumber": 136
+        },
+        {
+          "caller": "remove_code_blocks",
+          "callee": "re.sub(r\"<think>.*?</think>\", \"\", match_res, flags=re.DOTALL).strip",
+          "lineNumber": 137
+        },
+        {
+          "caller": "remove_code_blocks",
+          "callee": "re.sub",
+          "lineNumber": 137
+        },
+        {
+          "caller": "extract_json",
+          "callee": "text.strip",
+          "lineNumber": 147
+        },
+        {
+          "caller": "extract_json",
+          "callee": "re.search",
+          "lineNumber": 148
+        },
+        {
+          "caller": "extract_json",
+          "callee": "match.group",
+          "lineNumber": 150
+        },
+        {
+          "caller": "extract_json",
+          "callee": "text.find",
+          "lineNumber": 152
+        },
+        {
+          "caller": "extract_json",
+          "callee": "text.rfind",
+          "lineNumber": 153
+        },
+        {
+          "caller": "get_image_description",
+          "callee": "isinstance",
+          "lineNumber": 166
+        },
+        {
+          "caller": "get_image_description",
+          "callee": "llm.generate_response",
+          "lineNumber": 182
+        },
+        {
+          "caller": "parse_vision_messages",
+          "callee": "msg.get",
+          "lineNumber": 192
+        },
+        {
+          "caller": "parse_vision_messages",
+          "callee": "msg.get",
+          "lineNumber": 193
+        },
+        {
+          "caller": "parse_vision_messages",
+          "callee": "returned_messages.append",
+          "lineNumber": 195
+        },
+        {
+          "caller": "parse_vision_messages",
+          "callee": "isinstance",
+          "lineNumber": 204
+        },
+        {
+          "caller": "parse_vision_messages",
+          "callee": "isinstance",
+          "lineNumber": 208
+        },
+        {
+          "caller": "parse_vision_messages",
+          "callee": "part.get",
+          "lineNumber": 208
+        },
+        {
+          "caller": "parse_vision_messages",
+          "callee": "returned_messages.append",
+          "lineNumber": 212
+        },
+        {
+          "caller": "parse_vision_messages",
+          "callee": "\" \".join",
+          "lineNumber": 212
+        },
+        {
+          "caller": "parse_vision_messages",
+          "callee": "get_image_description",
+          "lineNumber": 214
+        },
+        {
+          "caller": "parse_vision_messages",
+          "callee": "returned_messages.append",
+          "lineNumber": 215
+        },
+        {
+          "caller": "parse_vision_messages",
+          "callee": "isinstance",
+          "lineNumber": 216
+        },
+        {
+          "caller": "parse_vision_messages",
+          "callee": "content.get",
+          "lineNumber": 216
+        },
+        {
+          "caller": "parse_vision_messages",
+          "callee": "content.get",
+          "lineNumber": 219
+        },
+        {
+          "caller": "parse_vision_messages",
+          "callee": "image_url_obj.get",
+          "lineNumber": 220
+        },
+        {
+          "caller": "parse_vision_messages",
+          "callee": "isinstance",
+          "lineNumber": 220
+        },
+        {
+          "caller": "parse_vision_messages",
+          "callee": "ValueError",
+          "lineNumber": 222
+        },
+        {
+          "caller": "parse_vision_messages",
+          "callee": "get_image_description",
+          "lineNumber": 224
+        },
+        {
+          "caller": "parse_vision_messages",
+          "callee": "returned_messages.append",
+          "lineNumber": 225
+        },
+        {
+          "caller": "parse_vision_messages",
+          "callee": "Exception",
+          "lineNumber": 227
+        },
+        {
+          "caller": "parse_vision_messages",
+          "callee": "returned_messages.append",
+          "lineNumber": 230
+        },
+        {
+          "caller": "process_telemetry_filters",
+          "callee": "hashlib.md5(filters[\"user_id\"].encode()).hexdigest",
+          "lineNumber": 244
+        },
+        {
+          "caller": "process_telemetry_filters",
+          "callee": "hashlib.md5",
+          "lineNumber": 244
+        },
+        {
+          "caller": "process_telemetry_filters",
+          "callee": "filters[\"user_id\"].encode",
+          "lineNumber": 244
+        },
+        {
+          "caller": "process_telemetry_filters",
+          "callee": "hashlib.md5(filters[\"agent_id\"].encode()).hexdigest",
+          "lineNumber": 246
+        },
+        {
+          "caller": "process_telemetry_filters",
+          "callee": "hashlib.md5",
+          "lineNumber": 246
+        },
+        {
+          "caller": "process_telemetry_filters",
+          "callee": "filters[\"agent_id\"].encode",
+          "lineNumber": 246
+        },
+        {
+          "caller": "process_telemetry_filters",
+          "callee": "hashlib.md5(filters[\"run_id\"].encode()).hexdigest",
+          "lineNumber": 248
+        },
+        {
+          "caller": "process_telemetry_filters",
+          "callee": "hashlib.md5",
+          "lineNumber": 248
+        },
+        {
+          "caller": "process_telemetry_filters",
+          "callee": "filters[\"run_id\"].encode",
+          "lineNumber": 248
+        },
+        {
+          "caller": "process_telemetry_filters",
+          "callee": "list",
+          "lineNumber": 250
+        },
+        {
+          "caller": "process_telemetry_filters",
+          "callee": "filters.keys",
+          "lineNumber": 250
+        },
+        {
+          "caller": "sanitize_relationship_for_cypher",
+          "callee": "char_map.items",
+          "lineNumber": 299
+        },
+        {
+          "caller": "sanitize_relationship_for_cypher",
+          "callee": "sanitized.replace",
+          "lineNumber": 300
+        },
+        {
+          "caller": "sanitize_relationship_for_cypher",
+          "callee": "re.sub(r\"_+\", \"_\", sanitized).strip",
+          "lineNumber": 302
+        },
+        {
+          "caller": "sanitize_relationship_for_cypher",
+          "callee": "re.sub",
+          "lineNumber": 302
+        },
+        {
+          "caller": "remove_spaces_from_entities",
+          "callee": "isinstance",
+          "lineNumber": 320
+        },
+        {
+          "caller": "remove_spaces_from_entities",
+          "callee": "all",
+          "lineNumber": 322
+        },
+        {
+          "caller": "remove_spaces_from_entities",
+          "callee": "item[\"source\"].lower().replace",
+          "lineNumber": 324
+        },
+        {
+          "caller": "remove_spaces_from_entities",
+          "callee": "item[\"source\"].lower",
+          "lineNumber": 324
+        },
+        {
+          "caller": "remove_spaces_from_entities",
+          "callee": "item[\"relationship\"].lower().replace",
+          "lineNumber": 325
+        },
+        {
+          "caller": "remove_spaces_from_entities",
+          "callee": "item[\"relationship\"].lower",
+          "lineNumber": 325
+        },
+        {
+          "caller": "remove_spaces_from_entities",
+          "callee": "sanitize_relationship_for_cypher",
+          "lineNumber": 326
+        },
+        {
+          "caller": "remove_spaces_from_entities",
+          "callee": "item[\"destination\"].lower().replace",
+          "lineNumber": 327
+        },
+        {
+          "caller": "remove_spaces_from_entities",
+          "callee": "item[\"destination\"].lower",
+          "lineNumber": 327
+        },
+        {
+          "caller": "remove_spaces_from_entities",
+          "callee": "cleaned.append",
+          "lineNumber": 328
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 13,
+        "functionCount": 13,
+        "classCount": 0
+      }
+    }
+  ]
+}

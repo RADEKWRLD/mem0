@@ -1,0 +1,1035 @@
+{
+  "nodes": [
+    {
+      "id": "file:mem0/configs/llms/anthropic.py",
+      "type": "file",
+      "name": "anthropic.py",
+      "filePath": "mem0/configs/llms/anthropic.py",
+      "summary": "定义 Anthropic LLM 适配器的模型参数、凭证、端点及 provider 特有校验规则。",
+      "tags": [
+        "configuration",
+        "llm",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/configs/llms/anthropic.py:AnthropicConfig",
+      "type": "class",
+      "name": "AnthropicConfig",
+      "filePath": "mem0/configs/llms/anthropic.py",
+      "lineRange": [
+        6,
+        59
+      ],
+      "summary": "封装 Anthropic 相关配置字段并执行类型与组合约束校验。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/llms/aws_bedrock.py",
+      "type": "file",
+      "name": "aws_bedrock.py",
+      "filePath": "mem0/configs/llms/aws_bedrock.py",
+      "summary": "定义 AWS Bedrock LLM 适配器的模型参数、凭证、端点及 provider 特有校验规则。",
+      "tags": [
+        "configuration",
+        "llm",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/configs/llms/aws_bedrock.py:AWSBedrockConfig",
+      "type": "class",
+      "name": "AWSBedrockConfig",
+      "filePath": "mem0/configs/llms/aws_bedrock.py",
+      "lineRange": [
+        7,
+        202
+      ],
+      "summary": "封装 AWS Bedrock 相关配置字段并执行类型与组合约束校验。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/llms/base.py",
+      "type": "file",
+      "name": "base.py",
+      "filePath": "mem0/configs/llms/base.py",
+      "summary": "定义所有 LLM provider 配置共享的基础字段与参数校验规则。",
+      "tags": [
+        "configuration",
+        "llm",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/configs/llms/base.py:BaseLlmConfig",
+      "type": "class",
+      "name": "BaseLlmConfig",
+      "filePath": "mem0/configs/llms/base.py",
+      "lineRange": [
+        7,
+        78
+      ],
+      "summary": "封装 base 相关配置字段并执行类型与组合约束校验。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/llms/deepseek.py",
+      "type": "file",
+      "name": "deepseek.py",
+      "filePath": "mem0/configs/llms/deepseek.py",
+      "summary": "定义 DeepSeek LLM 适配器的模型参数、凭证、端点及 provider 特有校验规则。",
+      "tags": [
+        "configuration",
+        "llm",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/configs/llms/deepseek.py:DeepSeekConfig",
+      "type": "class",
+      "name": "DeepSeekConfig",
+      "filePath": "mem0/configs/llms/deepseek.py",
+      "lineRange": [
+        6,
+        56
+      ],
+      "summary": "封装 DeepSeek 相关配置字段并执行类型与组合约束校验。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/llms/gemini.py",
+      "type": "file",
+      "name": "gemini.py",
+      "filePath": "mem0/configs/llms/gemini.py",
+      "summary": "定义 Gemini LLM 适配器的模型参数、凭证、端点及 provider 特有校验规则。",
+      "tags": [
+        "configuration",
+        "llm",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/configs/llms/gemini.py:GeminiConfig",
+      "type": "class",
+      "name": "GeminiConfig",
+      "filePath": "mem0/configs/llms/gemini.py",
+      "lineRange": [
+        7,
+        64
+      ],
+      "summary": "封装 Gemini 相关配置字段并执行类型与组合约束校验。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/llms/lmstudio.py",
+      "type": "file",
+      "name": "lmstudio.py",
+      "filePath": "mem0/configs/llms/lmstudio.py",
+      "summary": "定义 LM Studio LLM 适配器的模型参数、凭证、端点及 provider 特有校验规则。",
+      "tags": [
+        "configuration",
+        "llm",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/configs/llms/lmstudio.py:LMStudioConfig",
+      "type": "class",
+      "name": "LMStudioConfig",
+      "filePath": "mem0/configs/llms/lmstudio.py",
+      "lineRange": [
+        6,
+        59
+      ],
+      "summary": "封装 LM Studio 相关配置字段并执行类型与组合约束校验。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/llms/minimax.py",
+      "type": "file",
+      "name": "minimax.py",
+      "filePath": "mem0/configs/llms/minimax.py",
+      "summary": "定义 MiniMax LLM 适配器的模型参数、凭证、端点及 provider 特有校验规则。",
+      "tags": [
+        "configuration",
+        "llm",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/configs/llms/minimax.py:MinimaxConfig",
+      "type": "class",
+      "name": "MinimaxConfig",
+      "filePath": "mem0/configs/llms/minimax.py",
+      "lineRange": [
+        6,
+        56
+      ],
+      "summary": "封装 MiniMax 相关配置字段并执行类型与组合约束校验。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/llms/ollama.py",
+      "type": "file",
+      "name": "ollama.py",
+      "filePath": "mem0/configs/llms/ollama.py",
+      "summary": "定义 Ollama LLM 适配器的模型参数、凭证、端点及 provider 特有校验规则。",
+      "tags": [
+        "configuration",
+        "llm",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/configs/llms/ollama.py:OllamaConfig",
+      "type": "class",
+      "name": "OllamaConfig",
+      "filePath": "mem0/configs/llms/ollama.py",
+      "lineRange": [
+        6,
+        56
+      ],
+      "summary": "封装 Ollama 相关配置字段并执行类型与组合约束校验。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/llms/openai.py",
+      "type": "file",
+      "name": "openai.py",
+      "filePath": "mem0/configs/llms/openai.py",
+      "summary": "定义 OpenAI LLM 适配器的模型参数、凭证、端点及 provider 特有校验规则。",
+      "tags": [
+        "configuration",
+        "llm",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/configs/llms/openai.py:OpenAIConfig",
+      "type": "class",
+      "name": "OpenAIConfig",
+      "filePath": "mem0/configs/llms/openai.py",
+      "lineRange": [
+        6,
+        92
+      ],
+      "summary": "封装 OpenAI 相关配置字段并执行类型与组合约束校验。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/llms/vllm.py",
+      "type": "file",
+      "name": "vllm.py",
+      "filePath": "mem0/configs/llms/vllm.py",
+      "summary": "定义 vLLM LLM 适配器的模型参数、凭证、端点及 provider 特有校验规则。",
+      "tags": [
+        "configuration",
+        "llm",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/configs/llms/vllm.py:VllmConfig",
+      "type": "class",
+      "name": "VllmConfig",
+      "filePath": "mem0/configs/llms/vllm.py",
+      "lineRange": [
+        7,
+        57
+      ],
+      "summary": "封装 vLLM 相关配置字段并执行类型与组合约束校验。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/llms/xai.py",
+      "type": "file",
+      "name": "xai.py",
+      "filePath": "mem0/configs/llms/xai.py",
+      "summary": "定义 xAI LLM 适配器的模型参数、凭证、端点及 provider 特有校验规则。",
+      "tags": [
+        "configuration",
+        "llm",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/llms/xai.py:XAIConfig",
+      "type": "class",
+      "name": "XAIConfig",
+      "filePath": "mem0/configs/llms/xai.py",
+      "lineRange": [
+        6,
+        55
+      ],
+      "summary": "封装 xAI 相关配置字段并执行类型与组合约束校验。",
+      "tags": [
+        "data-model",
+        "configuration",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/anthropic.py",
+      "type": "file",
+      "name": "anthropic.py",
+      "filePath": "mem0/llms/anthropic.py",
+      "summary": "实现 Anthropic LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/llms/anthropic.py:AnthropicLLM",
+      "type": "class",
+      "name": "AnthropicLLM",
+      "filePath": "mem0/llms/anthropic.py",
+      "lineRange": [
+        14,
+        159
+      ],
+      "summary": "将统一 LLM 生成协议适配到 Anthropic，处理消息、工具调用和响应解析差异。",
+      "tags": [
+        "llm",
+        "adapter",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/aws_bedrock.py",
+      "type": "file",
+      "name": "aws_bedrock.py",
+      "filePath": "mem0/llms/aws_bedrock.py",
+      "summary": "实现 AWS Bedrock LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:mem0/llms/aws_bedrock.py:extract_provider",
+      "type": "function",
+      "name": "extract_provider",
+      "filePath": "mem0/llms/aws_bedrock.py",
+      "lineRange": [
+        26,
+        37
+      ],
+      "summary": "实现 extract provider 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/llms/aws_bedrock.py:AWSBedrockLLM",
+      "type": "class",
+      "name": "AWSBedrockLLM",
+      "filePath": "mem0/llms/aws_bedrock.py",
+      "lineRange": [
+        40,
+        728
+      ],
+      "summary": "将统一 LLM 生成协议适配到 AWS Bedrock，处理消息、工具调用和响应解析差异。",
+      "tags": [
+        "llm",
+        "adapter",
+        "service"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/llms/azure_openai.py",
+      "type": "file",
+      "name": "azure_openai.py",
+      "filePath": "mem0/llms/azure_openai.py",
+      "summary": "实现 Azure OpenAI LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/llms/azure_openai.py:AzureOpenAILLM",
+      "type": "class",
+      "name": "AzureOpenAILLM",
+      "filePath": "mem0/llms/azure_openai.py",
+      "lineRange": [
+        17,
+        166
+      ],
+      "summary": "将统一 LLM 生成协议适配到 Azure OpenAI，处理消息、工具调用和响应解析差异。",
+      "tags": [
+        "llm",
+        "adapter",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/azure_openai_structured.py",
+      "type": "file",
+      "name": "azure_openai_structured.py",
+      "filePath": "mem0/llms/azure_openai_structured.py",
+      "summary": "实现 Azure OpenAI Structured Outputs LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/llms/azure_openai_structured.py:AzureOpenAIStructuredLLM",
+      "type": "class",
+      "name": "AzureOpenAIStructuredLLM",
+      "filePath": "mem0/llms/azure_openai_structured.py",
+      "lineRange": [
+        16,
+        153
+      ],
+      "summary": "将统一 LLM 生成协议适配到 Azure OpenAI Structured Outputs，处理消息、工具调用和响应解析差异。",
+      "tags": [
+        "llm",
+        "adapter",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/base.py",
+      "type": "file",
+      "name": "base.py",
+      "filePath": "mem0/llms/base.py",
+      "summary": "定义 LLM 适配器抽象基类，集中处理通用生成参数、推理模型差异与响应生成契约。",
+      "tags": [
+        "abstract-base",
+        "llm",
+        "interface"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/llms/base.py:LLMBase",
+      "type": "class",
+      "name": "LLMBase",
+      "filePath": "mem0/llms/base.py",
+      "lineRange": [
+        7,
+        170
+      ],
+      "summary": "提供 LLM provider 的公共配置校验、参数能力判定与生成接口基线。",
+      "tags": [
+        "llm",
+        "adapter",
+        "service"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:mem0/configs/llms/anthropic.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/anthropic.py",
+      "target": "class:mem0/configs/llms/anthropic.py:AnthropicConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/llms/anthropic.py",
+      "target": "class:mem0/configs/llms/anthropic.py:AnthropicConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/configs/llms/anthropic.py:AnthropicConfig",
+      "target": "class:mem0/configs/llms/base.py:BaseLlmConfig",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/configs/llms/aws_bedrock.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/aws_bedrock.py",
+      "target": "class:mem0/configs/llms/aws_bedrock.py:AWSBedrockConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/llms/aws_bedrock.py",
+      "target": "class:mem0/configs/llms/aws_bedrock.py:AWSBedrockConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/configs/llms/aws_bedrock.py:AWSBedrockConfig",
+      "target": "class:mem0/configs/llms/base.py:BaseLlmConfig",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/configs/llms/base.py",
+      "target": "file:mem0/utils/http.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/base.py",
+      "target": "class:mem0/configs/llms/base.py:BaseLlmConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/llms/base.py",
+      "target": "class:mem0/configs/llms/base.py:BaseLlmConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/configs/llms/deepseek.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/deepseek.py",
+      "target": "class:mem0/configs/llms/deepseek.py:DeepSeekConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/llms/deepseek.py",
+      "target": "class:mem0/configs/llms/deepseek.py:DeepSeekConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/configs/llms/deepseek.py:DeepSeekConfig",
+      "target": "class:mem0/configs/llms/base.py:BaseLlmConfig",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/configs/llms/gemini.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/gemini.py",
+      "target": "class:mem0/configs/llms/gemini.py:GeminiConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/llms/gemini.py",
+      "target": "class:mem0/configs/llms/gemini.py:GeminiConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/configs/llms/gemini.py:GeminiConfig",
+      "target": "class:mem0/configs/llms/base.py:BaseLlmConfig",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/configs/llms/lmstudio.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/lmstudio.py",
+      "target": "class:mem0/configs/llms/lmstudio.py:LMStudioConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/llms/lmstudio.py",
+      "target": "class:mem0/configs/llms/lmstudio.py:LMStudioConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/configs/llms/lmstudio.py:LMStudioConfig",
+      "target": "class:mem0/configs/llms/base.py:BaseLlmConfig",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/configs/llms/minimax.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/minimax.py",
+      "target": "class:mem0/configs/llms/minimax.py:MinimaxConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/llms/minimax.py",
+      "target": "class:mem0/configs/llms/minimax.py:MinimaxConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/configs/llms/minimax.py:MinimaxConfig",
+      "target": "class:mem0/configs/llms/base.py:BaseLlmConfig",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/configs/llms/ollama.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/ollama.py",
+      "target": "class:mem0/configs/llms/ollama.py:OllamaConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/llms/ollama.py",
+      "target": "class:mem0/configs/llms/ollama.py:OllamaConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/configs/llms/ollama.py:OllamaConfig",
+      "target": "class:mem0/configs/llms/base.py:BaseLlmConfig",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/configs/llms/openai.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/openai.py",
+      "target": "class:mem0/configs/llms/openai.py:OpenAIConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/llms/openai.py",
+      "target": "class:mem0/configs/llms/openai.py:OpenAIConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/configs/llms/openai.py:OpenAIConfig",
+      "target": "class:mem0/configs/llms/base.py:BaseLlmConfig",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/configs/llms/vllm.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/vllm.py",
+      "target": "class:mem0/configs/llms/vllm.py:VllmConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/llms/vllm.py",
+      "target": "class:mem0/configs/llms/vllm.py:VllmConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/configs/llms/vllm.py:VllmConfig",
+      "target": "class:mem0/configs/llms/base.py:BaseLlmConfig",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/configs/llms/xai.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/xai.py",
+      "target": "class:mem0/configs/llms/xai.py:XAIConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/llms/xai.py",
+      "target": "class:mem0/configs/llms/xai.py:XAIConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/configs/llms/xai.py:XAIConfig",
+      "target": "class:mem0/configs/llms/base.py:BaseLlmConfig",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/llms/anthropic.py",
+      "target": "file:mem0/configs/llms/anthropic.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/anthropic.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/anthropic.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/anthropic.py",
+      "target": "class:mem0/llms/anthropic.py:AnthropicLLM",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/llms/anthropic.py",
+      "target": "class:mem0/llms/anthropic.py:AnthropicLLM",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/llms/anthropic.py:AnthropicLLM",
+      "target": "class:mem0/llms/base.py:LLMBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/llms/aws_bedrock.py",
+      "target": "file:mem0/configs/llms/aws_bedrock.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/aws_bedrock.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/aws_bedrock.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/aws_bedrock.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/aws_bedrock.py",
+      "target": "function:mem0/llms/aws_bedrock.py:extract_provider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/llms/aws_bedrock.py",
+      "target": "function:mem0/llms/aws_bedrock.py:extract_provider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/llms/aws_bedrock.py",
+      "target": "class:mem0/llms/aws_bedrock.py:AWSBedrockLLM",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/llms/aws_bedrock.py",
+      "target": "class:mem0/llms/aws_bedrock.py:AWSBedrockLLM",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/llms/aws_bedrock.py:AWSBedrockLLM",
+      "target": "class:mem0/llms/base.py:LLMBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/llms/azure_openai.py",
+      "target": "file:mem0/configs/llms/azure.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai.py",
+      "target": "class:mem0/llms/azure_openai.py:AzureOpenAILLM",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/llms/azure_openai.py",
+      "target": "class:mem0/llms/azure_openai.py:AzureOpenAILLM",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/llms/azure_openai.py:AzureOpenAILLM",
+      "target": "class:mem0/llms/base.py:LLMBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/llms/azure_openai_structured.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai_structured.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai_structured.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai_structured.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai_structured.py",
+      "target": "class:mem0/llms/azure_openai_structured.py:AzureOpenAIStructuredLLM",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/llms/azure_openai_structured.py",
+      "target": "class:mem0/llms/azure_openai_structured.py:AzureOpenAIStructuredLLM",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/llms/azure_openai_structured.py:AzureOpenAIStructuredLLM",
+      "target": "class:mem0/llms/base.py:LLMBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/llms/base.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/base.py",
+      "target": "class:mem0/llms/base.py:LLMBase",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/llms/base.py",
+      "target": "class:mem0/llms/base.py:LLMBase",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

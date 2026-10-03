@@ -1,0 +1,5436 @@
+{
+  "fileNodes": [
+    {
+      "id": "file:mem0/configs/vector_stores/elasticsearch.py",
+      "type": "file",
+      "name": "elasticsearch.py",
+      "filePath": "mem0/configs/vector_stores/elasticsearch.py",
+      "summary": "定义 Elasticsearch 向量存储适配器的 Pydantic 配置模型、索引参数及连接约束。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/milvus.py",
+      "type": "file",
+      "name": "milvus.py",
+      "filePath": "mem0/configs/vector_stores/milvus.py",
+      "summary": "定义 Milvus 向量存储适配器的 Pydantic 配置模型、索引参数及连接约束。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/opensearch.py",
+      "type": "file",
+      "name": "opensearch.py",
+      "filePath": "mem0/configs/vector_stores/opensearch.py",
+      "summary": "定义 OpenSearch 向量存储适配器的 Pydantic 配置模型、索引参数及连接约束。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/oracledb.py",
+      "type": "file",
+      "name": "oracledb.py",
+      "filePath": "mem0/configs/vector_stores/oracledb.py",
+      "summary": "定义 Oracle AI Vector Search 向量存储适配器的 Pydantic 配置模型、索引参数及连接约束。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/supabase.py",
+      "type": "file",
+      "name": "supabase.py",
+      "filePath": "mem0/configs/vector_stores/supabase.py",
+      "summary": "定义 Supabase 向量存储适配器的 Pydantic 配置模型、索引参数及连接约束。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/vertex_ai_vector_search.py",
+      "type": "file",
+      "name": "vertex_ai_vector_search.py",
+      "filePath": "mem0/configs/vector_stores/vertex_ai_vector_search.py",
+      "summary": "定义 Vertex AI Vector Search 向量存储适配器的 Pydantic 配置模型、索引参数及连接约束。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/vector_stores/azure_ai_search.py",
+      "type": "file",
+      "name": "azure_ai_search.py",
+      "filePath": "mem0/vector_stores/azure_ai_search.py",
+      "summary": "实现 Azure AI Search 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/azure_mysql.py",
+      "type": "file",
+      "name": "azure_mysql.py",
+      "filePath": "mem0/vector_stores/azure_mysql.py",
+      "summary": "实现 Azure MySQL 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/baidu.py",
+      "type": "file",
+      "name": "baidu.py",
+      "filePath": "mem0/vector_stores/baidu.py",
+      "summary": "实现 Baidu VectorDB 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/base.py",
+      "type": "file",
+      "name": "base.py",
+      "filePath": "mem0/vector_stores/base.py",
+      "summary": "定义向量存储后端必须实现的统一抽象契约，覆盖集合管理、向量检索、CRUD、批量与关键词搜索能力。",
+      "tags": [
+        "abstract-base",
+        "vector-store",
+        "interface"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/vector_stores/cassandra.py",
+      "type": "file",
+      "name": "cassandra.py",
+      "filePath": "mem0/vector_stores/cassandra.py",
+      "summary": "实现 Cassandra 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/chroma.py",
+      "type": "file",
+      "name": "chroma.py",
+      "filePath": "mem0/vector_stores/chroma.py",
+      "summary": "实现 Chroma 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/databricks.py",
+      "type": "file",
+      "name": "databricks.py",
+      "filePath": "mem0/vector_stores/databricks.py",
+      "summary": "实现 Databricks Vector Search 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/elasticsearch.py",
+      "type": "file",
+      "name": "elasticsearch.py",
+      "filePath": "mem0/vector_stores/elasticsearch.py",
+      "summary": "实现 Elasticsearch 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/faiss.py",
+      "type": "file",
+      "name": "faiss.py",
+      "filePath": "mem0/vector_stores/faiss.py",
+      "summary": "实现 FAISS 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/langchain.py",
+      "type": "file",
+      "name": "langchain.py",
+      "filePath": "mem0/vector_stores/langchain.py",
+      "summary": "实现 LangChain 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/vector_stores/milvus.py",
+      "type": "file",
+      "name": "milvus.py",
+      "filePath": "mem0/vector_stores/milvus.py",
+      "summary": "实现 Milvus 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/mongodb.py",
+      "type": "file",
+      "name": "mongodb.py",
+      "filePath": "mem0/vector_stores/mongodb.py",
+      "summary": "实现 MongoDB Atlas Vector Search 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/neptune_analytics.py",
+      "type": "file",
+      "name": "neptune_analytics.py",
+      "filePath": "mem0/vector_stores/neptune_analytics.py",
+      "summary": "实现 Neptune Analytics 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/opensearch.py",
+      "type": "file",
+      "name": "opensearch.py",
+      "filePath": "mem0/vector_stores/opensearch.py",
+      "summary": "实现 OpenSearch 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/oracledb.py",
+      "type": "file",
+      "name": "oracledb.py",
+      "filePath": "mem0/vector_stores/oracledb.py",
+      "summary": "实现 Oracle AI Vector Search 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/pgvector.py",
+      "type": "file",
+      "name": "pgvector.py",
+      "filePath": "mem0/vector_stores/pgvector.py",
+      "summary": "实现 PGVector 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/pinecone.py",
+      "type": "file",
+      "name": "pinecone.py",
+      "filePath": "mem0/vector_stores/pinecone.py",
+      "summary": "实现 Pinecone 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/qdrant.py",
+      "type": "file",
+      "name": "qdrant.py",
+      "filePath": "mem0/vector_stores/qdrant.py",
+      "summary": "实现 Qdrant 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/redis.py",
+      "type": "file",
+      "name": "redis.py",
+      "filePath": "mem0/vector_stores/redis.py",
+      "summary": "实现 Redis 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/s3_vectors.py",
+      "type": "file",
+      "name": "s3_vectors.py",
+      "filePath": "mem0/vector_stores/s3_vectors.py",
+      "summary": "实现 Amazon S3 Vectors 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/vector_stores/supabase.py",
+      "type": "file",
+      "name": "supabase.py",
+      "filePath": "mem0/vector_stores/supabase.py",
+      "summary": "实现 Supabase 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "abstract-base",
+        "vector-store",
+        "interface"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/turbopuffer.py",
+      "type": "file",
+      "name": "turbopuffer.py",
+      "filePath": "mem0/vector_stores/turbopuffer.py",
+      "summary": "实现 Turbopuffer 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/upstash_vector.py",
+      "type": "file",
+      "name": "upstash_vector.py",
+      "filePath": "mem0/vector_stores/upstash_vector.py",
+      "summary": "实现 Upstash Vector 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/valkey.py",
+      "type": "file",
+      "name": "valkey.py",
+      "filePath": "mem0/vector_stores/valkey.py",
+      "summary": "实现 Valkey 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/vertex_ai_vector_search.py",
+      "type": "file",
+      "name": "vertex_ai_vector_search.py",
+      "filePath": "mem0/vector_stores/vertex_ai_vector_search.py",
+      "summary": "实现 Vertex AI Vector Search 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/weaviate.py",
+      "type": "file",
+      "name": "weaviate.py",
+      "filePath": "mem0/vector_stores/weaviate.py",
+      "summary": "实现 Weaviate 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/configs/llms/anthropic.py",
+      "type": "file",
+      "name": "anthropic.py",
+      "filePath": "mem0/configs/llms/anthropic.py",
+      "summary": "定义 Anthropic LLM 适配器的模型参数、凭证、端点及 provider 特有校验规则。",
+      "tags": [
+        "configuration",
+        "llm",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/llms/aws_bedrock.py",
+      "type": "file",
+      "name": "aws_bedrock.py",
+      "filePath": "mem0/configs/llms/aws_bedrock.py",
+      "summary": "定义 AWS Bedrock LLM 适配器的模型参数、凭证、端点及 provider 特有校验规则。",
+      "tags": [
+        "configuration",
+        "llm",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/llms/base.py",
+      "type": "file",
+      "name": "base.py",
+      "filePath": "mem0/configs/llms/base.py",
+      "summary": "定义所有 LLM provider 配置共享的基础字段与参数校验规则。",
+      "tags": [
+        "configuration",
+        "llm",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/llms/deepseek.py",
+      "type": "file",
+      "name": "deepseek.py",
+      "filePath": "mem0/configs/llms/deepseek.py",
+      "summary": "定义 DeepSeek LLM 适配器的模型参数、凭证、端点及 provider 特有校验规则。",
+      "tags": [
+        "configuration",
+        "llm",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/llms/gemini.py",
+      "type": "file",
+      "name": "gemini.py",
+      "filePath": "mem0/configs/llms/gemini.py",
+      "summary": "定义 Gemini LLM 适配器的模型参数、凭证、端点及 provider 特有校验规则。",
+      "tags": [
+        "configuration",
+        "llm",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/llms/lmstudio.py",
+      "type": "file",
+      "name": "lmstudio.py",
+      "filePath": "mem0/configs/llms/lmstudio.py",
+      "summary": "定义 LM Studio LLM 适配器的模型参数、凭证、端点及 provider 特有校验规则。",
+      "tags": [
+        "configuration",
+        "llm",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/llms/minimax.py",
+      "type": "file",
+      "name": "minimax.py",
+      "filePath": "mem0/configs/llms/minimax.py",
+      "summary": "定义 MiniMax LLM 适配器的模型参数、凭证、端点及 provider 特有校验规则。",
+      "tags": [
+        "configuration",
+        "llm",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/llms/ollama.py",
+      "type": "file",
+      "name": "ollama.py",
+      "filePath": "mem0/configs/llms/ollama.py",
+      "summary": "定义 Ollama LLM 适配器的模型参数、凭证、端点及 provider 特有校验规则。",
+      "tags": [
+        "configuration",
+        "llm",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/llms/openai.py",
+      "type": "file",
+      "name": "openai.py",
+      "filePath": "mem0/configs/llms/openai.py",
+      "summary": "定义 OpenAI LLM 适配器的模型参数、凭证、端点及 provider 特有校验规则。",
+      "tags": [
+        "configuration",
+        "llm",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/llms/vllm.py",
+      "type": "file",
+      "name": "vllm.py",
+      "filePath": "mem0/configs/llms/vllm.py",
+      "summary": "定义 vLLM LLM 适配器的模型参数、凭证、端点及 provider 特有校验规则。",
+      "tags": [
+        "configuration",
+        "llm",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/llms/xai.py",
+      "type": "file",
+      "name": "xai.py",
+      "filePath": "mem0/configs/llms/xai.py",
+      "summary": "定义 xAI LLM 适配器的模型参数、凭证、端点及 provider 特有校验规则。",
+      "tags": [
+        "configuration",
+        "llm",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/llms/anthropic.py",
+      "type": "file",
+      "name": "anthropic.py",
+      "filePath": "mem0/llms/anthropic.py",
+      "summary": "实现 Anthropic LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/aws_bedrock.py",
+      "type": "file",
+      "name": "aws_bedrock.py",
+      "filePath": "mem0/llms/aws_bedrock.py",
+      "summary": "实现 AWS Bedrock LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/llms/azure_openai.py",
+      "type": "file",
+      "name": "azure_openai.py",
+      "filePath": "mem0/llms/azure_openai.py",
+      "summary": "实现 Azure OpenAI LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/azure_openai_structured.py",
+      "type": "file",
+      "name": "azure_openai_structured.py",
+      "filePath": "mem0/llms/azure_openai_structured.py",
+      "summary": "实现 Azure OpenAI Structured Outputs LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/base.py",
+      "type": "file",
+      "name": "base.py",
+      "filePath": "mem0/llms/base.py",
+      "summary": "定义 LLM 适配器抽象基类，集中处理通用生成参数、推理模型差异与响应生成契约。",
+      "tags": [
+        "abstract-base",
+        "llm",
+        "interface"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/deepseek.py",
+      "type": "file",
+      "name": "deepseek.py",
+      "filePath": "mem0/llms/deepseek.py",
+      "summary": "实现 DeepSeek LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/gemini.py",
+      "type": "file",
+      "name": "gemini.py",
+      "filePath": "mem0/llms/gemini.py",
+      "summary": "实现 Gemini LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/groq.py",
+      "type": "file",
+      "name": "groq.py",
+      "filePath": "mem0/llms/groq.py",
+      "summary": "实现 Groq LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/langchain.py",
+      "type": "file",
+      "name": "langchain.py",
+      "filePath": "mem0/llms/langchain.py",
+      "summary": "实现 LangChain LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/litellm.py",
+      "type": "file",
+      "name": "litellm.py",
+      "filePath": "mem0/llms/litellm.py",
+      "summary": "实现 LiteLLM LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/lmstudio.py",
+      "type": "file",
+      "name": "lmstudio.py",
+      "filePath": "mem0/llms/lmstudio.py",
+      "summary": "实现 LM Studio LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/minimax.py",
+      "type": "file",
+      "name": "minimax.py",
+      "filePath": "mem0/llms/minimax.py",
+      "summary": "实现 MiniMax LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/ollama.py",
+      "type": "file",
+      "name": "ollama.py",
+      "filePath": "mem0/llms/ollama.py",
+      "summary": "实现 Ollama LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/openai.py",
+      "type": "file",
+      "name": "openai.py",
+      "filePath": "mem0/llms/openai.py",
+      "summary": "实现 OpenAI LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/openai_structured.py",
+      "type": "file",
+      "name": "openai_structured.py",
+      "filePath": "mem0/llms/openai_structured.py",
+      "summary": "实现 OpenAI Structured Outputs LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/llms/sarvam.py",
+      "type": "file",
+      "name": "sarvam.py",
+      "filePath": "mem0/llms/sarvam.py",
+      "summary": "实现 Sarvam LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/together.py",
+      "type": "file",
+      "name": "together.py",
+      "filePath": "mem0/llms/together.py",
+      "summary": "实现 Together AI LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/vllm.py",
+      "type": "file",
+      "name": "vllm.py",
+      "filePath": "mem0/llms/vllm.py",
+      "summary": "实现 vLLM LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/llms/xai.py",
+      "type": "file",
+      "name": "xai.py",
+      "filePath": "mem0/llms/xai.py",
+      "summary": "实现 xAI LLM 适配器，负责消息与工具格式转换、请求参数组装以及响应规范化。",
+      "tags": [
+        "llm",
+        "adapter",
+        "generation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/memory/utils.py",
+      "type": "file",
+      "name": "utils.py",
+      "filePath": "mem0/memory/utils.py",
+      "summary": "提供记忆事实抽取、消息规范化、视觉消息处理、JSON 清洗与图关系消毒等共享工具。",
+      "tags": [
+        "memory",
+        "service",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "mem0/__init__.py",
+      "summary": "暴露 Mem0 Python SDK 的顶层版本信息和主要公共入口。",
+      "tags": [
+        "python-sdk",
+        "entry-point",
+        "public-api"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/client/main.py",
+      "type": "file",
+      "name": "main.py",
+      "filePath": "mem0/client/main.py",
+      "summary": "实现托管 Mem0 平台的同步与异步 HTTP 客户端，覆盖记忆 CRUD、搜索、项目、画像、导出、Webhook 与反馈 API。",
+      "tags": [
+        "api-client",
+        "hosted-platform",
+        "http"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/client/project.py",
+      "type": "file",
+      "name": "project.py",
+      "filePath": "mem0/client/project.py",
+      "summary": "封装组织与项目管理 API，并为同步和异步客户端提供共享参数校验与成员管理操作。",
+      "tags": [
+        "api-client",
+        "hosted-platform",
+        "http"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/client/types.py",
+      "type": "file",
+      "name": "types.py",
+      "filePath": "mem0/client/types.py",
+      "summary": "定义托管客户端各类操作的 Pydantic 请求选项模型，统一可选参数与序列化边界。",
+      "tags": [
+        "api-client",
+        "hosted-platform",
+        "http"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/client/utils.py",
+      "type": "file",
+      "name": "utils.py",
+      "filePath": "mem0/client/utils.py",
+      "summary": "集中处理托管 API 的 HTTP/请求异常，将底层错误转换为稳定的 SDK APIError。",
+      "tags": [
+        "api-client",
+        "hosted-platform",
+        "http"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/enums.py",
+      "type": "file",
+      "name": "enums.py",
+      "filePath": "mem0/configs/enums.py",
+      "summary": "定义记忆类型等核心枚举，供存储与业务流程统一判别。",
+      "tags": [
+        "python-sdk",
+        "entry-point",
+        "public-api"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/prompts.py",
+      "type": "file",
+      "name": "prompts.py",
+      "filePath": "mem0/configs/prompts.py",
+      "summary": "集中维护记忆抽取、更新、删除、摘要与时间解析提示词，并提供动态上下文拼装函数。",
+      "tags": [
+        "prompt-engineering",
+        "memory-extraction",
+        "templates"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/exceptions.py",
+      "type": "file",
+      "name": "exceptions.py",
+      "filePath": "mem0/exceptions.py",
+      "summary": "定义 SDK 的分层异常体系，并把 HTTP 状态码与服务端错误响应映射为可诊断的领域异常。",
+      "tags": [
+        "error-handling",
+        "exception-hierarchy",
+        "api-errors"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/memory/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "mem0/memory/__init__.py",
+      "summary": "标记 memory 子包并作为核心记忆实现的包级入口。",
+      "tags": [
+        "memory",
+        "service",
+        "persistence"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/memory/base.py",
+      "type": "file",
+      "name": "base.py",
+      "filePath": "mem0/memory/base.py",
+      "summary": "定义记忆系统的抽象 CRUD 与历史查询契约。",
+      "tags": [
+        "memory",
+        "service",
+        "persistence"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/memory/main.py",
+      "type": "file",
+      "name": "main.py",
+      "filePath": "mem0/memory/main.py",
+      "summary": "实现开源同步与异步记忆引擎，编排 LLM 抽取、embedding、向量检索、图关系、重排、历史记录与实体索引。",
+      "tags": [
+        "memory-engine",
+        "orchestration",
+        "sync-async"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/memory/notices.py",
+      "type": "file",
+      "name": "notices.py",
+      "filePath": "mem0/memory/notices.py",
+      "summary": "实现 OSS 功能提示与容量机会检测，通过本地状态、远端配置和采样规则控制首次运行、时间、衰减、规模及性能提示。",
+      "tags": [
+        "feature-notice",
+        "local-state",
+        "telemetry"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/memory/setup.py",
+      "type": "file",
+      "name": "setup.py",
+      "filePath": "mem0/memory/setup.py",
+      "summary": "管理本地匿名用户标识、配置文件初始化和身份别名标记，为遥测与客户端迁移提供持久状态。",
+      "tags": [
+        "memory",
+        "service",
+        "persistence"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/memory/storage.py",
+      "type": "file",
+      "name": "storage.py",
+      "filePath": "mem0/memory/storage.py",
+      "summary": "以 SQLite 持久化记忆变更历史和对话消息，并负责旧表结构迁移与批量写入。",
+      "tags": [
+        "sqlite",
+        "history",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/memory/telemetry.py",
+      "type": "file",
+      "name": "telemetry.py",
+      "filePath": "mem0/memory/telemetry.py",
+      "summary": "封装匿名 OSS/托管客户端遥测，处理采样、事件上报、身份识别与进程退出清理。",
+      "tags": [
+        "telemetry",
+        "sampling",
+        "observability"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/proxy/main.py",
+      "type": "file",
+      "name": "main.py",
+      "filePath": "mem0/proxy/main.py",
+      "summary": "提供 OpenAI 风格 chat.completions 代理，在生成前注入相关长期记忆，并在生成后异步回写对话。",
+      "tags": [
+        "openai-compatible",
+        "proxy",
+        "memory-augmentation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/utils/entity_extraction.py",
+      "type": "file",
+      "name": "entity_extraction.py",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "summary": "从自然语言中融合 NER、技术标识符、专名、引号短语与主题短语候选，清洗去重后产出稳定实体。",
+      "tags": [
+        "nlp",
+        "entity-extraction",
+        "ranking"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/utils/lemmatization.py",
+      "type": "file",
+      "name": "lemmatization.py",
+      "filePath": "mem0/utils/lemmatization.py",
+      "summary": "为 BM25 检索提供基于 spaCy 的词形还原与规范化文本处理。",
+      "tags": [
+        "python-sdk",
+        "entry-point",
+        "public-api"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/utils/scoring.py",
+      "type": "file",
+      "name": "scoring.py",
+      "filePath": "mem0/utils/scoring.py",
+      "summary": "组合语义相似度、BM25 与图实体信号，对候选记忆归一化并加权排序。",
+      "tags": [
+        "ranking",
+        "bm25",
+        "hybrid-search"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/embeddings/base.py",
+      "type": "file",
+      "name": "base.py",
+      "filePath": "mem0/configs/embeddings/base.py",
+      "summary": "汇总所有 embedding provider 的通用配置，包括模型、维度、代理、云端凭据与按记忆动作选择 embedding 类型，是各适配器的统一配置入口。",
+      "tags": [
+        "configuration",
+        "embeddings",
+        "provider-config"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "以普通 Python 配置对象统一不同厂商参数，并在初始化阶段构造 HTTP client 与 Azure 子配置。"
+    },
+    {
+      "id": "file:mem0/embeddings/aws_bedrock.py",
+      "type": "file",
+      "name": "aws_bedrock.py",
+      "filePath": "mem0/embeddings/aws_bedrock.py",
+      "summary": "实现 AWS Bedrock embedding 适配器，按模型家族组装请求、解析不同响应格式，并可对向量执行归一化。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "aws-bedrock"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/embeddings/azure_openai.py",
+      "type": "file",
+      "name": "azure_openai.py",
+      "filePath": "mem0/embeddings/azure_openai.py",
+      "summary": "实现 Azure OpenAI embedding 适配器，支持 API key 或 Azure Identity 认证，并提供单条与分批向量化。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "azure-openai"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/embeddings/base.py",
+      "type": "file",
+      "name": "base.py",
+      "filePath": "mem0/embeddings/base.py",
+      "summary": "定义 embedding provider 的抽象契约和默认批处理行为，使上层 Memory 流程可以统一调用不同向量模型。",
+      "tags": [
+        "embeddings",
+        "abstract-base",
+        "interface"
+      ],
+      "complexity": "simple",
+      "languageNotes": "通过 ABC 与抽象 embed 方法建立 provider 插件边界，embed_batch 默认逐条回退。"
+    },
+    {
+      "id": "file:mem0/embeddings/fastembed.py",
+      "type": "file",
+      "name": "fastembed.py",
+      "filePath": "mem0/embeddings/fastembed.py",
+      "summary": "将 FastEmbed 的本地 TextEmbedding 模型接入统一 embedding 接口，并把 NumPy 向量转换为普通列表。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "local-model"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/embeddings/gemini.py",
+      "type": "file",
+      "name": "gemini.py",
+      "filePath": "mem0/embeddings/gemini.py",
+      "summary": "封装 Google GenAI embedding API，按记忆动作选择 task type，并支持指定输出维度和批量分块。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "google-genai"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/embeddings/huggingface.py",
+      "type": "file",
+      "name": "huggingface.py",
+      "filePath": "mem0/embeddings/huggingface.py",
+      "summary": "提供 Hugging Face embedding 适配器，可在远程 OpenAI-compatible endpoint 与本地 SentenceTransformer 之间切换。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "huggingface"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/embeddings/langchain.py",
+      "type": "file",
+      "name": "langchain.py",
+      "filePath": "mem0/embeddings/langchain.py",
+      "summary": "把用户提供的 LangChain Embeddings 实例包装为 Mem0 的统一 embedding 接口，并校验所需协议。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "langchain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/embeddings/lmstudio.py",
+      "type": "file",
+      "name": "lmstudio.py",
+      "filePath": "mem0/embeddings/lmstudio.py",
+      "summary": "通过 OpenAI-compatible API 调用本地 LM Studio embedding 服务，支持单条与批量请求及响应数量校验。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "local-inference"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/embeddings/mock.py",
+      "type": "file",
+      "name": "mock.py",
+      "filePath": "mem0/embeddings/mock.py",
+      "summary": "提供返回空向量的占位 embedding 实现，供由外部向量服务自行生成 embedding 的场景使用。",
+      "tags": [
+        "embeddings",
+        "mock",
+        "adapter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/embeddings/ollama.py",
+      "type": "file",
+      "name": "ollama.py",
+      "filePath": "mem0/embeddings/ollama.py",
+      "summary": "封装 Ollama embedding API，负责规范化模型名、按需拉取缺失模型，并提供单条和批量向量化。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "ollama"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/embeddings/openai.py",
+      "type": "file",
+      "name": "openai.py",
+      "filePath": "mem0/embeddings/openai.py",
+      "summary": "实现 OpenAI embedding 适配器，处理输入清洗、按动作传递 embedding 类型、维度参数以及批量响应排序。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "openai"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/embeddings/together.py",
+      "type": "file",
+      "name": "together.py",
+      "filePath": "mem0/embeddings/together.py",
+      "summary": "通过 Together 的 OpenAI-compatible client 生成 embedding，并支持批量请求、结果排序和数量一致性校验。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "together-ai"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/embeddings/vertexai.py",
+      "type": "file",
+      "name": "vertexai.py",
+      "filePath": "mem0/embeddings/vertexai.py",
+      "summary": "实现 Vertex AI embedding 适配器，集中处理 GCP 认证、任务类型映射、输出维度以及分批预测。",
+      "tags": [
+        "embeddings",
+        "provider-adapter",
+        "vertex-ai"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/utils/gcp_auth.py",
+      "type": "file",
+      "name": "gcp_auth.py",
+      "filePath": "mem0/utils/gcp_auth.py",
+      "summary": "集中处理 GCP 凭据发现，并为 Vertex AI 初始化和 Google GenAI client 创建提供统一入口。",
+      "tags": [
+        "authentication",
+        "gcp",
+        "utility"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "凭据解析按内存 service account、文件、环境变量和 Application Default Credentials 的优先级回退。"
+    },
+    {
+      "id": "file:mem0/utils/http.py",
+      "type": "file",
+      "name": "http.py",
+      "filePath": "mem0/utils/http.py",
+      "summary": "根据字符串或字典代理配置创建同步 httpx client，供 provider 配置复用。",
+      "tags": [
+        "http-client",
+        "proxy",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/rerankers/base.py",
+      "type": "file",
+      "name": "base.py",
+      "filePath": "mem0/configs/rerankers/base.py",
+      "summary": "定义 reranker provider 共享的 Pydantic 配置字段，包括 provider、model、API key 与 top_k。",
+      "tags": [
+        "configuration",
+        "reranking",
+        "data-model"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/rerankers/cohere.py",
+      "type": "file",
+      "name": "cohere.py",
+      "filePath": "mem0/configs/rerankers/cohere.py",
+      "summary": "定义 Cohere reranker 的默认模型以及返回文档和分块数量等 provider 专属配置。",
+      "tags": [
+        "configuration",
+        "reranking",
+        "cohere"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/rerankers/huggingface.py",
+      "type": "file",
+      "name": "huggingface.py",
+      "filePath": "mem0/configs/rerankers/huggingface.py",
+      "summary": "定义 Hugging Face reranker 的模型、设备、批大小、最大长度和分数归一化选项。",
+      "tags": [
+        "configuration",
+        "reranking",
+        "huggingface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/rerankers/llm.py",
+      "type": "file",
+      "name": "llm.py",
+      "filePath": "mem0/configs/rerankers/llm.py",
+      "summary": "定义基于 LLM 的 reranker 配置，覆盖模型、采样、输出长度、top_k 以及可嵌套的 LLM provider 配置。",
+      "tags": [
+        "configuration",
+        "reranking",
+        "llm"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/rerankers/sentence_transformer.py",
+      "type": "file",
+      "name": "sentence_transformer.py",
+      "filePath": "mem0/configs/rerankers/sentence_transformer.py",
+      "summary": "定义 SentenceTransformer cross-encoder reranker 的模型、设备、批大小和进度显示选项。",
+      "tags": [
+        "configuration",
+        "reranking",
+        "sentence-transformers"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/rerankers/zero_entropy.py",
+      "type": "file",
+      "name": "zero_entropy.py",
+      "filePath": "mem0/configs/rerankers/zero_entropy.py",
+      "summary": "定义 ZeroEntropy reranker 的模型、API key 与 top_k 配置。",
+      "tags": [
+        "configuration",
+        "reranking",
+        "zero-entropy"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/reranker/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "mem0/reranker/__init__.py",
+      "summary": "作为 reranker 包入口，集中导出基础接口和各 provider 实现，方便工厂与用户统一导入。",
+      "tags": [
+        "entry-point",
+        "barrel",
+        "reranking"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/reranker/base.py",
+      "type": "file",
+      "name": "base.py",
+      "filePath": "mem0/reranker/base.py",
+      "summary": "声明 reranker 的抽象接口，约定根据 query 对文档列表重排并返回带分数的结果。",
+      "tags": [
+        "reranking",
+        "abstract-base",
+        "interface"
+      ],
+      "complexity": "simple",
+      "languageNotes": "通过 ABC 定义所有 reranker provider 必须实现的 rerank 契约。"
+    },
+    {
+      "id": "file:mem0/reranker/cohere_reranker.py",
+      "type": "file",
+      "name": "cohere_reranker.py",
+      "filePath": "mem0/reranker/cohere_reranker.py",
+      "summary": "调用 Cohere Rerank API 对多种文档载荷提取出的文本进行排序，并保留原始文档结构和 rerank 分数。",
+      "tags": [
+        "reranking",
+        "provider-adapter",
+        "cohere"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/reranker/huggingface_reranker.py",
+      "type": "file",
+      "name": "huggingface_reranker.py",
+      "filePath": "mem0/reranker/huggingface_reranker.py",
+      "summary": "使用 Hugging Face sequence-classification 模型对 query-document 对打分，支持批处理、设备选择、分数归一化和失败回退。",
+      "tags": [
+        "reranking",
+        "provider-adapter",
+        "huggingface"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/reranker/llm_reranker.py",
+      "type": "file",
+      "name": "llm_reranker.py",
+      "filePath": "mem0/reranker/llm_reranker.py",
+      "summary": "逐文档调用可配置 LLM 生成相关性分数，解析并限制到 0 到 1，再排序和应用 top_k；失败时使用中性分数。",
+      "tags": [
+        "reranking",
+        "llm",
+        "fault-tolerance"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "将系统评分规则与截断后的用户数据分离为 system/user 消息，以降低 prompt injection 与输入泛滥风险。"
+    },
+    {
+      "id": "file:mem0/reranker/sentence_transformer_reranker.py",
+      "type": "file",
+      "name": "sentence_transformer_reranker.py",
+      "filePath": "mem0/reranker/sentence_transformer_reranker.py",
+      "summary": "使用 SentenceTransformer CrossEncoder 对 query-document 对预测相关性，排序后返回带分数的文档，并对异常项提供回退。",
+      "tags": [
+        "reranking",
+        "cross-encoder",
+        "local-model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/reranker/zero_entropy_reranker.py",
+      "type": "file",
+      "name": "zero_entropy_reranker.py",
+      "filePath": "mem0/reranker/zero_entropy_reranker.py",
+      "summary": "调用 ZeroEntropy rerank 服务处理抽取后的文档文本，恢复原始文档、附加分数并按 top_k 截断。",
+      "tags": [
+        "reranking",
+        "provider-adapter",
+        "zero-entropy"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/utils/factory.py",
+      "type": "file",
+      "name": "factory.py",
+      "filePath": "mem0/utils/factory.py",
+      "summary": "集中维护 LLM、embedding、vector store 与 reranker 的 provider 注册表，通过延迟导入和配置适配创建具体实现。",
+      "tags": [
+        "factory",
+        "provider-registry",
+        "dynamic-loading"
+      ],
+      "complexity": "complex",
+      "languageNotes": "字符串类路径配合 importlib 实现延迟加载，使可选 provider 依赖不会在核心模块导入时全部加载。"
+    },
+    {
+      "id": "file:mem0/configs/base.py",
+      "type": "file",
+      "name": "base.py",
+      "filePath": "mem0/configs/base.py",
+      "summary": "定义核心 Memory 数据与组合配置模型，把 vector store、LLM、embedder、reranker 和历史存储配置汇聚为单一入口。",
+      "tags": [
+        "configuration",
+        "data-model",
+        "composition-root"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "Pydantic 模型把各子系统配置组合成 MemoryConfig，并为对外返回的 MemoryItem 提供稳定结构。"
+    },
+    {
+      "id": "file:mem0/configs/llms/azure.py",
+      "type": "file",
+      "name": "azure.py",
+      "filePath": "mem0/configs/llms/azure.py",
+      "summary": "定义 Azure OpenAI 的 provider 专属 LLM 配置，把通用 LLM 参数与 deployment、endpoint、API version 和 headers 组合起来。",
+      "tags": [
+        "configuration",
+        "llm",
+        "azure-openai"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/rerankers/config.py",
+      "type": "file",
+      "name": "config.py",
+      "filePath": "mem0/configs/rerankers/config.py",
+      "summary": "定义顶层 reranker 选择配置，以 provider 名称和可选 provider-specific 字典接入 MemoryConfig。",
+      "tags": [
+        "configuration",
+        "reranking",
+        "provider-selection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/embeddings/configs.py",
+      "type": "file",
+      "name": "configs.py",
+      "filePath": "mem0/embeddings/configs.py",
+      "summary": "定义顶层 embedder 选择配置，并在 Pydantic 校验阶段检查内置 provider 名称。",
+      "tags": [
+        "configuration",
+        "embeddings",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/llms/configs.py",
+      "type": "file",
+      "name": "configs.py",
+      "filePath": "mem0/llms/configs.py",
+      "summary": "定义顶层 LLM provider 配置，并通过校验器限制为核心支持的 provider 集合。",
+      "tags": [
+        "configuration",
+        "llm",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/vector_stores/configs.py",
+      "type": "file",
+      "name": "configs.py",
+      "filePath": "mem0/vector_stores/configs.py",
+      "summary": "定义 vector store provider 配置，维护 provider 到配置类的动态映射，并把字典转换为相应的强类型配置对象。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "dynamic-loading"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "Pydantic model validator 在实例创建后动态导入 provider 配置类，实现统一入口与按需依赖。"
+    },
+    {
+      "id": "config:.pre-commit-config.yaml",
+      "type": "config",
+      "name": ".pre-commit-config.yaml",
+      "filePath": ".pre-commit-config.yaml",
+      "summary": "定义仓库提交前的自动检查钩子，用于在代码进入版本历史前执行统一的格式化与静态检查。",
+      "tags": [
+        "configuration",
+        "pre-commit",
+        "linting",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:AGENTS.md",
+      "type": "document",
+      "name": "AGENTS.md",
+      "filePath": "AGENTS.md",
+      "summary": "面向代码代理的仓库级协作手册，说明 monorepo 分区、各包工具链、贡献门槛、测试要求和禁止事项。",
+      "tags": [
+        "documentation",
+        "development",
+        "repository-guide",
+        "contribution"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:CODE_OF_CONDUCT.md",
+      "type": "document",
+      "name": "CODE_OF_CONDUCT.md",
+      "filePath": "CODE_OF_CONDUCT.md",
+      "summary": "规定社区行为准则、贡献行为要求、违规处理职责及分级执行流程，并强调对 AI 辅助贡献的透明与可验证性。",
+      "tags": [
+        "documentation",
+        "governance",
+        "community",
+        "contribution"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:CONTRIBUTING.md",
+      "type": "document",
+      "name": "CONTRIBUTING.md",
+      "filePath": "CONTRIBUTING.md",
+      "summary": "完整描述 Mem0 的贡献流程，覆盖 issue 接受门槛、CLA、仓库布局、Python 与 TypeScript 开发工作流、PR 检查清单和发布约定。",
+      "tags": [
+        "documentation",
+        "contribution",
+        "development",
+        "release-process"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:LLM.md",
+      "type": "document",
+      "name": "LLM.md",
+      "filePath": "LLM.md",
+      "summary": "为 LLM 消费场景提供覆盖安装、核心 API、配置体系、各类 provider、高级记忆能力、常见模式、集成示例和故障排查的综合参考。",
+      "tags": [
+        "documentation",
+        "llm-context",
+        "api-reference",
+        "integration-guide"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "pipeline:Makefile",
+      "type": "pipeline",
+      "name": "Makefile",
+      "filePath": "Makefile",
+      "summary": "汇总 Python SDK 的安装、格式化、排序、lint、文档、构建、发布、清理及多版本 pytest 命令，作为本地开发流水线入口。",
+      "tags": [
+        "build-system",
+        "development",
+        "testing",
+        "release-process"
+      ],
+      "complexity": "simple",
+      "languageNotes": "通过 Make targets 封装 Hatch、Ruff、isort、Pytest 与构建发布命令。"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "项目主入口文档，介绍 Mem0 的个性化 AI 记忆定位、研究亮点、SDK 与自托管快速开始、Cloud、CLI、Agent Skills 及生态集成。",
+      "tags": [
+        "documentation",
+        "entry-point",
+        "quickstart",
+        "project-overview"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:SECURITY.md",
+      "type": "document",
+      "name": "SECURITY.md",
+      "filePath": "SECURITY.md",
+      "summary": "说明安全漏洞的私密报告渠道、响应过程、公开披露原则和受支持版本策略。",
+      "tags": [
+        "documentation",
+        "security",
+        "vulnerability-reporting",
+        "governance"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:marketplace.json",
+      "type": "config",
+      "name": "marketplace.json",
+      "filePath": "marketplace.json",
+      "summary": "声明 Mem0 marketplace 的名称、界面元数据及可分发插件条目，用于插件市场发现与安装。",
+      "tags": [
+        "configuration",
+        "plugin-marketplace",
+        "distribution",
+        "metadata"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:pyproject.toml",
+      "type": "config",
+      "name": "pyproject.toml",
+      "filePath": "pyproject.toml",
+      "summary": "定义 mem0ai Python 包的构建元数据、核心与可选依赖、Hatch 多版本环境、pytest 选项以及 Ruff/isort 规则。",
+      "tags": [
+        "configuration",
+        "python",
+        "dependency-management",
+        "build-system"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "以 Hatch 管理 Python 3.9 至 3.12 环境，并通过 optional dependency groups 隔离 provider 依赖。"
+    },
+    {
+      "id": "file:.gitmodules",
+      "type": "file",
+      "name": ".gitmodules",
+      "filePath": ".gitmodules",
+      "summary": "将 evaluation 目录绑定到 memory-benchmarks 仓库的 main 分支，使基准评测代码以 Git submodule 形式独立演进。",
+      "tags": [
+        "configuration",
+        "git-submodule",
+        "evaluation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:mem0/AGENTS.md",
+      "type": "document",
+      "name": "AGENTS.md",
+      "filePath": "mem0/AGENTS.md",
+      "summary": "核心 Python SDK 的开发指南，定义 Hatch/Ruff/Pytest 工作流、provider 扩展模式、公共 API 约束与图记忆定位。",
+      "tags": [
+        "documentation",
+        "python-sdk",
+        "provider-pattern",
+        "development"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/client/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "mem0/client/__init__.py",
+      "summary": "标记 hosted client 子包的空命名空间；实际客户端实现由同目录其他模块提供。",
+      "tags": [
+        "entry-point",
+        "package-marker",
+        "client"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "mem0/configs/__init__.py",
+      "summary": "标记全局配置子包的空命名空间，为不同 provider 类别的配置模型提供包边界。",
+      "tags": [
+        "entry-point",
+        "package-marker",
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/embeddings/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "mem0/configs/embeddings/__init__.py",
+      "summary": "标记 embedding provider 配置模型所在的 Python 子包，不承担运行时导出逻辑。",
+      "tags": [
+        "entry-point",
+        "package-marker",
+        "embeddings"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/llms/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "mem0/configs/llms/__init__.py",
+      "summary": "标记 LLM provider 配置模型所在的 Python 子包，不承担运行时导出逻辑。",
+      "tags": [
+        "entry-point",
+        "package-marker",
+        "llm"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/rerankers/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "mem0/configs/rerankers/__init__.py",
+      "summary": "标记 reranker provider 配置模型所在的 Python 子包，不承担运行时导出逻辑。",
+      "tags": [
+        "entry-point",
+        "package-marker",
+        "reranker"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "mem0/configs/vector_stores/__init__.py",
+      "summary": "标记各向量数据库配置模型的 Python 子包；具体 provider 配置按模块分隔。",
+      "tags": [
+        "entry-point",
+        "package-marker",
+        "vector-store"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/azure_ai_search.py",
+      "type": "file",
+      "name": "azure_ai_search.py",
+      "filePath": "mem0/configs/vector_stores/azure_ai_search.py",
+      "summary": "定义 Azure AI Search 向量存储的 Pydantic 配置，覆盖服务凭据、向量维度、压缩、混合检索与过滤模式校验。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "azure-ai-search",
+        "validation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "使用 Pydantic v2 的 model_validator 在模型构造前拒绝额外字段和已废弃参数。"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/azure_mysql.py",
+      "type": "file",
+      "name": "azure_mysql.py",
+      "filePath": "mem0/configs/vector_stores/azure_mysql.py",
+      "summary": "定义 Azure MySQL 向量存储配置，支持密码、Azure 凭据或外部连接池，并验证连接必填项与安全 SQL 标识符。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "azure-mysql",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/baidu.py",
+      "type": "file",
+      "name": "baidu.py",
+      "filePath": "mem0/configs/vector_stores/baidu.py",
+      "summary": "提供 Baidu VectorDB 的端点、账号、数据库、表、向量维度和距离度量配置，并拒绝未声明字段。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "baidu-vectordb",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/cassandra.py",
+      "type": "file",
+      "name": "cassandra.py",
+      "filePath": "mem0/configs/vector_stores/cassandra.py",
+      "summary": "定义 Cassandra/Astra DB 向量存储配置，处理接触点、secure connect bundle、成对账号密码与协议参数。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "cassandra",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/chroma.py",
+      "type": "file",
+      "name": "chroma.py",
+      "filePath": "mem0/configs/vector_stores/chroma.py",
+      "summary": "定义 ChromaDB 本地、服务端或 Cloud 三种连接配置，支持注入现有客户端并约束互斥连接模式。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "chromadb",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/databricks.py",
+      "type": "file",
+      "name": "databricks.py",
+      "filePath": "mem0/configs/vector_stores/databricks.py",
+      "summary": "定义 Databricks Vector Search 配置，覆盖 workspace、Unity Catalog、索引/管道类型、warehouse 与多种令牌或服务主体认证。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "databricks",
+        "authentication"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/faiss.py",
+      "type": "file",
+      "name": "faiss.py",
+      "filePath": "mem0/configs/vector_stores/faiss.py",
+      "summary": "提供 FAISS 索引路径、向量维度、距离策略与 L2 归一化配置，并限制支持的度量类型。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "faiss",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/langchain.py",
+      "type": "file",
+      "name": "langchain.py",
+      "filePath": "mem0/configs/vector_stores/langchain.py",
+      "summary": "定义对任意 LangChain Community VectorStore 实例的适配配置，并在缺少可选依赖时给出安装提示。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "langchain",
+        "adapter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/mongodb.py",
+      "type": "file",
+      "name": "mongodb.py",
+      "filePath": "mem0/configs/vector_stores/mongodb.py",
+      "summary": "提供 MongoDB 向量数据库的 URI、数据库、collection 与 embedding 维度配置，并禁止未知字段。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "mongodb",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/neptune.py",
+      "type": "file",
+      "name": "neptune.py",
+      "filePath": "mem0/configs/vector_stores/neptune.py",
+      "summary": "定义 Amazon Neptune Analytics 作为向量存储时的图端点与 collection 配置，并保护 Cypher 标识符插值。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "amazon-neptune",
+        "security"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/pgvector.py",
+      "type": "file",
+      "name": "pgvector.py",
+      "filePath": "mem0/configs/vector_stores/pgvector.py",
+      "summary": "定义 pgvector 的连接参数、SSL、连接池、DiskANN/HNSW 开关与向量维度，并支持三层连接配置优先级。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "pgvector",
+        "connection-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/pinecone.py",
+      "type": "file",
+      "name": "pinecone.py",
+      "filePath": "mem0/configs/vector_stores/pinecone.py",
+      "summary": "定义 Pinecone 客户端、API key、serverless/pod 部署、namespace、度量与批处理参数，并支持环境变量认证。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "pinecone",
+        "authentication"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/qdrant.py",
+      "type": "file",
+      "name": "qdrant.py",
+      "filePath": "mem0/configs/vector_stores/qdrant.py",
+      "summary": "定义 Qdrant 的本地路径、host/port、URL/API key、HTTPS、持久化与外部客户端配置，并检查连接方式完整性。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "qdrant",
+        "connection-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/redis.py",
+      "type": "file",
+      "name": "redis.py",
+      "filePath": "mem0/configs/vector_stores/redis.py",
+      "summary": "提供精简的 Redis 向量存储配置，要求连接 URL，并给出 collection 和 embedding 维度默认值。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "redis",
+        "data-model"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/s3_vectors.py",
+      "type": "file",
+      "name": "s3_vectors.py",
+      "filePath": "mem0/configs/vector_stores/s3_vectors.py",
+      "summary": "定义 Amazon S3 Vectors 的 bucket、索引名称、embedding 维度、距离度量与区域配置，并拒绝额外字段。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "s3-vectors",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/turbopuffer.py",
+      "type": "file",
+      "name": "turbopuffer.py",
+      "filePath": "mem0/configs/vector_stores/turbopuffer.py",
+      "summary": "定义 Turbopuffer namespace、区域、距离度量、批量大小及认证配置，并支持从环境变量读取 API key。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "turbopuffer",
+        "authentication"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/upstash_vector.py",
+      "type": "file",
+      "name": "upstash_vector.py",
+      "filePath": "mem0/configs/vector_stores/upstash_vector.py",
+      "summary": "定义 Upstash Vector 的 URL/token、现有客户端、namespace 与内建 embedding 开关，并将环境变量凭据写回已验证配置。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "upstash-vector",
+        "authentication"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/valkey.py",
+      "type": "file",
+      "name": "valkey.py",
+      "filePath": "mem0/configs/vector_stores/valkey.py",
+      "summary": "定义 Valkey 向量存储的连接、索引、时区、HNSW 调优与集群模式配置，并拒绝未声明字段。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "valkey",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/weaviate.py",
+      "type": "file",
+      "name": "weaviate.py",
+      "filePath": "mem0/configs/vector_stores/weaviate.py",
+      "summary": "定义 Weaviate 集群 URL、认证密钥、附加请求头、collection 和向量维度配置，并强制提供集群地址。",
+      "tags": [
+        "configuration",
+        "vector-store",
+        "weaviate",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/embeddings/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "mem0/embeddings/__init__.py",
+      "summary": "标记 embedding provider 实现所在的 Python 子包；provider 模块通过独立文件按需加载。",
+      "tags": [
+        "entry-point",
+        "package-marker",
+        "embeddings"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/llms/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "mem0/llms/__init__.py",
+      "summary": "标记 LLM provider 实现所在的 Python 子包；具体模型适配器由同目录模块提供。",
+      "tags": [
+        "entry-point",
+        "package-marker",
+        "llm"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:mem0/memory/oss_notices_config.json",
+      "type": "config",
+      "name": "oss_notices_config.json",
+      "filePath": "mem0/memory/oss_notices_config.json",
+      "summary": "配置 OSS 运行时提示的版本、variant 分流比例和七类 notice 开关/文案；当前各提示均关闭且文案为空。",
+      "tags": [
+        "configuration",
+        "runtime-notices",
+        "feature-flags",
+        "memory"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/proxy/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "mem0/proxy/__init__.py",
+      "summary": "标记 proxy 功能所在的 Python 子包，不包含额外导出或初始化副作用。",
+      "tags": [
+        "entry-point",
+        "package-marker",
+        "proxy"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/utils/spacy_models.py",
+      "type": "file",
+      "name": "spacy_models.py",
+      "filePath": "mem0/utils/spacy_models.py",
+      "summary": "集中管理 spaCy en_core_web_sm 的可用性检查与线程安全懒加载，为实体抽取和 BM25 词形还原共享模型实例。",
+      "tags": [
+        "utility",
+        "nlp",
+        "lazy-loading",
+        "singleton",
+        "thread-safety"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "通过模块级缓存、双重检查锁和失败标记避免重复加载或反复重试失败的 spaCy 模型。"
+    },
+    {
+      "id": "file:mem0/vector_stores/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "mem0/vector_stores/__init__.py",
+      "summary": "标记向量存储 provider 实现所在的 Python 子包；具体后端适配器由同目录模块承载。",
+      "tags": [
+        "entry-point",
+        "package-marker",
+        "vector-store"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "importEdges": [
+    {
+      "source": "file:mem0/vector_stores/azure_ai_search.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/azure_ai_search.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/azure_mysql.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/baidu.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/cassandra.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/chroma.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/databricks.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/databricks.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/elasticsearch.py",
+      "target": "file:mem0/configs/vector_stores/elasticsearch.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/elasticsearch.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/faiss.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/langchain.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/milvus.py",
+      "target": "file:mem0/configs/vector_stores/milvus.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/milvus.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/mongodb.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/neptune_analytics.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/opensearch.py",
+      "target": "file:mem0/configs/vector_stores/opensearch.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/opensearch.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "file:mem0/configs/vector_stores/oracledb.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/pgvector.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/pinecone.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/qdrant.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/redis.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/redis.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/redis.py",
+      "target": "file:mem0/vector_stores/redis.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/s3_vectors.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/supabase.py",
+      "target": "file:mem0/configs/vector_stores/supabase.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/supabase.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/turbopuffer.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/upstash_vector.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/valkey.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/valkey.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/valkey.py",
+      "target": "file:mem0/vector_stores/valkey.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/vertex_ai_vector_search.py",
+      "target": "file:mem0/configs/vector_stores/vertex_ai_vector_search.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/vertex_ai_vector_search.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/weaviate.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/anthropic.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/aws_bedrock.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/base.py",
+      "target": "file:mem0/utils/http.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/deepseek.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/gemini.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/lmstudio.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/minimax.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/ollama.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/openai.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/vllm.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/xai.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/anthropic.py",
+      "target": "file:mem0/configs/llms/anthropic.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/anthropic.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/anthropic.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/aws_bedrock.py",
+      "target": "file:mem0/configs/llms/aws_bedrock.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/aws_bedrock.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/aws_bedrock.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/aws_bedrock.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai.py",
+      "target": "file:mem0/configs/llms/azure.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai_structured.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai_structured.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai_structured.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai_structured.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/base.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/deepseek.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/deepseek.py",
+      "target": "file:mem0/configs/llms/deepseek.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/deepseek.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/deepseek.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/deepseek.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/gemini.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/gemini.py",
+      "target": "file:mem0/configs/llms/gemini.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/gemini.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/groq.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/groq.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/groq.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/langchain.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/langchain.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/litellm.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/litellm.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/litellm.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/lmstudio.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/lmstudio.py",
+      "target": "file:mem0/configs/llms/lmstudio.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/lmstudio.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/lmstudio.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/lmstudio.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/minimax.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/minimax.py",
+      "target": "file:mem0/configs/llms/minimax.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/minimax.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/minimax.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/minimax.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/ollama.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/ollama.py",
+      "target": "file:mem0/configs/llms/ollama.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/ollama.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/ollama.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/openai.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/openai.py",
+      "target": "file:mem0/configs/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/openai.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/openai.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/openai.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/openai_structured.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/openai_structured.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/openai_structured.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/sarvam.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/sarvam.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/together.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/together.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/together.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/vllm.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/vllm.py",
+      "target": "file:mem0/configs/llms/vllm.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/vllm.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/vllm.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/vllm.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/xai.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/xai.py",
+      "target": "file:mem0/configs/llms/xai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/xai.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/xai.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/xai.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "file:mem0/configs/prompts.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/__init__.py",
+      "target": "file:mem0/client/main.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/__init__.py",
+      "target": "file:mem0/memory/main.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/client/main.py",
+      "target": "file:mem0/client/project.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/client/main.py",
+      "target": "file:mem0/client/types.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/client/main.py",
+      "target": "file:mem0/client/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/client/main.py",
+      "target": "file:mem0/memory/setup.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/client/main.py",
+      "target": "file:mem0/memory/telemetry.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/client/project.py",
+      "target": "file:mem0/client/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/client/project.py",
+      "target": "file:mem0/memory/telemetry.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/client/utils.py",
+      "target": "file:mem0/exceptions.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/configs/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/configs/enums.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/configs/prompts.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/exceptions.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/memory/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/memory/notices.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/memory/setup.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/memory/storage.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/memory/telemetry.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/utils/entity_extraction.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/utils/factory.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/utils/lemmatization.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/utils/scoring.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "file:mem0/memory/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "file:mem0/memory/setup.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/telemetry.py",
+      "target": "file:mem0/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/telemetry.py",
+      "target": "file:mem0/memory/setup.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/proxy/main.py",
+      "target": "file:mem0/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/proxy/main.py",
+      "target": "file:mem0/configs/prompts.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/proxy/main.py",
+      "target": "file:mem0/memory/telemetry.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/embeddings/base.py",
+      "target": "file:mem0/configs/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/embeddings/base.py",
+      "target": "file:mem0/utils/http.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/aws_bedrock.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/aws_bedrock.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/azure_openai.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/azure_openai.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/azure_openai.py",
+      "target": "file:mem0/embeddings/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/base.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/fastembed.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/fastembed.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/gemini.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/gemini.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/huggingface.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/huggingface.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/huggingface.py",
+      "target": "file:mem0/embeddings/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/langchain.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/langchain.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/lmstudio.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/lmstudio.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/lmstudio.py",
+      "target": "file:mem0/embeddings/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/mock.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/ollama.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/ollama.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/openai.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/openai.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/openai.py",
+      "target": "file:mem0/embeddings/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/together.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/together.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/together.py",
+      "target": "file:mem0/embeddings/together.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/vertexai.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/vertexai.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/vertexai.py",
+      "target": "file:mem0/utils/gcp_auth.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/rerankers/cohere.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/rerankers/huggingface.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/rerankers/llm.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/rerankers/sentence_transformer.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/rerankers/zero_entropy.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/__init__.py",
+      "target": "file:mem0/reranker/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/__init__.py",
+      "target": "file:mem0/reranker/cohere_reranker.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/__init__.py",
+      "target": "file:mem0/reranker/huggingface_reranker.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/__init__.py",
+      "target": "file:mem0/reranker/llm_reranker.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/__init__.py",
+      "target": "file:mem0/reranker/sentence_transformer_reranker.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/__init__.py",
+      "target": "file:mem0/reranker/zero_entropy_reranker.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/cohere_reranker.py",
+      "target": "file:mem0/reranker/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/huggingface_reranker.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/huggingface_reranker.py",
+      "target": "file:mem0/configs/rerankers/huggingface.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/huggingface_reranker.py",
+      "target": "file:mem0/reranker/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/llm_reranker.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/llm_reranker.py",
+      "target": "file:mem0/configs/rerankers/llm.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/llm_reranker.py",
+      "target": "file:mem0/reranker/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/llm_reranker.py",
+      "target": "file:mem0/utils/factory.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/sentence_transformer_reranker.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/sentence_transformer_reranker.py",
+      "target": "file:mem0/configs/rerankers/sentence_transformer.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/sentence_transformer_reranker.py",
+      "target": "file:mem0/reranker/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/zero_entropy_reranker.py",
+      "target": "file:mem0/reranker/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/anthropic.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/aws_bedrock.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/azure.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/deepseek.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/gemini.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/lmstudio.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/minimax.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/ollama.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/vllm.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/xai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/rerankers/cohere.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/rerankers/huggingface.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/rerankers/llm.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/rerankers/sentence_transformer.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/rerankers/zero_entropy.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/embeddings/mock.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/base.py",
+      "target": "file:mem0/configs/rerankers/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/base.py",
+      "target": "file:mem0/embeddings/configs.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/base.py",
+      "target": "file:mem0/llms/configs.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/base.py",
+      "target": "file:mem0/vector_stores/configs.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/azure.py",
+      "target": "file:mem0/configs/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/azure.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ],
+  "allEdges": [
+    {
+      "source": "file:mem0/vector_stores/azure_ai_search.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/azure_ai_search.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/azure_mysql.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/baidu.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/cassandra.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/chroma.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/databricks.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/databricks.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/elasticsearch.py",
+      "target": "file:mem0/configs/vector_stores/elasticsearch.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/elasticsearch.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/faiss.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/langchain.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/milvus.py",
+      "target": "file:mem0/configs/vector_stores/milvus.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/milvus.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/mongodb.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/neptune_analytics.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/opensearch.py",
+      "target": "file:mem0/configs/vector_stores/opensearch.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/opensearch.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "file:mem0/configs/vector_stores/oracledb.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/pgvector.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/pinecone.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/qdrant.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/redis.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/redis.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/redis.py",
+      "target": "file:mem0/vector_stores/redis.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/s3_vectors.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/supabase.py",
+      "target": "file:mem0/configs/vector_stores/supabase.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/supabase.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/turbopuffer.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/upstash_vector.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/valkey.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/valkey.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/valkey.py",
+      "target": "file:mem0/vector_stores/valkey.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/vertex_ai_vector_search.py",
+      "target": "file:mem0/configs/vector_stores/vertex_ai_vector_search.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/vertex_ai_vector_search.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/weaviate.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/anthropic.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/aws_bedrock.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/base.py",
+      "target": "file:mem0/utils/http.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/deepseek.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/gemini.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/lmstudio.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/minimax.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/ollama.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/openai.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/vllm.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/xai.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/anthropic.py",
+      "target": "file:mem0/configs/llms/anthropic.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/anthropic.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/anthropic.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/aws_bedrock.py",
+      "target": "file:mem0/configs/llms/aws_bedrock.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/aws_bedrock.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/aws_bedrock.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/aws_bedrock.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai.py",
+      "target": "file:mem0/configs/llms/azure.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai_structured.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai_structured.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai_structured.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/azure_openai_structured.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/base.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/deepseek.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/deepseek.py",
+      "target": "file:mem0/configs/llms/deepseek.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/deepseek.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/deepseek.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/deepseek.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/gemini.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/gemini.py",
+      "target": "file:mem0/configs/llms/gemini.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/gemini.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/groq.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/groq.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/groq.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/langchain.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/langchain.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/litellm.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/litellm.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/litellm.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/lmstudio.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/lmstudio.py",
+      "target": "file:mem0/configs/llms/lmstudio.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/lmstudio.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/lmstudio.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/lmstudio.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/minimax.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/minimax.py",
+      "target": "file:mem0/configs/llms/minimax.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/minimax.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/minimax.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/minimax.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/ollama.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/ollama.py",
+      "target": "file:mem0/configs/llms/ollama.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/ollama.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/ollama.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/openai.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/openai.py",
+      "target": "file:mem0/configs/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/openai.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/openai.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/openai.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/openai_structured.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/openai_structured.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/openai_structured.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/sarvam.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/sarvam.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/together.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/together.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/together.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/vllm.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/vllm.py",
+      "target": "file:mem0/configs/llms/vllm.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/vllm.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/vllm.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/vllm.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/xai.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/xai.py",
+      "target": "file:mem0/configs/llms/xai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/xai.py",
+      "target": "file:mem0/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/xai.py",
+      "target": "file:mem0/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/llms/xai.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/utils.py",
+      "target": "file:mem0/configs/prompts.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/__init__.py",
+      "target": "file:mem0/client/main.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/__init__.py",
+      "target": "file:mem0/memory/main.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/client/main.py",
+      "target": "file:mem0/client/project.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/client/main.py",
+      "target": "file:mem0/client/types.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/client/main.py",
+      "target": "file:mem0/client/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/client/main.py",
+      "target": "file:mem0/memory/setup.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/client/main.py",
+      "target": "file:mem0/memory/telemetry.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/client/project.py",
+      "target": "file:mem0/client/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/client/project.py",
+      "target": "file:mem0/memory/telemetry.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/client/utils.py",
+      "target": "file:mem0/exceptions.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/configs/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/configs/enums.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/configs/prompts.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/exceptions.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/memory/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/memory/notices.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/memory/setup.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/memory/storage.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/memory/telemetry.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/utils/entity_extraction.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/utils/factory.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/utils/lemmatization.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/utils/scoring.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/main.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "file:mem0/memory/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/notices.py",
+      "target": "file:mem0/memory/setup.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/telemetry.py",
+      "target": "file:mem0/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/memory/telemetry.py",
+      "target": "file:mem0/memory/setup.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/proxy/main.py",
+      "target": "file:mem0/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/proxy/main.py",
+      "target": "file:mem0/configs/prompts.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/proxy/main.py",
+      "target": "file:mem0/memory/telemetry.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/embeddings/base.py",
+      "target": "file:mem0/configs/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/embeddings/base.py",
+      "target": "file:mem0/utils/http.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/aws_bedrock.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/aws_bedrock.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/azure_openai.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/azure_openai.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/azure_openai.py",
+      "target": "file:mem0/embeddings/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/base.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/fastembed.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/fastembed.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/gemini.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/gemini.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/huggingface.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/huggingface.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/huggingface.py",
+      "target": "file:mem0/embeddings/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/langchain.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/langchain.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/lmstudio.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/lmstudio.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/lmstudio.py",
+      "target": "file:mem0/embeddings/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/mock.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/ollama.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/ollama.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/openai.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/openai.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/openai.py",
+      "target": "file:mem0/embeddings/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/together.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/together.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/together.py",
+      "target": "file:mem0/embeddings/together.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/vertexai.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/vertexai.py",
+      "target": "file:mem0/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/embeddings/vertexai.py",
+      "target": "file:mem0/utils/gcp_auth.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/rerankers/cohere.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/rerankers/huggingface.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/rerankers/llm.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/rerankers/sentence_transformer.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/rerankers/zero_entropy.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/__init__.py",
+      "target": "file:mem0/reranker/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/__init__.py",
+      "target": "file:mem0/reranker/cohere_reranker.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/__init__.py",
+      "target": "file:mem0/reranker/huggingface_reranker.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/__init__.py",
+      "target": "file:mem0/reranker/llm_reranker.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/__init__.py",
+      "target": "file:mem0/reranker/sentence_transformer_reranker.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/__init__.py",
+      "target": "file:mem0/reranker/zero_entropy_reranker.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/cohere_reranker.py",
+      "target": "file:mem0/reranker/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/huggingface_reranker.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/huggingface_reranker.py",
+      "target": "file:mem0/configs/rerankers/huggingface.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/huggingface_reranker.py",
+      "target": "file:mem0/reranker/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/llm_reranker.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/llm_reranker.py",
+      "target": "file:mem0/configs/rerankers/llm.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/llm_reranker.py",
+      "target": "file:mem0/reranker/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/llm_reranker.py",
+      "target": "file:mem0/utils/factory.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/sentence_transformer_reranker.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/sentence_transformer_reranker.py",
+      "target": "file:mem0/configs/rerankers/sentence_transformer.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/sentence_transformer_reranker.py",
+      "target": "file:mem0/reranker/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/reranker/zero_entropy_reranker.py",
+      "target": "file:mem0/reranker/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/embeddings/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/anthropic.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/aws_bedrock.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/azure.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/deepseek.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/gemini.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/lmstudio.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/minimax.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/ollama.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/openai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/vllm.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/llms/xai.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/rerankers/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/rerankers/cohere.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/rerankers/huggingface.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/rerankers/llm.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/rerankers/sentence_transformer.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/configs/rerankers/zero_entropy.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/utils/factory.py",
+      "target": "file:mem0/embeddings/mock.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/base.py",
+      "target": "file:mem0/configs/rerankers/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/base.py",
+      "target": "file:mem0/embeddings/configs.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/base.py",
+      "target": "file:mem0/llms/configs.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/base.py",
+      "target": "file:mem0/vector_stores/configs.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/azure.py",
+      "target": "file:mem0/configs/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/configs/llms/azure.py",
+      "target": "file:mem0/configs/llms/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "document:AGENTS.md",
+      "target": "document:CONTRIBUTING.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:CODE_OF_CONDUCT.md",
+      "target": "document:CONTRIBUTING.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:CONTRIBUTING.md",
+      "target": "document:SECURITY.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:LLM.md",
+      "target": "document:README.md",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "pipeline:Makefile",
+      "target": "config:pyproject.toml",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:README.md",
+      "target": "config:marketplace.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

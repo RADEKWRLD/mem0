@@ -1,0 +1,139 @@
+{
+  "nodes": [
+    {
+      "id": "file:mem0/configs/vector_stores/valkey.py",
+      "type": "file",
+      "name": "valkey.py",
+      "filePath": "mem0/configs/vector_stores/valkey.py",
+      "summary": "定义 Valkey 向量存储的连接、索引、时区、HNSW 调优与集群模式配置，并拒绝未声明字段。",
+      "tags": ["configuration", "vector-store", "valkey", "validation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/vector_stores/valkey.py:ValkeyConfig",
+      "type": "class",
+      "name": "ValkeyConfig",
+      "filePath": "mem0/configs/vector_stores/valkey.py",
+      "lineRange": [6, 32],
+      "summary": "以 Pydantic 模型封装 Valkey URL、collection、向量维度及 HNSW 参数，并执行严格额外字段校验。",
+      "tags": ["configuration", "pydantic-model", "valkey", "similarity-search"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/vector_stores/weaviate.py",
+      "type": "file",
+      "name": "weaviate.py",
+      "filePath": "mem0/configs/vector_stores/weaviate.py",
+      "summary": "定义 Weaviate 集群 URL、认证密钥、附加请求头、collection 和向量维度配置，并强制提供集群地址。",
+      "tags": ["configuration", "vector-store", "weaviate", "validation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/vector_stores/weaviate.py:WeaviateConfig",
+      "type": "class",
+      "name": "WeaviateConfig",
+      "filePath": "mem0/configs/vector_stores/weaviate.py",
+      "lineRange": [6, 41],
+      "summary": "封装 Weaviate 连接与认证参数，在构造前检查 cluster_url 并拒绝模型未声明的配置项。",
+      "tags": ["configuration", "pydantic-model", "weaviate", "connection-management"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/embeddings/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "mem0/embeddings/__init__.py",
+      "summary": "标记 embedding provider 实现所在的 Python 子包；provider 模块通过独立文件按需加载。",
+      "tags": ["entry-point", "package-marker", "embeddings"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/llms/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "mem0/llms/__init__.py",
+      "summary": "标记 LLM provider 实现所在的 Python 子包；具体模型适配器由同目录模块提供。",
+      "tags": ["entry-point", "package-marker", "llm"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:mem0/memory/oss_notices_config.json",
+      "type": "config",
+      "name": "oss_notices_config.json",
+      "filePath": "mem0/memory/oss_notices_config.json",
+      "summary": "配置 OSS 运行时提示的版本、variant 分流比例和七类 notice 开关/文案；当前各提示均关闭且文案为空。",
+      "tags": ["configuration", "runtime-notices", "feature-flags", "memory"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/proxy/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "mem0/proxy/__init__.py",
+      "summary": "标记 proxy 功能所在的 Python 子包，不包含额外导出或初始化副作用。",
+      "tags": ["entry-point", "package-marker", "proxy"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/utils/spacy_models.py",
+      "type": "file",
+      "name": "spacy_models.py",
+      "filePath": "mem0/utils/spacy_models.py",
+      "summary": "集中管理 spaCy en_core_web_sm 的可用性检查与线程安全懒加载，为实体抽取和 BM25 词形还原共享模型实例。",
+      "tags": ["utility", "nlp", "lazy-loading", "singleton", "thread-safety"],
+      "complexity": "moderate",
+      "languageNotes": "通过模块级缓存、双重检查锁和失败标记避免重复加载或反复重试失败的 spaCy 模型。"
+    },
+    {
+      "id": "function:mem0/utils/spacy_models.py:_ensure_model_available",
+      "type": "function",
+      "name": "_ensure_model_available",
+      "filePath": "mem0/utils/spacy_models.py",
+      "lineRange": [21, 41],
+      "summary": "确认 spaCy 已安装且 en_core_web_sm 模型可用；缺失模型时尝试下载，并将安装或下载错误转换为可操作异常。",
+      "tags": ["utility", "nlp", "dependency-check", "error-handling"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/spacy_models.py:get_nlp_full",
+      "type": "function",
+      "name": "get_nlp_full",
+      "filePath": "mem0/utils/spacy_models.py",
+      "lineRange": [44, 66],
+      "summary": "线程安全地懒加载完整 spaCy pipeline 供实体抽取使用，并缓存成功实例或失败状态。",
+      "tags": ["utility", "nlp", "lazy-loading", "thread-safety"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/spacy_models.py:get_nlp_lemma",
+      "type": "function",
+      "name": "get_nlp_lemma",
+      "filePath": "mem0/utils/spacy_models.py",
+      "lineRange": [69, 91],
+      "summary": "线程安全地懒加载禁用 NER 与 parser 的轻量 spaCy pipeline，供 BM25 文本词形还原复用。",
+      "tags": ["utility", "nlp", "lemmatization", "lazy-loading"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/vector_stores/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "mem0/vector_stores/__init__.py",
+      "summary": "标记向量存储 provider 实现所在的 Python 子包；具体后端适配器由同目录模块承载。",
+      "tags": ["entry-point", "package-marker", "vector-store"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {"source": "file:mem0/configs/vector_stores/valkey.py", "target": "class:mem0/configs/vector_stores/valkey.py:ValkeyConfig", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:mem0/configs/vector_stores/valkey.py", "target": "class:mem0/configs/vector_stores/valkey.py:ValkeyConfig", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:mem0/configs/vector_stores/weaviate.py", "target": "class:mem0/configs/vector_stores/weaviate.py:WeaviateConfig", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:mem0/configs/vector_stores/weaviate.py", "target": "class:mem0/configs/vector_stores/weaviate.py:WeaviateConfig", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:mem0/utils/spacy_models.py", "target": "function:mem0/utils/spacy_models.py:_ensure_model_available", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:mem0/utils/spacy_models.py", "target": "function:mem0/utils/spacy_models.py:_ensure_model_available", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:mem0/utils/spacy_models.py", "target": "function:mem0/utils/spacy_models.py:get_nlp_full", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:mem0/utils/spacy_models.py", "target": "function:mem0/utils/spacy_models.py:get_nlp_full", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:mem0/utils/spacy_models.py", "target": "function:mem0/utils/spacy_models.py:get_nlp_lemma", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:mem0/utils/spacy_models.py", "target": "function:mem0/utils/spacy_models.py:get_nlp_lemma", "type": "exports", "direction": "forward", "weight": 0.8}
+  ]
+}

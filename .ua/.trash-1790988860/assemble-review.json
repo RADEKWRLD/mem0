@@ -1,0 +1,13 @@
+{
+  "fixedSectionOk": true,
+  "nodesRecovered": 0,
+  "edgesRestored": 0,
+  "crossBatchEdgesAdded": 0,
+  "typesRemapped": 0,
+  "complexityRemapped": 0,
+  "notes": [
+    "Merge report contained no Fixed or Could not fix warnings.",
+    "All 530 nodes have valid IDs, known types, and normalized complexity values; all 1071 edges reference existing nodes.",
+    "All 232 import relationships across 161 importMap entries already have matching file-to-file imports edges."
+  ]
+}

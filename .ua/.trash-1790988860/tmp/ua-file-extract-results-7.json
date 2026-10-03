@@ -1,0 +1,984 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 10,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 10,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 10
+    }
+  },
+  "results": [
+    {
+      "path": ".pre-commit-config.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 16,
+      "nonEmptyLines": 15,
+      "sections": [
+        {
+          "heading": "repos",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "AGENTS.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 175,
+      "nonEmptyLines": 132,
+      "sections": [
+        {
+          "heading": "AGENTS.md",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Do NOT",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Where to look",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "Repository map",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Setup",
+          "level": 2,
+          "line": 72
+        },
+        {
+          "heading": "Conventions everywhere",
+          "level": 2,
+          "line": 83
+        },
+        {
+          "heading": "Benchmarking",
+          "level": 2,
+          "line": 91
+        },
+        {
+          "heading": "What to ship with a change",
+          "level": 2,
+          "line": 99
+        },
+        {
+          "heading": "Contributing",
+          "level": 2,
+          "line": 113
+        },
+        {
+          "heading": "Two gates decide whether your pull request stays open",
+          "level": 3,
+          "line": 125
+        },
+        {
+          "heading": "The CLA is not optional",
+          "level": 3,
+          "line": 143
+        },
+        {
+          "heading": "What gets a pull request closed",
+          "level": 3,
+          "line": 151
+        },
+        {
+          "heading": "Reference",
+          "level": 3,
+          "line": 162
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 181,
+      "nonEmptyLines": 137,
+      "sections": [
+        {
+          "heading": "Contributor Covenant Code of Conduct",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Our Pledge",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Our Standards",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Contribution Conduct",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Enforcement Responsibilities",
+          "level": 2,
+          "line": 84
+        },
+        {
+          "heading": "Scope",
+          "level": 2,
+          "line": 96
+        },
+        {
+          "heading": "Enforcement",
+          "level": 2,
+          "line": 105
+        },
+        {
+          "heading": "Enforcement Guidelines",
+          "level": 2,
+          "line": 114
+        },
+        {
+          "heading": "1. Correction",
+          "level": 3,
+          "line": 119
+        },
+        {
+          "heading": "2. Warning",
+          "level": 3,
+          "line": 129
+        },
+        {
+          "heading": "3. Temporary Ban",
+          "level": 3,
+          "line": 143
+        },
+        {
+          "heading": "4. Permanent Ban",
+          "level": 3,
+          "line": 154
+        },
+        {
+          "heading": "Attribution",
+          "level": 2,
+          "line": 163
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 256,
+      "nonEmptyLines": 195,
+      "sections": [
+        {
+          "heading": "Contributing to Mem0",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Before You Start",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "1. Open an Issue First",
+          "level": 3,
+          "line": 18
+        },
+        {
+          "heading": "2. Understand Your Code",
+          "level": 3,
+          "line": 67
+        },
+        {
+          "heading": "3. Sign the Contributor License Agreement (CLA)",
+          "level": 3,
+          "line": 93
+        },
+        {
+          "heading": "First Contribution Fast Path",
+          "level": 2,
+          "line": 103
+        },
+        {
+          "heading": "Repository Layout",
+          "level": 2,
+          "line": 116
+        },
+        {
+          "heading": "Development Workflow",
+          "level": 2,
+          "line": 129
+        },
+        {
+          "heading": "Contributing to the Python SDK (`mem0/`)",
+          "level": 3,
+          "line": 143
+        },
+        {
+          "heading": "Contributing to the TypeScript SDK (`mem0-ts/`)",
+          "level": 3,
+          "line": 171
+        },
+        {
+          "heading": "Good Contribution Practices",
+          "level": 2,
+          "line": 191
+        },
+        {
+          "heading": "Pull Request Checklist",
+          "level": 2,
+          "line": 211
+        },
+        {
+          "heading": "Reporting Security Issues",
+          "level": 2,
+          "line": 222
+        },
+        {
+          "heading": "Releasing",
+          "level": 2,
+          "line": 227
+        },
+        {
+          "heading": "Tag Prefixes",
+          "level": 3,
+          "line": 232
+        },
+        {
+          "heading": "How to Release",
+          "level": 3,
+          "line": 243
+        },
+        {
+          "heading": "Publishing Details",
+          "level": 3,
+          "line": 249
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      }
+    },
+    {
+      "path": "LLM.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 1324,
+      "nonEmptyLines": 1086,
+      "sections": [
+        {
+          "heading": "Mem0 - The Memory Layer for Personalized AI",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Overview",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Installation",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "Quick Start",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "Python - Self-Hosted",
+          "level": 3,
+          "line": 24
+        },
+        {
+          "heading": "Python - Hosted Platform",
+          "level": 3,
+          "line": 45
+        },
+        {
+          "heading": "TypeScript - Client SDK",
+          "level": 3,
+          "line": 61
+        },
+        {
+          "heading": "TypeScript - OSS SDK",
+          "level": 3,
+          "line": 76
+        },
+        {
+          "heading": "Core API Reference",
+          "level": 2,
+          "line": 89
+        },
+        {
+          "heading": "Memory Class (Self-Hosted)",
+          "level": 3,
+          "line": 91
+        },
+        {
+          "heading": "Initialization",
+          "level": 4,
+          "line": 95
+        },
+        {
+          "heading": "Core Methods",
+          "level": 4,
+          "line": 112
+        },
+        {
+          "heading": "MemoryClient Class (Hosted Platform)",
+          "level": 3,
+          "line": 163
+        },
+        {
+          "heading": "Initialization",
+          "level": 4,
+          "line": 167
+        },
+        {
+          "heading": "Core Methods",
+          "level": 4,
+          "line": 177
+        },
+        {
+          "heading": "Batch Operations",
+          "level": 4,
+          "line": 210
+        },
+        {
+          "heading": "User Management",
+          "level": 4,
+          "line": 222
+        },
+        {
+          "heading": "Additional Features",
+          "level": 4,
+          "line": 236
+        },
+        {
+          "heading": "Configuration System",
+          "level": 2,
+          "line": 255
+        },
+        {
+          "heading": "MemoryConfig",
+          "level": 3,
+          "line": 257
+        },
+        {
+          "heading": "Supported Providers",
+          "level": 3,
+          "line": 274
+        },
+        {
+          "heading": "LLM Providers (20 supported)",
+          "level": 4,
+          "line": 276
+        },
+        {
+          "heading": "Embedding Providers (10 supported)",
+          "level": 4,
+          "line": 296
+        },
+        {
+          "heading": "Vector Store Providers (19 supported)",
+          "level": 4,
+          "line": 308
+        },
+        {
+          "heading": "Graph Store Providers (4 supported)",
+          "level": 4,
+          "line": 329
+        },
+        {
+          "heading": "Configuration Examples",
+          "level": 3,
+          "line": 335
+        },
+        {
+          "heading": "OpenAI Configuration",
+          "level": 4,
+          "line": 337
+        },
+        {
+          "heading": "Local Setup with Ollama",
+          "level": 4,
+          "line": 357
+        },
+        {
+          "heading": "Graph Memory with Neo4j",
+          "level": 4,
+          "line": 383
+        },
+        {
+          "heading": "Enterprise Setup",
+          "level": 4,
+          "line": 398
+        },
+        {
+          "heading": "LLM Providers",
+          "level": 4,
+          "line": 421
+        },
+        {
+          "heading": "Vector Store Providers",
+          "level": 4,
+          "line": 438
+        },
+        {
+          "heading": "Embedding Providers",
+          "level": 4,
+          "line": 458
+        },
+        {
+          "heading": "TypeScript/JavaScript SDK",
+          "level": 2,
+          "line": 470
+        },
+        {
+          "heading": "Client SDK (Hosted Platform)",
+          "level": 3,
+          "line": 472
+        },
+        {
+          "heading": "OSS SDK (Self-Hosted)",
+          "level": 3,
+          "line": 515
+        },
+        {
+          "heading": "Key TypeScript Types",
+          "level": 3,
+          "line": 551
+        },
+        {
+          "heading": "Advanced Features",
+          "level": 2,
+          "line": 588
+        },
+        {
+          "heading": "Graph Memory",
+          "level": 3,
+          "line": 590
+        },
+        {
+          "heading": "Multimodal Memory",
+          "level": 3,
+          "line": 625
+        },
+        {
+          "heading": "Procedural Memory",
+          "level": 3,
+          "line": 654
+        },
+        {
+          "heading": "Custom Prompts",
+          "level": 3,
+          "line": 673
+        },
+        {
+          "heading": "Common Usage Patterns",
+          "level": 2,
+          "line": 693
+        },
+        {
+          "heading": "1. Personal AI Assistant",
+          "level": 3,
+          "line": 695
+        },
+        {
+          "heading": "2. Customer Support Bot",
+          "level": 3,
+          "line": 730
+        },
+        {
+          "heading": "3. Learning Assistant",
+          "level": 3,
+          "line": 768
+        },
+        {
+          "heading": "4. Multi-Agent System",
+          "level": 3,
+          "line": 819
+        },
+        {
+          "heading": "5. Voice Assistant with Memory",
+          "level": 3,
+          "line": 861
+        },
+        {
+          "heading": "Best Practices",
+          "level": 2,
+          "line": 912
+        },
+        {
+          "heading": "1. Memory Organization",
+          "level": 3,
+          "line": 914
+        },
+        {
+          "heading": "2. Search Optimization",
+          "level": 3,
+          "line": 939
+        },
+        {
+          "heading": "3. Memory Lifecycle Management",
+          "level": 3,
+          "line": 959
+        },
+        {
+          "heading": "4. Error Handling",
+          "level": 3,
+          "line": 981
+        },
+        {
+          "heading": "5. Performance Optimization",
+          "level": 3,
+          "line": 1001
+        },
+        {
+          "heading": "Integration Examples",
+          "level": 2,
+          "line": 1024
+        },
+        {
+          "heading": "AutoGen Integration",
+          "level": 3,
+          "line": 1026
+        },
+        {
+          "heading": "LangChain Integration",
+          "level": 3,
+          "line": 1046
+        },
+        {
+          "heading": "Streamlit App",
+          "level": 3,
+          "line": 1088
+        },
+        {
+          "heading": "FastAPI Backend",
+          "level": 3,
+          "line": 1133
+        },
+        {
+          "heading": "Troubleshooting",
+          "level": 2,
+          "line": 1200
+        },
+        {
+          "heading": "Common Issues",
+          "level": 3,
+          "line": 1202
+        },
+        {
+          "heading": "Performance Tips",
+          "level": 3,
+          "line": 1264
+        },
+        {
+          "heading": "Resources",
+          "level": 2,
+          "line": 1312
+        },
+        {
+          "heading": "License",
+          "level": 2,
+          "line": 1321
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 64
+      }
+    },
+    {
+      "path": "Makefile",
+      "language": "makefile",
+      "fileCategory": "infra",
+      "totalLines": 52,
+      "nonEmptyLines": 37,
+      "steps": [
+        {
+          "name": "all",
+          "startLine": 8,
+          "endLine": 9
+        },
+        {
+          "name": "install",
+          "startLine": 10,
+          "endLine": 12
+        },
+        {
+          "name": "install_all",
+          "startLine": 13,
+          "endLine": 17
+        },
+        {
+          "name": "format",
+          "startLine": 19,
+          "endLine": 21
+        },
+        {
+          "name": "sort",
+          "startLine": 23,
+          "endLine": 25
+        },
+        {
+          "name": "lint",
+          "startLine": 27,
+          "endLine": 29
+        },
+        {
+          "name": "docs",
+          "startLine": 30,
+          "endLine": 32
+        },
+        {
+          "name": "build",
+          "startLine": 33,
+          "endLine": 35
+        },
+        {
+          "name": "publish",
+          "startLine": 36,
+          "endLine": 38
+        },
+        {
+          "name": "clean",
+          "startLine": 39,
+          "endLine": 41
+        },
+        {
+          "name": "test",
+          "startLine": 42,
+          "endLine": 44
+        },
+        {
+          "name": "test-py-3.10",
+          "startLine": 45,
+          "endLine": 47
+        },
+        {
+          "name": "test-py-3.11",
+          "startLine": 48,
+          "endLine": 50
+        },
+        {
+          "name": "test-py-3.12",
+          "startLine": 51,
+          "endLine": 53
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "stepCount": 14
+      }
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 269,
+      "nonEmptyLines": 198,
+      "sections": [
+        {
+          "heading": "New Memory Algorithm (April 2026)",
+          "level": 2,
+          "line": 45
+        },
+        {
+          "heading": "Research Highlights",
+          "level": 2,
+          "line": 65
+        },
+        {
+          "heading": "Introduction",
+          "level": 1,
+          "line": 71
+        },
+        {
+          "heading": "Key Features & Use Cases",
+          "level": 3,
+          "line": 75
+        },
+        {
+          "heading": "🚀 Quickstart Guide <a name=\"quickstart\"></a>",
+          "level": 2,
+          "line": 87
+        },
+        {
+          "heading": "Sign up as an agent",
+          "level": 3,
+          "line": 89
+        },
+        {
+          "heading": "Library (pip / npm)",
+          "level": 3,
+          "line": 119
+        },
+        {
+          "heading": "Self-Hosted Server",
+          "level": 3,
+          "line": 138
+        },
+        {
+          "heading": "Cloud Platform",
+          "level": 3,
+          "line": 152
+        },
+        {
+          "heading": "CLI",
+          "level": 3,
+          "line": 158
+        },
+        {
+          "heading": "Agent Skills",
+          "level": 3,
+          "line": 172
+        },
+        {
+          "heading": "Basic Usage",
+          "level": 3,
+          "line": 194
+        },
+        {
+          "heading": "🔗 Integrations & Demos",
+          "level": 2,
+          "line": 241
+        },
+        {
+          "heading": "📚 Documentation & Support",
+          "level": 2,
+          "line": 248
+        },
+        {
+          "heading": "Citation",
+          "level": 2,
+          "line": 254
+        },
+        {
+          "heading": "⚖️ License",
+          "level": 2,
+          "line": 267
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 16
+      }
+    },
+    {
+      "path": "SECURITY.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 54,
+      "nonEmptyLines": 39,
+      "sections": [
+        {
+          "heading": "Security Policy",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Reporting a Vulnerability",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Response Process",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Public Disclosure",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "Supported Versions",
+          "level": 2,
+          "line": 50
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": "marketplace.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 19,
+      "nonEmptyLines": 19,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "interface",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "plugins",
+          "level": 1,
+          "line": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "pyproject.toml",
+      "language": "toml",
+      "fileCategory": "config",
+      "totalLines": 174,
+      "nonEmptyLines": 160,
+      "sections": [
+        {
+          "heading": "build-system",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "project",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "project.optional-dependencies",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "tool.pytest.ini_options",
+          "level": 3,
+          "line": 89
+        },
+        {
+          "heading": "tool.hatch.build",
+          "level": 3,
+          "line": 92
+        },
+        {
+          "heading": "tool.hatch.build.targets.wheel",
+          "level": 5,
+          "line": 103
+        },
+        {
+          "heading": "tool.hatch.envs.dev_py_3_10",
+          "level": 4,
+          "line": 107
+        },
+        {
+          "heading": "tool.hatch.envs.dev_py_3_11",
+          "level": 4,
+          "line": 117
+        },
+        {
+          "heading": "tool.hatch.envs.dev_py_3_12",
+          "level": 4,
+          "line": 127
+        },
+        {
+          "heading": "tool.hatch.envs.default",
+          "level": 4,
+          "line": 137
+        },
+        {
+          "heading": "tool.hatch.envs.default.scripts",
+          "level": 5,
+          "line": 142
+        },
+        {
+          "heading": "tool.ruff",
+          "level": 2,
+          "line": 159
+        },
+        {
+          "heading": "tool.ruff.lint",
+          "level": 3,
+          "line": 162
+        },
+        {
+          "heading": "tool.ruff.lint.isort",
+          "level": 4,
+          "line": 165
+        },
+        {
+          "heading": "tool.isort",
+          "level": 2,
+          "line": 168
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 15
+      }
+    }
+  ]
+}

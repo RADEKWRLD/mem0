@@ -1,0 +1,1102 @@
+{
+  "nodes": [
+    {
+      "id": "file:mem0/proxy/main.py",
+      "type": "file",
+      "name": "main.py",
+      "filePath": "mem0/proxy/main.py",
+      "summary": "提供 OpenAI 风格 chat.completions 代理，在生成前注入相关长期记忆，并在生成后异步回写对话。",
+      "tags": [
+        "openai-compatible",
+        "proxy",
+        "memory-augmentation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/proxy/main.py:Mem0",
+      "type": "class",
+      "name": "Mem0",
+      "filePath": "mem0/proxy/main.py",
+      "lineRange": [
+        23,
+        35
+      ],
+      "summary": "构成 OpenAI 兼容代理的轻量命名空间，并挂载下一级 API 资源。",
+      "tags": [
+        "data-model",
+        "service",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/proxy/main.py:Chat",
+      "type": "class",
+      "name": "Chat",
+      "filePath": "mem0/proxy/main.py",
+      "lineRange": [
+        38,
+        40
+      ],
+      "summary": "构成 OpenAI 兼容代理的轻量命名空间，并挂载下一级 API 资源。",
+      "tags": [
+        "data-model",
+        "service",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/proxy/main.py:Completions",
+      "type": "class",
+      "name": "Completions",
+      "filePath": "mem0/proxy/main.py",
+      "lineRange": [
+        43,
+        186
+      ],
+      "summary": "实现带记忆检索注入和异步记忆回写的 OpenAI 兼容 completions 接口。",
+      "tags": [
+        "data-model",
+        "service",
+        "python-sdk"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/utils/entity_extraction.py",
+      "type": "file",
+      "name": "entity_extraction.py",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "summary": "从自然语言中融合 NER、技术标识符、专名、引号短语与主题短语候选，清洗去重后产出稳定实体。",
+      "tags": [
+        "nlp",
+        "entity-extraction",
+        "ranking"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:mem0/utils/entity_extraction.py:_is_sentence_start",
+      "type": "function",
+      "name": "_is_sentence_start",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        356,
+        364
+      ],
+      "summary": "实现 is sentence start 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/entity_extraction.py:_strip_generic_ending",
+      "type": "function",
+      "name": "_strip_generic_ending",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        367,
+        372
+      ],
+      "summary": "实现 strip generic ending 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/entity_extraction.py:_lemmatize_compound",
+      "type": "function",
+      "name": "_lemmatize_compound",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        375,
+        377
+      ],
+      "summary": "实现 lemmatize compound 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/entity_extraction.py:_has_artifacts",
+      "type": "function",
+      "name": "_has_artifacts",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        380,
+        390
+      ],
+      "summary": "实现 has artifacts 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/entity_extraction.py:_clean_text",
+      "type": "function",
+      "name": "_clean_text",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        393,
+        397
+      ],
+      "summary": "实现 clean text 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/entity_extraction.py:_norm_text",
+      "type": "function",
+      "name": "_norm_text",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        400,
+        401
+      ],
+      "summary": "实现 norm text 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/entity_extraction.py:_looks_like_technical_identifier",
+      "type": "function",
+      "name": "_looks_like_technical_identifier",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        404,
+        405
+      ],
+      "summary": "实现 looks like technical identifier 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/entity_extraction.py:_has_internal_cap_or_digit",
+      "type": "function",
+      "name": "_has_internal_cap_or_digit",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        408,
+        409
+      ],
+      "summary": "实现 has internal cap or digit 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/entity_extraction.py:_looks_like_metric_count_token",
+      "type": "function",
+      "name": "_looks_like_metric_count_token",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        412,
+        413
+      ],
+      "summary": "实现 looks like metric count token 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/entity_extraction.py:_is_metric_list_context",
+      "type": "function",
+      "name": "_is_metric_list_context",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        416,
+        419
+      ],
+      "summary": "实现 is metric list context 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/entity_extraction.py:_strip_trailing_metric_counts",
+      "type": "function",
+      "name": "_strip_trailing_metric_counts",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        422,
+        428
+      ],
+      "summary": "实现 strip trailing metric counts 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/entity_extraction.py:_is_list_item_name_token",
+      "type": "function",
+      "name": "_is_list_item_name_token",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        431,
+        440
+      ],
+      "summary": "实现 is list item name token 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/entity_extraction.py:_is_name_like_token",
+      "type": "function",
+      "name": "_is_name_like_token",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        443,
+        464
+      ],
+      "summary": "实现 is name like token 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/entity_extraction.py:_is_bad_single_name_token",
+      "type": "function",
+      "name": "_is_bad_single_name_token",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        467,
+        469
+      ],
+      "summary": "实现 is bad single name token 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/entity_extraction.py:_add_candidate",
+      "type": "function",
+      "name": "_add_candidate",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        472,
+        495
+      ],
+      "summary": "实现 add candidate 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/entity_extraction.py:_add_ner_candidates",
+      "type": "function",
+      "name": "_add_ner_candidates",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        498,
+        525
+      ],
+      "summary": "实现 add ner candidates 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/entity_extraction.py:_add_technical_identifier_candidates",
+      "type": "function",
+      "name": "_add_technical_identifier_candidates",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        528,
+        540
+      ],
+      "summary": "实现 add technical identifier candidates 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/entity_extraction.py:_add_proper_name_candidates",
+      "type": "function",
+      "name": "_add_proper_name_candidates",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        543,
+        578
+      ],
+      "summary": "实现 add proper name candidates 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/entity_extraction.py:_add_quoted_candidates",
+      "type": "function",
+      "name": "_add_quoted_candidates",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        581,
+        587
+      ],
+      "summary": "实现 add quoted candidates 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/entity_extraction.py:_add_topic_phrase_candidates",
+      "type": "function",
+      "name": "_add_topic_phrase_candidates",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        590,
+        696
+      ],
+      "summary": "实现 add topic phrase candidates 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:mem0/utils/entity_extraction.py:_spans_overlap",
+      "type": "function",
+      "name": "_spans_overlap",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        699,
+        702
+      ],
+      "summary": "实现 spans overlap 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/entity_extraction.py:_resolve_candidates",
+      "type": "function",
+      "name": "_resolve_candidates",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        705,
+        728
+      ],
+      "summary": "实现 resolve candidates 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/entity_extraction.py:_extract_entities_from_doc",
+      "type": "function",
+      "name": "_extract_entities_from_doc",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        731,
+        748
+      ],
+      "summary": "实现 extract entities from doc 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/entity_extraction.py:extract_entities",
+      "type": "function",
+      "name": "extract_entities",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        751,
+        758
+      ],
+      "summary": "从单段文本执行完整实体候选生成、冲突消解与去重流程。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/entity_extraction.py:extract_entities_batch",
+      "type": "function",
+      "name": "extract_entities_batch",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        761,
+        772
+      ],
+      "summary": "复用 NLP pipeline 批量抽取多段文本的实体。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/utils/entity_extraction.py:_EntityCandidate",
+      "type": "class",
+      "name": "_EntityCandidate",
+      "filePath": "mem0/utils/entity_extraction.py",
+      "lineRange": [
+        25,
+        32
+      ],
+      "summary": "表示实体抽取流水线中的候选文本、跨度、来源与优先级。",
+      "tags": [
+        "data-model",
+        "service",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/utils/lemmatization.py",
+      "type": "file",
+      "name": "lemmatization.py",
+      "filePath": "mem0/utils/lemmatization.py",
+      "summary": "为 BM25 检索提供基于 spaCy 的词形还原与规范化文本处理。",
+      "tags": [
+        "python-sdk",
+        "entry-point",
+        "public-api"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/lemmatization.py:lemmatize_for_bm25",
+      "type": "function",
+      "name": "lemmatize_for_bm25",
+      "filePath": "mem0/utils/lemmatization.py",
+      "lineRange": [
+        22,
+        50
+      ],
+      "summary": "将文本分词并词形还原为适合 BM25 建索引和查询的规范字符串。",
+      "tags": [
+        "ranking",
+        "hybrid-search",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/utils/scoring.py",
+      "type": "file",
+      "name": "scoring.py",
+      "filePath": "mem0/utils/scoring.py",
+      "summary": "组合语义相似度、BM25 与图实体信号，对候选记忆归一化并加权排序。",
+      "tags": [
+        "ranking",
+        "bm25",
+        "hybrid-search"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:mem0/utils/scoring.py:get_bm25_params",
+      "type": "function",
+      "name": "get_bm25_params",
+      "filePath": "mem0/utils/scoring.py",
+      "lineRange": [
+        16,
+        40
+      ],
+      "summary": "计算并规范化 get bm25 params，为混合检索排序提供可比较信号。",
+      "tags": [
+        "ranking",
+        "hybrid-search",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/scoring.py:normalize_bm25",
+      "type": "function",
+      "name": "normalize_bm25",
+      "filePath": "mem0/utils/scoring.py",
+      "lineRange": [
+        43,
+        54
+      ],
+      "summary": "计算并规范化 normalize bm25，为混合检索排序提供可比较信号。",
+      "tags": [
+        "ranking",
+        "hybrid-search",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/utils/scoring.py:score_and_rank",
+      "type": "function",
+      "name": "score_and_rank",
+      "filePath": "mem0/utils/scoring.py",
+      "lineRange": [
+        60,
+        139
+      ],
+      "summary": "融合语义、BM25 与实体增强分数，对记忆候选进行最终排序。",
+      "tags": [
+        "ranking",
+        "hybrid-search",
+        "utility"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:mem0/proxy/main.py",
+      "target": "file:mem0/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/proxy/main.py",
+      "target": "file:mem0/configs/prompts.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/proxy/main.py",
+      "target": "file:mem0/memory/telemetry.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/proxy/main.py",
+      "target": "class:mem0/proxy/main.py:Mem0",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/proxy/main.py",
+      "target": "class:mem0/proxy/main.py:Mem0",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/proxy/main.py",
+      "target": "class:mem0/proxy/main.py:Chat",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/proxy/main.py",
+      "target": "class:mem0/proxy/main.py:Chat",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/proxy/main.py",
+      "target": "class:mem0/proxy/main.py:Completions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/proxy/main.py",
+      "target": "class:mem0/proxy/main.py:Completions",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_is_sentence_start",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_is_sentence_start",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_strip_generic_ending",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_strip_generic_ending",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_lemmatize_compound",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_lemmatize_compound",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_has_artifacts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_has_artifacts",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_clean_text",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_clean_text",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_norm_text",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_norm_text",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_looks_like_technical_identifier",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_looks_like_technical_identifier",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_has_internal_cap_or_digit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_has_internal_cap_or_digit",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_looks_like_metric_count_token",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_looks_like_metric_count_token",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_is_metric_list_context",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_is_metric_list_context",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_strip_trailing_metric_counts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_strip_trailing_metric_counts",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_is_list_item_name_token",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_is_list_item_name_token",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_is_name_like_token",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_is_name_like_token",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_is_bad_single_name_token",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_is_bad_single_name_token",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_add_candidate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_add_candidate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_add_ner_candidates",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_add_ner_candidates",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_add_technical_identifier_candidates",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_add_technical_identifier_candidates",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_add_proper_name_candidates",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_add_proper_name_candidates",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_add_quoted_candidates",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_add_quoted_candidates",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_add_topic_phrase_candidates",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_add_topic_phrase_candidates",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_spans_overlap",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_spans_overlap",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_resolve_candidates",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_resolve_candidates",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_extract_entities_from_doc",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:_extract_entities_from_doc",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:extract_entities",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:extract_entities",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:extract_entities_batch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "function:mem0/utils/entity_extraction.py:extract_entities_batch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "class:mem0/utils/entity_extraction.py:_EntityCandidate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/entity_extraction.py",
+      "target": "class:mem0/utils/entity_extraction.py:_EntityCandidate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/lemmatization.py",
+      "target": "function:mem0/utils/lemmatization.py:lemmatize_for_bm25",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/lemmatization.py",
+      "target": "function:mem0/utils/lemmatization.py:lemmatize_for_bm25",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/scoring.py",
+      "target": "function:mem0/utils/scoring.py:get_bm25_params",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/scoring.py",
+      "target": "function:mem0/utils/scoring.py:get_bm25_params",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/scoring.py",
+      "target": "function:mem0/utils/scoring.py:normalize_bm25",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/scoring.py",
+      "target": "function:mem0/utils/scoring.py:normalize_bm25",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/utils/scoring.py",
+      "target": "function:mem0/utils/scoring.py:score_and_rank",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/utils/scoring.py",
+      "target": "function:mem0/utils/scoring.py:score_and_rank",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

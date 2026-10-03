@@ -1,0 +1,1013 @@
+{
+  "nodes": [
+    {
+      "id": "file:mem0/configs/enums.py",
+      "type": "file",
+      "name": "enums.py",
+      "filePath": "mem0/configs/enums.py",
+      "summary": "定义记忆类型等核心枚举，供存储与业务流程统一判别。",
+      "tags": [
+        "python-sdk",
+        "entry-point",
+        "public-api"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/configs/enums.py:MemoryType",
+      "type": "class",
+      "name": "MemoryType",
+      "filePath": "mem0/configs/enums.py",
+      "lineRange": [
+        4,
+        7
+      ],
+      "summary": "实现 MemoryType 对应的领域模型或服务能力。",
+      "tags": [
+        "memory-engine",
+        "service",
+        "public-api"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/configs/prompts.py",
+      "type": "file",
+      "name": "prompts.py",
+      "filePath": "mem0/configs/prompts.py",
+      "summary": "集中维护记忆抽取、更新、删除、摘要与时间解析提示词，并提供动态上下文拼装函数。",
+      "tags": [
+        "prompt-engineering",
+        "memory-extraction",
+        "templates"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:mem0/configs/prompts.py:get_update_memory_messages",
+      "type": "function",
+      "name": "get_update_memory_messages",
+      "filePath": "mem0/configs/prompts.py",
+      "lineRange": [
+        406,
+        460
+      ],
+      "summary": "生成用于判断新增、更新、删除或保持记忆的系统与用户提示消息。",
+      "tags": [
+        "prompt-engineering",
+        "serialization",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:mem0/configs/prompts.py:_truncate_content",
+      "type": "function",
+      "name": "_truncate_content",
+      "filePath": "mem0/configs/prompts.py",
+      "lineRange": [
+        968,
+        972
+      ],
+      "summary": "实现 truncate content 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/configs/prompts.py:_format_summary",
+      "type": "function",
+      "name": "_format_summary",
+      "filePath": "mem0/configs/prompts.py",
+      "lineRange": [
+        975,
+        979
+      ],
+      "summary": "实现 format summary 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/configs/prompts.py:_format_conversation_history",
+      "type": "function",
+      "name": "_format_conversation_history",
+      "filePath": "mem0/configs/prompts.py",
+      "lineRange": [
+        982,
+        992
+      ],
+      "summary": "实现 format conversation history 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/configs/prompts.py:_serialize_memories",
+      "type": "function",
+      "name": "_serialize_memories",
+      "filePath": "mem0/configs/prompts.py",
+      "lineRange": [
+        995,
+        997
+      ],
+      "summary": "实现 serialize memories 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/configs/prompts.py:_format_new_messages",
+      "type": "function",
+      "name": "_format_new_messages",
+      "filePath": "mem0/configs/prompts.py",
+      "lineRange": [
+        1000,
+        1004
+      ],
+      "summary": "转换或组织 format new messages，形成 provider 与记忆流水线可消费的消息结构。",
+      "tags": [
+        "prompt-engineering",
+        "serialization",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/configs/prompts.py:_resolve_dates",
+      "type": "function",
+      "name": "_resolve_dates",
+      "filePath": "mem0/configs/prompts.py",
+      "lineRange": [
+        1007,
+        1013
+      ],
+      "summary": "实现 resolve dates 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/configs/prompts.py:generate_additive_extraction_prompt",
+      "type": "function",
+      "name": "generate_additive_extraction_prompt",
+      "filePath": "mem0/configs/prompts.py",
+      "lineRange": [
+        1016,
+        1062
+      ],
+      "summary": "结合摘要、会话历史和当前消息生成仅追加事实的记忆抽取提示词。",
+      "tags": [
+        "prompt-engineering",
+        "serialization",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/exceptions.py",
+      "type": "file",
+      "name": "exceptions.py",
+      "filePath": "mem0/exceptions.py",
+      "summary": "定义 SDK 的分层异常体系，并把 HTTP 状态码与服务端错误响应映射为可诊断的领域异常。",
+      "tags": [
+        "error-handling",
+        "exception-hierarchy",
+        "api-errors"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:mem0/exceptions.py:create_exception_from_response",
+      "type": "function",
+      "name": "create_exception_from_response",
+      "filePath": "mem0/exceptions.py",
+      "lineRange": [
+        424,
+        485
+      ],
+      "summary": "依据 HTTP 状态码和响应载荷构造最具体的 SDK 领域异常。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/exceptions.py:MemoryError",
+      "type": "class",
+      "name": "MemoryError",
+      "filePath": "mem0/exceptions.py",
+      "lineRange": [
+        34,
+        90
+      ],
+      "summary": "表示 Memory 失败，并携带统一错误码、上下文和可重试信息。",
+      "tags": [
+        "exception",
+        "error-handling",
+        "diagnostics"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/exceptions.py:AuthenticationError",
+      "type": "class",
+      "name": "AuthenticationError",
+      "filePath": "mem0/exceptions.py",
+      "lineRange": [
+        93,
+        112
+      ],
+      "summary": "表示 Authentication 失败，并携带统一错误码、上下文和可重试信息。",
+      "tags": [
+        "exception",
+        "error-handling",
+        "diagnostics"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/exceptions.py:RateLimitError",
+      "type": "class",
+      "name": "RateLimitError",
+      "filePath": "mem0/exceptions.py",
+      "lineRange": [
+        115,
+        135
+      ],
+      "summary": "表示 RateLimit 失败，并携带统一错误码、上下文和可重试信息。",
+      "tags": [
+        "exception",
+        "error-handling",
+        "diagnostics"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/exceptions.py:ValidationError",
+      "type": "class",
+      "name": "ValidationError",
+      "filePath": "mem0/exceptions.py",
+      "lineRange": [
+        138,
+        159
+      ],
+      "summary": "表示 Validation 失败，并携带统一错误码、上下文和可重试信息。",
+      "tags": [
+        "exception",
+        "error-handling",
+        "diagnostics"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/exceptions.py:MemoryNotFoundError",
+      "type": "class",
+      "name": "MemoryNotFoundError",
+      "filePath": "mem0/exceptions.py",
+      "lineRange": [
+        162,
+        176
+      ],
+      "summary": "表示 MemoryNotFound 失败，并携带统一错误码、上下文和可重试信息。",
+      "tags": [
+        "exception",
+        "error-handling",
+        "diagnostics"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/exceptions.py:NetworkError",
+      "type": "class",
+      "name": "NetworkError",
+      "filePath": "mem0/exceptions.py",
+      "lineRange": [
+        179,
+        199
+      ],
+      "summary": "表示 Network 失败，并携带统一错误码、上下文和可重试信息。",
+      "tags": [
+        "exception",
+        "error-handling",
+        "diagnostics"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/exceptions.py:ConfigurationError",
+      "type": "class",
+      "name": "ConfigurationError",
+      "filePath": "mem0/exceptions.py",
+      "lineRange": [
+        202,
+        221
+      ],
+      "summary": "表示 Configuration 失败，并携带统一错误码、上下文和可重试信息。",
+      "tags": [
+        "exception",
+        "error-handling",
+        "diagnostics"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/exceptions.py:MemoryQuotaExceededError",
+      "type": "class",
+      "name": "MemoryQuotaExceededError",
+      "filePath": "mem0/exceptions.py",
+      "lineRange": [
+        224,
+        243
+      ],
+      "summary": "表示 MemoryQuotaExceeded 失败，并携带统一错误码、上下文和可重试信息。",
+      "tags": [
+        "exception",
+        "error-handling",
+        "diagnostics"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/exceptions.py:MemoryCorruptionError",
+      "type": "class",
+      "name": "MemoryCorruptionError",
+      "filePath": "mem0/exceptions.py",
+      "lineRange": [
+        246,
+        260
+      ],
+      "summary": "表示 MemoryCorruption 失败，并携带统一错误码、上下文和可重试信息。",
+      "tags": [
+        "exception",
+        "error-handling",
+        "diagnostics"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/exceptions.py:VectorSearchError",
+      "type": "class",
+      "name": "VectorSearchError",
+      "filePath": "mem0/exceptions.py",
+      "lineRange": [
+        263,
+        283
+      ],
+      "summary": "表示 VectorSearch 失败，并携带统一错误码、上下文和可重试信息。",
+      "tags": [
+        "exception",
+        "error-handling",
+        "diagnostics"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/exceptions.py:CacheError",
+      "type": "class",
+      "name": "CacheError",
+      "filePath": "mem0/exceptions.py",
+      "lineRange": [
+        286,
+        300
+      ],
+      "summary": "表示 Cache 失败，并携带统一错误码、上下文和可重试信息。",
+      "tags": [
+        "exception",
+        "error-handling",
+        "diagnostics"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/exceptions.py:VectorStoreError",
+      "type": "class",
+      "name": "VectorStoreError",
+      "filePath": "mem0/exceptions.py",
+      "lineRange": [
+        304,
+        321
+      ],
+      "summary": "表示 VectorStore 失败，并携带统一错误码、上下文和可重试信息。",
+      "tags": [
+        "exception",
+        "error-handling",
+        "diagnostics"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/exceptions.py:EmbeddingError",
+      "type": "class",
+      "name": "EmbeddingError",
+      "filePath": "mem0/exceptions.py",
+      "lineRange": [
+        326,
+        343
+      ],
+      "summary": "表示 Embedding 失败，并携带统一错误码、上下文和可重试信息。",
+      "tags": [
+        "exception",
+        "error-handling",
+        "diagnostics"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/exceptions.py:LLMError",
+      "type": "class",
+      "name": "LLMError",
+      "filePath": "mem0/exceptions.py",
+      "lineRange": [
+        346,
+        363
+      ],
+      "summary": "表示 LLM 失败，并携带统一错误码、上下文和可重试信息。",
+      "tags": [
+        "exception",
+        "error-handling",
+        "diagnostics"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/exceptions.py:DatabaseError",
+      "type": "class",
+      "name": "DatabaseError",
+      "filePath": "mem0/exceptions.py",
+      "lineRange": [
+        366,
+        383
+      ],
+      "summary": "表示 Database 失败，并携带统一错误码、上下文和可重试信息。",
+      "tags": [
+        "exception",
+        "error-handling",
+        "diagnostics"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/exceptions.py:DependencyError",
+      "type": "class",
+      "name": "DependencyError",
+      "filePath": "mem0/exceptions.py",
+      "lineRange": [
+        386,
+        403
+      ],
+      "summary": "表示 Dependency 失败，并携带统一错误码、上下文和可重试信息。",
+      "tags": [
+        "exception",
+        "error-handling",
+        "diagnostics"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/memory/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "mem0/memory/__init__.py",
+      "summary": "标记 memory 子包并作为核心记忆实现的包级入口。",
+      "tags": [
+        "memory",
+        "service",
+        "persistence"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:mem0/memory/base.py",
+      "type": "file",
+      "name": "base.py",
+      "filePath": "mem0/memory/base.py",
+      "summary": "定义记忆系统的抽象 CRUD 与历史查询契约。",
+      "tags": [
+        "memory",
+        "service",
+        "persistence"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/memory/base.py:MemoryBase",
+      "type": "class",
+      "name": "MemoryBase",
+      "filePath": "mem0/memory/base.py",
+      "lineRange": [
+        4,
+        63
+      ],
+      "summary": "规定记忆读取、更新、删除和历史查询的抽象接口。",
+      "tags": [
+        "memory-engine",
+        "service",
+        "public-api"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:mem0/configs/enums.py",
+      "target": "class:mem0/configs/enums.py:MemoryType",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/enums.py",
+      "target": "class:mem0/configs/enums.py:MemoryType",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/configs/prompts.py",
+      "target": "function:mem0/configs/prompts.py:get_update_memory_messages",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/prompts.py",
+      "target": "function:mem0/configs/prompts.py:get_update_memory_messages",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/configs/prompts.py",
+      "target": "function:mem0/configs/prompts.py:_truncate_content",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/prompts.py",
+      "target": "function:mem0/configs/prompts.py:_truncate_content",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/configs/prompts.py",
+      "target": "function:mem0/configs/prompts.py:_format_summary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/prompts.py",
+      "target": "function:mem0/configs/prompts.py:_format_summary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/configs/prompts.py",
+      "target": "function:mem0/configs/prompts.py:_format_conversation_history",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/prompts.py",
+      "target": "function:mem0/configs/prompts.py:_format_conversation_history",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/configs/prompts.py",
+      "target": "function:mem0/configs/prompts.py:_serialize_memories",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/prompts.py",
+      "target": "function:mem0/configs/prompts.py:_serialize_memories",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/configs/prompts.py",
+      "target": "function:mem0/configs/prompts.py:_format_new_messages",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/prompts.py",
+      "target": "function:mem0/configs/prompts.py:_format_new_messages",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/configs/prompts.py",
+      "target": "function:mem0/configs/prompts.py:_resolve_dates",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/prompts.py",
+      "target": "function:mem0/configs/prompts.py:_resolve_dates",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/configs/prompts.py",
+      "target": "function:mem0/configs/prompts.py:generate_additive_extraction_prompt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/configs/prompts.py",
+      "target": "function:mem0/configs/prompts.py:generate_additive_extraction_prompt",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "function:mem0/exceptions.py:create_exception_from_response",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "function:mem0/exceptions.py:create_exception_from_response",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:MemoryError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:MemoryError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:AuthenticationError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:AuthenticationError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/exceptions.py:AuthenticationError",
+      "target": "class:mem0/exceptions.py:MemoryError",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:RateLimitError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:RateLimitError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/exceptions.py:RateLimitError",
+      "target": "class:mem0/exceptions.py:MemoryError",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:ValidationError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:ValidationError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/exceptions.py:ValidationError",
+      "target": "class:mem0/exceptions.py:MemoryError",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:MemoryNotFoundError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:MemoryNotFoundError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/exceptions.py:MemoryNotFoundError",
+      "target": "class:mem0/exceptions.py:MemoryError",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:NetworkError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:NetworkError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/exceptions.py:NetworkError",
+      "target": "class:mem0/exceptions.py:MemoryError",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:ConfigurationError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:ConfigurationError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/exceptions.py:ConfigurationError",
+      "target": "class:mem0/exceptions.py:MemoryError",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:MemoryQuotaExceededError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:MemoryQuotaExceededError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/exceptions.py:MemoryQuotaExceededError",
+      "target": "class:mem0/exceptions.py:MemoryError",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:MemoryCorruptionError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:MemoryCorruptionError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/exceptions.py:MemoryCorruptionError",
+      "target": "class:mem0/exceptions.py:MemoryError",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:VectorSearchError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:VectorSearchError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/exceptions.py:VectorSearchError",
+      "target": "class:mem0/exceptions.py:MemoryError",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:CacheError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:CacheError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/exceptions.py:CacheError",
+      "target": "class:mem0/exceptions.py:MemoryError",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:VectorStoreError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:VectorStoreError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/exceptions.py:VectorStoreError",
+      "target": "class:mem0/exceptions.py:MemoryError",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:EmbeddingError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:EmbeddingError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/exceptions.py:EmbeddingError",
+      "target": "class:mem0/exceptions.py:MemoryError",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:LLMError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:LLMError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/exceptions.py:LLMError",
+      "target": "class:mem0/exceptions.py:MemoryError",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:DatabaseError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:DatabaseError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/exceptions.py:DatabaseError",
+      "target": "class:mem0/exceptions.py:MemoryError",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:DependencyError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/exceptions.py",
+      "target": "class:mem0/exceptions.py:DependencyError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/exceptions.py:DependencyError",
+      "target": "class:mem0/exceptions.py:MemoryError",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/memory/base.py",
+      "target": "class:mem0/memory/base.py:MemoryBase",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/memory/base.py",
+      "target": "class:mem0/memory/base.py:MemoryBase",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

@@ -1,0 +1,1927 @@
+{
+  "nodes": [
+    {
+      "id": "file:mem0/vector_stores/milvus.py",
+      "type": "file",
+      "name": "milvus.py",
+      "filePath": "mem0/vector_stores/milvus.py",
+      "summary": "实现 Milvus 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:mem0/vector_stores/milvus.py:OutputData",
+      "type": "class",
+      "name": "OutputData",
+      "filePath": "mem0/vector_stores/milvus.py",
+      "lineRange": [
+        27,
+        30
+      ],
+      "summary": "规范化 Milvus 查询结果中的标识、载荷和相似度字段。",
+      "tags": [
+        "data-model",
+        "serialization",
+        "search-result"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/vector_stores/milvus.py:MilvusDB",
+      "type": "class",
+      "name": "MilvusDB",
+      "filePath": "mem0/vector_stores/milvus.py",
+      "lineRange": [
+        33,
+        374
+      ],
+      "summary": "将 Mem0 向量存储协议适配到 Milvus，实现集合、向量、元数据和过滤操作。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "service"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/mongodb.py",
+      "type": "file",
+      "name": "mongodb.py",
+      "filePath": "mem0/vector_stores/mongodb.py",
+      "summary": "实现 MongoDB Atlas Vector Search 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:mem0/vector_stores/mongodb.py:OutputData",
+      "type": "class",
+      "name": "OutputData",
+      "filePath": "mem0/vector_stores/mongodb.py",
+      "lineRange": [
+        21,
+        24
+      ],
+      "summary": "规范化 MongoDB Atlas Vector Search 查询结果中的标识、载荷和相似度字段。",
+      "tags": [
+        "data-model",
+        "serialization",
+        "search-result"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/vector_stores/mongodb.py:MongoDB",
+      "type": "class",
+      "name": "MongoDB",
+      "filePath": "mem0/vector_stores/mongodb.py",
+      "lineRange": [
+        27,
+        425
+      ],
+      "summary": "将 Mem0 向量存储协议适配到 MongoDB Atlas Vector Search，实现集合、向量、元数据和过滤操作。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "service"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/neptune_analytics.py",
+      "type": "file",
+      "name": "neptune_analytics.py",
+      "filePath": "mem0/vector_stores/neptune_analytics.py",
+      "summary": "实现 Neptune Analytics 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:mem0/vector_stores/neptune_analytics.py:_validate_filter",
+      "type": "function",
+      "name": "_validate_filter",
+      "filePath": "mem0/vector_stores/neptune_analytics.py",
+      "lineRange": [
+        22,
+        29
+      ],
+      "summary": "校验并规范化 validate filter 相关输入，在违反约束时尽早抛出明确错误。",
+      "tags": [
+        "validation",
+        "guard",
+        "error-handling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/vector_stores/neptune_analytics.py:_escape_cypher",
+      "type": "function",
+      "name": "_escape_cypher",
+      "filePath": "mem0/vector_stores/neptune_analytics.py",
+      "lineRange": [
+        32,
+        33
+      ],
+      "summary": "实现 escape cypher 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/vector_stores/neptune_analytics.py:OutputData",
+      "type": "class",
+      "name": "OutputData",
+      "filePath": "mem0/vector_stores/neptune_analytics.py",
+      "lineRange": [
+        35,
+        38
+      ],
+      "summary": "规范化 Neptune Analytics 查询结果中的标识、载荷和相似度字段。",
+      "tags": [
+        "data-model",
+        "serialization",
+        "search-result"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/vector_stores/neptune_analytics.py:NeptuneAnalyticsVector",
+      "type": "class",
+      "name": "NeptuneAnalyticsVector",
+      "filePath": "mem0/vector_stores/neptune_analytics.py",
+      "lineRange": [
+        41,
+        535
+      ],
+      "summary": "将 Mem0 向量存储协议适配到 Neptune Analytics，实现集合、向量、元数据和过滤操作。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "service"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/opensearch.py",
+      "type": "file",
+      "name": "opensearch.py",
+      "filePath": "mem0/vector_stores/opensearch.py",
+      "summary": "实现 OpenSearch 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:mem0/vector_stores/opensearch.py:_validate_filter",
+      "type": "function",
+      "name": "_validate_filter",
+      "filePath": "mem0/vector_stores/opensearch.py",
+      "lineRange": [
+        22,
+        29
+      ],
+      "summary": "校验并规范化 validate filter 相关输入，在违反约束时尽早抛出明确错误。",
+      "tags": [
+        "validation",
+        "guard",
+        "error-handling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/vector_stores/opensearch.py:_build_filter_clauses",
+      "type": "function",
+      "name": "_build_filter_clauses",
+      "filePath": "mem0/vector_stores/opensearch.py",
+      "lineRange": [
+        32,
+        52
+      ],
+      "summary": "构建或清洗 build filter clauses 所需的过滤表达式，隔离不同后端的查询语法。",
+      "tags": [
+        "query-builder",
+        "filtering",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/vector_stores/opensearch.py:OutputData",
+      "type": "class",
+      "name": "OutputData",
+      "filePath": "mem0/vector_stores/opensearch.py",
+      "lineRange": [
+        55,
+        58
+      ],
+      "summary": "规范化 OpenSearch 查询结果中的标识、载荷和相似度字段。",
+      "tags": [
+        "data-model",
+        "serialization",
+        "search-result"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/vector_stores/opensearch.py:OpenSearchDB",
+      "type": "class",
+      "name": "OpenSearchDB",
+      "filePath": "mem0/vector_stores/opensearch.py",
+      "lineRange": [
+        61,
+        414
+      ],
+      "summary": "将 Mem0 向量存储协议适配到 OpenSearch，实现集合、向量、元数据和过滤操作。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "service"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/oracledb.py",
+      "type": "file",
+      "name": "oracledb.py",
+      "filePath": "mem0/vector_stores/oracledb.py",
+      "summary": "实现 Oracle AI Vector Search 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:mem0/vector_stores/oracledb.py:_validate_metadata_key",
+      "type": "function",
+      "name": "_validate_metadata_key",
+      "filePath": "mem0/vector_stores/oracledb.py",
+      "lineRange": [
+        38,
+        44
+      ],
+      "summary": "校验并规范化 validate metadata key 相关输入，在违反约束时尽早抛出明确错误。",
+      "tags": [
+        "validation",
+        "guard",
+        "error-handling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/vector_stores/oracledb.py:_convert_distance_to_score",
+      "type": "function",
+      "name": "_convert_distance_to_score",
+      "filePath": "mem0/vector_stores/oracledb.py",
+      "lineRange": [
+        57,
+        61
+      ],
+      "summary": "计算并规范化 convert distance to score，为混合检索排序提供可比较信号。",
+      "tags": [
+        "ranking",
+        "hybrid-search",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/vector_stores/oracledb.py:_json_path",
+      "type": "function",
+      "name": "_json_path",
+      "filePath": "mem0/vector_stores/oracledb.py",
+      "lineRange": [
+        83,
+        92
+      ],
+      "summary": "安全处理 json path 的 JSON 表达与数据边界。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/vector_stores/oracledb.py:_bind_filter_value",
+      "type": "function",
+      "name": "_bind_filter_value",
+      "filePath": "mem0/vector_stores/oracledb.py",
+      "lineRange": [
+        95,
+        98
+      ],
+      "summary": "构建或清洗 bind filter value 所需的过滤表达式，隔离不同后端的查询语法。",
+      "tags": [
+        "query-builder",
+        "filtering",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/vector_stores/oracledb.py:_json_exists",
+      "type": "function",
+      "name": "_json_exists",
+      "filePath": "mem0/vector_stores/oracledb.py",
+      "lineRange": [
+        101,
+        103
+      ],
+      "summary": "安全处理 json exists 的 JSON 表达与数据边界。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/vector_stores/oracledb.py:_validate_scalar_operand",
+      "type": "function",
+      "name": "_validate_scalar_operand",
+      "filePath": "mem0/vector_stores/oracledb.py",
+      "lineRange": [
+        106,
+        108
+      ],
+      "summary": "校验并规范化 validate scalar operand 相关输入，在违反约束时尽早抛出明确错误。",
+      "tags": [
+        "validation",
+        "guard",
+        "error-handling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:mem0/vector_stores/oracledb.py:_build_field_condition",
+      "type": "function",
+      "name": "_build_field_condition",
+      "filePath": "mem0/vector_stores/oracledb.py",
+      "lineRange": [
+        111,
+        191
+      ],
+      "summary": "实现 build field condition 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:mem0/vector_stores/oracledb.py:_build_filter_group",
+      "type": "function",
+      "name": "_build_filter_group",
+      "filePath": "mem0/vector_stores/oracledb.py",
+      "lineRange": [
+        194,
+        220
+      ],
+      "summary": "构建或清洗 build filter group 所需的过滤表达式，隔离不同后端的查询语法。",
+      "tags": [
+        "query-builder",
+        "filtering",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/vector_stores/oracledb.py:OutputData",
+      "type": "class",
+      "name": "OutputData",
+      "filePath": "mem0/vector_stores/oracledb.py",
+      "lineRange": [
+        26,
+        31
+      ],
+      "summary": "规范化 Oracle AI Vector Search 查询结果中的标识、载荷和相似度字段。",
+      "tags": [
+        "data-model",
+        "serialization",
+        "search-result"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/vector_stores/oracledb.py:OracleAIVectorSearch",
+      "type": "class",
+      "name": "OracleAIVectorSearch",
+      "filePath": "mem0/vector_stores/oracledb.py",
+      "lineRange": [
+        223,
+        602
+      ],
+      "summary": "将 Mem0 向量存储协议适配到 Oracle AI Vector Search，实现集合、向量、元数据和过滤操作。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "service"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/pgvector.py",
+      "type": "file",
+      "name": "pgvector.py",
+      "filePath": "mem0/vector_stores/pgvector.py",
+      "summary": "实现 PGVector 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:mem0/vector_stores/pgvector.py:_build_filter_conditions",
+      "type": "function",
+      "name": "_build_filter_conditions",
+      "filePath": "mem0/vector_stores/pgvector.py",
+      "lineRange": [
+        50,
+        119
+      ],
+      "summary": "构建或清洗 build filter conditions 所需的过滤表达式，隔离不同后端的查询语法。",
+      "tags": [
+        "query-builder",
+        "filtering",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:mem0/vector_stores/pgvector.py:_with_sslmode",
+      "type": "function",
+      "name": "_with_sslmode",
+      "filePath": "mem0/vector_stores/pgvector.py",
+      "lineRange": [
+        122,
+        137
+      ],
+      "summary": "实现 with sslmode 相关的共享业务逻辑，并为上层记忆流程提供稳定结果。",
+      "tags": [
+        "utility",
+        "business-logic",
+        "python-sdk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/vector_stores/pgvector.py:OutputData",
+      "type": "class",
+      "name": "OutputData",
+      "filePath": "mem0/vector_stores/pgvector.py",
+      "lineRange": [
+        140,
+        143
+      ],
+      "summary": "规范化 PGVector 查询结果中的标识、载荷和相似度字段。",
+      "tags": [
+        "data-model",
+        "serialization",
+        "search-result"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/vector_stores/pgvector.py:PGVector",
+      "type": "class",
+      "name": "PGVector",
+      "filePath": "mem0/vector_stores/pgvector.py",
+      "lineRange": [
+        146,
+        563
+      ],
+      "summary": "将 Mem0 向量存储协议适配到 PGVector，实现集合、向量、元数据和过滤操作。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "service"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/pinecone.py",
+      "type": "file",
+      "name": "pinecone.py",
+      "filePath": "mem0/vector_stores/pinecone.py",
+      "summary": "实现 Pinecone 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:mem0/vector_stores/pinecone.py:OutputData",
+      "type": "class",
+      "name": "OutputData",
+      "filePath": "mem0/vector_stores/pinecone.py",
+      "lineRange": [
+        19,
+        22
+      ],
+      "summary": "规范化 Pinecone 查询结果中的标识、载荷和相似度字段。",
+      "tags": [
+        "data-model",
+        "serialization",
+        "search-result"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/vector_stores/pinecone.py:PineconeDB",
+      "type": "class",
+      "name": "PineconeDB",
+      "filePath": "mem0/vector_stores/pinecone.py",
+      "lineRange": [
+        25,
+        439
+      ],
+      "summary": "将 Mem0 向量存储协议适配到 Pinecone，实现集合、向量、元数据和过滤操作。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "service"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/qdrant.py",
+      "type": "file",
+      "name": "qdrant.py",
+      "filePath": "mem0/vector_stores/qdrant.py",
+      "summary": "实现 Qdrant 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:mem0/vector_stores/qdrant.py:Qdrant",
+      "type": "class",
+      "name": "Qdrant",
+      "filePath": "mem0/vector_stores/qdrant.py",
+      "lineRange": [
+        29,
+        606
+      ],
+      "summary": "将 Mem0 向量存储协议适配到 Qdrant，实现集合、向量、元数据和过滤操作。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "service"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/redis.py",
+      "type": "file",
+      "name": "redis.py",
+      "filePath": "mem0/vector_stores/redis.py",
+      "summary": "实现 Redis 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:mem0/vector_stores/redis.py:MemoryResult",
+      "type": "class",
+      "name": "MemoryResult",
+      "filePath": "mem0/vector_stores/redis.py",
+      "lineRange": [
+        41,
+        45
+      ],
+      "summary": "规范化 Redis 查询结果中的标识、载荷和相似度字段。",
+      "tags": [
+        "data-model",
+        "serialization",
+        "search-result"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/vector_stores/redis.py:RedisDB",
+      "type": "class",
+      "name": "RedisDB",
+      "filePath": "mem0/vector_stores/redis.py",
+      "lineRange": [
+        48,
+        367
+      ],
+      "summary": "将 Mem0 向量存储协议适配到 Redis，实现集合、向量、元数据和过滤操作。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "service"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/s3_vectors.py",
+      "type": "file",
+      "name": "s3_vectors.py",
+      "filePath": "mem0/vector_stores/s3_vectors.py",
+      "summary": "实现 Amazon S3 Vectors 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:mem0/vector_stores/s3_vectors.py:OutputData",
+      "type": "class",
+      "name": "OutputData",
+      "filePath": "mem0/vector_stores/s3_vectors.py",
+      "lineRange": [
+        18,
+        21
+      ],
+      "summary": "规范化 Amazon S3 Vectors 查询结果中的标识、载荷和相似度字段。",
+      "tags": [
+        "data-model",
+        "serialization",
+        "search-result"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/vector_stores/s3_vectors.py:S3Vectors",
+      "type": "class",
+      "name": "S3Vectors",
+      "filePath": "mem0/vector_stores/s3_vectors.py",
+      "lineRange": [
+        24,
+        223
+      ],
+      "summary": "将 Mem0 向量存储协议适配到 Amazon S3 Vectors，实现集合、向量、元数据和过滤操作。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mem0/vector_stores/supabase.py",
+      "type": "file",
+      "name": "supabase.py",
+      "filePath": "mem0/vector_stores/supabase.py",
+      "summary": "实现 Supabase 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "abstract-base",
+        "vector-store",
+        "interface"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:mem0/vector_stores/supabase.py:OutputData",
+      "type": "class",
+      "name": "OutputData",
+      "filePath": "mem0/vector_stores/supabase.py",
+      "lineRange": [
+        20,
+        23
+      ],
+      "summary": "规范化 Supabase 查询结果中的标识、载荷和相似度字段。",
+      "tags": [
+        "data-model",
+        "serialization",
+        "search-result"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/vector_stores/supabase.py:Supabase",
+      "type": "class",
+      "name": "Supabase",
+      "filePath": "mem0/vector_stores/supabase.py",
+      "lineRange": [
+        26,
+        259
+      ],
+      "summary": "将 Mem0 向量存储协议适配到 Supabase，实现集合、向量、元数据和过滤操作。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "service"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/turbopuffer.py",
+      "type": "file",
+      "name": "turbopuffer.py",
+      "filePath": "mem0/vector_stores/turbopuffer.py",
+      "summary": "实现 Turbopuffer 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:mem0/vector_stores/turbopuffer.py:OutputData",
+      "type": "class",
+      "name": "OutputData",
+      "filePath": "mem0/vector_stores/turbopuffer.py",
+      "lineRange": [
+        19,
+        22
+      ],
+      "summary": "规范化 Turbopuffer 查询结果中的标识、载荷和相似度字段。",
+      "tags": [
+        "data-model",
+        "serialization",
+        "search-result"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/vector_stores/turbopuffer.py:TurbopufferDB",
+      "type": "class",
+      "name": "TurbopufferDB",
+      "filePath": "mem0/vector_stores/turbopuffer.py",
+      "lineRange": [
+        25,
+        360
+      ],
+      "summary": "将 Mem0 向量存储协议适配到 Turbopuffer，实现集合、向量、元数据和过滤操作。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "service"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/upstash_vector.py",
+      "type": "file",
+      "name": "upstash_vector.py",
+      "filePath": "mem0/vector_stores/upstash_vector.py",
+      "summary": "实现 Upstash Vector 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:mem0/vector_stores/upstash_vector.py:_validate_filter",
+      "type": "function",
+      "name": "_validate_filter",
+      "filePath": "mem0/vector_stores/upstash_vector.py",
+      "lineRange": [
+        20,
+        32
+      ],
+      "summary": "校验并规范化 validate filter 相关输入，在违反约束时尽早抛出明确错误。",
+      "tags": [
+        "validation",
+        "guard",
+        "error-handling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/vector_stores/upstash_vector.py:OutputData",
+      "type": "class",
+      "name": "OutputData",
+      "filePath": "mem0/vector_stores/upstash_vector.py",
+      "lineRange": [
+        35,
+        38
+      ],
+      "summary": "规范化 Upstash Vector 查询结果中的标识、载荷和相似度字段。",
+      "tags": [
+        "data-model",
+        "serialization",
+        "search-result"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/vector_stores/upstash_vector.py:UpstashVector",
+      "type": "class",
+      "name": "UpstashVector",
+      "filePath": "mem0/vector_stores/upstash_vector.py",
+      "lineRange": [
+        41,
+        360
+      ],
+      "summary": "将 Mem0 向量存储协议适配到 Upstash Vector，实现集合、向量、元数据和过滤操作。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "service"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/valkey.py",
+      "type": "file",
+      "name": "valkey.py",
+      "filePath": "mem0/vector_stores/valkey.py",
+      "summary": "实现 Valkey 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:mem0/vector_stores/valkey.py:OutputData",
+      "type": "class",
+      "name": "OutputData",
+      "filePath": "mem0/vector_stores/valkey.py",
+      "lineRange": [
+        38,
+        41
+      ],
+      "summary": "规范化 Valkey 查询结果中的标识、载荷和相似度字段。",
+      "tags": [
+        "data-model",
+        "serialization",
+        "search-result"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/vector_stores/valkey.py:ValkeyDB",
+      "type": "class",
+      "name": "ValkeyDB",
+      "filePath": "mem0/vector_stores/valkey.py",
+      "lineRange": [
+        47,
+        812
+      ],
+      "summary": "将 Mem0 向量存储协议适配到 Valkey，实现集合、向量、元数据和过滤操作。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "service"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/vertex_ai_vector_search.py",
+      "type": "file",
+      "name": "vertex_ai_vector_search.py",
+      "filePath": "mem0/vector_stores/vertex_ai_vector_search.py",
+      "summary": "实现 Vertex AI Vector Search 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:mem0/vector_stores/vertex_ai_vector_search.py:OutputData",
+      "type": "class",
+      "name": "OutputData",
+      "filePath": "mem0/vector_stores/vertex_ai_vector_search.py",
+      "lineRange": [
+        28,
+        31
+      ],
+      "summary": "规范化 Vertex AI Vector Search 查询结果中的标识、载荷和相似度字段。",
+      "tags": [
+        "data-model",
+        "serialization",
+        "search-result"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/vector_stores/vertex_ai_vector_search.py:GoogleMatchingEngine",
+      "type": "class",
+      "name": "GoogleMatchingEngine",
+      "filePath": "mem0/vector_stores/vertex_ai_vector_search.py",
+      "lineRange": [
+        34,
+        647
+      ],
+      "summary": "将 Mem0 向量存储协议适配到 Vertex AI Vector Search，实现集合、向量、元数据和过滤操作。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "service"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mem0/vector_stores/weaviate.py",
+      "type": "file",
+      "name": "weaviate.py",
+      "filePath": "mem0/vector_stores/weaviate.py",
+      "summary": "实现 Weaviate 向量存储适配器，将 Mem0 的统一集合、写入、检索、过滤和生命周期接口映射到该后端。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:mem0/vector_stores/weaviate.py:OutputData",
+      "type": "class",
+      "name": "OutputData",
+      "filePath": "mem0/vector_stores/weaviate.py",
+      "lineRange": [
+        25,
+        28
+      ],
+      "summary": "规范化 Weaviate 查询结果中的标识、载荷和相似度字段。",
+      "tags": [
+        "data-model",
+        "serialization",
+        "search-result"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:mem0/vector_stores/weaviate.py:Weaviate",
+      "type": "class",
+      "name": "Weaviate",
+      "filePath": "mem0/vector_stores/weaviate.py",
+      "lineRange": [
+        31,
+        384
+      ],
+      "summary": "将 Mem0 向量存储协议适配到 Weaviate，实现集合、向量、元数据和过滤操作。",
+      "tags": [
+        "vector-store",
+        "adapter",
+        "service"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:mem0/vector_stores/milvus.py",
+      "target": "file:mem0/configs/vector_stores/milvus.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/milvus.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/milvus.py",
+      "target": "class:mem0/vector_stores/milvus.py:OutputData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/milvus.py",
+      "target": "class:mem0/vector_stores/milvus.py:OutputData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/milvus.py",
+      "target": "class:mem0/vector_stores/milvus.py:MilvusDB",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/milvus.py",
+      "target": "class:mem0/vector_stores/milvus.py:MilvusDB",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/vector_stores/milvus.py:MilvusDB",
+      "target": "class:mem0/vector_stores/base.py:VectorStoreBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/vector_stores/mongodb.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/mongodb.py",
+      "target": "class:mem0/vector_stores/mongodb.py:OutputData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/mongodb.py",
+      "target": "class:mem0/vector_stores/mongodb.py:OutputData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/mongodb.py",
+      "target": "class:mem0/vector_stores/mongodb.py:MongoDB",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/mongodb.py",
+      "target": "class:mem0/vector_stores/mongodb.py:MongoDB",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/vector_stores/mongodb.py:MongoDB",
+      "target": "class:mem0/vector_stores/base.py:VectorStoreBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/vector_stores/neptune_analytics.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/neptune_analytics.py",
+      "target": "function:mem0/vector_stores/neptune_analytics.py:_validate_filter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/neptune_analytics.py",
+      "target": "function:mem0/vector_stores/neptune_analytics.py:_validate_filter",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/neptune_analytics.py",
+      "target": "function:mem0/vector_stores/neptune_analytics.py:_escape_cypher",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/neptune_analytics.py",
+      "target": "function:mem0/vector_stores/neptune_analytics.py:_escape_cypher",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/neptune_analytics.py",
+      "target": "class:mem0/vector_stores/neptune_analytics.py:OutputData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/neptune_analytics.py",
+      "target": "class:mem0/vector_stores/neptune_analytics.py:OutputData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/neptune_analytics.py",
+      "target": "class:mem0/vector_stores/neptune_analytics.py:NeptuneAnalyticsVector",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/neptune_analytics.py",
+      "target": "class:mem0/vector_stores/neptune_analytics.py:NeptuneAnalyticsVector",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/vector_stores/neptune_analytics.py:NeptuneAnalyticsVector",
+      "target": "class:mem0/vector_stores/base.py:VectorStoreBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/vector_stores/opensearch.py",
+      "target": "file:mem0/configs/vector_stores/opensearch.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/opensearch.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/opensearch.py",
+      "target": "function:mem0/vector_stores/opensearch.py:_validate_filter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/opensearch.py",
+      "target": "function:mem0/vector_stores/opensearch.py:_validate_filter",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/opensearch.py",
+      "target": "function:mem0/vector_stores/opensearch.py:_build_filter_clauses",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/opensearch.py",
+      "target": "function:mem0/vector_stores/opensearch.py:_build_filter_clauses",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/opensearch.py",
+      "target": "class:mem0/vector_stores/opensearch.py:OutputData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/opensearch.py",
+      "target": "class:mem0/vector_stores/opensearch.py:OutputData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/opensearch.py",
+      "target": "class:mem0/vector_stores/opensearch.py:OpenSearchDB",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/opensearch.py",
+      "target": "class:mem0/vector_stores/opensearch.py:OpenSearchDB",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/vector_stores/opensearch.py:OpenSearchDB",
+      "target": "class:mem0/vector_stores/base.py:VectorStoreBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "file:mem0/configs/vector_stores/oracledb.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "function:mem0/vector_stores/oracledb.py:_validate_metadata_key",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "function:mem0/vector_stores/oracledb.py:_validate_metadata_key",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "function:mem0/vector_stores/oracledb.py:_convert_distance_to_score",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "function:mem0/vector_stores/oracledb.py:_convert_distance_to_score",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "function:mem0/vector_stores/oracledb.py:_json_path",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "function:mem0/vector_stores/oracledb.py:_json_path",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "function:mem0/vector_stores/oracledb.py:_bind_filter_value",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "function:mem0/vector_stores/oracledb.py:_bind_filter_value",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "function:mem0/vector_stores/oracledb.py:_json_exists",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "function:mem0/vector_stores/oracledb.py:_json_exists",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "function:mem0/vector_stores/oracledb.py:_validate_scalar_operand",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "function:mem0/vector_stores/oracledb.py:_validate_scalar_operand",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "function:mem0/vector_stores/oracledb.py:_build_field_condition",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "function:mem0/vector_stores/oracledb.py:_build_field_condition",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "function:mem0/vector_stores/oracledb.py:_build_filter_group",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "function:mem0/vector_stores/oracledb.py:_build_filter_group",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "class:mem0/vector_stores/oracledb.py:OutputData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "class:mem0/vector_stores/oracledb.py:OutputData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "class:mem0/vector_stores/oracledb.py:OracleAIVectorSearch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/oracledb.py",
+      "target": "class:mem0/vector_stores/oracledb.py:OracleAIVectorSearch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/vector_stores/oracledb.py:OracleAIVectorSearch",
+      "target": "class:mem0/vector_stores/base.py:VectorStoreBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/vector_stores/pgvector.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/pgvector.py",
+      "target": "function:mem0/vector_stores/pgvector.py:_build_filter_conditions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/pgvector.py",
+      "target": "function:mem0/vector_stores/pgvector.py:_build_filter_conditions",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/pgvector.py",
+      "target": "function:mem0/vector_stores/pgvector.py:_with_sslmode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/pgvector.py",
+      "target": "function:mem0/vector_stores/pgvector.py:_with_sslmode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/pgvector.py",
+      "target": "class:mem0/vector_stores/pgvector.py:OutputData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/pgvector.py",
+      "target": "class:mem0/vector_stores/pgvector.py:OutputData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/pgvector.py",
+      "target": "class:mem0/vector_stores/pgvector.py:PGVector",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/pgvector.py",
+      "target": "class:mem0/vector_stores/pgvector.py:PGVector",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/vector_stores/pgvector.py:PGVector",
+      "target": "class:mem0/vector_stores/base.py:VectorStoreBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/vector_stores/pinecone.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/pinecone.py",
+      "target": "class:mem0/vector_stores/pinecone.py:OutputData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/pinecone.py",
+      "target": "class:mem0/vector_stores/pinecone.py:OutputData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/pinecone.py",
+      "target": "class:mem0/vector_stores/pinecone.py:PineconeDB",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/pinecone.py",
+      "target": "class:mem0/vector_stores/pinecone.py:PineconeDB",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/vector_stores/pinecone.py:PineconeDB",
+      "target": "class:mem0/vector_stores/base.py:VectorStoreBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/vector_stores/qdrant.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/qdrant.py",
+      "target": "class:mem0/vector_stores/qdrant.py:Qdrant",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/qdrant.py",
+      "target": "class:mem0/vector_stores/qdrant.py:Qdrant",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/vector_stores/qdrant.py:Qdrant",
+      "target": "class:mem0/vector_stores/base.py:VectorStoreBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/vector_stores/redis.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/redis.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/redis.py",
+      "target": "file:mem0/vector_stores/redis.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/redis.py",
+      "target": "class:mem0/vector_stores/redis.py:MemoryResult",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/redis.py",
+      "target": "class:mem0/vector_stores/redis.py:MemoryResult",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/redis.py",
+      "target": "class:mem0/vector_stores/redis.py:RedisDB",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/redis.py",
+      "target": "class:mem0/vector_stores/redis.py:RedisDB",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/vector_stores/redis.py:RedisDB",
+      "target": "class:mem0/vector_stores/base.py:VectorStoreBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/vector_stores/s3_vectors.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/s3_vectors.py",
+      "target": "class:mem0/vector_stores/s3_vectors.py:OutputData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/s3_vectors.py",
+      "target": "class:mem0/vector_stores/s3_vectors.py:OutputData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/s3_vectors.py",
+      "target": "class:mem0/vector_stores/s3_vectors.py:S3Vectors",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/s3_vectors.py",
+      "target": "class:mem0/vector_stores/s3_vectors.py:S3Vectors",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/vector_stores/s3_vectors.py:S3Vectors",
+      "target": "class:mem0/vector_stores/base.py:VectorStoreBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/vector_stores/supabase.py",
+      "target": "file:mem0/configs/vector_stores/supabase.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/supabase.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/supabase.py",
+      "target": "class:mem0/vector_stores/supabase.py:OutputData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/supabase.py",
+      "target": "class:mem0/vector_stores/supabase.py:OutputData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/supabase.py",
+      "target": "class:mem0/vector_stores/supabase.py:Supabase",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/supabase.py",
+      "target": "class:mem0/vector_stores/supabase.py:Supabase",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/vector_stores/supabase.py:Supabase",
+      "target": "class:mem0/vector_stores/base.py:VectorStoreBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/vector_stores/turbopuffer.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/turbopuffer.py",
+      "target": "class:mem0/vector_stores/turbopuffer.py:OutputData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/turbopuffer.py",
+      "target": "class:mem0/vector_stores/turbopuffer.py:OutputData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/turbopuffer.py",
+      "target": "class:mem0/vector_stores/turbopuffer.py:TurbopufferDB",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/turbopuffer.py",
+      "target": "class:mem0/vector_stores/turbopuffer.py:TurbopufferDB",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/vector_stores/turbopuffer.py:TurbopufferDB",
+      "target": "class:mem0/vector_stores/base.py:VectorStoreBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/vector_stores/upstash_vector.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/upstash_vector.py",
+      "target": "function:mem0/vector_stores/upstash_vector.py:_validate_filter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/upstash_vector.py",
+      "target": "function:mem0/vector_stores/upstash_vector.py:_validate_filter",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/upstash_vector.py",
+      "target": "class:mem0/vector_stores/upstash_vector.py:OutputData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/upstash_vector.py",
+      "target": "class:mem0/vector_stores/upstash_vector.py:OutputData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/upstash_vector.py",
+      "target": "class:mem0/vector_stores/upstash_vector.py:UpstashVector",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/upstash_vector.py",
+      "target": "class:mem0/vector_stores/upstash_vector.py:UpstashVector",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/vector_stores/upstash_vector.py:UpstashVector",
+      "target": "class:mem0/vector_stores/base.py:VectorStoreBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/vector_stores/valkey.py",
+      "target": "file:mem0/memory/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/valkey.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/valkey.py",
+      "target": "file:mem0/vector_stores/valkey.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/valkey.py",
+      "target": "class:mem0/vector_stores/valkey.py:OutputData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/valkey.py",
+      "target": "class:mem0/vector_stores/valkey.py:OutputData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/valkey.py",
+      "target": "class:mem0/vector_stores/valkey.py:ValkeyDB",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/valkey.py",
+      "target": "class:mem0/vector_stores/valkey.py:ValkeyDB",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/vector_stores/valkey.py:ValkeyDB",
+      "target": "class:mem0/vector_stores/base.py:VectorStoreBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/vector_stores/vertex_ai_vector_search.py",
+      "target": "file:mem0/configs/vector_stores/vertex_ai_vector_search.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/vertex_ai_vector_search.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/vertex_ai_vector_search.py",
+      "target": "class:mem0/vector_stores/vertex_ai_vector_search.py:OutputData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/vertex_ai_vector_search.py",
+      "target": "class:mem0/vector_stores/vertex_ai_vector_search.py:OutputData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/vertex_ai_vector_search.py",
+      "target": "class:mem0/vector_stores/vertex_ai_vector_search.py:GoogleMatchingEngine",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/vertex_ai_vector_search.py",
+      "target": "class:mem0/vector_stores/vertex_ai_vector_search.py:GoogleMatchingEngine",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/vector_stores/vertex_ai_vector_search.py:GoogleMatchingEngine",
+      "target": "class:mem0/vector_stores/base.py:VectorStoreBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:mem0/vector_stores/weaviate.py",
+      "target": "file:mem0/vector_stores/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:mem0/vector_stores/weaviate.py",
+      "target": "class:mem0/vector_stores/weaviate.py:OutputData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/weaviate.py",
+      "target": "class:mem0/vector_stores/weaviate.py:OutputData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:mem0/vector_stores/weaviate.py",
+      "target": "class:mem0/vector_stores/weaviate.py:Weaviate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:mem0/vector_stores/weaviate.py",
+      "target": "class:mem0/vector_stores/weaviate.py:Weaviate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:mem0/vector_stores/weaviate.py:Weaviate",
+      "target": "class:mem0/vector_stores/base.py:VectorStoreBase",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    }
+  ]
+}
